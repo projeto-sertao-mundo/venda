@@ -1,0 +1,23 @@
+{
+  "name": "godot-seu-fulo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "indexifier ./builds --html > builds/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projeto-sertao-mundo/godot-seu-fulo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projeto-sertao-mundo/godot-seu-fulo/issues"
+  },
+  "homepage": "https://github.com/projeto-sertao-mundo/godot-seu-fulo#readme",
+  "devDependencies": {
+    "indexifier": "^3.2.2"
+  }
+}
