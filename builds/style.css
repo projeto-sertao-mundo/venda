@@ -1,0 +1,35 @@
+html, body {
+  background-color: #ecf0f1;
+}
+
+pre {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 0px;
+  text-align: center;
+}
+
+pre::after {
+  content: 'Versões: A Venda do Seu Fulô';
+  display: block;
+  font-size: 24px;
+  padding: 32px 0 16px;
+}
+
+pre > a {
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+pre > a:hover {
+  color: #2980b9;
+}
+
+pre > a:last-child {
+  font-size: 24px;
+  padding: 8px;
+}
+
+a[href='./'] {
+  display: none;
+}
