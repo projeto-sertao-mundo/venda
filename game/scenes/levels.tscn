@@ -1,0 +1,43 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 113.0
+margin_top = 267.0
+margin_right = 249.0
+margin_bottom = 318.0
+text = "Level 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 369.0
+margin_top = 264.0
+margin_right = 505.0
+margin_bottom = 315.0
+text = "Level 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 684.0
+margin_top = 263.0
+margin_right = 820.0
+margin_bottom = 314.0
+text = "Level 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 22.0
+margin_top = 529.0
+margin_right = 158.0
+margin_bottom = 580.0
+text = "Voltar"
+__meta__ = {
+"_edit_use_anchors_": false
+}

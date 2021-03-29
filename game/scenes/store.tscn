@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 328.818
+margin_top = 162.069
+margin_right = 675.818
+margin_bottom = 234.069
+text = "Loja Seu Fulô"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 21.0
+margin_top = 522.0
+margin_right = 196.0
+margin_bottom = 579.0
+text = "Sair da Loja"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,43 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 384.0
+margin_top = 24.0
+margin_right = 630.0
+margin_bottom = 144.0
+text = "Porta da loja"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 572.0
+margin_top = 312.0
+margin_right = 802.0
+margin_bottom = 367.0
+text = "Entrar na loja"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 213.0
+margin_top = 312.0
+margin_right = 443.0
+margin_bottom = 367.0
+text = "Procurar itens"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 30.0
+margin_top = 533.0
+margin_right = 195.0
+margin_bottom = 582.0
+text = "Voltar Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
