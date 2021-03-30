@@ -7,31 +7,31 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="concept_kid" type="Sprite" parent="."]
-position = Vector2( 330.626, 349.302 )
-scale = Vector2( 0.146932, 0.146932 )
+position = Vector2( 698.903, 625.51 )
+scale = Vector2( 0.257026, 0.257026 )
 texture = ExtResource( 3 )
 flip_h = true
 
 [node name="concept_helper" type="Sprite" parent="."]
-position = Vector2( 699.88, 345.822 )
-scale = Vector2( 0.146932, 0.146932 )
+position = Vector2( 1306.27, 625.205 )
+scale = Vector2( 0.262146, 0.262146 )
 texture = ExtResource( 2 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
-margin_left = 328.818
-margin_top = 57.069
-margin_right = 675.818
-margin_bottom = 129.069
+margin_left = 798.689
+margin_top = 238.033
+margin_right = 1145.69
+margin_bottom = 310.033
 text = "Loja Seu Fulô"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="."]
-margin_left = 21.0
-margin_top = 522.0
-margin_right = 196.0
-margin_bottom = 579.0
+margin_left = 46.3984
+margin_top = 966.472
+margin_right = 221.398
+margin_bottom = 1023.47
 text = "Sair da Loja"
 script = ExtResource( 1 )
 __meta__ = {

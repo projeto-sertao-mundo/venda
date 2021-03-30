@@ -6,25 +6,25 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="concept_store-out" type="Sprite" parent="."]
-position = Vector2( 513.209, 320 )
-scale = Vector2( 0.31424, 0.31424 )
+position = Vector2( 982.758, 492.194 )
+scale = Vector2( 0.567316, 0.567316 )
 texture = ExtResource( 2 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
 margin_left = 27.0
 margin_top = 15.0
-margin_right = 273.0
-margin_bottom = 53.0
+margin_right = 345.0
+margin_bottom = 101.0
 text = "Porta da loja"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="."]
-margin_left = 622.511
-margin_top = 534.247
-margin_right = 852.511
-margin_bottom = 589.247
+margin_left = 1289.93
+margin_top = 897.323
+margin_right = 1519.93
+margin_bottom = 952.323
 text = "Entrar na loja"
 script = ExtResource( 1 )
 __meta__ = {
@@ -32,10 +32,10 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 253.409
-margin_top = 408.532
-margin_right = 483.409
-margin_bottom = 463.532
+margin_left = 621.825
+margin_top = 702.197
+margin_right = 851.825
+margin_bottom = 757.197
 text = "Procurar itens"
 script = ExtResource( 1 )
 __meta__ = {
@@ -43,10 +43,10 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="."]
-margin_left = 17.6529
-margin_top = 533.0
-margin_right = 182.653
-margin_bottom = 582.0
+margin_left = 25.6619
+margin_top = 1000.19
+margin_right = 190.662
+margin_bottom = 1049.19
 text = "Voltar Menu"
 script = ExtResource( 1 )
 __meta__ = {
