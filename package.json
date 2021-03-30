@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "indexifier ./builds --exclude htm --html > builds/index.html"
+    "deploy": "indexifier ./builds --exclude htm --html > builds/index.html && echo '<link rel=stylesheet href=style.css />' >> builds/index.html"
   },
   "repository": {
     "type": "git",
