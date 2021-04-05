@@ -1,53 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://scripts/button-actions.gd" type="Script" id=3]
+[ext_resource path="res://scripts/button-navigations.gd" type="Script" id=3]
 
-[sub_resource type="GDScript" id=1]
-script/source = "extends KinematicBody2D
+[node name="SceneMenu" type="Node2D"]
 
-export (int) var speed = 200
-
-var velocity = Vector2()
-
-func get_input():
-	velocity = Vector2()
-	if Input.is_action_pressed(\"ui_right\"):
-		velocity.x += 1
-	if Input.is_action_pressed(\"ui_left\"):
-		velocity.x -= 1
-	if Input.is_action_pressed(\"ui_down\"):
-		velocity.y += 1
-	if Input.is_action_pressed(\"ui_up\"):
-		velocity.y -= 1
-	velocity = velocity.normalized() * speed
-	
-func _physics_process(delta):
-	get_input()
-	velocity = move_and_slide(velocity)
-"
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 32.0167, 31.6132 )
-
-[node name="Node2D" type="Node2D"]
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 961.994, 482.198 )
-script = SubResource( 1 )
-
-[node name="icon" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( 1.78186, -57.0175 )
+[node name="GameLogo" type="Sprite" parent="."]
+position = Vector2( 963.776, 425.18 )
 scale = Vector2( 3.56133, 3.56133 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-shape = SubResource( 2 )
-
 [node name="BtnPlayGame" type="Button" parent="."]
-margin_left = 814.263
+margin_left = 816.508
 margin_top = 623.47
-margin_right = 1126.26
+margin_right = 1128.5
 margin_bottom = 696.47
 text = "Jogar"
 script = ExtResource( 3 )
@@ -55,7 +21,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="."]
+[node name="BtnCredits" type="Button" parent="."]
 margin_left = 814.263
 margin_top = 736.442
 margin_right = 1126.26

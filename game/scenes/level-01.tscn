@@ -1,16 +1,28 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://images/Skills.png" type="Texture" id=1]
-[ext_resource path="res://scripts/button-actions.gd" type="Script" id=2]
+[ext_resource path="res://items/level-01/item-flame-temp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/button-navigations.gd" type="Script" id=2]
+[ext_resource path="res://items/level-01/item-cannon-temp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/level-01/item-laser-temp.tscn" type="PackedScene" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="level-01" type="Node2D"]
 
-[node name="Skills" type="Sprite" parent="."]
-position = Vector2( 927.795, 523.951 )
-scale = Vector2( 3.27484, 3.27484 )
-texture = ExtResource( 1 )
+[node name="hud" type="Node2D" parent="."]
+position = Vector2( 39.818, 986.448 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Button" type="Button" parent="hud"]
+margin_right = 159.0
+margin_bottom = 48.002
+text = "Voltar"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="items-to-find" type="Node2D" parent="hud"]
+position = Vector2( -39.818, -986.448 )
+
+[node name="ColorRect" type="ColorRect" parent="hud/items-to-find"]
 margin_left = 778.72
 margin_top = 974.993
 margin_right = 828.72
@@ -19,7 +31,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="hud/items-to-find"]
 margin_left = 844.72
 margin_top = 974.993
 margin_right = 894.72
@@ -28,7 +40,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect3" type="ColorRect" parent="."]
+[node name="ColorRect3" type="ColorRect" parent="hud/items-to-find"]
 margin_left = 912.72
 margin_top = 973.993
 margin_right = 962.72
@@ -37,7 +49,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect4" type="ColorRect" parent="."]
+[node name="ColorRect4" type="ColorRect" parent="hud/items-to-find"]
 margin_left = 977.72
 margin_top = 973.993
 margin_right = 1027.72
@@ -46,7 +58,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect5" type="ColorRect" parent="."]
+[node name="ColorRect5" type="ColorRect" parent="hud/items-to-find"]
 margin_left = 1044.72
 margin_top = 970.993
 margin_right = 1094.72
@@ -55,14 +67,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 39.818
-margin_top = 986.448
-margin_right = 198.818
-margin_bottom = 1034.45
-text = "Voltar"
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="Button" to="Button" method="_on_BackLevelChoice_pressed"]
+[node name="item-cannon-temp" parent="." instance=ExtResource( 3 )]
+position = Vector2( 484.197, 501.361 )
+
+[node name="item-flame-temp" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1393.22, 685.708 )
+
+[node name="item-laser-temp" parent="." instance=ExtResource( 4 )]
+position = Vector2( 888.912, 289.469 )
+[connection signal="pressed" from="hud/Button" to="hud/Button" method="_on_BackLevelChoice_pressed"]
