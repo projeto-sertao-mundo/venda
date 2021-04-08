@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/concept_store-out.png-f008c5bea09560e4b8b7d0fa8857f2b6.stex"
+path="res://.import/flamethrower_up.png-43cabb9f55e123dad55d23247597aa70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/concept_store-out.png"
-dest_files=[ "res://.import/concept_store-out.png-f008c5bea09560e4b8b7d0fa8857f2b6.stex" ]
+source_file="res://sprites/temp/flamethrower_up.png"
+dest_files=[ "res://.import/flamethrower_up.png-43cabb9f55e123dad55d23247597aa70.stex" ]
 
 [params]
 

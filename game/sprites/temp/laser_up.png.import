@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Skills.png-a7af7010c309f22d4009357b83355854.stex"
+path="res://.import/laser_up.png-f09f32961f6cef74a73913295e09407f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Skills.png"
-dest_files=[ "res://.import/Skills.png-a7af7010c309f22d4009357b83355854.stex" ]
+source_file="res://sprites/temp/laser_up.png"
+dest_files=[ "res://.import/laser_up.png-f09f32961f6cef74a73913295e09407f.stex" ]
 
 [params]
 

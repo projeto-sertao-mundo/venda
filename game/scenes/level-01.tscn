@@ -1,78 +1,86 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://items/level-01/item-flame-temp.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scripts/button-navigations.gd" type="Script" id=2]
 [ext_resource path="res://items/level-01/item-cannon-temp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/level-01/item-laser-temp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://scripts/ItemsManager.gd" type="Script" id=6]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+
+func _on_PlayGame_pressed():
+	get_tree().change_scene(\"res://scenes/store-out.tscn\")
+
+func _on_BackMenu_pressed():
+	get_tree().change_scene(\"res://scenes/menu.tscn\")
+
+func _on_BackStoreOut_pressed():
+	get_tree().change_scene(\"res://scenes/store-out.tscn\")
+
+func _on_BackLevelChoice_pressed():
+	get_tree().change_scene(\"res://scenes/levels.tscn\")
+
+func _on_EnterStore_pressed():
+	get_tree().change_scene(\"res://scenes/store.tscn\")
+
+func _on_EnterLevelChoice_pressed():
+	get_tree().change_scene(\"res://scenes/levels.tscn\")
+
+func _on_EnterLevel01_pressed():
+	get_tree().change_scene(\"res://scenes/level-01.tscn\")
+"
 
 [node name="level-01" type="Node2D"]
 
+[node name="items-manager" type="Node2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="item-cannon-temp" parent="items-manager" instance=ExtResource( 3 )]
+position = Vector2( 490.197, 501.361 )
+
+[node name="item-flame-temp" parent="items-manager" instance=ExtResource( 1 )]
+position = Vector2( 1394.63, 685.708 )
+collision_layer = 1024
+
+[node name="item-laser-temp" parent="items-manager" instance=ExtResource( 4 )]
+position = Vector2( 786.64, 957.803 )
+
+[node name="items-to-find" type="Node2D" parent="items-manager"]
+light_mask = 0
+position = Vector2( 960, 980 )
+z_index = 1
+
+[node name="scene" type="Node2D" parent="."]
+z_index = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="scene"]
+margin_left = 1400.0
+margin_top = 596.0
+margin_right = 1644.0
+margin_bottom = 830.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
 [node name="hud" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Button" type="Button" parent="hud"]
 margin_right = 159.0
 margin_bottom = 48.002
 text = "Voltar"
-script = ExtResource( 2 )
+script = SubResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
-
-[node name="items-to-find" type="Node2D" parent="hud"]
-position = Vector2( -39.818, -986.448 )
-
-[node name="ColorRect" type="ColorRect" parent="hud/items-to-find"]
-margin_left = 778.72
-margin_top = 974.993
-margin_right = 828.72
-margin_bottom = 1024.99
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect2" type="ColorRect" parent="hud/items-to-find"]
-margin_left = 844.72
-margin_top = 974.993
-margin_right = 894.72
-margin_bottom = 1024.99
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect3" type="ColorRect" parent="hud/items-to-find"]
-margin_left = 912.72
-margin_top = 973.993
-margin_right = 962.72
-margin_bottom = 1023.99
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect4" type="ColorRect" parent="hud/items-to-find"]
-margin_left = 977.72
-margin_top = 973.993
-margin_right = 1027.72
-margin_bottom = 1023.99
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect5" type="ColorRect" parent="hud/items-to-find"]
-margin_left = 1044.72
-margin_top = 970.993
-margin_right = 1094.72
-margin_bottom = 1020.99
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="item-cannon-temp" parent="." instance=ExtResource( 3 )]
-position = Vector2( 484.197, 501.361 )
-
-[node name="item-flame-temp" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1393.22, 685.708 )
-
-[node name="item-laser-temp" parent="." instance=ExtResource( 4 )]
-position = Vector2( 888.912, 289.469 )
 [connection signal="pressed" from="hud/Button" to="hud/Button" method="_on_BackLevelChoice_pressed"]

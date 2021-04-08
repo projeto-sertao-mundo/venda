@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scripts/button-navigations.gd" type="Script" id=1]
-[ext_resource path="res://images/concept_store-out.png" type="Texture" id=2]
+[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
+[ext_resource path="res://sprites/concept_store-out.png" type="Texture" id=2]
+
+
 
 
 [node name="Node2D" type="Node2D"]

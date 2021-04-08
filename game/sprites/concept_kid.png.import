@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/concept_helper.png-d7f01a9bf38fc62b5f420d6ec7337c10.stex"
+path="res://.import/concept_kid.png-a250d983c3f96da8ee3dfbae66809994.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/concept_helper.png"
-dest_files=[ "res://.import/concept_helper.png-d7f01a9bf38fc62b5f420d6ec7337c10.stex" ]
+source_file="res://sprites/concept_kid.png"
+dest_files=[ "res://.import/concept_kid.png-a250d983c3f96da8ee3dfbae66809994.stex" ]
 
 [params]
 
