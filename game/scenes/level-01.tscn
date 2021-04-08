@@ -44,7 +44,7 @@ position = Vector2( 1394.63, 685.708 )
 collision_layer = 1024
 
 [node name="item-laser-temp" parent="items-manager" instance=ExtResource( 4 )]
-position = Vector2( 786.64, 957.803 )
+position = Vector2( 777.731, 793.878 )
 
 [node name="items-to-find" type="Node2D" parent="items-manager"]
 light_mask = 0
@@ -57,15 +57,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="TextureRect" type="TextureRect" parent="scene"]
-margin_left = 1400.0
-margin_top = 596.0
-margin_right = 1644.0
-margin_bottom = 830.0
+[node name="Node2D2" type="Node2D" parent="scene"]
+position = Vector2( 832.867, 911.439 )
+
+[node name="TextureRect" type="TextureRect" parent="scene/Node2D2"]
+margin_left = -64.0
+margin_top = -128.0
+margin_right = 64.0
+rect_pivot_offset = Vector2( -817.187, 89.708 )
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D3" type="Node2D" parent="scene"]
+position = Vector2( 1454.71, 785.723 )
+
+[node name="TextureRect" type="TextureRect" parent="scene/Node2D3"]
+margin_left = -64.0
+margin_top = -128.0
+margin_right = 64.0
+rect_pivot_offset = Vector2( -817.187, 89.708 )
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
 "_edit_use_anchors_": false
 }
 

@@ -30,23 +30,32 @@ func create_item_sprite(item: Dictionary):
 		sprite.texture = item.sprite
 	return sprite
 
-func clear_item_list():
-	var item_list_node = get_node("items-to-find")
-	var item_list_children = item_list_node.get_children()
-	for item in item_list_children: # Limpar lista de items
-		item.queue_free()
-
 func populate_item_list():
 	var item_list_node = get_node("items-to-find")
 	var i = 0
 	while i < items.size(): # Adicionar novos sprites
 		var sprite = create_item_sprite(items[i])
 		var size = sprite.get_rect().size
-		var positionX = i * size.x * sprite_scale + sprite_margin * i
+		var positionX = (i * size.x * sprite_scale) + (i * sprite_margin)
 		sprite.position.x = positionX
 		item_list_node.add_child(sprite)
 		i += 1
 
+func clear_item_list():
+	var item_list_node = get_node("items-to-find")
+	var item_list_children = item_list_node.get_children()
+	for item in item_list_children: # Limpar lista de items
+		item.free()
+
+func fix_position_item_list():
+	var item_list_node = get_node("items-to-find")
+	var item_list_children = item_list_node.get_children()
+	var item_list_count = item_list_children.size()
+	var sprite_size = item_list_children[1].get_rect().size
+	var positionX = (item_list_count * sprite_size.x * sprite_scale) + (item_list_count * sprite_margin)
+	item_list_node.position.x = (1920 - positionX) / 2
+
 func draw_item_list():
 	clear_item_list()
 	populate_item_list()
+	fix_position_item_list()
