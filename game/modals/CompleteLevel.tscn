@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://new_theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=2]
+
+[node name="CompleteLevelModal" type="Node2D"]
+z_index = 10
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 432.294
+margin_top = 235.969
+margin_right = 1432.29
+margin_bottom = 735.969
+color = Color( 0.258824, 0.258824, 0.258824, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 500.401
+margin_top = 389.167
+margin_right = 659.401
+margin_bottom = 411.167
+rect_scale = Vector2( 5.42501, 5.42501 )
+theme = ExtResource( 1 )
+text = "Você completou o level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 833.142
+margin_top = 541.122
+margin_right = 1033.14
+margin_bottom = 591.122
+text = "OK"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="Button" method="_on_BackStoreOut_pressed"]

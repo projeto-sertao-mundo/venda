@@ -55,7 +55,19 @@ func fix_position_item_list():
 	var positionX = (item_list_count * sprite_size.x * sprite_scale) + (item_list_count * sprite_margin)
 	item_list_node.position.x = (1920 - positionX) / 2
 
+func check_complete_level():
+	var hasNotFoundItem = false
+	for item in items:
+		if item.status == false:
+			hasNotFoundItem = true
+			break
+	if hasNotFoundItem == false:
+		var scene = load("res://modals/CompleteLevel.tscn")
+		var modal = scene.instance()
+		get_parent().add_child(modal)
+
 func draw_item_list():
 	clear_item_list()
 	populate_item_list()
 	fix_position_item_list()
+	check_complete_level()

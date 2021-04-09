@@ -1,24 +1,18 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
-[ext_resource path="res://sprites/concept_helper.png" type="Texture" id=2]
-[ext_resource path="res://sprites/concept_kid.png" type="Texture" id=3]
-
-
-
+[ext_resource path="res://sprites/characters/boy-and-horse.png" type="Texture" id=2]
+[ext_resource path="res://sprites/characters/helper.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="concept_kid" type="Sprite" parent="."]
-position = Vector2( 698.903, 625.51 )
-scale = Vector2( 0.257026, 0.257026 )
-texture = ExtResource( 3 )
-flip_h = true
-
-[node name="concept_helper" type="Sprite" parent="."]
-position = Vector2( 1306.27, 625.205 )
-scale = Vector2( 0.262146, 0.262146 )
+[node name="boy-and-horse" type="Sprite" parent="."]
+position = Vector2( 1320.8, 635.785 )
 texture = ExtResource( 2 )
+
+[node name="helper" type="Sprite" parent="."]
+position = Vector2( 643.095, 718.846 )
+texture = ExtResource( 3 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
 margin_left = 798.689

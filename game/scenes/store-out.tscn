@@ -1,51 +1,37 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
-[ext_resource path="res://sprites/concept_store-out.png" type="Texture" id=2]
-
-
-
+[ext_resource path="res://sprites/background/hub.jpg" type="Texture" id=2]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="concept_store-out" type="Sprite" parent="."]
-position = Vector2( 982.758, 492.194 )
-scale = Vector2( 0.567316, 0.567316 )
+[node name="hub" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
 texture = ExtResource( 2 )
 
-[node name="TextEdit" type="TextEdit" parent="."]
-margin_left = 27.0
-margin_top = 15.0
-margin_right = 345.0
-margin_bottom = 101.0
-text = "Porta da loja"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button" type="Button" parent="."]
-margin_left = 1289.93
-margin_top = 897.323
-margin_right = 1519.93
-margin_bottom = 952.323
-text = "Entrar na loja"
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button2" type="Button" parent="."]
-margin_left = 621.825
-margin_top = 702.197
-margin_right = 851.825
-margin_bottom = 757.197
+[node name="BtnGoSelectLevel" type="Button" parent="."]
+margin_left = 677.262
+margin_top = 498.09
+margin_right = 907.262
+margin_bottom = 553.09
 text = "Procurar itens"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="."]
+[node name="BtnGoStore" type="Button" parent="."]
+margin_left = 1148.82
+margin_top = 670.537
+margin_right = 1378.82
+margin_bottom = 725.537
+text = "Entrar na loja"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnBackMenu" type="Button" parent="."]
 margin_left = 25.6619
 margin_top = 1000.19
 margin_right = 190.662
@@ -55,6 +41,6 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Button" to="Button" method="_on_EnterStore_pressed"]
-[connection signal="pressed" from="Button2" to="Button" method="_on_EnterLevelChoice_pressed"]
-[connection signal="pressed" from="Button3" to="Button3" method="_on_BackMenu_pressed"]
+[connection signal="pressed" from="BtnGoSelectLevel" to="BtnGoStore" method="_on_EnterLevelChoice_pressed"]
+[connection signal="pressed" from="BtnGoStore" to="BtnGoStore" method="_on_EnterStore_pressed"]
+[connection signal="pressed" from="BtnBackMenu" to="BtnBackMenu" method="_on_BackMenu_pressed"]
