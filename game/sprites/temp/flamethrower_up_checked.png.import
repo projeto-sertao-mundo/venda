@@ -1,34 +1,17 @@
 [remap]
 
-importer="texture"
-type="StreamTexture"
-path="res://.import/flamethrower_up_checked.png-0efc9643b1d598254c11a2b1a081d700.stex"
-metadata={
-"vram_texture": false
-}
-
+importer="texture_atlas"
+type="Texture"
+path="res://.import/flamethrower_up_checked.png-0efc9643b1d598254c11a2b1a081d700.res"
+group_file="res://altlas/items-temp.png"
+valid=true
 [deps]
 
+
 source_file="res://sprites/temp/flamethrower_up_checked.png"
-dest_files=[ "res://.import/flamethrower_up_checked.png-0efc9643b1d598254c11a2b1a081d700.stex" ]
+dest_files=[ "res://.import/flamethrower_up_checked.png-0efc9643b1d598254c11a2b1a081d700.res" ]
 
 [params]
 
-compress/mode=0
-compress/lossy_quality=0.7
-compress/hdr_mode=0
-compress/bptc_ldr=0
-compress/normal_map=0
-flags/repeat=0
-flags/filter=true
-flags/mipmaps=false
-flags/anisotropic=false
-flags/srgb=2
-process/fix_alpha_border=true
-process/premult_alpha=false
-process/HDR_as_SRGB=false
-process/invert_color=false
-stream=false
-size_limit=0
-detect_3d=true
-svg/scale=1.0
+atlas_file="res://altlas/items-temp.png"
+import_mode=0

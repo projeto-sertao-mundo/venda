@@ -1,12 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://new_theme.tres" type="Theme" id=1]
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=2]
+[ext_resource path="res://scripts/ShowModal.gd" type="Script" id=3]
 
 [node name="CompleteLevelModal" type="Node2D"]
 z_index = 10
+script = ExtResource( 3 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="timer" type="Timer" parent="."]
+
+[node name="content" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="content"]
 margin_left = 432.294
 margin_top = 235.969
 margin_right = 1432.29
@@ -16,7 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="content"]
 margin_left = 500.401
 margin_top = 389.167
 margin_right = 659.401
@@ -28,14 +35,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 833.142
+[node name="Button" type="Button" parent="content"]
+margin_left = 835.03
 margin_top = 541.122
-margin_right = 1033.14
+margin_right = 1035.03
 margin_bottom = 591.122
 text = "OK"
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="Button" to="Button" method="_on_BackStoreOut_pressed"]
+modal_node_path = NodePath("../..")
+[connection signal="pressed" from="content/Button" to="content/Button" method="_on_BackStoreOut_pressed"]
+[connection signal="pressed" from="content/Button" to="content/Button" method="_on_close_modal"]

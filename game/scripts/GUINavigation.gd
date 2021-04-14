@@ -1,5 +1,7 @@
 extends Button
 
+export (NodePath) var modal_node_path = null
+
 func _on_PlayGame_pressed():
 	get_tree().change_scene("res://scenes/store-out.tscn")
 
@@ -20,3 +22,7 @@ func _on_EnterLevelChoice_pressed():
 
 func _on_EnterLevel01_pressed():
 	get_tree().change_scene("res://scenes/level-01.tscn")
+
+func _on_close_modal():
+	var modal = get_node(modal_node_path)
+	modal.queue_free()

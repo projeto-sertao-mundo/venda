@@ -19,6 +19,10 @@ config/name="Seu Fulô"
 run/main_scene="res://scenes/menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ItemsManager="*res://scripts/ItemsManager.gd"
+
 [display]
 
 window/size/width=1920
