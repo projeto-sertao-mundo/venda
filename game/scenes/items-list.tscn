@@ -4,3 +4,4 @@
 
 [node name="items-list" type="Node2D"]
 script = ExtResource( 1 )
+level_name = "Level01"

@@ -1,19 +1,20 @@
 extends Node2D
 
-export (Array, Dictionary) var items = []
+export (Dictionary) var items = {}
 export (int) var sprite_scale = 4
 export (int) var sprite_margin = 30
 
 var item_list = null
+var level_name = ""
 
 func item_add(name: String, level: String, sprite: Texture, sprite_checked: Texture):
 	var hasItem = false
-	for item in items:
+	for item in items[level_name]:
 		if item.name == name:
 			hasItem = true
 			break
 	if hasItem == false:
-		items.push_front({
+		items[level_name].push_front({
 			name = name,
 			level = level,
 			sprite = sprite,
@@ -23,14 +24,29 @@ func item_add(name: String, level: String, sprite: Texture, sprite_checked: Text
 		item_list_draw()
 
 func item_found(name: String):
-	for item in items:
+	for item in items[level_name]:
 		if item.name == name:
 			item["status"] = true
 	item_list_draw()
 
+func item_is_checked(name: String):
+	var isChecked = false
+	for item in items[level_name]:
+		if item.name == name:
+			isChecked = item.status
+			break
+	return isChecked
+
+func level_define(name: String):
+	level_name = name
+	print(items.has(level_name))
+	if items.has(level_name) == false:
+		items[level_name] = []
+	print(items)
+
 func check_complete_level():
 	var hasNotFoundItem = false
-	for item in items:
+	for item in items[level_name]:
 		if item.status == false:
 			hasNotFoundItem = true
 			break
@@ -58,8 +74,8 @@ func item_list_clear():
 
 func item_list_populate():
 	var i = 0
-	while i < items.size(): # Adicionar novos sprites
-		var item = items[i]
+	while i < items[level_name].size(): # Adicionar novos sprites
+		var item = items[level_name][i]
 		var sprite = create_sprite(item.sprite, item.sprite_checked, item.status)
 		var size = sprite.get_rect().size
 		var positionX = (i * size.x * sprite_scale) + (i * sprite_margin)
@@ -70,9 +86,10 @@ func item_list_populate():
 func item_list_fix_position():
 	var item_list_children = item_list.get_children()
 	var item_list_count = item_list_children.size()
-	var sprite_size = item_list_children[0].get_rect().size
-	var positionX = (item_list_count * sprite_size.x * sprite_scale) + (item_list_count * sprite_margin)
-	item_list.position.x = (1920 - positionX) / 2
+	if item_list_count != 0:
+		var sprite_size = item_list_children[0].get_rect().size
+		var positionX = (item_list_count * sprite_size.x * sprite_scale) + (item_list_count * sprite_margin)
+		item_list.position.x = (1920 - positionX) / 2
 	item_list.position.y = 980
 
 func item_list_draw():
