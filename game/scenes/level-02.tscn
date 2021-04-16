@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://items/level-01/item-flame-temp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/items-list.tscn" type="PackedScene" id=2]
+[ext_resource path="res://items/level-01/item-cannon-temp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/level-01/item-laser-temp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+
+func _on_PlayGame_pressed():
+	get_tree().change_scene(\"res://scenes/store-out.tscn\")
+
+func _on_BackMenu_pressed():
+	get_tree().change_scene(\"res://scenes/menu.tscn\")
+
+func _on_BackStoreOut_pressed():
+	get_tree().change_scene(\"res://scenes/store-out.tscn\")
+
+func _on_BackLevelChoice_pressed():
+	get_tree().change_scene(\"res://scenes/levels.tscn\")
+
+func _on_EnterStore_pressed():
+	get_tree().change_scene(\"res://scenes/store.tscn\")
+
+func _on_EnterLevelChoice_pressed():
+	get_tree().change_scene(\"res://scenes/levels.tscn\")
+
+func _on_EnterLevel01_pressed():
+	get_tree().change_scene(\"res://scenes/level-01.tscn\")
+"
+
+[node name="level-01" type="Node2D"]
+
+[node name="items-list" parent="." instance=ExtResource( 2 )]
+level_name = "Level02"
+
+[node name="items-fo-find" type="Node2D" parent="."]
+
+[node name="item-cannon-temp" parent="items-fo-find" instance=ExtResource( 3 )]
+position = Vector2( 1486.94, 768.507 )
+
+[node name="item-flame-temp" parent="items-fo-find" instance=ExtResource( 1 )]
+position = Vector2( 586.457, 524.073 )
+collision_layer = 1024
+
+[node name="item-laser-temp" parent="items-fo-find" instance=ExtResource( 4 )]
+position = Vector2( 842.834, 210.197 )
+
+[node name="items-to-disrupt" type="Node2D" parent="."]
+z_index = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D2" type="Node2D" parent="items-to-disrupt"]
+position = Vector2( 897.97, 327.758 )
+
+[node name="TextureRect" type="TextureRect" parent="items-to-disrupt/Node2D2"]
+margin_left = -64.0
+margin_top = -128.0
+margin_right = 64.0
+rect_pivot_offset = Vector2( -817.187, 89.708 )
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D3" type="Node2D" parent="items-to-disrupt"]
+position = Vector2( 646.537, 624.088 )
+
+[node name="TextureRect" type="TextureRect" parent="items-to-disrupt/Node2D3"]
+margin_left = -64.0
+margin_top = -128.0
+margin_right = 64.0
+rect_pivot_offset = Vector2( -817.187, 89.708 )
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hud" type="Node2D" parent="."]
+position = Vector2( 39.818, 986.448 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Button" type="Button" parent="hud"]
+margin_right = 159.0
+margin_bottom = 48.002
+text = "Voltar"
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="pressed" from="hud/Button" to="hud/Button" method="_on_BackLevelChoice_pressed"]

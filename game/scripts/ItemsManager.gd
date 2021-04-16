@@ -50,7 +50,7 @@ func check_complete_level():
 		if item.status == false:
 			hasNotFoundItem = true
 			break
-	if hasNotFoundItem == false:
+	if hasNotFoundItem == false and items[level_name].size() > 0:
 		var scene = load("res://modals/CompleteLevel.tscn")
 		var modal = scene.instance()
 		get_parent().add_child(modal)

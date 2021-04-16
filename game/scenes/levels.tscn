@@ -20,23 +20,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BtnLevel03" type="Button" parent="."]
+[node name="BtnLevel02" type="Button" parent="."]
 margin_left = 1560.39
 margin_top = 267.236
 margin_right = 1696.39
 margin_bottom = 318.236
-text = "Level 3"
+text = "Level 2"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BtnLevel04" type="Button" parent="."]
+[node name="BtnLevel03" type="Button" parent="."]
 margin_left = 1149.34
 margin_top = 909.776
 margin_right = 1285.34
 margin_bottom = 960.776
-text = "Level 4"
+text = "Level 3"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -53,6 +53,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="BtnLevel01" to="BtnLevel01" method="_on_EnterLevel01_pressed"]
-[connection signal="pressed" from="BtnLevel03" to="BtnLevel03" method="_on_EnterLevel01_pressed"]
-[connection signal="pressed" from="BtnLevel04" to="BtnLevel04" method="_on_EnterLevel01_pressed"]
+[connection signal="pressed" from="BtnLevel02" to="BtnLevel02" method="_on_EnterLevel02_pressed"]
+[connection signal="pressed" from="BtnLevel03" to="BtnLevel03" method="_on_EnterLevel03_pressed"]
 [connection signal="pressed" from="BtnGoStore" to="BtnGoStore" method="_on_EnterStore_pressed"]

@@ -46,5 +46,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 modal_node_path = NodePath("../..")
-[connection signal="pressed" from="content/Button" to="content/Button" method="_on_BackStoreOut_pressed"]
+
+[node name="Button2" type="Button" parent="content"]
+margin_left = 835.03
+margin_top = 541.122
+margin_right = 1035.03
+margin_bottom = 591.122
+text = "OK"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+modal_node_path = NodePath("../..")
+[connection signal="pressed" from="content/Button" to="content/Button" method="_on_BackLevelChoice_pressed"]
 [connection signal="pressed" from="content/Button" to="content/Button" method="_on_close_modal"]
+[connection signal="pressed" from="content/Button2" to="content/Button2" method="_on_BackLevelChoice_pressed"]
+[connection signal="pressed" from="content/Button2" to="content/Button2" method="_on_close_modal"]
