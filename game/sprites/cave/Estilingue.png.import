@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Estilingue.png-67652fbac6c7b497c025b5506acac997.res"
+group_file="res://altlas/items-cave.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/Estilingue.png"
+dest_files=[ "res://.import/Estilingue.png-67652fbac6c7b497c025b5506acac997.res" ]
+
+[params]
+
+atlas_file="res://altlas/items-cave.png"
+import_mode=0

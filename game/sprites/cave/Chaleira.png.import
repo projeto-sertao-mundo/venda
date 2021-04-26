@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Chaleira.png-a5fdd5ad8b9bf3b95006acb7c750a2a3.res"
+group_file="res://altlas/items-cave.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/Chaleira.png"
+dest_files=[ "res://.import/Chaleira.png-a5fdd5ad8b9bf3b95006acb7c750a2a3.res" ]
+
+[params]
+
+atlas_file="res://altlas/items-cave.png"
+import_mode=0

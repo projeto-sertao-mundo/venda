@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Agulha.png-9ad83c98aa60e4a67f1a81d72f030133.res"
+group_file="res://altlas/items-cave.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/Agulha.png"
+dest_files=[ "res://.import/Agulha.png-9ad83c98aa60e4a67f1a81d72f030133.res" ]
+
+[params]
+
+atlas_file="res://altlas/items-cave.png"
+import_mode=0

@@ -1,7 +1,7 @@
 extends Node2D
 
 export (Dictionary) var items = {}
-export (int) var sprite_scale = 4
+export (int) var sprite_scale = 0.3
 export (int) var sprite_margin = 30
 
 var item_list = null

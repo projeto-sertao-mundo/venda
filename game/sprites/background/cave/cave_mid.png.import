@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/cave_mid.png-79497949c0a86f51a6e5109706bf8ba4.res"
+group_file="res://altlas/level-cave.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/background/cave/cave_mid.png"
+dest_files=[ "res://.import/cave_mid.png-79497949c0a86f51a6e5109706bf8ba4.res" ]
+
+[params]
+
+atlas_file="res://altlas/level-cave.png"
+import_mode=0

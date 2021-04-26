@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/CarrinhoMadeira.png-36fb778999b3db4d21ed120d504ba235.res"
+group_file="res://altlas/items-cave.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/CarrinhoMadeira.png"
+dest_files=[ "res://.import/CarrinhoMadeira.png-36fb778999b3db4d21ed120d504ba235.res" ]
+
+[params]
+
+atlas_file="res://altlas/items-cave.png"
+import_mode=0
