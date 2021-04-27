@@ -4,6 +4,7 @@
 [ext_resource path="res://sprites/cave/IoIo.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 5.69975 )
 
 [node name="IoIo" type="Area2D"]
 scale = Vector2( 5, 5 )
@@ -16,6 +17,7 @@ item_sprite_checked = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.089093, 7.21629 )
 scale = Vector2( 0.0928051, 0.092805 )
 texture = ExtResource( 2 )
 [connection signal="input_event" from="." to="." method="_on_item_is_pressed"]

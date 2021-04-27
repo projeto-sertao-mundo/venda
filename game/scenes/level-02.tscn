@@ -127,7 +127,7 @@ position = Vector2( 23.3082, 836.976 )
 z_index = 50
 
 [node name="IoIo" parent="items-fo-find" instance=ExtResource( 20 )]
-position = Vector2( 540.326, 186.465 )
+position = Vector2( 529.838, 163.99 )
 z_index = 20
 
 [node name="Isqueiro" parent="items-fo-find" instance=ExtResource( 22 )]
@@ -178,20 +178,21 @@ scale = Vector2( 1.9, 1.9 )
 z_index = 20
 texture = ExtResource( 11 )
 
-[node name="Control" type="Control" parent="scene/cave_stalactites_big2"]
-margin_left = -205.0
-margin_top = -64.0
-margin_right = -187.0
-margin_bottom = 86.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="cave_roof" type="Sprite" parent="scene"]
 position = Vector2( 962.212, 537.854 )
 scale = Vector2( 1.9, 1.9 )
 z_index = 30
 texture = ExtResource( 9 )
+
+[node name="Control3" type="Control" parent="scene/cave_roof"]
+margin_left = -255.63
+margin_top = -234.22
+margin_right = -204.63
+margin_bottom = -197.22
+rect_rotation = -13.7883
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="cave_front" type="Sprite" parent="scene"]
 position = Vector2( 960, 698.893 )
@@ -204,6 +205,33 @@ position = Vector2( 960, 542.092 )
 scale = Vector2( 1.9, 1.9 )
 z_index = 50
 texture = ExtResource( 10 )
+
+[node name="Control" type="Control" parent="scene/cave_stalactites_front"]
+margin_left = -511.0
+margin_top = 132.0
+margin_right = -493.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control4" type="Control" parent="scene/cave_stalactites_front"]
+margin_left = -511.0
+margin_top = 132.0
+margin_right = -493.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="scene/cave_stalactites_front"]
+margin_left = -466.0
+margin_top = 29.0
+margin_right = -453.0
+margin_bottom = 93.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="items-to-disrupt" type="Node2D" parent="."]
 visible = false
