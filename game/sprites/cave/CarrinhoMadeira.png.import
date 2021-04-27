@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/CarrinhoMadeira.png-36fb778999b3db4d21ed120d504ba235.res"
-group_file="res://altlas/items-cave.png"
+group_file="res://altlas/CaveItems.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/CarrinhoMadeira.png-36fb778999b3db4d21ed120d504ba235
 
 [params]
 
-atlas_file="res://altlas/items-cave.png"
+atlas_file="res://altlas/CaveItems.png"
 import_mode=0

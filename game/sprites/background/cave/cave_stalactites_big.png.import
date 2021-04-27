@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/cave_stalactites_big.png-035e550dafe795021867e42d2489a05c.res"
-group_file="res://altlas/level-cave.png"
+group_file="res://altlas/Cave.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/cave_stalactites_big.png-035e550dafe795021867e42d248
 
 [params]
 
-atlas_file="res://altlas/level-cave.png"
+atlas_file="res://altlas/Cave.png"
 import_mode=0

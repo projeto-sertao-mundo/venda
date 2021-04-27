@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/Pelego.png-a8f5fcd5d8f50561f6163a77ebd90bec.res"
-group_file="res://altlas/items-cave.png"
+group_file="res://altlas/CaveItems.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/Pelego.png-a8f5fcd5d8f50561f6163a77ebd90bec.res" ]
 
 [params]
 
-atlas_file="res://altlas/items-cave.png"
+atlas_file="res://altlas/CaveItems.png"
 import_mode=0

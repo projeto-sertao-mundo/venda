@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Church.png-c732614ba27f94057c84e2b3bdaeb62f.res"
+group_file="res://altlas/MapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/map/Church.png"
+dest_files=[ "res://.import/Church.png-c732614ba27f94057c84e2b3bdaeb62f.res" ]
+
+[params]
+
+atlas_file="res://altlas/MapItems.png"
+import_mode=0

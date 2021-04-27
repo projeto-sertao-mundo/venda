@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/level-cave.png-1771fc0852c9e81865b142e31ef9578b.stex"
+path="res://.import/CaveItems.png-12739ac9b8401eb6dc2ec0425e1a6809.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://altlas/level-cave.png"
-dest_files=[ "res://.import/level-cave.png-1771fc0852c9e81865b142e31ef9578b.stex" ]
+source_file="res://altlas/CaveItems.png"
+dest_files=[ "res://.import/CaveItems.png-12739ac9b8401eb6dc2ec0425e1a6809.stex" ]
 
 [params]
 

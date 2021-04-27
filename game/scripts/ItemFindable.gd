@@ -13,7 +13,7 @@ func _ready():
 	if (item_status):
 		delete_me()
 
-func _on_item_is_pressed(viewport, event, shape_idx):
+func _on_item_is_pressed(vi1ewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			items_manager.item_found(item_name)
