@@ -1,9 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
-[ext_resource path="res://sprites/commerce/BackgroundCommerce.jpg" type="Texture" id=2]
-[ext_resource path="res://items/commerce/Fence.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/commerce/BackgroundCommerce.jpg" type="Texture" id=2]
+[ext_resource path="res://items/commerce/fence/Fence.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/commerce/door/Door.tscn" type="PackedScene" id=4]
+
 
 [node name="CommerceOut" type="Node2D"]
 

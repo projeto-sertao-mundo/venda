@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Elephant.png-894dbb6a3eee222ac01f279e63567c24.res"
+group_file="res://items/AtlasMapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Map/Elephant.png"
+dest_files=[ "res://.import/Elephant.png-894dbb6a3eee222ac01f279e63567c24.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasMapItems.png"
+import_mode=0

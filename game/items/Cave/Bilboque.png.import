@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Bilboque.png-a101c00e71fbcbc34f885757e6fc6061.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/Bilboque.png"
+dest_files=[ "res://.import/Bilboque.png-a101c00e71fbcbc34f885757e6fc6061.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

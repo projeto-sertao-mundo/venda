@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/OvosEmpalhados.png-e4c234f8611ce540a9ce2cb5556adfc3.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/OvosEmpalhados.png"
+dest_files=[ "res://.import/OvosEmpalhados.png-e4c234f8611ce540a9ce2cb5556adfc3.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

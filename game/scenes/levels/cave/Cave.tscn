@@ -1,0 +1,212 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://items/Cave/Agulha.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/items-list.tscn" type="PackedScene" id=2]
+[ext_resource path="res://items/Cave/Bilboque.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/Cave/Alavanca.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/levels/cave/cave_bg.jpg" type="Texture" id=6]
+[ext_resource path="res://scenes/levels/cave/cave_front.png" type="Texture" id=7]
+[ext_resource path="res://scenes/levels/cave/cave_mid.png" type="Texture" id=8]
+[ext_resource path="res://scenes/levels/cave/cave_roof.png" type="Texture" id=9]
+[ext_resource path="res://scenes/levels/cave/cave_stalactites_front.png" type="Texture" id=10]
+[ext_resource path="res://scenes/levels/cave/cave_stalactites_big.png" type="Texture" id=11]
+[ext_resource path="res://items/Cave/Alforge.tscn" type="PackedScene" id=12]
+[ext_resource path="res://items/Cave/Berrante.tscn" type="PackedScene" id=13]
+[ext_resource path="res://items/Cave/Bota.tscn" type="PackedScene" id=14]
+[ext_resource path="res://items/Cave/CarrinhoMadeira.tscn" type="PackedScene" id=15]
+[ext_resource path="res://items/Cave/Canivete.tscn" type="PackedScene" id=16]
+[ext_resource path="res://items/Cave/Cachimbo.tscn" type="PackedScene" id=17]
+[ext_resource path="res://items/Cave/Corda.tscn" type="PackedScene" id=18]
+[ext_resource path="res://items/Cave/Chaleira.tscn" type="PackedScene" id=19]
+[ext_resource path="res://items/Cave/IoIo.tscn" type="PackedScene" id=20]
+[ext_resource path="res://items/Cave/Estilingue.tscn" type="PackedScene" id=21]
+[ext_resource path="res://items/Cave/Isqueiro.tscn" type="PackedScene" id=22]
+[ext_resource path="res://items/Cave/Lamparina.tscn" type="PackedScene" id=23]
+[ext_resource path="res://items/Cave/OvosEmpalhados.tscn" type="PackedScene" id=24]
+[ext_resource path="res://items/Cave/Pelego.tscn" type="PackedScene" id=25]
+[ext_resource path="res://items/Cave/Pa.tscn" type="PackedScene" id=26]
+[ext_resource path="res://items/Cave/TachoDeCobre.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=28]
+
+
+[node name="LevelCave" type="Node2D"]
+
+[node name="HUD" type="Node2D" parent="."]
+position = Vector2( 39.818, 986.448 )
+z_index = 500
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Button" type="Button" parent="HUD"]
+margin_right = 159.0
+margin_bottom = 48.002
+text = "Voltar"
+script = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="List" parent="HUD" instance=ExtResource( 2 )]
+position = Vector2( -39.818, -986.448 )
+z_index = 500
+level_name = "Cave"
+
+[node name="Scene" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cave_bg" type="Sprite" parent="Scene"]
+position = Vector2( 960, 542.092 )
+scale = Vector2( 1.9, 1.9 )
+texture = ExtResource( 6 )
+
+[node name="cave_mid" type="Sprite" parent="Scene"]
+position = Vector2( 960, 566.342 )
+scale = Vector2( 1.9, 1.9 )
+z_index = 10
+texture = ExtResource( 8 )
+
+[node name="cave_stalactites_big2" type="Sprite" parent="Scene"]
+position = Vector2( 960.5, 541.8 )
+scale = Vector2( 1.9, 1.9 )
+z_index = 20
+texture = ExtResource( 11 )
+
+[node name="cave_roof" type="Sprite" parent="Scene"]
+position = Vector2( 962.212, 537.854 )
+scale = Vector2( 1.9, 1.9 )
+z_index = 30
+texture = ExtResource( 9 )
+
+[node name="Control3" type="Control" parent="Scene/cave_roof"]
+margin_left = -255.63
+margin_top = -234.22
+margin_right = -204.63
+margin_bottom = -197.22
+rect_rotation = -13.7883
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cave_front" type="Sprite" parent="Scene"]
+position = Vector2( 960, 698.893 )
+scale = Vector2( 1.9, 1.9 )
+z_index = 40
+texture = ExtResource( 7 )
+
+[node name="cave_stalactites_front" type="Sprite" parent="Scene"]
+position = Vector2( 960, 542.092 )
+scale = Vector2( 1.9, 1.9 )
+z_index = 50
+texture = ExtResource( 10 )
+
+[node name="Control" type="Control" parent="Scene/cave_stalactites_front"]
+margin_left = -511.0
+margin_top = 132.0
+margin_right = -493.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control4" type="Control" parent="Scene/cave_stalactites_front"]
+margin_left = -511.0
+margin_top = 132.0
+margin_right = -493.0
+margin_bottom = 196.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="Scene/cave_stalactites_front"]
+margin_left = -466.0
+margin_top = 29.0
+margin_right = -453.0
+margin_bottom = 93.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Agulha" parent="Items" instance=ExtResource( 1 )]
+position = Vector2( 489.896, 578.185 )
+rotation = 0.208701
+z_index = 25
+
+[node name="Alavanca" parent="Items" instance=ExtResource( 4 )]
+position = Vector2( 1028.18, 490.471 )
+z_index = 10
+
+[node name="Alforge" parent="Items" instance=ExtResource( 12 )]
+position = Vector2( 1404.85, 860.284 )
+z_index = 20
+
+[node name="Berrante" parent="Items" instance=ExtResource( 13 )]
+position = Vector2( 1260.76, 991.657 )
+z_index = 20
+
+[node name="Bilboque" parent="Items" instance=ExtResource( 3 )]
+position = Vector2( 1824.4, 777.646 )
+z_index = 50
+
+[node name="Bota" parent="Items" instance=ExtResource( 14 )]
+position = Vector2( 940.803, 781.884 )
+z_index = 30
+
+[node name="Cachimbo" parent="Items" instance=ExtResource( 17 )]
+position = Vector2( 976.825, 896.306 )
+z_index = 30
+
+[node name="Canivete" parent="Items" instance=ExtResource( 16 )]
+position = Vector2( 523.375, 972.587 )
+z_index = 60
+
+[node name="CarrinhoMadeira" parent="Items" instance=ExtResource( 15 )]
+position = Vector2( 1108.2, 930.208 )
+z_index = 30
+
+[node name="Chaleira" parent="Items" instance=ExtResource( 19 )]
+position = Vector2( 733.148, 480.996 )
+z_index = 20
+
+[node name="Corda" parent="Items" instance=ExtResource( 18 )]
+position = Vector2( 93.2327, 684.413 )
+z_index = 40
+
+[node name="Estilingue" parent="Items" instance=ExtResource( 21 )]
+position = Vector2( 23.3082, 836.976 )
+z_index = 50
+
+[node name="IoIo" parent="Items" instance=ExtResource( 20 )]
+position = Vector2( 529.838, 163.99 )
+z_index = 20
+
+[node name="Isqueiro" parent="Items" instance=ExtResource( 22 )]
+position = Vector2( 177.99, 1031.92 )
+z_index = 60
+
+[node name="Lamparina" parent="Items" instance=ExtResource( 23 )]
+position = Vector2( 716.197, 983.182 )
+z_index = 40
+
+[node name="OvosEmpalhados" parent="Items" instance=ExtResource( 24 )]
+position = Vector2( 1873.13, 194.941 )
+z_index = 50
+
+[node name="Pa" parent="Items" instance=ExtResource( 26 )]
+position = Vector2( 1610.38, 945.041 )
+z_index = 30
+
+[node name="Pelego" parent="Items" instance=ExtResource( 25 )]
+position = Vector2( 266.985, 281.817 )
+rotation = 0.130834
+z_index = 60
+
+[node name="TachoDeCobre" parent="Items" instance=ExtResource( 27 )]
+position = Vector2( 1774.89, 1035.44 )
+rotation = 0.675008
+z_index = 60
+[connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Station.png-bd3f971d8a0c64ada0e00396a3a216fa.res"
+group_file="res://items/AtlasMapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Map/Station.png"
+dest_files=[ "res://.import/Station.png-bd3f971d8a0c64ada0e00396a3a216fa.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasMapItems.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Alforge.png-ceba78113b5e44a0dd7b962d378ca187.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/Alforge.png"
+dest_files=[ "res://.import/Alforge.png-ceba78113b5e44a0dd7b962d378ca187.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

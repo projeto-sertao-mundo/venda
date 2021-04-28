@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Berrante.png-40e5760e867e3b44b1a09bd2f235bf40.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/Berrante.png"
+dest_files=[ "res://.import/Berrante.png-40e5760e867e3b44b1a09bd2f235bf40.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

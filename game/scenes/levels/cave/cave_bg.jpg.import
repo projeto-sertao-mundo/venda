@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/cave_bg.jpg-8af82a75d0749b2b6c927369ee94face.res"
+group_file="res://scenes/levels/cave/AtlasCaveScene.png"
+valid=true
+[deps]
+
+
+source_file="res://scenes/levels/cave/cave_bg.jpg"
+dest_files=[ "res://.import/cave_bg.jpg-8af82a75d0749b2b6c927369ee94face.res" ]
+
+[params]
+
+atlas_file="res://scenes/levels/cave/AtlasCaveScene.png"
+import_mode=0

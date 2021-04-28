@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Canivete.png-aabf2ac3d482990620821587a3fff198.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/Canivete.png"
+dest_files=[ "res://.import/Canivete.png-aabf2ac3d482990620821587a3fff198.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

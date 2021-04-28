@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/map/items/Commerce.png" type="Texture" id=1]
+[ext_resource path="res://items/Map/Commerce.png" type="Texture" id=1]
 [ext_resource path="res://scripts/MapItem.gd" type="Script" id=2]
-[ext_resource path="res://sprites/map/items/CommerceHover.png" type="Texture" id=3]
+[ext_resource path="res://items/Map/CommerceHover.png" type="Texture" id=3]
+
 
 
 [sub_resource type="RectangleShape2D" id=1]

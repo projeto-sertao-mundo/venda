@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/flamethrower_up_checked.png-7417d7eba0473992d6e8dcb707699f24.res"
+group_file="res://sprites/temp/items-temp.png"
+valid=true
+[deps]
+
+
+source_file="res://temp/flamethrower_up_checked.png"
+dest_files=[ "res://.import/flamethrower_up_checked.png-7417d7eba0473992d6e8dcb707699f24.res" ]
+
+[params]
+
+atlas_file="res://sprites/temp/items-temp.png"
+import_mode=0

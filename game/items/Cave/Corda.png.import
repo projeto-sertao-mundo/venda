@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Corda.png-937c06cf1f2876f72a10edc35793816c.res"
+group_file="res://items/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/Cave/Corda.png"
+dest_files=[ "res://.import/Corda.png-937c06cf1f2876f72a10edc35793816c.res" ]
+
+[params]
+
+atlas_file="res://items/AtlasCaveItems.png"
+import_mode=0

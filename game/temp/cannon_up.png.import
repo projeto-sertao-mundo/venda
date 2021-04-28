@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/cannon_up.png-52ad27c1d6385a32dc958e1f749de52d.res"
+group_file="res://sprites/temp/items-temp.png"
+valid=true
+[deps]
+
+
+source_file="res://temp/cannon_up.png"
+dest_files=[ "res://.import/cannon_up.png-52ad27c1d6385a32dc958e1f749de52d.res" ]
+
+[params]
+
+atlas_file="res://sprites/temp/items-temp.png"
+import_mode=0

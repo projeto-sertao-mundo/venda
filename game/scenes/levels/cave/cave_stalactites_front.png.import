@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/cave_stalactites_front.png-6414744423f7473b000eed42979bc7e3.res"
+group_file="res://scenes/levels/cave/AtlasCaveScene.png"
+valid=true
+[deps]
+
+
+source_file="res://scenes/levels/cave/cave_stalactites_front.png"
+dest_files=[ "res://.import/cave_stalactites_front.png-6414744423f7473b000eed42979bc7e3.res" ]
+
+[params]
+
+atlas_file="res://scenes/levels/cave/AtlasCaveScene.png"
+import_mode=0
