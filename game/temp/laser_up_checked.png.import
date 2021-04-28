@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/laser_up_checked.png-9913ec70d4bf14a9d992f5de5a439530.res"
-group_file="res://sprites/temp/items-temp.png"
+group_file="res://temp/items-temp.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/laser_up_checked.png-9913ec70d4bf14a9d992f5de5a43953
 
 [params]
 
-atlas_file="res://sprites/temp/items-temp.png"
+atlas_file="res://temp/items-temp.png"
 import_mode=0

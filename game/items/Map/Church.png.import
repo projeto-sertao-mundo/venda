@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Church.png-a147d61e9a029b3c24daabac4eb02cdf.res"
+path="res://.import/Church.png-6353b0138f9987d01f28e9faf222d0ad.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Map/Church.png"
-dest_files=[ "res://.import/Church.png-a147d61e9a029b3c24daabac4eb02cdf.res" ]
+source_file="res://items/map/Church.png"
+dest_files=[ "res://.import/Church.png-6353b0138f9987d01f28e9faf222d0ad.res" ]
 
 [params]
 

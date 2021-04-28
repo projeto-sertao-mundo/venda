@@ -5,7 +5,6 @@
 [ext_resource path="res://items/commerce/fence/Fence.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/commerce/door/Door.tscn" type="PackedScene" id=4]
 
-
 [node name="CommerceOut" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
@@ -26,7 +25,9 @@ __meta__ = {
 
 [node name="Fence" parent="." instance=ExtResource( 3 )]
 position = Vector2( 782.443, 509.747 )
+scene = "res://scenes/map/Map.tscn"
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1243.22, 586.561 )
+scene = "res://scenes/commerce/Inside.tscn"
 [connection signal="pressed" from="BtnBackMenu" to="BtnBackMenu" method="_on_BackMenu_pressed"]

@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Pa.png-c3f453a39dc9dc16e211fa9868079468.res"
+path="res://.import/Pa.png-31625487c38848f8c8826dd0112a0881.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Pa.png"
-dest_files=[ "res://.import/Pa.png-c3f453a39dc9dc16e211fa9868079468.res" ]
+source_file="res://items/cave/Pa.png"
+dest_files=[ "res://.import/Pa.png-31625487c38848f8c8826dd0112a0881.res" ]
 
 [params]
 

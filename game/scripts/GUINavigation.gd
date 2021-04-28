@@ -12,13 +12,13 @@ func _on_BackStoreOut_pressed():
 	get_tree().change_scene("res://scenes/store-out.tscn")
 
 func _on_BackLevelChoice_pressed():
-	get_tree().change_scene("res://scenes/levels/Map.tscn")
+	get_tree().change_scene("res://scenes/map/Map.tscn")
 
 func _on_EnterStore_pressed():
 	get_tree().change_scene("res://scenes/store.tscn")
 
 func _on_EnterLevelChoice_pressed():
-	get_tree().change_scene("res://scenes/levels/Map.tscn")
+	get_tree().change_scene("res://scenes/map/Map.tscn")
 
 func _on_close_modal():
 	var modal = get_node(modal_node_path)

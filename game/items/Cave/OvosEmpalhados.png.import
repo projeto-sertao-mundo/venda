@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/OvosEmpalhados.png-e4c234f8611ce540a9ce2cb5556adfc3.res"
+path="res://.import/OvosEmpalhados.png-194f772a93cc942f0fdb76aeea22bfa0.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/OvosEmpalhados.png"
-dest_files=[ "res://.import/OvosEmpalhados.png-e4c234f8611ce540a9ce2cb5556adfc3.res" ]
+source_file="res://items/cave/OvosEmpalhados.png"
+dest_files=[ "res://.import/OvosEmpalhados.png-194f772a93cc942f0fdb76aeea22bfa0.res" ]
 
 [params]
 

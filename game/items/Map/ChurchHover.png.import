@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/ChurchHover.png-37120f0d4952ad1c046604760b118868.res"
+path="res://.import/ChurchHover.png-ba9b959599874d3aa9f9bc006d702364.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Map/ChurchHover.png"
-dest_files=[ "res://.import/ChurchHover.png-37120f0d4952ad1c046604760b118868.res" ]
+source_file="res://items/map/ChurchHover.png"
+dest_files=[ "res://.import/ChurchHover.png-ba9b959599874d3aa9f9bc006d702364.res" ]
 
 [params]
 

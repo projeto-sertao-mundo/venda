@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Carrinho.png-018c6a93850d56c1c67b427229f895d2.res"
+path="res://.import/Carrinho.png-65f3a3db532da5e74eba5cb6aa241577.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Carrinho.png"
-dest_files=[ "res://.import/Carrinho.png-018c6a93850d56c1c67b427229f895d2.res" ]
+source_file="res://items/cave/Carrinho.png"
+dest_files=[ "res://.import/Carrinho.png-65f3a3db532da5e74eba5cb6aa241577.res" ]
 
 [params]
 

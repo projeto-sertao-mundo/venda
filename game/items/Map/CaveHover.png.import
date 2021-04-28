@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/CaveHover.png-5898ecd27f6bae56476dab1e0ede77f4.res"
+path="res://.import/CaveHover.png-2e08e9f63def2ea77863345e91b04034.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Map/CaveHover.png"
-dest_files=[ "res://.import/CaveHover.png-5898ecd27f6bae56476dab1e0ede77f4.res" ]
+source_file="res://items/map/CaveHover.png"
+dest_files=[ "res://.import/CaveHover.png-2e08e9f63def2ea77863345e91b04034.res" ]
 
 [params]
 

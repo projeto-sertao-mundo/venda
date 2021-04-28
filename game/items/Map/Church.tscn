@@ -1,17 +1,15 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://items/Map/Church.png" type="Texture" id=1]
+[ext_resource path="res://items/map/Church.png" type="Texture" id=1]
 [ext_resource path="res://scripts/MapItem.gd" type="Script" id=2]
-[ext_resource path="res://items/Map/ChurchHover.png" type="Texture" id=3]
-
-
+[ext_resource path="res://items/map/ChurchHover.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 115.134, 117.911 )
 
 [node name="Church" type="Area2D"]
 script = ExtResource( 2 )
-scene = "res://scenes/levels/Church.tscn"
+scene = "res://scenes/church/Church.tscn"
 default_sprite = ExtResource( 1 )
 hover_sprite = ExtResource( 3 )
 

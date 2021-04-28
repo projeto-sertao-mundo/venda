@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Alforge.png-ceba78113b5e44a0dd7b962d378ca187.res"
+path="res://.import/Alforge.png-d440ee5bc7e5397cb3f024f32c00a1a5.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Alforge.png"
-dest_files=[ "res://.import/Alforge.png-ceba78113b5e44a0dd7b962d378ca187.res" ]
+source_file="res://items/cave/Alforge.png"
+dest_files=[ "res://.import/Alforge.png-d440ee5bc7e5397cb3f024f32c00a1a5.res" ]
 
 [params]
 

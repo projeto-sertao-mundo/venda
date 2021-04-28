@@ -1,12 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://items/Map/Church.tscn" type="PackedScene" id=1]
-[ext_resource path="res://items/Map/Cave.tscn" type="PackedScene" id=2]
-[ext_resource path="res://items/Map/Elephant.tscn" type="PackedScene" id=3]
-[ext_resource path="res://items/Map/Commerce.tscn" type="PackedScene" id=4]
-[ext_resource path="res://items/Map/Station.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/levels/map/BackgroundMap.jpg" type="Texture" id=6]
-
+[ext_resource path="res://items/map/Church.tscn" type="PackedScene" id=1]
+[ext_resource path="res://items/map/Cave.tscn" type="PackedScene" id=2]
+[ext_resource path="res://items/map/Elephant.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/map/Commerce.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/map/Station.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/map/BackgroundMap.jpg" type="Texture" id=6]
 
 [node name="Map" type="Node2D"]
 

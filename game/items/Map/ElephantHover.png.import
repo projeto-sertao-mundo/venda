@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/ElephantHover.png-625d8976241dcffa425d69e9a1f01074.res"
+path="res://.import/ElephantHover.png-c48e27e4e7f42978e339cd9183353530.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Map/ElephantHover.png"
-dest_files=[ "res://.import/ElephantHover.png-625d8976241dcffa425d69e9a1f01074.res" ]
+source_file="res://items/map/ElephantHover.png"
+dest_files=[ "res://.import/ElephantHover.png-c48e27e4e7f42978e339cd9183353530.res" ]
 
 [params]
 

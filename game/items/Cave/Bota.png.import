@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Bota.png-22d413a0b4ffc579e2c2a311a7f64086.res"
+path="res://.import/Bota.png-f58f1581e082702bf010085f4e34602f.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Bota.png"
-dest_files=[ "res://.import/Bota.png-22d413a0b4ffc579e2c2a311a7f64086.res" ]
+source_file="res://items/cave/Bota.png"
+dest_files=[ "res://.import/Bota.png-f58f1581e082702bf010085f4e34602f.res" ]
 
 [params]
 

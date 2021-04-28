@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/cave_roof.png-bbe5cd54511e7c552b49ff88a3667cd5.res"
+group_file="res://scenes/cave/AtlasCaveScene.png"
+valid=true
+[deps]
+
+
+source_file="res://scenes/cave/cave_roof.png"
+dest_files=[ "res://.import/cave_roof.png-bbe5cd54511e7c552b49ff88a3667cd5.res" ]
+
+[params]
+
+atlas_file="res://scenes/cave/AtlasCaveScene.png"
+import_mode=0
