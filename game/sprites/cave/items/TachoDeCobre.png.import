@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/TachoDeCobre.png-2df650b1ab92b5b9d456660fa41a95dd.res"
+group_file="res://sprites/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/items/TachoDeCobre.png"
+dest_files=[ "res://.import/TachoDeCobre.png-2df650b1ab92b5b9d456660fa41a95dd.res" ]
+
+[params]
+
+atlas_file="res://sprites/cave/AtlasCaveItems.png"
+import_mode=0

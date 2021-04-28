@@ -1,8 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/map/StationHover.png" type="Texture" id=1]
+[ext_resource path="res://sprites/map/items/StationHover.png" type="Texture" id=1]
 [ext_resource path="res://scripts/MapItem.gd" type="Script" id=2]
-[ext_resource path="res://sprites/map/Station.png" type="Texture" id=3]
+[ext_resource path="res://sprites/map/items/Station.png" type="Texture" id=3]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 122.597, 57.7419 )

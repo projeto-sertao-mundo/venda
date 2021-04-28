@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Lamparina.png-bfaf92717c62a44a15344a7e96df2a74.res"
+group_file="res://sprites/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/items/Lamparina.png"
+dest_files=[ "res://.import/Lamparina.png-bfaf92717c62a44a15344a7e96df2a74.res" ]
+
+[params]
+
+atlas_file="res://sprites/cave/AtlasCaveItems.png"
+import_mode=0

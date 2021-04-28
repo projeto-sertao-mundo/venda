@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Alavanca.png-f4506d317a0030f65177cf976e635967.res"
+group_file="res://sprites/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/cave/items/Alavanca.png"
+dest_files=[ "res://.import/Alavanca.png-f4506d317a0030f65177cf976e635967.res" ]
+
+[params]
+
+atlas_file="res://sprites/cave/AtlasCaveItems.png"
+import_mode=0

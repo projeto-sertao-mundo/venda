@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/CommerceHover.png-31ecf4a85878fbff40f1c499654a2bc2.res"
+group_file="res://sprites/map/MapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/map/items/CommerceHover.png"
+dest_files=[ "res://.import/CommerceHover.png-31ecf4a85878fbff40f1c499654a2bc2.res" ]
+
+[params]
+
+atlas_file="res://sprites/map/MapItems.png"
+import_mode=0

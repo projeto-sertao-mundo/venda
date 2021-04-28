@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/ChurchHover.png-cd8ead5ed86e88d3dab7108aba1fd196.res"
+group_file="res://sprites/map/MapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://sprites/map/items/ChurchHover.png"
+dest_files=[ "res://.import/ChurchHover.png-cd8ead5ed86e88d3dab7108aba1fd196.res" ]
+
+[params]
+
+atlas_file="res://sprites/map/MapItems.png"
+import_mode=0

@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/cannon_up.png-f425e4285667ff6d5a86c3e1ebb494a3.res"
-group_file="res://altlas/items-temp.png"
+group_file="res://sprites/temp/items-temp.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/cannon_up.png-f425e4285667ff6d5a86c3e1ebb494a3.res" 
 
 [params]
 
-atlas_file="res://altlas/items-temp.png"
+atlas_file="res://sprites/temp/items-temp.png"
 import_mode=0
