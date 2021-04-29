@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Pedra_marrom_claro_dir.png-eec3e7f00e309e8961b720d8a3be9adb.res"
+group_file="res://scenes/cave/AtlasCaveScene.png"
+valid=true
+[deps]
+
+
+source_file="res://scenes/cave/Pedra_marrom_claro_dir.png"
+dest_files=[ "res://.import/Pedra_marrom_claro_dir.png-eec3e7f00e309e8961b720d8a3be9adb.res" ]
+
+[params]
+
+atlas_file="res://scenes/cave/AtlasCaveScene.png"
+import_mode=0

@@ -4,33 +4,23 @@
 [ext_resource path="res://temp/boy-and-horse.png" type="Texture" id=2]
 [ext_resource path="res://temp/helper.png" type="Texture" id=3]
 
-
-
 [node name="Node2D" type="Node2D"]
 
 [node name="boy-and-horse" type="Sprite" parent="."]
-position = Vector2( 1320.8, 635.785 )
+position = Vector2( 826.359, 366.09 )
+scale = Vector2( 0.601404, 0.601404 )
 texture = ExtResource( 2 )
 
 [node name="helper" type="Sprite" parent="."]
-position = Vector2( 643.095, 718.846 )
+position = Vector2( 508.247, 341.273 )
+scale = Vector2( 0.625934, 0.625934 )
 texture = ExtResource( 3 )
 
-[node name="TextEdit" type="TextEdit" parent="."]
-margin_left = 798.689
-margin_top = 238.033
-margin_right = 1145.69
-margin_bottom = 310.033
-text = "Loja Seu Fulô"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Button" type="Button" parent="."]
-margin_left = 46.3984
-margin_top = 966.472
-margin_right = 221.398
-margin_bottom = 1023.47
+margin_left = 40.4051
+margin_top = 633.848
+margin_right = 215.405
+margin_bottom = 690.846
 text = "Sair da Loja"
 script = ExtResource( 1 )
 __meta__ = {

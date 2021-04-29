@@ -8,8 +8,7 @@
 [node name="CommerceOut" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 960, 540 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 640, 360 )
 texture = ExtResource( 2 )
 
 [node name="BtnBackMenu" type="Button" parent="."]
@@ -24,10 +23,10 @@ __meta__ = {
 }
 
 [node name="Fence" parent="." instance=ExtResource( 3 )]
-position = Vector2( 782.443, 509.747 )
+position = Vector2( 515.589, 338.65 )
 scene = "res://scenes/map/Map.tscn"
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1243.22, 586.561 )
+position = Vector2( 829.803, 389.291 )
 scene = "res://scenes/commerce/Inside.tscn"
 [connection signal="pressed" from="BtnBackMenu" to="BtnBackMenu" method="_on_BackMenu_pressed"]

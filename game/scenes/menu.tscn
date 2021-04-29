@@ -12,15 +12,14 @@ font_data = ExtResource( 2 )
 [node name="SceneMenu" type="Node2D"]
 
 [node name="BackgroundCommerce" type="Sprite" parent="."]
-position = Vector2( 962.245, 540 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 
 [node name="BtnPlayGame" type="Button" parent="."]
-margin_left = 817.843
-margin_top = 623.47
-margin_right = 1129.83
-margin_bottom = 696.47
+margin_left = 484.647
+margin_top = 395.4
+margin_right = 796.634
+margin_bottom = 468.4
 text = "Jogar"
 script = ExtResource( 3 )
 __meta__ = {
@@ -28,20 +27,20 @@ __meta__ = {
 }
 
 [node name="BtnCredits" type="Button" parent="."]
-margin_left = 814.263
-margin_top = 736.442
-margin_right = 1126.26
-margin_bottom = 817.442
+margin_left = 481.067
+margin_top = 508.372
+margin_right = 793.064
+margin_bottom = 589.372
 text = "Creditos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextEdit" type="TextEdit" parent="."]
-margin_left = 787.594
-margin_top = 457.175
-margin_right = 1182.59
-margin_bottom = 540.175
+margin_left = 450.834
+margin_top = 261.177
+margin_right = 845.83
+margin_bottom = 344.177
 custom_fonts/font = SubResource( 1 )
 text = "Nova Fonte"
 __meta__ = {

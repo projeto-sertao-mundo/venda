@@ -5,7 +5,7 @@
 [ext_resource path="res://items/commerce/fence/FenceHover.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 136.062, 95.9829 )
+extents = Vector2( 100.385, 75.7664 )
 
 [node name="Fence" type="Area2D"]
 script = ExtResource( 2 )
@@ -18,7 +18,7 @@ shape = SubResource( 1 )
 
 [node name="SpriteNode" type="Sprite" parent="."]
 position = Vector2( 0, -10.7028 )
-scale = Vector2( 1.10684, 1.10684 )
+scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
