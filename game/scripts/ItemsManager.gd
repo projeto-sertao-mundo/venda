@@ -93,8 +93,7 @@ func item_list_fix_position():
 	item_list.position.y = 980
 
 func item_list_draw():
-	item_list_clear()
-	item_list_populate()
-	item_list_fix_position()
+#	item_list_clear()
+#	item_list_populate()
+#	item_list_fix_position()
 	check_complete_level()
-	pass

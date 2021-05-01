@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://items/hud/list/List.gd" type="Script" id=1]
+[ext_resource path="res://items/hud/list/NoteIcon.png" type="Texture" id=2]
+[ext_resource path="res://items/hud/list/Note.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 22.3992, 37.2308 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 677.87, 389.092 )
+
+[node name="List" type="Node2D"]
+script = ExtResource( 1 )
+level_name = "Level01"
+popup_path = NodePath("PopUp")
+popup_closer_path = NodePath("PopUpCloser")
+
+[node name="Icon" type="Area2D" parent="."]
+position = Vector2( 1150, 660 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Icon"]
+position = Vector2( 0.793701, 0 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="PopUpCloser" type="Area2D" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUpCloser"]
+shape = SubResource( 3 )
+
+[node name="PopUp" type="Node2D" parent="."]
+visible = false
+position = Vector2( 460.203, -1.09207 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="TextureRect" parent="PopUp"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="input_event" from="Icon" to="." method="open_popup"]
+[connection signal="input_event" from="PopUpCloser" to="." method="close_popup"]
