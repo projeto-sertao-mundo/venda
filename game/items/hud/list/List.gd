@@ -9,6 +9,8 @@ export (NodePath) var popup_path
 export (NodePath) var popup_closer_path
 
 var list_node
+
+var popup_status = false
 var popup_node
 var popup_closer_node
 
@@ -19,18 +21,15 @@ func _ready():
 	popup_node = get_node(popup_path)
 	popup_closer_node = get_node(popup_closer_path)
 
-func open_popup(viewport, event, shape_idx):
+func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			popup_node.visible = true
-			popup_closer_node.visible = true
-			draw_list()
-
-func close_popup(viewport, event, shape_idx):
-	if event is InputEventMouseButton:
-		if event.is_pressed():
-			popup_node.visible = false
-			popup_closer_node.visible = false
+			if popup_status == true:
+				popup_status = false
+				popup_node.visible = false
+			else:
+				popup_status = true
+				popup_node.visible = true
 
 func draw_list():
 	clear_list()

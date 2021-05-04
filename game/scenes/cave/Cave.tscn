@@ -257,6 +257,7 @@ z_index = 65
 position = Vector2( 698.265, 567.799 )
 scale = Vector2( 6.64708, 6.64708 )
 z_index = 30
+item_name = "Pá"
 
 [node name="Pelego" parent="Items" instance=ExtResource( 25 )]
 position = Vector2( 25.43, 28.9765 )

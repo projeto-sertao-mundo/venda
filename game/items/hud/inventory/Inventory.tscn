@@ -23,12 +23,11 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="PopUp"]
-visible = false
 margin_left = 325.0
 margin_top = -29.0
 margin_right = 1330.0
 margin_bottom = 744.0
-color = Color( 0.321569, 0.690196, 0.168627, 0.4 )
+color = Color( 0, 0, 0, 0.392157 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

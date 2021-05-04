@@ -1,45 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://items/hud/list/List.gd" type="Script" id=1]
 [ext_resource path="res://items/hud/list/NoteIcon.png" type="Texture" id=2]
 [ext_resource path="res://items/hud/list/Note.png" type="Texture" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 22.3992, 37.2308 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 677.87, 389.092 )
 
 [node name="List" type="Node2D"]
 script = ExtResource( 1 )
 level_name = "Level01"
 list_path = NodePath("PopUp/List")
 popup_path = NodePath("PopUp")
-popup_closer_path = NodePath("PopUpCloser")
-
-[node name="Icon" type="Area2D" parent="."]
-position = Vector2( 1150, 660 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon"]
-shape = SubResource( 1 )
-
-[node name="Sprite" type="Sprite" parent="Icon"]
-position = Vector2( 0.793701, 0 )
-scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 2 )
-
-[node name="PopUpCloser" type="Area2D" parent="."]
-visible = false
-position = Vector2( 640, 360 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUpCloser"]
-shape = SubResource( 2 )
 
 [node name="PopUp" type="Node2D" parent="."]
 visible = false
@@ -47,6 +16,14 @@ position = Vector2( 460.203, -1.09207 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="ColorRect" type="ColorRect" parent="PopUp"]
+margin_left = -472.176
+margin_top = -10.6908
+margin_right = -432.176
+margin_bottom = 29.3092
+rect_scale = Vector2( 32.76, 18.8 )
+color = Color( 0, 0, 0, 0.392157 )
 
 [node name="Sprite" type="TextureRect" parent="PopUp"]
 margin_right = 40.0
@@ -58,5 +35,14 @@ __meta__ = {
 
 [node name="List" type="Node2D" parent="PopUp"]
 position = Vector2( 47.8684, 166.215 )
-[connection signal="input_event" from="Icon" to="." method="open_popup"]
-[connection signal="input_event" from="PopUpCloser" to="." method="close_popup"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 1112.2, 620.789 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Icon2" type="TextureRect" parent="Node2D"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="Node2D/Icon2" to="." method="toggle_popup"]
