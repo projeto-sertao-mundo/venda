@@ -18,7 +18,6 @@ func _on_item_is_pressed(vi1ewport, event, shape_idx):
 		if event.is_pressed():
 			items_manager.item_found(item_name)
 			delete_me()
-		print(shape_idx, item_name)
 
 func delete_me():
 	get_node(get_path()).queue_free() # Deletar item clicado

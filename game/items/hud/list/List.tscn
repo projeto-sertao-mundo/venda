@@ -7,12 +7,13 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 22.3992, 37.2308 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 677.87, 389.092 )
 
 [node name="List" type="Node2D"]
 script = ExtResource( 1 )
 level_name = "Level01"
+list_path = NodePath("PopUp/List")
 popup_path = NodePath("PopUp")
 popup_closer_path = NodePath("PopUpCloser")
 
@@ -38,7 +39,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUpCloser"]
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="PopUp" type="Node2D" parent="."]
 visible = false
@@ -54,5 +55,8 @@ texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="List" type="Node2D" parent="PopUp"]
+position = Vector2( 47.8684, 166.215 )
 [connection signal="input_event" from="Icon" to="." method="open_popup"]
 [connection signal="input_event" from="PopUpCloser" to="." method="close_popup"]

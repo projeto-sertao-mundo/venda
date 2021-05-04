@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://items/hud/list/Checkbox.png" type="Texture" id=2]
+[ext_resource path="res://items/hud/list/CheckboxChecked.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 1 )
+
+[node name="Text" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 60.7941
+margin_top = -23.3268
+margin_right = 849.794
+margin_bottom = 25.6732
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Label"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Checkbox" type="Sprite" parent="."]
+position = Vector2( 25, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="CheckboxChecked" type="Sprite" parent="."]
+visible = false
+position = Vector2( 25, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )

@@ -7,6 +7,12 @@ export (int) var sprite_margin = 30
 var item_list = null
 var level_name = ""
 
+func define_level(name: String):
+	level_name = name
+	print(items.has(level_name))
+	if items.has(level_name) == false:
+		items[level_name] = []
+
 func item_add(name: String, level: String, sprite: Texture, sprite_checked: Texture):
 	var hasItem = false
 	for item in items[level_name]:
@@ -21,13 +27,19 @@ func item_add(name: String, level: String, sprite: Texture, sprite_checked: Text
 			sprite_checked = sprite_checked,
 			status = false,
 		})
-		item_list_draw()
 
 func item_found(name: String):
 	for item in items[level_name]:
 		if item.name == name:
 			item["status"] = true
-	item_list_draw()
+
+func define_list(node: Node2D):
+	item_list = node
+
+func get_list(level: String):
+	return items[level]
+
+
 
 func item_is_checked(name: String):
 	var isChecked = false
@@ -36,13 +48,6 @@ func item_is_checked(name: String):
 			isChecked = item.status
 			break
 	return isChecked
-
-func level_define(name: String):
-	level_name = name
-	print(items.has(level_name))
-	if items.has(level_name) == false:
-		items[level_name] = []
-	print(items)
 
 func check_complete_level():
 	var hasNotFoundItem = false
@@ -63,9 +68,6 @@ func create_sprite(sprite_txt: Texture, sprite_checked_txt: Texture, status: boo
 	else:
 		sprite.texture = sprite_txt
 	return sprite
-
-func item_list_define(node: Node2D):
-	item_list = node
 
 func item_list_clear():
 	var item_list_children = item_list.get_children()
