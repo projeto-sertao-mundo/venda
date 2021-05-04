@@ -55,10 +55,10 @@ position = Vector2( -39.818, -986.448 )
 [node name="Button" type="Button" parent="HUD"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 913.898
-margin_top = -332.422
-margin_right = 1072.9
-margin_bottom = -284.42
+margin_left = 1003.0
+margin_top = -360.0
+margin_right = 1071.0
+margin_bottom = -292.0
 text = "Voltar"
 script = ExtResource( 28 )
 __meta__ = {

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://items/hud/inventory/BookIcon.png" type="Texture" id=1]
 [ext_resource path="res://items/hud/inventory/Inventory.gd" type="Script" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://items/hud/inventory/BookCave.png" type="Texture" id=4]
 [ext_resource path="res://items/hud/inventory/BookChurch.png" type="Texture" id=5]
 [ext_resource path="res://items/hud/inventory/BookStation.png" type="Texture" id=6]
+[ext_resource path="res://items/hud/inventory/TagElephant.png" type="Texture" id=7]
+[ext_resource path="res://items/hud/inventory/TagStation.png" type="Texture" id=8]
+[ext_resource path="res://items/hud/inventory/TagCave.png" type="Texture" id=9]
+[ext_resource path="res://items/hud/inventory/TagChruch.png" type="Texture" id=10]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 2 )
@@ -41,45 +45,45 @@ __meta__ = {
 }
 
 [node name="Elephant" type="TextureRect" parent="PopUp"]
-margin_left = 736.34
-margin_top = 63.5378
-margin_right = 992.34
-margin_bottom = 319.538
-rect_scale = Vector2( 0.174836, 0.175733 )
-texture = ExtResource( 1 )
+margin_left = 710.0
+margin_top = 65.8909
+margin_right = 864.0
+margin_bottom = 147.891
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Station" type="TextureRect" parent="PopUp"]
-margin_left = 831.395
-margin_top = 60.4762
-margin_right = 1087.4
-margin_bottom = 316.476
-rect_scale = Vector2( 0.197485, 0.197485 )
-texture = ExtResource( 1 )
+margin_left = 811.555
+margin_top = 67.5546
+margin_right = 965.555
+margin_bottom = 149.555
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Cave" type="TextureRect" parent="PopUp"]
-margin_left = 940.789
-margin_top = 72.1628
-margin_right = 1196.79
-margin_bottom = 328.163
-rect_scale = Vector2( 0.155773, 0.155773 )
-texture = ExtResource( 1 )
+margin_left = 911.0
+margin_top = 70.0
+margin_right = 1065.0
+margin_bottom = 152.0
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Church" type="TextureRect" parent="PopUp"]
-margin_left = 1037.01
-margin_top = 69.4901
-margin_right = 1293.01
-margin_bottom = 325.49
-rect_scale = Vector2( 0.162501, 0.162501 )
-texture = ExtResource( 1 )
+margin_left = 1010.79
+margin_top = 70.3363
+margin_right = 1164.79
+margin_bottom = 152.336
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
