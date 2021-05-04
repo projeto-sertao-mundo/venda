@@ -3,10 +3,6 @@
 [ext_resource path="res://scripts/ItemFindable.gd" type="Script" id=1]
 [ext_resource path="res://items/cave/Agulha.png" type="Texture" id=2]
 
-
-
-
-
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="Agulha" type="Area2D"]

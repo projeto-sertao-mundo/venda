@@ -22,6 +22,17 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="ColorRect" type="ColorRect" parent="PopUp"]
+visible = false
+margin_left = 325.0
+margin_top = -29.0
+margin_right = 1330.0
+margin_bottom = 744.0
+color = Color( 0.321569, 0.690196, 0.168627, 0.4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Book" type="TextureRect" parent="PopUp"]
 margin_right = 40.0
 margin_bottom = 40.0

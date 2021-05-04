@@ -55,9 +55,9 @@ position = Vector2( -39.818, -986.448 )
 [node name="Button" type="Button" parent="HUD"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -14.8729
+margin_left = 913.898
 margin_top = -332.422
-margin_right = 144.127
+margin_right = 1072.9
 margin_bottom = -284.42
 text = "Voltar"
 script = ExtResource( 28 )
@@ -171,81 +171,100 @@ __meta__ = {
 }
 
 [node name="Agulha" parent="Items" instance=ExtResource( 1 )]
-position = Vector2( 527.994, 484.528 )
-rotation = 0.208701
-z_index = 25
+position = Vector2( 397.769, 277.229 )
+rotation = -2.47189
+scale = Vector2( 4.28914, 4.28914 )
+z_index = 50
 
 [node name="Alavanca" parent="Items" instance=ExtResource( 4 )]
-position = Vector2( 710.7, 409.514 )
+position = Vector2( 659.021, 333.479 )
+scale = Vector2( 3.01977, 3.01977 )
 z_index = 10
 
 [node name="Alforge" parent="Items" instance=ExtResource( 12 )]
-position = Vector2( 1138.17, 417.399 )
+position = Vector2( 1188.57, 392.201 )
+scale = Vector2( 4.89696, 4.89696 )
 z_index = 20
 
 [node name="Berrante" parent="Items" instance=ExtResource( 13 )]
-position = Vector2( 800.414, 664.652 )
+position = Vector2( 1022.41, 115.49 )
+rotation = 0.784677
 z_index = 20
 
 [node name="Bilboque" parent="Items" instance=ExtResource( 3 )]
-position = Vector2( 1212.08, 502.983 )
-z_index = 50
+position = Vector2( 370.964, 192.389 )
+rotation = 0.230962
+scale = Vector2( 2.9987, 2.9987 )
+z_index = 45
 
 [node name="Bota" parent="Items" instance=ExtResource( 14 )]
-position = Vector2( 604.274, 610.445 )
-z_index = 30
+position = Vector2( 871.111, 671.952 )
+z_index = 40
 
 [node name="Cachimbo" parent="Items" instance=ExtResource( 17 )]
-position = Vector2( 697.442, 548.665 )
+position = Vector2( 707.242, 549.11 )
+rotation = -0.0460871
+scale = Vector2( 3.66316, 3.66316 )
 z_index = 30
 
 [node name="Canivete" parent="Items" instance=ExtResource( 16 )]
-position = Vector2( 359.873, 642.408 )
-z_index = 60
+position = Vector2( 506.91, 589.149 )
+rotation = -0.683974
+scale = Vector2( 2.54031, 2.54031 )
+z_index = 25
 
 [node name="CarrinhoMadeira" parent="Items" instance=ExtResource( 15 )]
-position = Vector2( 927.236, 536.533 )
+position = Vector2( 584.93, 490.61 )
 z_index = 30
 
 [node name="Chaleira" parent="Items" instance=ExtResource( 19 )]
-position = Vector2( 468.052, 314.319 )
-z_index = 20
+position = Vector2( 969.503, 396.866 )
+rotation = 0.536461
+z_index = 1
 
 [node name="Corda" parent="Items" instance=ExtResource( 18 )]
-position = Vector2( 86.8831, 424.079 )
-z_index = 40
+position = Vector2( 1025.26, 607.04 )
+rotation = 1.42284
+scale = Vector2( 7.57463, 7.57463 )
+z_index = 25
 
 [node name="Estilingue" parent="Items" instance=ExtResource( 21 )]
-position = Vector2( 31.2452, 530.608 )
+position = Vector2( 38.1134, 569.33 )
 z_index = 50
 
 [node name="IoIo" parent="Items" instance=ExtResource( 20 )]
-position = Vector2( 336.175, 122.718 )
+position = Vector2( 267.826, 171.077 )
+rotation = -1.30942
+scale = Vector2( 2.61971, 2.61971 )
 z_index = 20
 
 [node name="Isqueiro" parent="Items" instance=ExtResource( 22 )]
-position = Vector2( 109.732, 660.468 )
+position = Vector2( 87.6221, 693.996 )
+rotation = 0.0286073
+scale = Vector2( 3.14938, 3.14938 )
 z_index = 60
 
 [node name="Lamparina" parent="Items" instance=ExtResource( 23 )]
-position = Vector2( 474.912, 638.716 )
+position = Vector2( 480.575, 657.594 )
+scale = Vector2( 3.35378, 3.35378 )
 z_index = 40
 
 [node name="OvosEmpalhados" parent="Items" instance=ExtResource( 24 )]
-position = Vector2( 1235.61, 116.826 )
-z_index = 50
+position = Vector2( 763.14, 26.1116 )
+z_index = 65
 
 [node name="Pa" parent="Items" instance=ExtResource( 26 )]
-position = Vector2( 1056.01, 660.299 )
+position = Vector2( 698.265, 567.799 )
+scale = Vector2( 6.64708, 6.64708 )
 z_index = 30
 
 [node name="Pelego" parent="Items" instance=ExtResource( 25 )]
-position = Vector2( 162.217, 172.286 )
-rotation = 0.130834
+position = Vector2( 25.43, 28.9765 )
+rotation = 0.287736
 z_index = 60
 
 [node name="TachoDeCobre" parent="Items" instance=ExtResource( 27 )]
-position = Vector2( 1109.65, 677.622 )
+position = Vector2( 812.198, 576.6 )
 rotation = 0.675008
 z_index = 60
 [connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]
