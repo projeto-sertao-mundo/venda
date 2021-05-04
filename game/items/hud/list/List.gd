@@ -6,20 +6,17 @@ var text_scene = preload("res://items/hud/list/Text.tscn")
 export (String) var level_name = ""
 export (NodePath) var list_path
 export (NodePath) var popup_path
-export (NodePath) var popup_closer_path
 
 var list_node
 
 var popup_status = false
 var popup_node
-var popup_closer_node
 
 func _ready():
 	manager.define_level(level_name)
 	manager.define_list(self)
 	list_node = get_node(list_path)
 	popup_node = get_node(popup_path)
-	popup_closer_node = get_node(popup_closer_path)
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -28,6 +25,7 @@ func toggle_popup(event: InputEvent):
 				popup_status = false
 				popup_node.visible = false
 			else:
+				draw_list()
 				popup_status = true
 				popup_node.visible = true
 
@@ -50,4 +48,4 @@ func draw_items():
 		if(item.status):
 			text.get_node("CheckboxChecked").visible = true
 		list_node.add_child(text)
-		pos += 25
+		pos += 45

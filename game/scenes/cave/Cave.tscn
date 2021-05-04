@@ -176,11 +176,6 @@ rotation = -2.47189
 scale = Vector2( 4.28914, 4.28914 )
 z_index = 50
 
-[node name="Alavanca" parent="Items" instance=ExtResource( 4 )]
-position = Vector2( 659.021, 333.479 )
-scale = Vector2( 3.01977, 3.01977 )
-z_index = 10
-
 [node name="Alforge" parent="Items" instance=ExtResource( 12 )]
 position = Vector2( 1188.57, 392.201 )
 scale = Vector2( 4.89696, 4.89696 )
@@ -191,42 +186,16 @@ position = Vector2( 1022.41, 115.49 )
 rotation = 0.784677
 z_index = 20
 
-[node name="Bilboque" parent="Items" instance=ExtResource( 3 )]
-position = Vector2( 370.964, 192.389 )
-rotation = 0.230962
-scale = Vector2( 2.9987, 2.9987 )
-z_index = 45
-
-[node name="Bota" parent="Items" instance=ExtResource( 14 )]
-position = Vector2( 871.111, 671.952 )
-z_index = 40
-
 [node name="Cachimbo" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 707.242, 549.11 )
 rotation = -0.0460871
 scale = Vector2( 3.66316, 3.66316 )
 z_index = 30
 
-[node name="Canivete" parent="Items" instance=ExtResource( 16 )]
-position = Vector2( 506.91, 589.149 )
-rotation = -0.683974
-scale = Vector2( 2.54031, 2.54031 )
-z_index = 25
-
-[node name="CarrinhoMadeira" parent="Items" instance=ExtResource( 15 )]
-position = Vector2( 584.93, 490.61 )
-z_index = 30
-
 [node name="Chaleira" parent="Items" instance=ExtResource( 19 )]
 position = Vector2( 969.503, 396.866 )
 rotation = 0.536461
 z_index = 1
-
-[node name="Corda" parent="Items" instance=ExtResource( 18 )]
-position = Vector2( 1025.26, 607.04 )
-rotation = 1.42284
-scale = Vector2( 7.57463, 7.57463 )
-z_index = 25
 
 [node name="Estilingue" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 38.1134, 569.33 )
@@ -238,33 +207,65 @@ rotation = -1.30942
 scale = Vector2( 2.61971, 2.61971 )
 z_index = 20
 
-[node name="Isqueiro" parent="Items" instance=ExtResource( 22 )]
-position = Vector2( 87.6221, 693.996 )
-rotation = 0.0286073
-scale = Vector2( 3.14938, 3.14938 )
-z_index = 60
-
-[node name="Lamparina" parent="Items" instance=ExtResource( 23 )]
-position = Vector2( 480.575, 657.594 )
-scale = Vector2( 3.35378, 3.35378 )
-z_index = 40
-
-[node name="OvosEmpalhados" parent="Items" instance=ExtResource( 24 )]
-position = Vector2( 763.14, 26.1116 )
-z_index = 65
-
-[node name="Pa" parent="Items" instance=ExtResource( 26 )]
-position = Vector2( 698.265, 567.799 )
-scale = Vector2( 6.64708, 6.64708 )
-z_index = 30
-item_name = "Pá"
-
 [node name="Pelego" parent="Items" instance=ExtResource( 25 )]
 position = Vector2( 25.43, 28.9765 )
 rotation = 0.287736
 z_index = 60
 
-[node name="TachoDeCobre" parent="Items" instance=ExtResource( 27 )]
+[node name="ItemsRest" type="Node2D" parent="."]
+
+[node name="Alavanca" parent="ItemsRest" instance=ExtResource( 4 )]
+position = Vector2( 659.021, 333.479 )
+scale = Vector2( 3.01977, 3.01977 )
+z_index = 10
+
+[node name="Bilboque" parent="ItemsRest" instance=ExtResource( 3 )]
+position = Vector2( 370.964, 192.389 )
+rotation = 0.230962
+scale = Vector2( 2.9987, 2.9987 )
+z_index = 45
+
+[node name="Bota" parent="ItemsRest" instance=ExtResource( 14 )]
+position = Vector2( 871.111, 671.952 )
+z_index = 40
+
+[node name="Canivete" parent="ItemsRest" instance=ExtResource( 16 )]
+position = Vector2( 506.91, 589.149 )
+rotation = -0.683974
+scale = Vector2( 2.54031, 2.54031 )
+z_index = 25
+
+[node name="CarrinhoMadeira" parent="ItemsRest" instance=ExtResource( 15 )]
+position = Vector2( 584.93, 490.61 )
+z_index = 30
+
+[node name="Corda" parent="ItemsRest" instance=ExtResource( 18 )]
+position = Vector2( 1025.26, 607.04 )
+rotation = 1.42284
+scale = Vector2( 7.57463, 7.57463 )
+z_index = 25
+
+[node name="Isqueiro" parent="ItemsRest" instance=ExtResource( 22 )]
+position = Vector2( 87.6221, 693.996 )
+rotation = 0.0286073
+scale = Vector2( 3.14938, 3.14938 )
+z_index = 60
+
+[node name="Lamparina" parent="ItemsRest" instance=ExtResource( 23 )]
+position = Vector2( 480.575, 657.594 )
+scale = Vector2( 3.35378, 3.35378 )
+z_index = 40
+
+[node name="OvosEmpalhados" parent="ItemsRest" instance=ExtResource( 24 )]
+position = Vector2( 763.14, 26.1116 )
+z_index = 65
+
+[node name="Pa" parent="ItemsRest" instance=ExtResource( 26 )]
+position = Vector2( 698.265, 567.799 )
+scale = Vector2( 6.64708, 6.64708 )
+z_index = 30
+
+[node name="TachoDeCobre" parent="ItemsRest" instance=ExtResource( 27 )]
 position = Vector2( 812.198, 576.6 )
 rotation = 0.675008
 z_index = 60
