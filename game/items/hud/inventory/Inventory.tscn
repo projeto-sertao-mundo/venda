@@ -14,7 +14,7 @@
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 2 )
 popup_path = NodePath("PopUp")
-sprite_path = NodePath("PopUp/Book")
+sprite_path = NodePath("PopUp/Sprite")
 cave_sprite = ExtResource( 4 )
 church_sprite = ExtResource( 5 )
 elephant_sprite = ExtResource( 3 )
@@ -27,19 +27,11 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="PopUp"]
-margin_left = 325.0
-margin_top = -29.0
+margin_left = -63.0
+margin_top = -42.0
 margin_right = 1330.0
 margin_bottom = 744.0
 color = Color( 0, 0, 0, 0.392157 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Book" type="TextureRect" parent="PopUp"]
-margin_right = 40.0
-margin_bottom = 40.0
-texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -87,6 +79,10 @@ texture = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="PopUp"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 4 )
 
 [node name="Icon" type="Node2D" parent="."]
 scale = Vector2( 0.3, 0.3 )
