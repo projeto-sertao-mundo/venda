@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Lamparina.png-8b56897430e38d47ffe7c79bf8d44935.res"
+path="res://.import/Lamparina.png-0c30c463ca8fbcfd32153f82ea0b66eb.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/cave/Lamparina.png"
-dest_files=[ "res://.import/Lamparina.png-8b56897430e38d47ffe7c79bf8d44935.res" ]
+source_file="res://items/Cave/Lamparina.png"
+dest_files=[ "res://.import/Lamparina.png-0c30c463ca8fbcfd32153f82ea0b66eb.res" ]
 
 [params]
 

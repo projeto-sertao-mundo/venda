@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/TachoDeCobre.png-ba0e06e46ecc6828c23cbac7771def2d.res"
+path="res://.import/TachoDeCobre.png-0402574a8c333b28ed4add13d905d420.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/cave/TachoDeCobre.png"
-dest_files=[ "res://.import/TachoDeCobre.png-ba0e06e46ecc6828c23cbac7771def2d.res" ]
+source_file="res://items/Cave/TachoDeCobre.png"
+dest_files=[ "res://.import/TachoDeCobre.png-0402574a8c333b28ed4add13d905d420.res" ]
 
 [params]
 

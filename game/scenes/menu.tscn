@@ -54,4 +54,5 @@ __meta__ = {
 "_editor_description_": "
 "
 }
+
 [connection signal="gui_input" from="Menu/Play/ButtonPlay" to="." method="_on_PlayGame_pressed"]

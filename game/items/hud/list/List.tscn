@@ -45,4 +45,5 @@ texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="gui_input" from="Node2D/Icon2" to="." method="toggle_popup"]

@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/CommerceHover.png-3efbde5bebc4327c92be84397ec876db.res"
+path="res://.import/CommerceHover.png-e8589b110c19eda6bf1cd32e912639db.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/map/CommerceHover.png"
-dest_files=[ "res://.import/CommerceHover.png-3efbde5bebc4327c92be84397ec876db.res" ]
+source_file="res://items/Map/CommerceHover.png"
+dest_files=[ "res://.import/CommerceHover.png-e8589b110c19eda6bf1cd32e912639db.res" ]
 
 [params]
 

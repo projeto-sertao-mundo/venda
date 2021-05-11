@@ -269,4 +269,5 @@ z_index = 30
 position = Vector2( 812.198, 576.6 )
 rotation = 0.675008
 z_index = 60
+
 [connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

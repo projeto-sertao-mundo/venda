@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Isqueiro.png-b635070734461387677b67e1797c8c4f.res"
+path="res://.import/Isqueiro.png-2b1c4c875f3b51ef682e7b304ecac818.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/cave/Isqueiro.png"
-dest_files=[ "res://.import/Isqueiro.png-b635070734461387677b67e1797c8c4f.res" ]
+source_file="res://items/Cave/Isqueiro.png"
+dest_files=[ "res://.import/Isqueiro.png-2b1c4c875f3b51ef682e7b304ecac818.res" ]
 
 [params]
 

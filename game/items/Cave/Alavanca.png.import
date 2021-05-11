@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Alavanca.png-959910d94c0acbee6cbe8898d231a86f.res"
+path="res://.import/Alavanca.png-178ce1a1ef42775f6bc73133f70b3ebe.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/cave/Alavanca.png"
-dest_files=[ "res://.import/Alavanca.png-959910d94c0acbee6cbe8898d231a86f.res" ]
+source_file="res://items/Cave/Alavanca.png"
+dest_files=[ "res://.import/Alavanca.png-178ce1a1ef42775f6bc73133f70b3ebe.res" ]
 
 [params]
 
