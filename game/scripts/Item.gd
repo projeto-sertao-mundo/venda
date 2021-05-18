@@ -17,8 +17,7 @@ func _on_item_is_pressed(vi1ewport, event, shape_idx):
 
 func founded():
 	manager.item_found(level, item_name)
-	z_index = 5000
-	z_as_relative = false
+	z_index = 256
 	is_founded = true
 
 func delete_me():

@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Item.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[node name="BaciaFlores" type="Area2D"]
-scale = Vector2( 5, 5 )
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 124.94, 70.9499 )
+
+[node name="Bacia de Flores" type="KinematicBody2D"]
 script = ExtResource( 2 )
 level = "Church"
 item_name = "Bacia de Flores"
@@ -14,8 +16,12 @@ item_name = "Bacia de Flores"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.0928051, 0.092805 )
+[node name="BaciaFlores" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BaciaFlores"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="BaciaFlores"]
 texture = ExtResource( 1 )
 
-[connection signal="input_event" from="." to="." method="_on_item_is_pressed"]
+[connection signal="input_event" from="BaciaFlores" to="." method="_on_item_is_pressed"]
