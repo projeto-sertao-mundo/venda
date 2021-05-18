@@ -18,9 +18,12 @@ onready var elephant_items = get_node("Book/Pages/PageElephant/Items").get_child
 onready var page_station = get_node("Book/Pages/PageStation")
 onready var station_items = get_node("Book/Pages/PageStation/Items").get_children()
 
+onready var information_modal = get_node("InformationModal")
+
 func _ready():
 	hidden_inventory()
 	hidden_all_pages()
+	hidden_information_modal()
 	show_page()
 
 func toggle_popup(event: InputEvent):
@@ -31,23 +34,12 @@ func toggle_popup(event: InputEvent):
 				show_inventory()
 				update_all_items()
 
-func hidden_inventory():
-	inventory.visible = false
-	inventory_is_visible = false
-	inventory.z_index = 500
+# NOTE: Controlar exibição da páginas do inventário
 
 func show_inventory():
 	inventory.visible = true
 	inventory_is_visible = true
 	inventory.z_index = 1000
-
-func hidden_all_pages():
-	page_cave.visible = false
-	page_church.visible = false
-	page_elephant.visible = false
-	page_station.visible = false
-
-# NOTE: Exibir página do inventário
 
 func show_page():
 	if level == "Cave": show_cave_page()
@@ -74,6 +66,26 @@ func show_station_page():
 	hidden_all_pages()
 	update_items(station_items)
 	page_station.visible = true
+
+func show_information_modal():
+	print("SHOW")
+	information_modal.visible = true
+	information_modal.z_index = 2000
+
+func hidden_information_modal():
+	print("HIDDEN")
+	information_modal.visible = false
+
+func hidden_inventory():
+	inventory.visible = false
+	inventory_is_visible = false
+	inventory.z_index = 500
+
+func hidden_all_pages():
+	page_cave.visible = false
+	page_church.visible = false
+	page_elephant.visible = false
+	page_station.visible = false
 
 # NOTE: Atualizar lista de items
 
@@ -114,3 +126,13 @@ func _on_click_station_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			show_station_page()
+
+func _on_click_open_information_modal(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			show_information_modal()
+
+func _on_click_close_information_modal(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			hidden_information_modal()

@@ -4,31 +4,35 @@ onready var manager = get_node("/root/Manager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 onready var text_scene = preload("res://scenes/list/Text.tscn")
 
-var list
+onready var textarea = get_node("Paper/Text")
 export (NodePath) var list_path
 
-var popup
-export (NodePath) var popup_path
-var popup_status = false
+var paper_is_visible = false
+onready var paper = get_node("Paper")
 
 func _ready():
-	list = get_node(list_path)
-	popup = get_node(popup_path)
+	hidden_list()
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			if popup_status == true:
-				popup_status = false
-				popup.visible = false
-			else:
-				clear()
-				update()
-				popup_status = true
-				popup.visible = true
+			if paper_is_visible: hidden_list()
+			else: show_list()
+
+func show_list():
+	clear()
+	update()
+	paper.visible = true
+	paper_is_visible = true
+	paper.z_index = 1000
+
+func hidden_list():
+	paper.visible = false
+	paper_is_visible = false
+	paper.z_index = 500
 
 func clear():
-	var children = list.get_children()
+	var children = textarea.get_children()
 	for node in children:
 		node.free()
 
@@ -40,5 +44,5 @@ func update():
 		text.get_node("Label").text = item.label
 		text.position.y = pos
 		if (item.status): text.get_node("CheckboxChecked").visible = true
-		list.add_child(text)
+		textarea.add_child(text)
 		pos += 45

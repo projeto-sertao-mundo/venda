@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -28,8 +28,6 @@
 [ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
 [ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
 
-[sub_resource type="RectangleShape2D" id=1]
-
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
 level = "Cave"
@@ -50,6 +48,9 @@ __meta__ = {
 }
 
 [node name="Tags" type="Node2D" parent="Book"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Cave" type="TextureRect" parent="Book/Tags"]
 margin_left = 911.0
@@ -113,11 +114,17 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Agulha"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 500.189
+margin_top = 228.046
+margin_right = 780.189
+margin_bottom = 508.046
+rect_scale = Vector2( 0.430543, 0.430543 )
 texture = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Alforge" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -126,11 +133,17 @@ position = Vector2( 743.786, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Alforge"]
 visible = false
-position = Vector2( 743.786, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 696.713
+margin_top = 236.733
+margin_right = 976.713
+margin_bottom = 516.733
+rect_scale = Vector2( 0.377789, 0.377789 )
 texture = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Berrante" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -139,10 +152,13 @@ position = Vector2( 887.865, 282.258 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Berrante"]
 visible = false
-position = Vector2( 887.865, 282.258 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 840.367
+margin_top = 230.566
+margin_right = 1120.37
+margin_bottom = 510.566
+rect_scale = Vector2( 0.369349, 0.369349 )
 texture = ExtResource( 12 )
 
 [node name="Cachimbo" type="Node2D" parent="Book/Pages/PageCave/Items"]
@@ -152,10 +168,13 @@ position = Vector2( 1033.7, 278.743 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Cachimbo"]
 visible = false
-position = Vector2( 1033.7, 278.743 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 980.219
+margin_top = 226.786
+margin_right = 1260.22
+margin_bottom = 506.786
+rect_scale = Vector2( 0.348731, 0.348731 )
 texture = ExtResource( 15 )
 
 [node name="Chaleira" type="Node2D" parent="Book/Pages/PageCave/Items"]
@@ -165,10 +184,13 @@ position = Vector2( 279.921, 444.493 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Chaleira"]
 visible = false
-position = Vector2( 279.921, 444.493 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 215.447
+margin_top = 389.316
+margin_right = 495.447
+margin_bottom = 669.316
+rect_scale = Vector2( 0.371516, 0.371516 )
 texture = ExtResource( 16 )
 
 [node name="Estilingue" type="Node2D" parent="Book/Pages/PageCave/Items"]
@@ -178,10 +200,13 @@ position = Vector2( 421.657, 448.007 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Estilingue"]
 visible = false
-position = Vector2( 421.657, 448.007 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 371.677
+margin_top = 393.095
+margin_right = 651.677
+margin_bottom = 673.095
+rect_scale = Vector2( 0.378677, 0.378677 )
 texture = ExtResource( 18 )
 
 [node name="IoIo" type="Node2D" parent="Book/Pages/PageCave/Items"]
@@ -191,10 +216,13 @@ position = Vector2( 557.537, 451.521 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/IoIo"]
 visible = false
-position = Vector2( 557.537, 451.521 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 511.528
+margin_top = 425.853
+margin_right = 791.528
+margin_bottom = 705.853
+rect_scale = Vector2( 0.385965, 0.385965 )
 texture = ExtResource( 19 )
 
 [node name="Pelego" type="Node2D" parent="Book/Pages/PageCave/Items"]
@@ -204,13 +232,17 @@ position = Vector2( 757.842, 445.664 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Pelego"]
 visible = false
-position = Vector2( 757.842, 445.664 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 713.115
+margin_top = 398.135
+margin_right = 993.115
+margin_bottom = 678.135
+rect_scale = Vector2( 0.349867, 0.349867 )
 texture = ExtResource( 17 )
 
 [node name="PageChurch" type="Node2D" parent="Book/Pages"]
+visible = false
 
 [node name="BookChurch" type="Sprite" parent="Book/Pages/PageChurch"]
 position = Vector2( 640, 360 )
@@ -226,10 +258,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 517.828
+margin_top = 236.865
+margin_right = 773.828
+margin_bottom = 492.865
+rect_scale = Vector2( 0.385355, 0.385355 )
 texture = ExtResource( 14 )
 
 [node name="Bastidor" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -240,10 +275,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Bastidor"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Bastidor"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 517.828
+margin_top = 238.125
+margin_right = 773.828
+margin_bottom = 494.125
+rect_scale = Vector2( 0.395611, 0.395611 )
 texture = ExtResource( 24 )
 
 [node name="Caderno" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -254,10 +292,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Caderno"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Caderno"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 521.607
+margin_top = 239.385
+margin_right = 777.607
+margin_bottom = 495.385
+rect_scale = Vector2( 0.382528, 0.382528 )
 texture = ExtResource( 25 )
 
 [node name="Copo de Vidro" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -268,10 +309,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 511.528
+margin_top = 236.865
+margin_right = 767.528
+margin_bottom = 492.865
+rect_scale = Vector2( 0.397179, 0.397179 )
 texture = ExtResource( 22 )
 
 [node name="Espanador" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -282,10 +326,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Espanador"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Espanador"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 522.867
+margin_top = 244.425
+margin_right = 778.867
+margin_bottom = 500.425
+rect_scale = Vector2( 0.356775, 0.356775 )
 texture = ExtResource( 26 )
 
 [node name="Presepio" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -296,10 +343,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Presepio"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Presepio"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 514.048
+margin_top = 233.085
+margin_right = 770.048
+margin_bottom = 489.085
+rect_scale = Vector2( 0.406607, 0.406607 )
 texture = ExtResource( 21 )
 
 [node name="Tabletes" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -310,10 +360,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tabletes"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 511.528
+margin_top = 238.125
+margin_right = 767.528
+margin_bottom = 494.125
+rect_scale = Vector2( 0.416672, 0.416672 )
 texture = ExtResource( 23 )
 
 [node name="Tecido de Chita" type="Node2D" parent="Book/Pages/PageChurch/Items"]
@@ -324,10 +377,13 @@ position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 20 )
 
-[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
 visible = false
-position = Vector2( 561.235, 287.529 )
-scale = Vector2( 0.464724, 0.39733 )
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 27 )
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
@@ -348,18 +404,26 @@ texture = ExtResource( 11 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageStation"]
 
-[node name="PopUpDetail" type="Node2D" parent="."]
+[node name="InformationModal" type="Node2D" parent="."]
 visible = false
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="ColorRect" type="ColorRect" parent="PopUpDetail"]
+[node name="ColorRect" type="ColorRect" parent="InformationModal"]
 margin_left = -62.2652
 margin_top = -25.0096
 margin_right = -22.2652
 margin_bottom = 14.9904
 rect_scale = Vector2( 34.7095, 18.6983 )
-color = Color( 0, 0, 0, 0.352941 )
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="ColorRect2" type="ColorRect" parent="PopUpDetail"]
+[node name="Modal" type="Node2D" parent="InformationModal"]
+
+[node name="BG" type="ColorRect" parent="InformationModal/Modal"]
 margin_left = 429.413
 margin_top = 188.87
 margin_right = 469.413
@@ -369,7 +433,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PopUpDetail"]
+[node name="ItemName" type="Label" parent="InformationModal/Modal"]
+margin_left = 452.941
+margin_top = 207.524
+margin_right = 718.941
+margin_bottom = 258.524
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Nome do Item"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="ItemDescription" type="RichTextLabel" parent="InformationModal/Modal"]
 margin_left = 451.41
 margin_top = 275.624
 margin_right = 890.41
@@ -382,32 +458,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="PopUpDetail"]
-margin_left = 452.941
-margin_top = 207.524
-margin_right = 718.941
-margin_bottom = 258.524
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Nome do Item"
-__meta__ = {
-"_edit_use_anchors_": false,
-"_editor_description_": ""
-}
-
-[node name="Area2D" type="Area2D" parent="PopUpDetail"]
-position = Vector2( 863.032, 222.269 )
-scale = Vector2( 2.32, 2.24 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUpDetail/Area2D"]
-shape = SubResource( 1 )
-
-[node name="Check" type="Sprite" parent="PopUpDetail/Area2D"]
-position = Vector2( 1.20825, 0.42511 )
-scale = Vector2( 0.124962, 0.124962 )
+[node name="Close" type="TextureRect" parent="InformationModal/Modal"]
+margin_left = 843.554
+margin_top = 192.303
+margin_right = 1099.55
+margin_bottom = 448.303
+rect_scale = Vector2( 0.203662, 0.203662 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Icon" type="Node2D" parent="."]
 scale = Vector2( 0.3, 0.3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Book" type="TextureRect" parent="Icon"]
 margin_left = 3925.89
@@ -423,5 +489,18 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Tags/Church" to="." method="_on_click_church_tag"]
 [connection signal="gui_input" from="Book/Tags/Elephant" to="." method="_on_click_elephant_tag"]
 [connection signal="gui_input" from="Book/Tags/Station" to="." method="_on_click_station_tag"]
-[connection signal="input_event" from="PopUpDetail/Area2D" to="PopUpDetail" method="close_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIo/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presepio/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tabletes/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
 [connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]

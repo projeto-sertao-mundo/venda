@@ -7,17 +7,15 @@
 [node name="List" type="Node2D"]
 script = ExtResource( 1 )
 level = "Cave"
-list_path = NodePath("PopUp/List")
-popup_path = NodePath("PopUp")
+list_path = NodePath("Paper/Text")
 
-[node name="PopUp" type="Node2D" parent="."]
-visible = false
+[node name="Paper" type="Node2D" parent="."]
 position = Vector2( 460.203, -1.09207 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ColorRect" type="ColorRect" parent="PopUp"]
+[node name="ColorRect" type="ColorRect" parent="Paper"]
 margin_left = -472.176
 margin_top = -10.6908
 margin_right = -432.176
@@ -25,7 +23,7 @@ margin_bottom = 29.3092
 rect_scale = Vector2( 32.76, 18.8 )
 color = Color( 0, 0, 0, 0.392157 )
 
-[node name="Sprite" type="TextureRect" parent="PopUp"]
+[node name="Sprite" type="TextureRect" parent="Paper"]
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 3 )
@@ -33,17 +31,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="List" type="Node2D" parent="PopUp"]
+[node name="Text" type="Node2D" parent="Paper"]
 position = Vector2( 47.8684, 166.215 )
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Icon" type="Node2D" parent="."]
 position = Vector2( 1112.2, 620.789 )
 scale = Vector2( 0.3, 0.3 )
 
-[node name="Icon2" type="TextureRect" parent="Node2D"]
+[node name="Sprite" type="TextureRect" parent="Icon"]
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="gui_input" from="Node2D/Icon2" to="." method="toggle_popup"]
+[connection signal="gui_input" from="Icon/Sprite" to="." method="toggle_popup"]
