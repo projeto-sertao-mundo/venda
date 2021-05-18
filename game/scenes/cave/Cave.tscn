@@ -174,6 +174,7 @@ __meta__ = {
 }
 
 [node name="Items" type="Node2D" parent="."]
+z_as_relative = false
 __meta__ = {
 "_edit_lock_": true
 }
@@ -183,42 +184,58 @@ position = Vector2( 397.769, 277.229 )
 rotation = -2.47189
 scale = Vector2( 4.28914, 4.28914 )
 z_index = 50
+collision_layer = 0
+collision_mask = 0
 
 [node name="Alforge" parent="Items" instance=ExtResource( 12 )]
 position = Vector2( 1188.57, 392.201 )
 scale = Vector2( 4.89696, 4.89696 )
 z_index = 20
+collision_layer = 0
+collision_mask = 0
 
 [node name="Berrante" parent="Items" instance=ExtResource( 13 )]
 position = Vector2( 1022.41, 115.49 )
 rotation = 0.784677
 z_index = 20
+collision_layer = 0
+collision_mask = 0
 
 [node name="Cachimbo" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 701.356, 564.41 )
 rotation = -0.0460871
 scale = Vector2( 3.66316, 3.66316 )
 z_index = 30
+collision_layer = 0
+collision_mask = 0
 
 [node name="Chaleira" parent="Items" instance=ExtResource( 19 )]
 position = Vector2( 969.503, 396.866 )
 rotation = 0.536461
 z_index = 1
+collision_layer = 0
+collision_mask = 0
 
 [node name="Estilingue" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 38.1134, 569.33 )
 z_index = 50
+collision_layer = 0
+collision_mask = 0
 
 [node name="IoIo" parent="Items" instance=ExtResource( 20 )]
 position = Vector2( 267.826, 171.077 )
 rotation = -1.30942
 scale = Vector2( 2.61971, 2.61971 )
 z_index = 20
+collision_layer = 0
+collision_mask = 0
 
 [node name="Pelego" parent="Items" instance=ExtResource( 25 )]
 position = Vector2( 25.43, 28.9765 )
 rotation = 0.287736
 z_index = 60
+collision_layer = 0
+collision_mask = 0
 
 [node name="ItemsRest" type="Node2D" parent="."]
 
@@ -346,5 +363,8 @@ position = Vector2( 314.548, 599.721 )
 scale = Vector2( 0.209198, 0.209198 )
 z_index = 60
 texture = ExtResource( 8 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 1214.65, 666.095 )
 
 [connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]
