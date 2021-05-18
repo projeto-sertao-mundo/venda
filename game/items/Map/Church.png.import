@@ -3,7 +3,7 @@
 importer="texture_atlas"
 type="Texture"
 path="res://.import/Church.png-6353b0138f9987d01f28e9faf222d0ad.res"
-group_file="res://items/AtlasMapItems.png"
+group_file="res://items/map/AtlasMapItems.png"
 valid=true
 [deps]
 
@@ -13,5 +13,5 @@ dest_files=[ "res://.import/Church.png-6353b0138f9987d01f28e9faf222d0ad.res" ]
 
 [params]
 
-atlas_file="res://items/AtlasMapItems.png"
+atlas_file="res://items/map/AtlasMapItems.png"
 import_mode=0

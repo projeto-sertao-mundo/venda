@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Bota.png-2ddbaeadce1c78b8beaa73a386fd79fa.res"
+group_file="res://items/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/cave/rest/Bota.png"
+dest_files=[ "res://.import/Bota.png-2ddbaeadce1c78b8beaa73a386fd79fa.res" ]
+
+[params]
+
+atlas_file="res://items/cave/AtlasCaveItems.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Cachimbo.png-de9b5ae9cf3d75681da9505a62c33605.res"
+group_file="res://items/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/cave/items/Cachimbo.png"
+dest_files=[ "res://.import/Cachimbo.png-de9b5ae9cf3d75681da9505a62c33605.res" ]
+
+[params]
+
+atlas_file="res://items/cave/AtlasCaveItems.png"
+import_mode=0

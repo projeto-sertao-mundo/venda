@@ -11,19 +11,20 @@
 [ext_resource path="res://scenes/inventory/BookElephant.png" type="Texture" id=9]
 [ext_resource path="res://scenes/inventory/TagChruch.png" type="Texture" id=10]
 [ext_resource path="res://scenes/inventory/BookStation.png" type="Texture" id=11]
-[ext_resource path="res://items/cave/Berrante.png" type="Texture" id=12]
-[ext_resource path="res://items/cave/Alforge.png" type="Texture" id=13]
-[ext_resource path="res://items/Cave/Agulha.png" type="Texture" id=14]
-[ext_resource path="res://items/cave/Cachimbo.png" type="Texture" id=15]
-[ext_resource path="res://items/cave/Chaleira.png" type="Texture" id=16]
-[ext_resource path="res://items/cave/Pelego.png" type="Texture" id=17]
-[ext_resource path="res://items/cave/Estilingue.png" type="Texture" id=18]
-[ext_resource path="res://items/cave/IoIo.png" type="Texture" id=19]
+[ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=12]
+[ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=13]
+[ext_resource path="res://items/cave/items/Cachimbo.png" type="Texture" id=15]
+[ext_resource path="res://items/cave/items/Chaleira.png" type="Texture" id=16]
+[ext_resource path="res://items/cave/items/Pelego.png" type="Texture" id=17]
+[ext_resource path="res://items/cave/items/Estilingue.png" type="Texture" id=18]
+[ext_resource path="res://items/cave/items/IoIo.png" type="Texture" id=19]
+[ext_resource path="res://items/cave/items/Agulha.png" type="Texture" id=20]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
+level = "Cave"
 
 [node name="Book" type="Node2D" parent="."]
 __meta__ = {
@@ -101,20 +102,20 @@ texture = ExtResource( 8 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
 visible = false
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Alforge" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
 position = Vector2( 743.786, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
 visible = false
@@ -127,7 +128,7 @@ texture = ExtResource( 13 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
 position = Vector2( 887.865, 282.258 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
 visible = false
@@ -140,7 +141,7 @@ texture = ExtResource( 12 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
 position = Vector2( 1033.7, 278.743 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
 visible = false
@@ -153,7 +154,7 @@ texture = ExtResource( 15 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
 position = Vector2( 279.921, 444.493 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
 visible = false
@@ -166,7 +167,7 @@ texture = ExtResource( 16 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
 position = Vector2( 421.657, 448.007 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
 visible = false
@@ -179,7 +180,7 @@ texture = ExtResource( 18 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
 position = Vector2( 557.537, 451.521 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
 visible = false
@@ -192,7 +193,7 @@ texture = ExtResource( 19 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
 position = Vector2( 757.842, 445.664 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 14 )
+texture = ExtResource( 20 )
 
 [node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
 visible = false

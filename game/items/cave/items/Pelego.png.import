@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Pelego.png-14dee0adda45dfa3b7e744b7db967d7b.res"
+group_file="res://items/cave/AtlasCaveItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/cave/items/Pelego.png"
+dest_files=[ "res://.import/Pelego.png-14dee0adda45dfa3b7e744b7db967d7b.res" ]
+
+[params]
+
+atlas_file="res://items/cave/AtlasCaveItems.png"
+import_mode=0
