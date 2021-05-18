@@ -32,4 +32,5 @@ position = Vector2( 829.803, 389.291 )
 scene = "res://scenes/commerce/Inside.tscn"
 
 [node name="Inventory" parent="." instance=ExtResource( 5 )]
+
 [connection signal="pressed" from="BtnBackMenu" to="BtnBackMenu" method="_on_BackMenu_pressed"]
