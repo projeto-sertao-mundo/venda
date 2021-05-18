@@ -1,8 +1,9 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
+[ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://items/church/items/BaciaFlores.tscn" type="PackedScene" id=3]
-[ext_resource path="res://items/church/items/PoteBarro.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/church/items/Bastidor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/church/items/Tabletes.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=6]
 [ext_resource path="res://scenes/church/BG.png" type="Texture" id=7]
@@ -23,6 +24,7 @@
 [ext_resource path="res://items/church/items/Caderno.tscn" type="PackedScene" id=22]
 [ext_resource path="res://items/church/items/Presepio.tscn" type="PackedScene" id=23]
 [ext_resource path="res://items/church/items/CopoDeVidro.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=25]
 [ext_resource path="res://items/church/rest/Lampião.png" type="Texture" id=26]
 [ext_resource path="res://items/church/rest/VassouraPalha.png" type="Texture" id=27]
 [ext_resource path="res://items/church/rest/Cálice.png" type="Texture" id=28]
@@ -32,14 +34,21 @@
 [ext_resource path="res://items/church/rest/PlantaDecorativa.png" type="Texture" id=32]
 [ext_resource path="res://items/church/rest/Viola.png" type="Texture" id=33]
 [ext_resource path="res://items/church/rest/Agulha.png" type="Texture" id=34]
-[ext_resource path="res://items/church/rest/Bastidor.png" type="Texture" id=35]
+[ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=35]
 
 [node name="Church" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
+
+[node name="Inventory" parent="HUD" instance=ExtResource( 25 )]
+position = Vector2( -35.348, -979.095 )
+level = "Church"
+
+[node name="List" parent="HUD" instance=ExtResource( 1 )]
+position = Vector2( -29.0484, -977.835 )
+level = "Church"
 
 [node name="Button" type="Button" parent="HUD"]
 anchor_top = 1.0
@@ -142,9 +151,9 @@ scale = Vector2( 2.16904, 2.16904 )
 z_index = 15
 
 [node name="Espanador" parent="Items" instance=ExtResource( 2 )]
-position = Vector2( 193.502, 422.79 )
+position = Vector2( 194.691, 419.222 )
 rotation = 7.02674
-scale = Vector2( 3.23045, 3.23045 )
+scale = Vector2( 3.71573, 3.71573 )
 z_index = 35
 
 [node name="Presepio" parent="Items" instance=ExtResource( 23 )]
@@ -162,19 +171,21 @@ rotation = -0.174976
 scale = Vector2( 1.44043, 1.44043 )
 z_index = 25
 
-[node name="Bastidor" type="Sprite" parent="Items"]
-position = Vector2( 855.573, 680.454 )
-scale = Vector2( 0.224284, 0.224284 )
+[node name="Bastidor" parent="Items" instance=ExtResource( 4 )]
+position = Vector2( 856.666, 682.404 )
+rotation = 0.76992
+scale = Vector2( 2.36016, 2.36016 )
 z_index = 35
-texture = ExtResource( 35 )
 
 [node name="ItemsRest" type="Node2D" parent="."]
 z_index = 1
 
-[node name="PoteBarro" parent="ItemsRest" instance=ExtResource( 4 )]
-position = Vector2( 191.251, 444.861 )
-scale = Vector2( 3.1572, 3.1572 )
+[node name="PoteBarro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 192.508, 445.937 )
+rotation = -0.0543978
+scale = Vector2( 0.284479, 0.284479 )
 z_index = 35
+texture = ExtResource( 35 )
 
 [node name="Agulha" type="Sprite" parent="ItemsRest"]
 position = Vector2( 1161.48, 709.818 )

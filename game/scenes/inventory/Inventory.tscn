@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -13,12 +13,20 @@
 [ext_resource path="res://scenes/inventory/BookStation.png" type="Texture" id=11]
 [ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=12]
 [ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=13]
+[ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=14]
 [ext_resource path="res://items/cave/items/Cachimbo.png" type="Texture" id=15]
 [ext_resource path="res://items/cave/items/Chaleira.png" type="Texture" id=16]
 [ext_resource path="res://items/cave/items/Pelego.png" type="Texture" id=17]
 [ext_resource path="res://items/cave/items/Estilingue.png" type="Texture" id=18]
 [ext_resource path="res://items/cave/items/IoIo.png" type="Texture" id=19]
 [ext_resource path="res://items/cave/items/Agulha.png" type="Texture" id=20]
+[ext_resource path="res://items/church/items/Presepio.png" type="Texture" id=21]
+[ext_resource path="res://items/church/items/CopoDeVidro.png" type="Texture" id=22]
+[ext_resource path="res://items/church/items/Tabletes.png" type="Texture" id=23]
+[ext_resource path="res://items/church/items/Bastidor.png" type="Texture" id=24]
+[ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=25]
+[ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
+[ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -90,6 +98,7 @@ __meta__ = {
 [node name="Pages" type="Node2D" parent="Book"]
 
 [node name="PageCave" type="Node2D" parent="Book/Pages"]
+visible = false
 
 [node name="BookCave" type="Sprite" parent="Book/Pages/PageCave"]
 position = Vector2( 640, 360 )
@@ -202,13 +211,124 @@ scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 17 )
 
 [node name="PageChurch" type="Node2D" parent="Book/Pages"]
-visible = false
 
 [node name="BookChurch" type="Sprite" parent="Book/Pages/PageChurch"]
 position = Vector2( 640, 360 )
 texture = ExtResource( 4 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageChurch"]
+
+[node name="Bacia de Flores" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( -282.843, -73.5391 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 14 )
+
+[node name="Bastidor" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( -144.25, -77.7817 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Bastidor"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Bastidor"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 24 )
+
+[node name="Caderno" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( -7.07104, -83.4386 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Caderno"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Caderno"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 25 )
+
+[node name="Copo de Vidro" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( 181.019, -70.7106 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 22 )
+
+[node name="Espanador" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( 190.919, 67.8822 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Espanador"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Espanador"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 26 )
+
+[node name="Presepio" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( 354.967, 56.5686 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Presepio"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Presepio"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 21 )
+
+[node name="Tabletes" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( 203.647, 203.647 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 23 )
+
+[node name="Tecido de Chita" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+position = Vector2( 359.21, 197.99 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 20 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 27 )
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
 visible = false

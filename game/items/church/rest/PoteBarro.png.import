@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PoteBarro.png-e750dc2f4c5f22206bda97c802ce025b.stex"
+path="res://.import/PoteBarro.png-e7435c3b6ddbf2ae8328c824aa97b386.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/church/items/PoteBarro.png"
-dest_files=[ "res://.import/PoteBarro.png-e750dc2f4c5f22206bda97c802ce025b.stex" ]
+source_file="res://items/church/rest/PoteBarro.png"
+dest_files=[ "res://.import/PoteBarro.png-e7435c3b6ddbf2ae8328c824aa97b386.stex" ]
 
 [params]
 

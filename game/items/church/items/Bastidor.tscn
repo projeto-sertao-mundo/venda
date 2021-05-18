@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=1]
+[ext_resource path="res://items/church/items/Bastidor.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Item.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[node name="Caderno" type="Area2D"]
+[node name="Bastidor" type="Area2D"]
 scale = Vector2( 5, 5 )
 script = ExtResource( 2 )
 level = "Church"
-item_name = "Caderno"
+item_name = "Bastidor"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

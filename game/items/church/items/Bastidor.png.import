@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bastidor.png-c3836f0c8d5ec5bd0e4eee72fc79cdb4.stex"
+path="res://.import/Bastidor.png-477680577e279c2e95c3d387c0be6b62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/church/rest/Bastidor.png"
-dest_files=[ "res://.import/Bastidor.png-c3836f0c8d5ec5bd0e4eee72fc79cdb4.stex" ]
+source_file="res://items/church/items/Bastidor.png"
+dest_files=[ "res://.import/Bastidor.png-477680577e279c2e95c3d387c0be6b62.stex" ]
 
 [params]
 

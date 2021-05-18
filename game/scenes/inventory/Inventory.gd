@@ -21,7 +21,7 @@ onready var station_items = get_node("Book/Pages/PageStation/Items").get_childre
 func _ready():
 	hidden_inventory()
 	hidden_all_pages()
-	show_cave_page()
+	show_page()
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -29,7 +29,7 @@ func toggle_popup(event: InputEvent):
 			if inventory_is_visible: hidden_inventory()
 			else:
 				show_inventory()
-				update_items(cave_items)
+				update_all_items()
 
 func hidden_inventory():
 	inventory.visible = false
@@ -48,6 +48,12 @@ func hidden_all_pages():
 	page_station.visible = false
 
 # NOTE: Exibir página do inventário
+
+func show_page():
+	if level == "Cave": show_cave_page()
+	elif level == "Church": show_church_page()
+	elif level == "Station": show_station_page()
+	else: show_elephant_page()
 
 func show_cave_page():
 	hidden_all_pages()
@@ -70,6 +76,13 @@ func show_station_page():
 	page_station.visible = true
 
 # NOTE: Atualizar lista de items
+
+func update_all_items():
+	update_items(cave_items)
+	update_items(church_items)
+	update_items(elephant_items)
+	update_items(station_items)
+
 
 func update_items(level_items):
 	var items = manager.get_items(level)
