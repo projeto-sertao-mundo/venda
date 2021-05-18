@@ -1,8 +1,5 @@
 extends Node2D
 
-var list;
-var inventory;
-
 var items = {
 	Cave = [
 		{ status = false, name = "AGULHA",		label = "Agulha", sprite = "" },
@@ -13,15 +10,16 @@ var items = {
 		{ status = false, name = "ESTILINGUE",	label = "Estilingue", sprite = "" },
 		{ status = false, name = "IOIO",		label = "IoIo", sprite = "" },
 		{ status = false, name = "PELEGO",		label = "Pelego", sprite = "" },
-	]
+	],
+	Church = [],
+	Elephant = [],
+	Station = [],
 }
 
 func item_found(level: String, name: String):
 	for item in items[level]:
 		if item.label == name:
 			item.status = true
-	if list: list.update()
-	if inventory: inventory.update()
 
 func get_items(level: String):
 	return items[level]

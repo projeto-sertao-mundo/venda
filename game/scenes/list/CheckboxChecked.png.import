@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TagChruch.png-2abf846e9200eee2c8e9bda795d9b87c.stex"
+path="res://.import/CheckboxChecked.png-80bd6227874bb431e30fcbddaad1b192.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/TagChruch.png"
-dest_files=[ "res://.import/TagChruch.png-2abf846e9200eee2c8e9bda795d9b87c.stex" ]
+source_file="res://scenes/list/CheckboxChecked.png"
+dest_files=[ "res://.import/CheckboxChecked.png-80bd6227874bb431e30fcbddaad1b192.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BookStation.png-ec69771cd758f4fea9c9a2aebfc73fb2.stex"
+path="res://.import/Checkbox.png-8ce0be53e28d85576b9dd6ca3478cc0a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/BookStation.png"
-dest_files=[ "res://.import/BookStation.png-ec69771cd758f4fea9c9a2aebfc73fb2.stex" ]
+source_file="res://scenes/list/Checkbox.png"
+dest_files=[ "res://.import/Checkbox.png-8ce0be53e28d85576b9dd6ca3478cc0a.stex" ]
 
 [params]
 

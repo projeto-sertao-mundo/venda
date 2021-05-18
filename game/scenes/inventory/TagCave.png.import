@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Checkbox.png-7ac1394198a30fa0da5f20ea6750e836.stex"
+path="res://.import/TagCave.png-7ef9bd4fd61bf56b34796e36c760db88.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/list/Checkbox.png"
-dest_files=[ "res://.import/Checkbox.png-7ac1394198a30fa0da5f20ea6750e836.stex" ]
+source_file="res://scenes/inventory/TagCave.png"
+dest_files=[ "res://.import/TagCave.png-7ef9bd4fd61bf56b34796e36c760db88.stex" ]
 
 [params]
 

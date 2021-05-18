@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TagCave.png-90322541e101d441e9824223b31141ae.stex"
+path="res://.import/BookStation.png-92c88901eb6ffb321d2a5183a9d5fbf2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/TagCave.png"
-dest_files=[ "res://.import/TagCave.png-90322541e101d441e9824223b31141ae.stex" ]
+source_file="res://scenes/inventory/BookStation.png"
+dest_files=[ "res://.import/BookStation.png-92c88901eb6ffb321d2a5183a9d5fbf2.stex" ]
 
 [params]
 

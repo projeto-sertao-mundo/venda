@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/commerce/BackgroundCommerce.jpg" type="Texture" id=2]
 [ext_resource path="res://items/commerce/fence/Fence.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/commerce/door/Door.tscn" type="PackedScene" id=4]
-[ext_resource path="res://items/hud/inventory/Inventory.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=5]
 
 [node name="CommerceOut" type="Node2D"]
 

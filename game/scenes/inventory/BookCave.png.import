@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BookCave.png-5b70e50e7cb67e32ceed26b7458f429a.stex"
+path="res://.import/BookCave.png-143cedef577175af23350890b27fe8e4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/BookCave.png"
-dest_files=[ "res://.import/BookCave.png-5b70e50e7cb67e32ceed26b7458f429a.stex" ]
+source_file="res://scenes/inventory/BookCave.png"
+dest_files=[ "res://.import/BookCave.png-143cedef577175af23350890b27fe8e4.stex" ]
 
 [params]
 

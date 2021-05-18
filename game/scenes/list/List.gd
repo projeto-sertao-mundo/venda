@@ -2,7 +2,7 @@ extends Node2D
 
 onready var manager = get_node("/root/Manager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
-var text_scene = preload("res://items/hud/list/Text.tscn")
+var text_scene = preload("res://scenes/list/Text.tscn")
 
 var list
 export (NodePath) var list_path

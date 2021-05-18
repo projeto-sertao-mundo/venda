@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CheckboxChecked.png-3d3c8bef63464b4f4b479e36b5faaebe.stex"
+path="res://.import/TagElephant.png-2a5874dc7a4ce92de9730faac04744c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/list/CheckboxChecked.png"
-dest_files=[ "res://.import/CheckboxChecked.png-3d3c8bef63464b4f4b479e36b5faaebe.stex" ]
+source_file="res://scenes/inventory/TagElephant.png"
+dest_files=[ "res://.import/TagElephant.png-2a5874dc7a4ce92de9730faac04744c7.stex" ]
 
 [params]
 

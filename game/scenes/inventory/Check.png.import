@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TagElephant.png-1caa34da2f991e71624be13b3055ebde.stex"
+path="res://.import/Check.png-a6c26ab60519ac47fc370f9e01fc8d23.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/TagElephant.png"
-dest_files=[ "res://.import/TagElephant.png-1caa34da2f991e71624be13b3055ebde.stex" ]
+source_file="res://scenes/inventory/Check.png"
+dest_files=[ "res://.import/Check.png-a6c26ab60519ac47fc370f9e01fc8d23.stex" ]
 
 [params]
 

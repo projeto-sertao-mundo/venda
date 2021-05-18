@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BookChurch.png-73bf2d2fd0dacbc44fb4b99358191828.stex"
+path="res://.import/BookElephant.png-6b83e9b5cf9da4e32c478c179099e4f0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/BookChurch.png"
-dest_files=[ "res://.import/BookChurch.png-73bf2d2fd0dacbc44fb4b99358191828.stex" ]
+source_file="res://scenes/inventory/BookElephant.png"
+dest_files=[ "res://.import/BookElephant.png-6b83e9b5cf9da4e32c478c179099e4f0.stex" ]
 
 [params]
 

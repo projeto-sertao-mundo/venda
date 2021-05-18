@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://items/hud/list/List.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/items/church/Espanador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/items/church/BaciaFlores.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/items/church/PoteBarro.tscn" type="PackedScene" id=4]
@@ -24,7 +24,7 @@
 [ext_resource path="res://assets/items/church/Caderno.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/items/church/Presepio.tscn" type="PackedScene" id=23]
 [ext_resource path="res://assets/items/church/CopoDeVidro.tscn" type="PackedScene" id=24]
-[ext_resource path="res://items/hud/inventory/Inventory.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=25]
 
 [node name="Church" type="Node2D"]
 

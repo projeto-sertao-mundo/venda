@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/NoteIcon.png-c8d044fae04f6651019526d31bde2318.stex"
+path="res://.import/BookIcon.png-d3e3b2de65b40595c607b82ebb6d575b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/list/NoteIcon.png"
-dest_files=[ "res://.import/NoteIcon.png-c8d044fae04f6651019526d31bde2318.stex" ]
+source_file="res://scenes/inventory/BookIcon.png"
+dest_files=[ "res://.import/BookIcon.png-d3e3b2de65b40595c607b82ebb6d575b.stex" ]
 
 [params]
 

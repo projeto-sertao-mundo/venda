@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BookIcon.png-5f6c6bb6934c4ddd95aa4b91b348fb35.stex"
+path="res://.import/TagChruch.png-2ce6f3e544b449517c80961b71c70e5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/hud/inventory/BookIcon.png"
-dest_files=[ "res://.import/BookIcon.png-5f6c6bb6934c4ddd95aa4b91b348fb35.stex" ]
+source_file="res://scenes/inventory/TagChruch.png"
+dest_files=[ "res://.import/TagChruch.png-2ce6f3e544b449517c80961b71c70e5d.stex" ]
 
 [params]
 
