@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Bilboque.png-a101c00e71fbcbc34f885757e6fc6061.res"
+path="res://.import/Bilboque.png-7bce44719af8295a7fa59b65ad7a3546.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Bilboque.png"
-dest_files=[ "res://.import/Bilboque.png-a101c00e71fbcbc34f885757e6fc6061.res" ]
+source_file="res://items/cave/Bilboque.png"
+dest_files=[ "res://.import/Bilboque.png-7bce44719af8295a7fa59b65ad7a3546.res" ]
 
 [params]
 

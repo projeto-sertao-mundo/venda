@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/CarrinhoMadeira.png-772f3f5ffff0c141b867b2e6d7645aa4.res"
+path="res://.import/CarrinhoMadeira.png-c7e7c78e2b2495d6a32f6dcb5873a8cb.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/CarrinhoMadeira.png"
-dest_files=[ "res://.import/CarrinhoMadeira.png-772f3f5ffff0c141b867b2e6d7645aa4.res" ]
+source_file="res://items/cave/CarrinhoMadeira.png"
+dest_files=[ "res://.import/CarrinhoMadeira.png-c7e7c78e2b2495d6a32f6dcb5873a8cb.res" ]
 
 [params]
 

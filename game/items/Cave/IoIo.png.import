@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/IoIo.png-cf3fc9ebfee9e3599ecf935b4ccf1f58.res"
+path="res://.import/IoIo.png-914258dae1c28b71b543b82cd5fa54a5.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/IoIo.png"
-dest_files=[ "res://.import/IoIo.png-cf3fc9ebfee9e3599ecf935b4ccf1f58.res" ]
+source_file="res://items/cave/IoIo.png"
+dest_files=[ "res://.import/IoIo.png-914258dae1c28b71b543b82cd5fa54a5.res" ]
 
 [params]
 

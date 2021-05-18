@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://items/hud/inventory/BookIcon.png" type="Texture" id=1]
 [ext_resource path="res://items/hud/inventory/Inventory.gd" type="Script" id=2]
@@ -11,25 +11,26 @@
 [ext_resource path="res://items/hud/inventory/TagCave.png" type="Texture" id=9]
 [ext_resource path="res://items/hud/inventory/TagChruch.png" type="Texture" id=10]
 [ext_resource path="res://items/Cave/Agulha.png" type="Texture" id=11]
-[ext_resource path="res://items/hud/inventory/Pages.gd" type="Script" id=12]
+[ext_resource path="res://items/cave/Berrante.png" type="Texture" id=12]
+[ext_resource path="res://items/hud/inventory/Check.png" type="Texture" id=13]
+[ext_resource path="res://items/cave/Alforge.png" type="Texture" id=14]
+[ext_resource path="res://items/cave/Cachimbo.png" type="Texture" id=15]
+[ext_resource path="res://items/cave/Chaleira.png" type="Texture" id=16]
+[ext_resource path="res://items/cave/Pelego.png" type="Texture" id=17]
+[ext_resource path="res://items/cave/Estilingue.png" type="Texture" id=18]
+[ext_resource path="res://items/cave/IoIo.png" type="Texture" id=19]
+
+[sub_resource type="RectangleShape2D" id=1]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 2 )
-popup_path = NodePath("PopUp")
-sprite_path = NodePath("PopUp/Sprite")
-cave_page_path = NodePath("PopUp/CaveItems")
-cave_sprite = ExtResource( 4 )
-church_sprite = ExtResource( 5 )
-elephant_sprite = ExtResource( 3 )
-station_sprite = ExtResource( 6 )
 
-[node name="PopUp" type="Node2D" parent="."]
-visible = false
+[node name="Book" type="Node2D" parent="."]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ColorRect" type="ColorRect" parent="PopUp"]
+[node name="BG" type="ColorRect" parent="Book"]
 margin_left = -63.0
 margin_top = -42.0
 margin_right = 1330.0
@@ -39,29 +40,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Elephant" type="TextureRect" parent="PopUp"]
-margin_left = 710.0
-margin_top = 65.8909
-margin_right = 864.0
-margin_bottom = 147.891
-rect_scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Tags" type="Node2D" parent="Book"]
 
-[node name="Station" type="TextureRect" parent="PopUp"]
-margin_left = 811.555
-margin_top = 67.5546
-margin_right = 965.555
-margin_bottom = 149.555
-rect_scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Cave" type="TextureRect" parent="PopUp"]
+[node name="Cave" type="TextureRect" parent="Book/Tags"]
 margin_left = 911.0
 margin_top = 70.0
 margin_right = 1065.0
@@ -72,7 +53,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Church" type="TextureRect" parent="PopUp"]
+[node name="Church" type="TextureRect" parent="Book/Tags"]
 margin_left = 1010.79
 margin_top = 70.3363
 margin_right = 1164.79
@@ -83,53 +64,226 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="PopUp"]
+[node name="Elephant" type="TextureRect" parent="Book/Tags"]
+margin_left = 710.0
+margin_top = 65.8909
+margin_right = 864.0
+margin_bottom = 147.891
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Station" type="TextureRect" parent="Book/Tags"]
+margin_left = 811.555
+margin_top = 67.5546
+margin_right = 965.555
+margin_bottom = 149.555
+rect_scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pages" type="Node2D" parent="Book"]
+
+[node name="PageCave" type="Node2D" parent="Book/Pages"]
+
+[node name="BookCave" type="Sprite" parent="Book/Pages/PageCave"]
 position = Vector2( 640, 360 )
 texture = ExtResource( 4 )
 
-[node name="CaveItems" type="Node2D" parent="PopUp"]
-visible = false
-script = ExtResource( 12 )
+[node name="Items" type="Node2D" parent="Book/Pages/PageCave"]
 
-[node name="Sprite1" type="Sprite" parent="PopUp/CaveItems"]
-position = Vector2( 563.394, 291.629 )
+[node name="Agulha" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
+position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite2" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
+visible = false
+position = Vector2( 561.235, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 11 )
+
+[node name="Alforge" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
 position = Vector2( 743.786, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite3" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
+visible = false
+position = Vector2( 743.786, 287.529 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 14 )
+
+[node name="Berrante" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
 position = Vector2( 887.865, 282.258 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite4" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
+visible = false
+position = Vector2( 887.865, 282.258 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 12 )
+
+[node name="Cachimbo" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
 position = Vector2( 1033.7, 278.743 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite5" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
+visible = false
+position = Vector2( 1033.7, 278.743 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 15 )
+
+[node name="Chaleira" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
 position = Vector2( 279.921, 444.493 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite6" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
+visible = false
+position = Vector2( 279.921, 444.493 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 16 )
+
+[node name="Estilingue" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
 position = Vector2( 421.657, 448.007 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite7" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
+visible = false
+position = Vector2( 421.657, 448.007 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 18 )
+
+[node name="IoIo" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
 position = Vector2( 557.537, 451.521 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
 
-[node name="Sprite8" type="Sprite" parent="PopUp/CaveItems"]
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
+visible = false
+position = Vector2( 557.537, 451.521 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 19 )
+
+[node name="Pelego" type="Node2D" parent="Book/Pages/PageCave/Items"]
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
 position = Vector2( 757.842, 445.664 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 11 )
+
+[node name="Sprite" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
+visible = false
+position = Vector2( 757.842, 445.664 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 17 )
+
+[node name="PageChurch" type="Node2D" parent="Book/Pages"]
+visible = false
+
+[node name="BookChurch" type="Sprite" parent="Book/Pages/PageChurch"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 5 )
+
+[node name="Items" type="Node2D" parent="Book/Pages/PageChurch"]
+
+[node name="PageElephant" type="Node2D" parent="Book/Pages"]
+visible = false
+
+[node name="BookElephant" type="Sprite" parent="Book/Pages/PageElephant"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 3 )
+
+[node name="Items" type="Node2D" parent="Book/Pages/PageElephant"]
+
+[node name="PageStation" type="Node2D" parent="Book/Pages"]
+visible = false
+
+[node name="BookStation" type="Sprite" parent="Book/Pages/PageStation"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 6 )
+
+[node name="Items" type="Node2D" parent="Book/Pages/PageStation"]
+
+[node name="PopUpDetail" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="PopUpDetail"]
+margin_left = -62.2652
+margin_top = -25.0096
+margin_right = -22.2652
+margin_bottom = 14.9904
+rect_scale = Vector2( 34.7095, 18.6983 )
+color = Color( 0, 0, 0, 0.352941 )
+
+[node name="ColorRect2" type="ColorRect" parent="PopUpDetail"]
+margin_left = 429.413
+margin_top = 188.87
+margin_right = 469.413
+margin_bottom = 228.87
+rect_scale = Vector2( 11.84, 6.96 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PopUpDetail"]
+margin_left = 451.41
+margin_top = 275.624
+margin_right = 890.41
+margin_bottom = 563.624
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+
+O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PopUpDetail"]
+margin_left = 452.941
+margin_top = 207.524
+margin_right = 718.941
+margin_bottom = 258.524
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Nome do Item"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Area2D" type="Area2D" parent="PopUpDetail"]
+position = Vector2( 863.032, 222.269 )
+scale = Vector2( 2.32, 2.24 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUpDetail/Area2D"]
+shape = SubResource( 1 )
+
+[node name="Check" type="Sprite" parent="PopUpDetail/Area2D"]
+position = Vector2( 1.20825, 0.42511 )
+scale = Vector2( 0.124962, 0.124962 )
+texture = ExtResource( 13 )
 
 [node name="Icon" type="Node2D" parent="."]
 scale = Vector2( 0.3, 0.3 )
@@ -144,8 +298,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="gui_input" from="PopUp/Elephant" to="." method="show_elephant_page"]
-[connection signal="gui_input" from="PopUp/Station" to="." method="show_station_page"]
-[connection signal="gui_input" from="PopUp/Cave" to="." method="show_cave_page"]
-[connection signal="gui_input" from="PopUp/Church" to="." method="show_church_page"]
+[connection signal="gui_input" from="Book/Tags/Cave" to="." method="_on_click_cave_tag"]
+[connection signal="gui_input" from="Book/Tags/Church" to="." method="_on_click_church_tag"]
+[connection signal="gui_input" from="Book/Tags/Elephant" to="." method="_on_click_elephant_tag"]
+[connection signal="gui_input" from="Book/Tags/Station" to="." method="_on_click_station_tag"]
+[connection signal="input_event" from="PopUpDetail/Area2D" to="PopUpDetail" method="close_information_modal"]
 [connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]

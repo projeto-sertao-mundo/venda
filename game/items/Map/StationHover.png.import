@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/StationHover.png-9c76593871fffbf09531c6cb4b269388.res"
+path="res://.import/StationHover.png-d3db6b1c4ae9d73094e6a70a44424da4.res"
 group_file="res://items/AtlasMapItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Map/StationHover.png"
-dest_files=[ "res://.import/StationHover.png-9c76593871fffbf09531c6cb4b269388.res" ]
+source_file="res://items/map/StationHover.png"
+dest_files=[ "res://.import/StationHover.png-d3db6b1c4ae9d73094e6a70a44424da4.res" ]
 
 [params]
 

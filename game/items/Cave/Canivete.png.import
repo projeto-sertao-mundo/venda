@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Canivete.png-aabf2ac3d482990620821587a3fff198.res"
+path="res://.import/Canivete.png-ac10d71b495215f4a90727cfe0b10d6f.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Canivete.png"
-dest_files=[ "res://.import/Canivete.png-aabf2ac3d482990620821587a3fff198.res" ]
+source_file="res://items/cave/Canivete.png"
+dest_files=[ "res://.import/Canivete.png-ac10d71b495215f4a90727cfe0b10d6f.res" ]
 
 [params]
 

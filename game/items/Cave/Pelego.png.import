@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Pelego.png-1d87afa20b23bb53b38cea84b414893d.res"
+path="res://.import/Pelego.png-bc64319ca22a6929869a801c321bd0a0.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Pelego.png"
-dest_files=[ "res://.import/Pelego.png-1d87afa20b23bb53b38cea84b414893d.res" ]
+source_file="res://items/cave/Pelego.png"
+dest_files=[ "res://.import/Pelego.png-bc64319ca22a6929869a801c321bd0a0.res" ]
 
 [params]
 

@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Chaleira.png-c8f798b2d2226e62a84f99e8db6d7fde.res"
+path="res://.import/Chaleira.png-58ca45c88c86ab1df5db6cc3f6849323.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Chaleira.png"
-dest_files=[ "res://.import/Chaleira.png-c8f798b2d2226e62a84f99e8db6d7fde.res" ]
+source_file="res://items/cave/Chaleira.png"
+dest_files=[ "res://.import/Chaleira.png-58ca45c88c86ab1df5db6cc3f6849323.res" ]
 
 [params]
 

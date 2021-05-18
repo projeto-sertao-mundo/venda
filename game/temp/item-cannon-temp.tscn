@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://temp/cannon_up.png" type="Texture" id=1]
-[ext_resource path="res://scripts/ItemFindable.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=2]
 [ext_resource path="res://temp/cannon_up_checked.png" type="Texture" id=3]
 
 

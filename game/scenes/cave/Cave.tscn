@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://items/cave/Agulha.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/hud/list/List.tscn" type="PackedScene" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://items/cave/Alavanca.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/cave/Estalactite_branca_teto.png" type="Texture" id=5]
 [ext_resource path="res://items/hud/inventory/Inventory.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/items/cave/CaixaDeRape.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/items/cave/Barbeador.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/items/cave/Envelope.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/items/cave/Tesoura.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/items/cave/PenteDeChifre.tscn" type="PackedScene" id=11]
 [ext_resource path="res://items/cave/Alforge.tscn" type="PackedScene" id=12]
 [ext_resource path="res://items/cave/Berrante.tscn" type="PackedScene" id=13]
 [ext_resource path="res://items/cave/Bota.tscn" type="PackedScene" id=14]
@@ -34,8 +39,13 @@
 [ext_resource path="res://scenes/cave/Gruta_background.jpg" type="Texture" id=37]
 [ext_resource path="res://scenes/cave/Pedra_marrom_chão_dir.png" type="Texture" id=38]
 [ext_resource path="res://scenes/cave/Pedra_marrom_teto_esq.png" type="Texture" id=39]
+[ext_resource path="res://assets/items/cave/Radio.tscn" type="PackedScene" id=40]
+[ext_resource path="res://assets/items/cave/SacaDeFeijão.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/items/cave/Estribo.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/items/cave/BilhaDeBarro.tscn" type="PackedScene" id=43]
+[ext_resource path="res://assets/items/cave/PalhaCigarro.tscn" type="PackedScene" id=44]
 
-[node name="LevelCave" type="Node2D"]
+[node name="Cave" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
@@ -47,10 +57,10 @@ __meta__ = {
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
 position = Vector2( -39.818, -986.448 )
 z_index = 500
-level_name = "Cave"
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 6 )]
 position = Vector2( -39.818, -986.448 )
+level = "Cave"
 
 [node name="Button" type="Button" parent="HUD"]
 anchor_top = 1.0
@@ -269,5 +279,39 @@ z_index = 30
 position = Vector2( 812.198, 576.6 )
 rotation = 0.675008
 z_index = 60
+
+[node name="CaixaDeRape" parent="ItemsRest" instance=ExtResource( 7 )]
+position = Vector2( 591.452, 679.239 )
+z_index = 30
+
+[node name="BilhaDeBarro" parent="ItemsRest" instance=ExtResource( 43 )]
+position = Vector2( 922.13, 548.809 )
+z_index = 60
+
+[node name="Barbeador" parent="ItemsRest" instance=ExtResource( 8 )]
+position = Vector2( 296.245, 662.402 )
+scale = Vector2( 1, 1 )
+z_index = 60
+
+[node name="Envelope" parent="ItemsRest" instance=ExtResource( 9 )]
+position = Vector2( 806.965, 440.155 )
+
+[node name="Estribo" parent="ItemsRest" instance=ExtResource( 42 )]
+position = Vector2( 527.472, 361.582 )
+
+[node name="PalhaCigarro" parent="ItemsRest" instance=ExtResource( 44 )]
+position = Vector2( 759.822, 364.95 )
+
+[node name="PenteDeChifre" parent="ItemsRest" instance=ExtResource( 11 )]
+position = Vector2( 810.332, 233.622 )
+
+[node name="Radio" parent="ItemsRest" instance=ExtResource( 40 )]
+position = Vector2( 619.514, 262.806 )
+
+[node name="SacaDeFeijão" parent="ItemsRest" instance=ExtResource( 41 )]
+position = Vector2( 1083.09, 266.173 )
+
+[node name="Tesoura" parent="ItemsRest" instance=ExtResource( 10 )]
+position = Vector2( 525.227, 176.376 )
 
 [connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

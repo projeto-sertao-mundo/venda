@@ -2,14 +2,14 @@
 
 importer="texture_atlas"
 type="Texture"
-path="res://.import/Agulha.png-24646caed46944ef8ed04782388a380d.res"
+path="res://.import/Agulha.png-83b3fa2a8f5dc0c98e4c4877efe31b3b.res"
 group_file="res://items/AtlasCaveItems.png"
 valid=true
 [deps]
 
 
-source_file="res://items/Cave/Agulha.png"
-dest_files=[ "res://.import/Agulha.png-24646caed46944ef8ed04782388a380d.res" ]
+source_file="res://items/cave/Agulha.png"
+dest_files=[ "res://.import/Agulha.png-83b3fa2a8f5dc0c98e4c4877efe31b3b.res" ]
 
 [params]
 

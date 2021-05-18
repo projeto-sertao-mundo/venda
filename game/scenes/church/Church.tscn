@@ -1,76 +1,169 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://items/hud/list/List.tscn" type="PackedScene" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://temp/item-cannon-temp.tscn" type="PackedScene" id=3]
-[ext_resource path="res://temp/item-laser-temp.tscn" type="PackedScene" id=4]
-[ext_resource path="res://temp/item-flame-temp.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/items/church/Espanador.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/items/church/BaciaFlores.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/items/church/PoteBarro.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/items/church/Tabletes.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=6]
+[ext_resource path="res://scenes/church/BG.png" type="Texture" id=7]
+[ext_resource path="res://scenes/church/BancoDireita.png" type="Texture" id=8]
+[ext_resource path="res://scenes/church/BandeiraEsquerda.png" type="Texture" id=9]
+[ext_resource path="res://scenes/church/CercaDireita.png" type="Texture" id=10]
+[ext_resource path="res://scenes/church/BandeiraDireita.png" type="Texture" id=11]
+[ext_resource path="res://scenes/church/CercaEsquerda.png" type="Texture" id=12]
+[ext_resource path="res://scenes/church/ChurchWood.png" type="Texture" id=13]
+[ext_resource path="res://scenes/church/Doll02.png" type="Texture" id=14]
+[ext_resource path="res://scenes/church/Bacia.png" type="Texture" id=15]
+[ext_resource path="res://scenes/church/BG2.png" type="Texture" id=16]
+[ext_resource path="res://scenes/church/Doll03.png" type="Texture" id=17]
+[ext_resource path="res://scenes/church/BancoEsquerda.png" type="Texture" id=18]
+[ext_resource path="res://scenes/church/Doll01.png" type="Texture" id=19]
+[ext_resource path="res://scenes/church/Table.png" type="Texture" id=20]
+[ext_resource path="res://assets/items/church/TecidoChita.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/items/church/Caderno.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/items/church/Presepio.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/items/church/CopoDeVidro.tscn" type="PackedScene" id=24]
+[ext_resource path="res://items/hud/inventory/Inventory.tscn" type="PackedScene" id=25]
 
+[node name="Church" type="Node2D"]
 
+[node name="HUD" type="Node2D" parent="."]
+position = Vector2( 39.818, 986.448 )
+z_index = 500
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="level-01" type="Node2D"]
+[node name="List" parent="HUD" instance=ExtResource( 1 )]
+position = Vector2( -39.818, -986.448 )
+level_name = "Church"
 
-[node name="items-list" parent="." instance=ExtResource( 1 )]
+[node name="Inventory" parent="HUD" instance=ExtResource( 25 )]
+position = Vector2( -39.6365, -984.663 )
 
-[node name="items-fo-find" type="Node2D" parent="."]
+[node name="Button" type="Button" parent="HUD"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 1003.0
+margin_top = -360.0
+margin_right = 1071.0
+margin_bottom = -292.0
+text = "Voltar"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="item-cannon-temp" parent="items-fo-find" instance=ExtResource( 3 )]
-position = Vector2( 490.197, 501.361 )
+[node name="Scene" type="Node2D" parent="."]
 
-[node name="item-flame-temp" parent="items-fo-find" instance=ExtResource( 5 )]
-position = Vector2( 1394.63, 685.708 )
-collision_layer = 1024
+[node name="BG" type="Sprite" parent="Scene"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 7 )
 
-[node name="item-laser-temp" parent="items-fo-find" instance=ExtResource( 4 )]
-position = Vector2( 777.731, 793.878 )
+[node name="BG2" type="Sprite" parent="Scene"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 16 )
 
-[node name="items-to-disrupt" type="Node2D" parent="."]
+[node name="ChurchWood" type="Sprite" parent="Scene"]
+position = Vector2( 665.709, 321.394 )
+z_index = 10
+texture = ExtResource( 13 )
+
+[node name="Doll01" type="Sprite" parent="Scene"]
+position = Vector2( 572.45, 298.168 )
+z_index = 10
+texture = ExtResource( 19 )
+
+[node name="Doll02" type="Sprite" parent="Scene"]
+position = Vector2( 757.856, 304.525 )
+z_index = 10
+texture = ExtResource( 14 )
+
+[node name="Doll03" type="Sprite" parent="Scene"]
+position = Vector2( 666.742, 286.514 )
+z_index = 10
+texture = ExtResource( 17 )
+
+[node name="BandeiraDireita" type="Sprite" parent="Scene"]
+position = Vector2( 825.919, 345.844 )
+z_index = 10
+texture = ExtResource( 11 )
+
+[node name="BandeiraEsquerda" type="Sprite" parent="Scene"]
+position = Vector2( 497.228, 359.617 )
+z_index = 10
+texture = ExtResource( 9 )
+
+[node name="Table" type="Sprite" parent="Scene"]
+position = Vector2( 677.499, 466.127 )
+z_index = 20
+texture = ExtResource( 20 )
+
+[node name="CercaDireita" type="Sprite" parent="Scene"]
+position = Vector2( 989.878, 578.925 )
+z_index = 30
+texture = ExtResource( 10 )
+
+[node name="CercaEsquerda" type="Sprite" parent="Scene"]
+position = Vector2( 355.26, 574.688 )
+z_index = 30
+texture = ExtResource( 12 )
+
+[node name="BancoDireita" type="Sprite" parent="Scene"]
+position = Vector2( 1061.42, 649.102 )
+z_index = 40
+texture = ExtResource( 8 )
+
+[node name="BancoEsquerda" type="Sprite" parent="Scene"]
+position = Vector2( 288.068, 648.035 )
+z_index = 40
+texture = ExtResource( 18 )
+
+[node name="Bacia" type="Sprite" parent="Scene"]
+position = Vector2( 80.0916, 452.557 )
+z_index = 40
+texture = ExtResource( 15 )
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="ItemsRest" type="Node2D" parent="."]
 z_index = 1
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Node2D2" type="Node2D" parent="items-to-disrupt"]
-position = Vector2( 832.867, 911.439 )
+[node name="BaciaFlores" parent="ItemsRest" instance=ExtResource( 3 )]
+position = Vector2( 1231.86, 446.741 )
+z_index = 45
 
-[node name="TextureRect" type="TextureRect" parent="items-to-disrupt/Node2D2"]
-margin_left = -64.0
-margin_top = -128.0
-margin_right = 64.0
-rect_pivot_offset = Vector2( -817.187, 89.708 )
-texture = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Caderno" parent="ItemsRest" instance=ExtResource( 22 )]
+position = Vector2( 43.8531, 741.74 )
+z_index = 35
 
-[node name="Node2D3" type="Node2D" parent="items-to-disrupt"]
-position = Vector2( 1454.71, 785.723 )
+[node name="CopoDeVidro" parent="ItemsRest" instance=ExtResource( 24 )]
+position = Vector2( 986.25, 513.483 )
+scale = Vector2( 2.16904, 2.16904 )
+z_index = 25
 
-[node name="TextureRect" type="TextureRect" parent="items-to-disrupt/Node2D3"]
-margin_left = -64.0
-margin_top = -128.0
-margin_right = 64.0
-rect_pivot_offset = Vector2( -817.187, 89.708 )
-texture = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Espanador" parent="ItemsRest" instance=ExtResource( 2 )]
+position = Vector2( 822.065, 653.641 )
+z_index = 25
 
-[node name="hud" type="Node2D" parent="."]
-position = Vector2( 39.818, 986.448 )
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="PoteBarro" parent="ItemsRest" instance=ExtResource( 4 )]
+position = Vector2( 881.225, 671.571 )
+z_index = 35
 
-[node name="Button" type="Button" parent="hud"]
-margin_right = 159.0
-margin_bottom = 48.002
-text = "Voltar"
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
-[connection signal="pressed" from="hud/Button" to="hud/Button" method="_on_BackLevelChoice_pressed"]
+[node name="Presepio" parent="ItemsRest" instance=ExtResource( 23 )]
+position = Vector2( 536.409, 478.777 )
+z_index = 25
+
+[node name="Tabletes" parent="ItemsRest" instance=ExtResource( 5 )]
+position = Vector2( 548.422, 650.971 )
+z_index = 25
+
+[node name="TecidoChita" parent="ItemsRest" instance=ExtResource( 21 )]
+position = Vector2( 1066.34, 548.188 )
+z_index = 25
+
+[connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

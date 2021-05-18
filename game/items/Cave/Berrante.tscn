@@ -1,11 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/ItemFindable.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=1]
 [ext_resource path="res://items/cave/Berrante.png" type="Texture" id=2]
-
-
-
-
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -13,8 +9,7 @@
 scale = Vector2( 5, 5 )
 script = ExtResource( 1 )
 item_name = "Berrante"
-item_sprite = ExtResource( 2 )
-item_sprite_checked = ExtResource( 2 )
+level = "Church"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -22,4 +17,5 @@ shape = SubResource( 1 )
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.0928051, 0.092805 )
 texture = ExtResource( 2 )
+
 [connection signal="input_event" from="." to="." method="_on_item_is_pressed"]

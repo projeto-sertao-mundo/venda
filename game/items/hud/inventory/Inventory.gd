@@ -1,64 +1,103 @@
 extends Node2D
 
-var popup_status = false
-var popup_node
-export (NodePath) var popup_path
+onready var manager = get_node("/root/Manager")
+export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
-var sprite_node
-export (NodePath) var sprite_path
+var inventory_is_visible = false
+onready var inventory = get_node("Book")
 
-var cave_page_node
-export (NodePath) var cave_page_path
+onready var page_cave = get_node("Book/Pages/PageCave")
+onready var cave_items = get_node("Book/Pages/PageCave/Items").get_children()
 
-export (Texture) var cave_sprite
-export (Texture) var church_sprite
-export (Texture) var elephant_sprite
-export (Texture) var station_sprite
+onready var page_church = get_node("Book/Pages/PageChurch")
+onready var church_items = get_node("Book/Pages/PageChurch/Items").get_children()
+
+onready var page_elephant = get_node("Book/Pages/PageElephant")
+onready var elephant_items = get_node("Book/Pages/PageElephant/Items").get_children()
+
+onready var page_station = get_node("Book/Pages/PageStation")
+onready var station_items = get_node("Book/Pages/PageStation/Items").get_children()
 
 func _ready():
-	popup_node = get_node(popup_path)
-	sprite_node = get_node(sprite_path)
-	cave_page_node = get_node(cave_page_path)
-	
+	hidden_inventory()
 	hidden_all_pages()
-	cave_page_node.visible = true
-	sprite_node.texture = cave_sprite
+	show_cave_page()
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			if popup_status == true:
-				popup_status = false
-				popup_node.visible = false
+			if inventory_is_visible: hidden_inventory()
 			else:
-				popup_status = true
-				popup_node.visible = true
-				cave_page_node.draw_items()
-				
+				show_inventory()
+				update_items(cave_items)
+
+func hidden_inventory():
+	inventory.visible = false
+	inventory_is_visible = false
+	inventory.z_index = 500
+
+func show_inventory():
+	inventory.visible = true
+	inventory_is_visible = true
+	inventory.z_index = 1000
+
 func hidden_all_pages():
-	cave_page_node.visible = false
+	page_cave.visible = false
+	page_church.visible = false
+	page_elephant.visible = false
+	page_station.visible = false
 
-func show_cave_page(event: InputEvent):
+# NOTE: Exibir página do inventário
+
+func show_cave_page():
+	hidden_all_pages()
+	update_items(cave_items)
+	page_cave.visible = true
+
+func show_church_page():
+	hidden_all_pages()
+	update_items(church_items)
+	page_church.visible = true
+
+func show_elephant_page():
+	hidden_all_pages()
+	update_items(elephant_items)
+	page_elephant.visible = true
+
+func show_station_page():
+	hidden_all_pages()
+	update_items(station_items)
+	page_station.visible = true
+
+# NOTE: Atualizar lista de items
+
+func update_items(level_items):
+	var items = manager.get_items(level)
+	for item in items:
+		if item.status == true:
+			for node in level_items:
+				if item.label == node.name:
+					node.get_node("Sprite").visible = true
+					node.get_node("Default").visible = false
+
+# NOTE: Eventos de clique nas tags do livro
+
+func _on_click_cave_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			hidden_all_pages()
-			cave_page_node.visible = true
-			sprite_node.texture = cave_sprite
+			show_cave_page()
 
-func show_church_page(event: InputEvent):
+func _on_click_church_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			hidden_all_pages()
-			sprite_node.texture = church_sprite
+			show_church_page()
 
-func show_elephant_page(event: InputEvent):
+func _on_click_elephant_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			hidden_all_pages()
-			sprite_node.texture = elephant_sprite
+			show_elephant_page()
 
-func show_station_page(event: InputEvent):
+func _on_click_station_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
-			hidden_all_pages()
-			sprite_node.texture = station_sprite
+			show_station_page()
