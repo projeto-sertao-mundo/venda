@@ -30,9 +30,7 @@ func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			if inventory_is_visible: hidden_inventory()
-			else:
-				show_inventory()
-				update_all_items()
+			else: show_inventory()
 
 # NOTE: Controlar exibição da páginas do inventário
 
@@ -40,6 +38,7 @@ func show_inventory():
 	inventory.visible = true
 	inventory_is_visible = true
 	inventory.z_index = 1000
+	show_page()
 
 func show_page():
 	if level == "Cave": show_cave_page()
@@ -49,31 +48,33 @@ func show_page():
 
 func show_cave_page():
 	hidden_all_pages()
-	update_items(cave_items)
+	var manager_items = manager.get_items("Cave")
+	update_items(manager_items, cave_items)
 	page_cave.visible = true
 
 func show_church_page():
 	hidden_all_pages()
-	update_items(church_items)
+	var manager_items = manager.get_items("Church")
+	update_items(manager_items, church_items)
 	page_church.visible = true
 
 func show_elephant_page():
 	hidden_all_pages()
-	update_items(elephant_items)
+	var manager_items = manager.get_items("Elephant")
+	update_items(manager_items, elephant_items)
 	page_elephant.visible = true
 
 func show_station_page():
 	hidden_all_pages()
-	update_items(station_items)
+	var manager_items = manager.get_items("Station")
+	update_items(manager_items, station_items)
 	page_station.visible = true
 
 func show_information_modal():
-	print("SHOW")
 	information_modal.visible = true
 	information_modal.z_index = 2000
 
 func hidden_information_modal():
-	print("HIDDEN")
 	information_modal.visible = false
 
 func hidden_inventory():
@@ -89,16 +90,8 @@ func hidden_all_pages():
 
 # NOTE: Atualizar lista de items
 
-func update_all_items():
-	update_items(cave_items)
-	update_items(church_items)
-	update_items(elephant_items)
-	update_items(station_items)
-
-
-func update_items(level_items):
-	var items = manager.get_items(level)
-	for item in items:
+func update_items(manager_items, level_items):
+	for item in manager_items:
 		if item.status == true:
 			for node in level_items:
 				if item.label == node.name:

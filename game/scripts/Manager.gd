@@ -29,6 +29,7 @@ func item_found(level: String, name: String):
 	for item in items[level]:
 		if item.label == name:
 			item.status = true
+	print(items)
 
 func get_items(level: String):
 	return items[level]
