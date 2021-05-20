@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=25]
 [ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
 [ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
+[ext_resource path="res://scenes/inventory/Question.png" type="Texture" id=28]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
@@ -112,7 +113,7 @@ texture = ExtResource( 8 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Agulha"]
 visible = false
@@ -131,7 +132,7 @@ __meta__ = {
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Alforge"]
 position = Vector2( 743.786, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Alforge"]
 visible = false
@@ -150,7 +151,7 @@ __meta__ = {
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Berrante"]
 position = Vector2( 887.865, 282.258 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Berrante"]
 visible = false
@@ -166,7 +167,7 @@ texture = ExtResource( 12 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Cachimbo"]
 position = Vector2( 1033.7, 278.743 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Cachimbo"]
 visible = false
@@ -182,7 +183,7 @@ texture = ExtResource( 15 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Chaleira"]
 position = Vector2( 279.921, 444.493 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Chaleira"]
 visible = false
@@ -198,7 +199,7 @@ texture = ExtResource( 16 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Estilingue"]
 position = Vector2( 421.657, 448.007 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Estilingue"]
 visible = false
@@ -214,7 +215,7 @@ texture = ExtResource( 18 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
 position = Vector2( 557.537, 451.521 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/IoIo"]
 visible = false
@@ -230,7 +231,7 @@ texture = ExtResource( 19 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Pelego"]
 position = Vector2( 757.842, 445.664 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Pelego"]
 visible = false
@@ -256,7 +257,7 @@ position = Vector2( -282.843, -73.5391 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Bacia de Flores"]
 visible = false
@@ -273,7 +274,7 @@ position = Vector2( -144.25, -77.7817 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Bastidor"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Bastidor"]
 visible = false
@@ -290,7 +291,7 @@ position = Vector2( -7.07104, -83.4386 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Caderno"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Caderno"]
 visible = false
@@ -307,7 +308,7 @@ position = Vector2( 181.019, -70.7106 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Copo de Vidro"]
 visible = false
@@ -324,7 +325,7 @@ position = Vector2( 190.919, 67.8822 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Espanador"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Espanador"]
 visible = false
@@ -341,7 +342,7 @@ position = Vector2( 354.967, 56.5686 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Presepio"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Presepio"]
 visible = false
@@ -358,7 +359,7 @@ position = Vector2( 203.647, 203.647 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tabletes"]
 visible = false
@@ -375,7 +376,7 @@ position = Vector2( 359.21, 197.99 )
 [node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
-texture = ExtResource( 20 )
+texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tecido de Chita"]
 visible = false
