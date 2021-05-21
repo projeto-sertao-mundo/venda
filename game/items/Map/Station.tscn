@@ -9,6 +9,7 @@ extents = Vector2( 122.597, 57.7419 )
 
 [node name="Station" type="Area2D"]
 script = ExtResource( 2 )
+level = "Station"
 scene = "res://scenes/station/Station.tscn"
 default_sprite = ExtResource( 3 )
 hover_sprite = ExtResource( 1 )
@@ -20,6 +21,7 @@ shape = SubResource( 1 )
 position = Vector2( 4.67194, 5.303 )
 rotation = 0.750492
 texture = ExtResource( 3 )
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

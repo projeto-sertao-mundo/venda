@@ -25,11 +25,31 @@ var items = {
 	Station = [],
 }
 
+var level_is_completed = {
+	Cave = false,
+	Church = false,
+	Elephant = false,
+	Station = false,
+}
+
 func item_found(level: String, name: String):
 	for item in items[level]:
 		if item.label == name:
 			item.status = true
-	print(items)
+			check_level(level)
+			break
 
 func get_items(level: String):
 	return items[level]
+
+func check_level(level: String):
+	var all_items_is_founded = true
+	for item in items[level]:
+		if item.status == false:
+			all_items_is_founded = false
+			break
+	if all_items_is_founded:
+		level_is_completed[level] = true
+
+func get_level_status(level: String):
+	return level_is_completed[level]

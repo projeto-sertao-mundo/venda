@@ -9,6 +9,7 @@ extents = Vector2( 115.134, 80.5423 )
 
 [node name="Cave" type="Area2D"]
 script = ExtResource( 2 )
+level = "Cave"
 scene = "res://scenes/cave/Cave.tscn"
 default_sprite = ExtResource( 1 )
 hover_sprite = ExtResource( 3 )
@@ -19,6 +20,7 @@ shape = SubResource( 1 )
 [node name="SpriteNode" type="Sprite" parent="."]
 position = Vector2( 0, -16.054 )
 texture = ExtResource( 1 )
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
