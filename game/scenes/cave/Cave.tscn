@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://items/cave/items/Agulha.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -44,6 +44,7 @@
 [ext_resource path="res://items/cave/rest/BilhaDeBarro.png" type="Texture" id=42]
 [ext_resource path="res://items/cave/rest/Carrinho.png" type="Texture" id=43]
 [ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=44]
+[ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=45]
 
 [node name="Cave" type="Node2D"]
 
@@ -72,6 +73,10 @@ position = Vector2( -38.1634, -976.92 )
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
 position = Vector2( -36.1565, -984.706 )
+
+[node name="Helper" parent="HUD" instance=ExtResource( 45 )]
+position = Vector2( -58.7329, -985.112 )
+level = "Cave"
 
 [node name="Scene" type="Node2D" parent="."]
 __meta__ = {
