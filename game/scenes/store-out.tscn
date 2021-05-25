@@ -28,7 +28,9 @@ position = Vector2( 515.589, 338.65 )
 scene = "res://scenes/map/Map.tscn"
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
-position = Vector2( 829.803, 389.291 )
+position = Vector2( 1207.37, 345.564 )
+rotation = -0.0112802
+scale = Vector2( 1.34665, 1.34665 )
 scene = "res://scenes/commerce/Inside.tscn"
 
 [node name="Inventory" parent="." instance=ExtResource( 5 )]
