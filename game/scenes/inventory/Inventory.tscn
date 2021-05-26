@@ -336,15 +336,15 @@ margin_bottom = 500.425
 rect_scale = Vector2( 0.356775, 0.356775 )
 texture = ExtResource( 26 )
 
-[node name="Presepio" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+[node name="Presépio" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 354.967, 56.5686 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Presepio"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Presépio"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Presepio"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Presépio"]
 visible = false
 margin_left = 514.048
 margin_top = 233.085
@@ -353,15 +353,15 @@ margin_bottom = 489.085
 rect_scale = Vector2( 0.406607, 0.406607 )
 texture = ExtResource( 21 )
 
-[node name="Tabletes" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+[node name="Tabletes de Anil" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 203.647, 203.647 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes de Anil"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tabletes"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tabletes de Anil"]
 visible = false
 margin_left = 511.528
 margin_top = 238.125
@@ -388,13 +388,148 @@ rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 27 )
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
-visible = false
 
 [node name="BookElephant" type="Sprite" parent="Book/Pages/PageElephant"]
 position = Vector2( 640, 360 )
 texture = ExtResource( 9 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageElephant"]
+
+[node name="Tecido de Chita2" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 890.954, 205.061 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita2"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita2"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita3" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 1030.96, 197.99 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita3"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita3"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita4" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 292.742, 463.862 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita4"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita4"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita5" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 428.507, 458.205 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita5"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita5"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita6" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 568.514, 449.72 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita6"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita6"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita7" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 752.361, 362.039 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita7"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita7"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita8" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 902.268, 339.411 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita8"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita8"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita9" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+position = Vector2( 767.918, 500.632 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita9"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita9"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
 
 [node name="PageStation" type="Node2D" parent="Book/Pages"]
 visible = false
@@ -404,6 +539,142 @@ position = Vector2( 640, 360 )
 texture = ExtResource( 11 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageStation"]
+
+[node name="Tecido de Chita10" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 562.857, 196.576 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita10"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita10"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita11" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 770.746, 203.647 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita11"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita11"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita12" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 564.271, 335.169 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita12"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita12"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita13" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 780.646, 343.654 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita13"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita13"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita14" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 954.594, 336.583 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita14"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita14"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita15" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 567.099, 473.762 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita15"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita15"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita16" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 793.373, 482.247 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita16"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita16"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
+
+[node name="Tecido de Chita17" type="Node2D" parent="Book/Pages/PageStation/Items"]
+position = Vector2( 964.493, 478.004 )
+
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita17"]
+position = Vector2( -3.03601, 0.443726 )
+scale = Vector2( 0.464724, 0.39733 )
+texture = ExtResource( 28 )
+
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita17"]
+visible = false
+margin_left = 514.048
+margin_top = 229.306
+margin_right = 770.048
+margin_bottom = 485.306
+rect_scale = Vector2( 0.430931, 0.430931 )
+texture = ExtResource( 27 )
 
 [node name="InformationModal" type="Node2D" parent="."]
 visible = false
@@ -501,7 +772,7 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presepio/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tabletes/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tabletes de Anil/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
 [connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]

@@ -171,6 +171,7 @@ scale = Vector2( 0.397761, 0.397761 )
 z_index = 15
 collision_layer = 0
 collision_mask = 0
+item_name = "Presépio"
 
 [node name="Tabletes" parent="Items" instance=ExtResource( 5 )]
 position = Vector2( 728.601, 76.6564 )
@@ -178,6 +179,7 @@ scale = Vector2( 2.50317, 2.50317 )
 z_index = 5
 collision_layer = 0
 collision_mask = 0
+item_name = "Tabletes de Anil"
 
 [node name="TecidoChita" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 822.432, 387.026 )
