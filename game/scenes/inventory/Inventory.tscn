@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -28,10 +28,13 @@
 [ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
 [ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
 [ext_resource path="res://scenes/inventory/Question.png" type="Texture" id=28]
+[ext_resource path="res://scenes/inventory/BookIconHover.png" type="Texture" id=29]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
 level = "Cave"
+sprite_default = ExtResource( 3 )
+sprite_hover = ExtResource( 29 )
 
 [node name="Book" type="Node2D" parent="."]
 __meta__ = {
@@ -776,3 +779,5 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tabletes de Anil/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
 [connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]
+[connection signal="mouse_entered" from="Icon/Book" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Icon/Book" to="." method="_on_mouse_exited"]

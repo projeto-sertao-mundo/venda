@@ -5,7 +5,6 @@
 [ext_resource path="res://items/church/items/BaciaFlores.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/church/items/Bastidor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/church/items/Tabletes.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=6]
 [ext_resource path="res://scenes/church/BG.png" type="Texture" id=7]
 [ext_resource path="res://scenes/church/BancoDireita.png" type="Texture" id=8]
 [ext_resource path="res://scenes/church/BandeiraEsquerda.png" type="Texture" id=9]
@@ -35,6 +34,7 @@
 [ext_resource path="res://items/church/rest/Viola.png" type="Texture" id=33]
 [ext_resource path="res://items/church/rest/Agulha.png" type="Texture" id=34]
 [ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=35]
+[ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=36]
 
 [node name="Church" type="Node2D"]
 
@@ -50,18 +50,8 @@ level = "Church"
 position = Vector2( -29.0484, -977.835 )
 level = "Church"
 
-[node name="Button" type="Button" parent="HUD"]
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_left = 1003.0
-margin_top = -360.0
-margin_right = 1071.0
-margin_bottom = -292.0
-text = "Voltar"
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="ExitLevel" parent="HUD" instance=ExtResource( 36 )]
+position = Vector2( 1059.27, -319.807 )
 
 [node name="Scene" type="Node2D" parent="."]
 
@@ -265,5 +255,3 @@ scale = Vector2( 0.656698, 0.656698 )
 z_index = 25
 texture = ExtResource( 33 )
 flip_h = true
-
-[connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

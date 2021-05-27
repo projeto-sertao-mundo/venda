@@ -27,7 +27,6 @@
 [ext_resource path="res://items/cave/items/Pelego.tscn" type="PackedScene" id=25]
 [ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=26]
 [ext_resource path="res://items/cave/rest/TachoDeCobre.tscn" type="PackedScene" id=27]
-[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=28]
 [ext_resource path="res://scenes/cave/Pedra_marrom_claro_esq.png" type="Texture" id=29]
 [ext_resource path="res://scenes/cave/Estalactite_grande_esq.png" type="Texture" id=30]
 [ext_resource path="res://scenes/cave/Estalactite_branca_chão.png" type="Texture" id=31]
@@ -45,6 +44,7 @@
 [ext_resource path="res://items/cave/rest/Carrinho.png" type="Texture" id=43]
 [ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=44]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=45]
+[ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=46]
 
 [node name="Cave" type="Node2D"]
 
@@ -55,24 +55,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Button" type="Button" parent="HUD"]
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_left = 1003.0
-margin_top = -360.0
-margin_right = 1071.0
-margin_bottom = -292.0
-text = "Voltar"
-script = ExtResource( 28 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Inventory" parent="HUD" instance=ExtResource( 6 )]
 position = Vector2( -38.1634, -976.92 )
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
 position = Vector2( -36.1565, -984.706 )
+
+[node name="ExitLevel" parent="HUD" instance=ExtResource( 46 )]
+position = Vector2( 1049.14, -324.805 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 45 )]
 position = Vector2( -58.7329, -985.112 )
@@ -371,5 +361,3 @@ texture = ExtResource( 8 )
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 1214.65, 666.095 )
-
-[connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

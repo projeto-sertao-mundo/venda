@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/station/Beam.png" type="Texture" id=3]
 [ext_resource path="res://scenes/station/Door.png" type="Texture" id=4]
 [ext_resource path="res://scenes/station/Fence.png" type="Texture" id=5]
-[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=6]
+[ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/station/Floor.png" type="Texture" id=7]
 [ext_resource path="res://scenes/station/BeamLeft.png" type="Texture" id=8]
 [ext_resource path="res://scenes/station/Roof.png" type="Texture" id=9]
@@ -31,14 +31,8 @@ level = "Station"
 position = Vector2( -39.818, -986.448 )
 level = "Station"
 
-[node name="Button" type="Button" parent="HUD"]
-margin_right = 159.0
-margin_bottom = 48.002
-text = "Voltar"
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="ExitLevel" parent="HUD" instance=ExtResource( 6 )]
+position = Vector2( 1049.39, -327.43 )
 
 [node name="Scene" type="Node2D" parent="."]
 z_index = 1
@@ -82,5 +76,3 @@ texture = ExtResource( 5 )
 [node name="Roof" type="Sprite" parent="Scene"]
 position = Vector2( 640.782, 44.2265 )
 texture = ExtResource( 9 )
-
-[connection signal="pressed" from="HUD/Button" to="HUD/Button" method="_on_BackLevelChoice_pressed"]

@@ -3,6 +3,11 @@ extends Node2D
 onready var manager = get_node("/root/Manager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
+export (Texture) var sprite_default
+export (Texture) var sprite_hover
+
+onready var sprite_node = get_node("Icon/Book")
+
 var inventory_is_visible = false
 onready var inventory = get_node("Book")
 
@@ -129,3 +134,9 @@ func _on_click_close_information_modal(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			hidden_information_modal()
+
+func _on_mouse_entered():
+	sprite_node.texture = sprite_hover
+
+func _on_mouse_exited():
+	sprite_node.texture = sprite_default

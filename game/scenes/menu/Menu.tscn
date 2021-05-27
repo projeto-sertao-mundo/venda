@@ -26,7 +26,6 @@ texture = ExtResource( 8 )
 [node name="Menu" type="Node2D" parent="."]
 position = Vector2( 640, 360 )
 rotation = -0.0277531
-scale = Vector2( 1, 1 )
 
 [node name="BG" type="Sprite" parent="Menu"]
 position = Vector2( 14.1965, 38.1101 )
