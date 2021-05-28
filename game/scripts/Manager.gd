@@ -1,5 +1,7 @@
 extends Node2D
 
+var should_run_map_animation = true
+
 var items = {
 	Cave = [
 		{ status = false, label = "Agulha" },
