@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://items/cave/items/Agulha.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://items/cave/items/Pelego.tscn" type="PackedScene" id=25]
 [ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=26]
 [ext_resource path="res://items/cave/rest/TachoDeCobre.tscn" type="PackedScene" id=27]
+[ext_resource path="res://items/church/rest/VassouraPalha.png" type="Texture" id=28]
 [ext_resource path="res://scenes/cave/Pedra_marrom_claro_esq.png" type="Texture" id=29]
 [ext_resource path="res://scenes/cave/Estalactite_grande_esq.png" type="Texture" id=30]
 [ext_resource path="res://scenes/cave/Estalactite_branca_chão.png" type="Texture" id=31]
@@ -45,10 +46,14 @@
 [ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=44]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=45]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=46]
+[ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=47]
+[ext_resource path="res://items/church/rest/Lampião.png" type="Texture" id=48]
+[ext_resource path="res://items/church/rest/MalaCouro.png" type="Texture" id=49]
 
 [node name="Cave" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
+visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
 __meta__ = {
@@ -217,7 +222,7 @@ z_index = 50
 collision_layer = 0
 collision_mask = 0
 
-[node name="IoIo" parent="Items" instance=ExtResource( 20 )]
+[node name="IoIô" parent="Items" instance=ExtResource( 20 )]
 position = Vector2( 267.826, 171.077 )
 rotation = -1.30942
 scale = Vector2( 2.61971, 2.61971 )
@@ -266,7 +271,7 @@ scale = Vector2( 7.57463, 7.57463 )
 z_index = 25
 
 [node name="Isqueiro" parent="ItemsRest" instance=ExtResource( 22 )]
-position = Vector2( 87.6221, 693.996 )
+position = Vector2( 136.759, 561.704 )
 rotation = 0.0286073
 scale = Vector2( 3.14938, 3.14938 )
 z_index = 60
@@ -354,10 +359,36 @@ z_index = 5
 texture = ExtResource( 40 )
 
 [node name="Tesoura2" type="Sprite" parent="ItemsRest"]
-position = Vector2( 314.548, 599.721 )
+position = Vector2( 375.024, 655.158 )
 scale = Vector2( 0.209198, 0.209198 )
 z_index = 60
 texture = ExtResource( 8 )
+
+[node name="Lampião" type="Sprite" parent="ItemsRest"]
+position = Vector2( 808.457, 351.87 )
+scale = Vector2( 0.340358, 0.340358 )
+z_index = 50
+texture = ExtResource( 48 )
+
+[node name="MalaCouro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 316.312, 674.967 )
+scale = Vector2( 0.675993, 0.675993 )
+z_index = 50
+texture = ExtResource( 49 )
+
+[node name="PoteBarro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 1268.05, 500.266 )
+rotation = -0.753707
+scale = Vector2( 0.443578, 0.443578 )
+z_index = 50
+texture = ExtResource( 47 )
+
+[node name="VassouraPalha" type="Sprite" parent="ItemsRest"]
+position = Vector2( 1291.38, 292.771 )
+rotation = 1.16552
+scale = Vector2( 0.916981, 0.916981 )
+z_index = 50
+texture = ExtResource( 28 )
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 1214.65, 666.095 )

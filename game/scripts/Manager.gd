@@ -10,7 +10,7 @@ var items = {
 		{ status = false, label = "Cachimbo" },
 		{ status = false, label = "Chaleira" },
 		{ status = false, label = "Estilingue" },
-		{ status = false, label = "IoIo" },
+		{ status = false, label = "IoIô" },
 		{ status = false, label = "Pelego" },
 	],
 	Church = [

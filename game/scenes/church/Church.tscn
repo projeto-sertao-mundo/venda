@@ -1,10 +1,11 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://items/church/items/BaciaFlores.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/church/items/Bastidor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/church/items/Tabletes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://items/cave/rest/Envelope.png" type="Texture" id=6]
 [ext_resource path="res://scenes/church/BG.png" type="Texture" id=7]
 [ext_resource path="res://scenes/church/BancoDireita.png" type="Texture" id=8]
 [ext_resource path="res://scenes/church/BandeiraEsquerda.png" type="Texture" id=9]
@@ -35,6 +36,13 @@
 [ext_resource path="res://items/church/rest/Agulha.png" type="Texture" id=34]
 [ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=35]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=36]
+[ext_resource path="res://items/cave/rest/PenteDeChifre.png" type="Texture" id=37]
+[ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=38]
+[ext_resource path="res://items/cave/rest/CaixaDeRape.png" type="Texture" id=39]
+[ext_resource path="res://items/cave/rest/BilhaDeBarro.png" type="Texture" id=40]
+[ext_resource path="res://items/cave/rest/Tesoura.png" type="Texture" id=41]
+[ext_resource path="res://items/cave/rest/CarrinhoMadeira.png" type="Texture" id=42]
+[ext_resource path="res://items/cave/rest/Isqueiro.png" type="Texture" id=43]
 
 [node name="Church" type="Node2D"]
 
@@ -255,3 +263,54 @@ scale = Vector2( 0.656698, 0.656698 )
 z_index = 25
 texture = ExtResource( 33 )
 flip_h = true
+
+[node name="BilhaDeBarro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 507.547, 558.245 )
+scale = Vector2( 0.440454, 0.440454 )
+z_index = 25
+texture = ExtResource( 40 )
+
+[node name="CaixaDeRape" type="Sprite" parent="ItemsRest"]
+position = Vector2( 450.547, 474.245 )
+rotation = -0.190458
+scale = Vector2( 0.150912, 0.150912 )
+z_index = 50
+texture = ExtResource( 39 )
+
+[node name="CarrinhoMadeira" type="Sprite" parent="ItemsRest"]
+position = Vector2( 743.547, 509.245 )
+scale = Vector2( 0.375255, 0.375255 )
+z_index = 25
+texture = ExtResource( 42 )
+
+[node name="Envelope" type="Sprite" parent="ItemsRest"]
+position = Vector2( 751.547, 616.245 )
+rotation = 0.654606
+scale = Vector2( 0.261013, 0.261013 )
+texture = ExtResource( 6 )
+
+[node name="Isqueiro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 986.048, 387.345 )
+rotation = 1.88212
+scale = Vector2( 0.191237, 0.191237 )
+z_index = 15
+texture = ExtResource( 43 )
+
+[node name="PenteDeChifre" type="Sprite" parent="ItemsRest"]
+position = Vector2( 581.699, 635.375 )
+rotation = 2.34807
+scale = Vector2( 0.253208, 0.253208 )
+texture = ExtResource( 37 )
+
+[node name="Radio" type="Sprite" parent="ItemsRest"]
+position = Vector2( 1121.88, 448.812 )
+scale = Vector2( 0.372489, 0.372489 )
+z_index = 50
+texture = ExtResource( 38 )
+
+[node name="Tesoura" type="Sprite" parent="ItemsRest"]
+position = Vector2( 1108.13, 710.58 )
+rotation = -0.762446
+scale = Vector2( 0.206468, 0.206468 )
+z_index = 50
+texture = ExtResource( 41 )

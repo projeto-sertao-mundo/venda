@@ -11,7 +11,7 @@ extents = Vector2( 10, 5.69975 )
 [node name="IoIo" type="KinematicBody2D"]
 script = ExtResource( 1 )
 level = "Cave"
-item_name = "IoIo"
+item_name = "IoIô"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
