@@ -1,17 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
 [ext_resource path="res://temp/boy-and-horse.png" type="Texture" id=2]
 [ext_resource path="res://temp/helper.png" type="Texture" id=3]
+[ext_resource path="res://scenes/commerce/BG.png" type="Texture" id=4]
+[ext_resource path="res://scenes/commerce/Counter.png" type="Texture" id=5]
+[ext_resource path="res://scenes/commerce/CounterFront.png" type="Texture" id=6]
+[ext_resource path="res://scenes/commerce/Window.png" type="Texture" id=7]
+[ext_resource path="res://scenes/commerce/Door.png" type="Texture" id=8]
+[ext_resource path="res://scenes/commerce/Shelf.png" type="Texture" id=9]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="boy-and-horse" type="Sprite" parent="."]
+visible = false
 position = Vector2( 826.359, 366.09 )
 scale = Vector2( 0.601404, 0.601404 )
 texture = ExtResource( 2 )
 
 [node name="helper" type="Sprite" parent="."]
+visible = false
 position = Vector2( 508.247, 341.273 )
 scale = Vector2( 0.625934, 0.625934 )
 texture = ExtResource( 3 )
@@ -26,5 +34,31 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Scene" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite" parent="Scene"]
+position = Vector2( 640.026, 359.989 )
+texture = ExtResource( 4 )
+
+[node name="Counter" type="Sprite" parent="Scene"]
+position = Vector2( 752.258, 449.984 )
+texture = ExtResource( 5 )
+
+[node name="CounterFront" type="Sprite" parent="Scene"]
+position = Vector2( 275.63, 588.459 )
+texture = ExtResource( 6 )
+
+[node name="Window" type="Sprite" parent="Scene"]
+position = Vector2( 904.457, 275.771 )
+texture = ExtResource( 7 )
+
+[node name="Door" type="Sprite" parent="Scene"]
+position = Vector2( 1167.3, 320.156 )
+texture = ExtResource( 8 )
+
+[node name="Shelf" type="Sprite" parent="Scene"]
+position = Vector2( 397.1, 262.758 )
+texture = ExtResource( 9 )
 
 [connection signal="pressed" from="Button" to="Button" method="_on_BackStoreOut_pressed"]

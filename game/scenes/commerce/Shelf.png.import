@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Door.png-92f10500e0a24fa209e3d07e04d3d4d1.stex"
+path="res://.import/Shelf.png-9430a8a7559c3184a8d330e340d965b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/menu/Door.png"
-dest_files=[ "res://.import/Door.png-92f10500e0a24fa209e3d07e04d3d4d1.stex" ]
+source_file="res://scenes/commerce/Shelf.png"
+dest_files=[ "res://.import/Shelf.png-9430a8a7559c3184a8d330e340d965b2.stex" ]
 
 [params]
 
