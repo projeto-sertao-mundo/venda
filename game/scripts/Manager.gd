@@ -24,7 +24,16 @@ var items = {
 		{ status = false, label = "Tecido de Chita" },
 	],
 	Elephant = [],
-	Station = [],
+	Station = [
+		{ status = false, label = "Balança" },
+		{ status = false, label = "Bolas de Gude" },
+		{ status = false, label = "Cigarro" },
+		{ status = false, label = "Colher" },
+		{ status = false, label = "Dedal" },
+		{ status = false, label = "Lingua De Sogra" },
+		{ status = false, label = "Panela" },
+		{ status = false, label = "Pirolito Puxa Puxa" },
+	],
 }
 
 var level_is_completed = {

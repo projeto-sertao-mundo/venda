@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -13,22 +13,30 @@
 [ext_resource path="res://scenes/inventory/BookStation.png" type="Texture" id=11]
 [ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=12]
 [ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=13]
-[ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=14]
+[ext_resource path="res://items/Bolas de Gude/items/BaciaFlores.png" type="Texture" id=14]
 [ext_resource path="res://items/cave/items/Cachimbo.png" type="Texture" id=15]
 [ext_resource path="res://items/cave/items/Chaleira.png" type="Texture" id=16]
 [ext_resource path="res://items/cave/items/Pelego.png" type="Texture" id=17]
 [ext_resource path="res://items/cave/items/Estilingue.png" type="Texture" id=18]
 [ext_resource path="res://items/cave/items/IoIo.png" type="Texture" id=19]
 [ext_resource path="res://items/cave/items/Agulha.png" type="Texture" id=20]
-[ext_resource path="res://items/church/items/Presepio.png" type="Texture" id=21]
-[ext_resource path="res://items/church/items/CopoDeVidro.png" type="Texture" id=22]
-[ext_resource path="res://items/church/items/Tabletes.png" type="Texture" id=23]
-[ext_resource path="res://items/church/items/Bastidor.png" type="Texture" id=24]
-[ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=25]
-[ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
-[ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
+[ext_resource path="res://items/Bolas de Gude/items/Presepio.png" type="Texture" id=21]
+[ext_resource path="res://items/Bolas de Gude/items/CopoDeVidro.png" type="Texture" id=22]
+[ext_resource path="res://items/Bolas de Gude/items/Tabletes.png" type="Texture" id=23]
+[ext_resource path="res://items/Bolas de Gude/items/Bastidor.png" type="Texture" id=24]
+[ext_resource path="res://items/Bolas de Gude/items/Caderno.png" type="Texture" id=25]
+[ext_resource path="res://items/Bolas de Gude/items/Espanador.png" type="Texture" id=26]
+[ext_resource path="res://items/Bolas de Gude/items/TecidoChita.png" type="Texture" id=27]
 [ext_resource path="res://scenes/inventory/Question.png" type="Texture" id=28]
 [ext_resource path="res://scenes/inventory/BookIconHover.png" type="Texture" id=29]
+[ext_resource path="res://items/station/items/Pirolito.png" type="Texture" id=30]
+[ext_resource path="res://items/station/items/Balanca.png" type="Texture" id=31]
+[ext_resource path="res://items/station/items/BolasDeGude.png" type="Texture" id=32]
+[ext_resource path="res://items/station/items/Colher.png" type="Texture" id=33]
+[ext_resource path="res://items/station/items/Panela.png" type="Texture" id=34]
+[ext_resource path="res://items/station/items/LiguaDeSogra.png" type="Texture" id=35]
+[ext_resource path="res://items/station/items/Cigarro.png" type="Texture" id=36]
+[ext_resource path="res://items/station/items/Dedal.png" type="Texture" id=37]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
@@ -103,7 +111,6 @@ __meta__ = {
 [node name="Pages" type="Node2D" parent="Book"]
 
 [node name="PageCave" type="Node2D" parent="Book/Pages"]
-visible = false
 
 [node name="BookCave" type="Sprite" parent="Book/Pages/PageCave"]
 position = Vector2( 640, 360 )
@@ -391,6 +398,7 @@ rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 27 )
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
+visible = false
 
 [node name="BookElephant" type="Sprite" parent="Book/Pages/PageElephant"]
 position = Vector2( 640, 360 )
@@ -543,141 +551,153 @@ texture = ExtResource( 11 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageStation"]
 
-[node name="Tecido de Chita10" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Balança" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 562.857, 196.576 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita10"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Balança"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita10"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Balança"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -55.8799
+margin_top = -45.0513
+margin_right = 200.12
+margin_bottom = 210.949
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita11" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Bolas de Gude" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 770.746, 203.647 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita11"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Bolas de Gude"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita11"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Bolas de Gude"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
-rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+margin_left = -36.0807
+margin_top = -29.495
+margin_right = 219.919
+margin_bottom = 226.505
+rect_scale = Vector2( 0.603077, 0.603077 )
+texture = ExtResource( 32 )
 
-[node name="Tecido de Chita12" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Cigarro" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 564.271, 335.169 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita12"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Cigarro"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita12"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Cigarro"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -44.5662
+margin_top = -43.6371
+margin_right = 211.434
+margin_bottom = 212.363
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 36 )
 
-[node name="Tecido de Chita13" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Colher" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 780.646, 343.654 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita13"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Colher"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita13"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Colher"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = 21.9017
+margin_top = -50.7083
+margin_right = 277.902
+margin_bottom = 205.292
+rect_rotation = 37.2873
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita14" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Dedal" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 954.594, 336.583 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita14"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Dedal"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita14"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Dedal"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -34.2166
+margin_top = -39.7808
+margin_right = 221.783
+margin_bottom = 216.219
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 37 )
 
-[node name="Tecido de Chita15" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Lingua De Sogra" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 567.099, 473.762 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita15"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Lingua De Sogra"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita15"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Lingua De Sogra"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -52.7162
+margin_top = -9.50854
+margin_right = 203.284
+margin_bottom = 246.491
+rect_rotation = -53.8378
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 35 )
 
-[node name="Tecido de Chita16" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Panela" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 793.373, 482.247 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita16"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Panela"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita16"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Panela"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
-rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+margin_left = -39.2617
+margin_top = -28.0083
+margin_right = 216.738
+margin_bottom = 227.992
+rect_scale = Vector2( 0.347848, 0.347848 )
+texture = ExtResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita17" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Pirolito Puxa Puxa" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 964.493, 478.004 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Tecido de Chita17"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Pirolito Puxa Puxa"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Tecido de Chita17"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Pirolito Puxa Puxa"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
-rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+margin_left = 11.1921
+margin_top = -56.5988
+margin_right = 267.192
+margin_bottom = 199.401
+rect_rotation = 25.989
+rect_scale = Vector2( 0.499413, 0.499413 )
+texture = ExtResource( 30 )
 
 [node name="InformationModal" type="Node2D" parent="."]
 visible = false

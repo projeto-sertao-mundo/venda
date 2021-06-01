@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://items/station/items/Balanca.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 128.685, 90.7256 )
+
+[node name="Balança" type="KinematicBody2D"]
+script = ExtResource( 2 )
+level = "Station"
+item_name = "Balança"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Balança" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balança"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Balança"]
+texture = ExtResource( 1 )
+
+[connection signal="input_event" from="Balança" to="." method="_on_item_is_pressed"]

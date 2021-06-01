@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://items/Bolas de Gude/items/Bastidor.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="Bastidor" type="KinematicBody2D"]
+script = ExtResource( 2 )
+level = "Church"
+item_name = "Bastidor"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Bastidor" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bastidor"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Bastidor"]
+scale = Vector2( 0.0928051, 0.092805 )
+texture = ExtResource( 1 )
+
+[connection signal="input_event" from="Bastidor" to="." method="_on_item_is_pressed"]

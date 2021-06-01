@@ -27,7 +27,7 @@
 [ext_resource path="res://items/cave/items/Pelego.tscn" type="PackedScene" id=25]
 [ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=26]
 [ext_resource path="res://items/cave/rest/TachoDeCobre.tscn" type="PackedScene" id=27]
-[ext_resource path="res://items/church/rest/VassouraPalha.png" type="Texture" id=28]
+[ext_resource path="res://items/Bolas de Gude/rest/VassouraPalha.png" type="Texture" id=28]
 [ext_resource path="res://scenes/cave/Pedra_marrom_claro_esq.png" type="Texture" id=29]
 [ext_resource path="res://scenes/cave/Estalactite_grande_esq.png" type="Texture" id=30]
 [ext_resource path="res://scenes/cave/Estalactite_branca_chão.png" type="Texture" id=31]
@@ -46,14 +46,13 @@
 [ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=44]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=45]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=46]
-[ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=47]
-[ext_resource path="res://items/church/rest/Lampião.png" type="Texture" id=48]
-[ext_resource path="res://items/church/rest/MalaCouro.png" type="Texture" id=49]
+[ext_resource path="res://items/Bolas de Gude/rest/PoteBarro.png" type="Texture" id=47]
+[ext_resource path="res://items/Bolas de Gude/rest/Lampião.png" type="Texture" id=48]
+[ext_resource path="res://items/Bolas de Gude/rest/MalaCouro.png" type="Texture" id=49]
 
 [node name="Cave" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
 __meta__ = {
@@ -389,6 +388,3 @@ rotation = 1.16552
 scale = Vector2( 0.916981, 0.916981 )
 z_index = 50
 texture = ExtResource( 28 )
-
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2( 1214.65, 666.095 )

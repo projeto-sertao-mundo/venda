@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://scenes/station/BG.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -13,15 +13,22 @@
 [ext_resource path="res://scenes/station/TrainTracks.png" type="Texture" id=11]
 [ext_resource path="res://scenes/station/WindowLeft.png" type="Texture" id=12]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=13]
+[ext_resource path="res://items/station/items/Dedal.tscn" type="PackedScene" id=14]
+[ext_resource path="res://items/station/items/LiguaDeSogra.tscn" type="PackedScene" id=15]
+[ext_resource path="res://items/station/items/Panela.tscn" type="PackedScene" id=16]
+[ext_resource path="res://items/station/items/Cigarro.tscn" type="PackedScene" id=17]
+[ext_resource path="res://items/station/items/BolasDeGude.tscn" type="PackedScene" id=18]
+[ext_resource path="res://items/station/items/Balanca.tscn" type="PackedScene" id=19]
+[ext_resource path="res://items/station/items/Pirolito.tscn" type="PackedScene" id=20]
+[ext_resource path="res://items/station/items/Colher.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=22]
 
-[node name="level-01" type="Node2D"]
+[node name="Station" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
+visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 13 )]
 position = Vector2( -40.4426, -986.368 )
@@ -33,6 +40,10 @@ level = "Station"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 6 )]
 position = Vector2( 1049.39, -327.43 )
+
+[node name="Helper" parent="HUD" instance=ExtResource( 22 )]
+position = Vector2( -41.7478, -986.988 )
+level = "Station"
 
 [node name="Scene" type="Node2D" parent="."]
 z_index = 1
@@ -67,12 +78,59 @@ texture = ExtResource( 7 )
 
 [node name="TrainTracks" type="Sprite" parent="Scene"]
 position = Vector2( 639.992, 680.614 )
+z_index = 50
 texture = ExtResource( 11 )
 
 [node name="Fence" type="Sprite" parent="Scene"]
 position = Vector2( 451.278, 496.775 )
+z_index = 30
 texture = ExtResource( 5 )
 
 [node name="Roof" type="Sprite" parent="Scene"]
 position = Vector2( 640.782, 44.2265 )
+z_index = 30
 texture = ExtResource( 9 )
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Balança" parent="Items" instance=ExtResource( 19 )]
+position = Vector2( 1238.4, 540.459 )
+scale = Vector2( 0.539398, 0.539398 )
+z_index = 60
+
+[node name="Bolas De Gude" parent="Items" instance=ExtResource( 18 )]
+position = Vector2( 312.093, 541.873 )
+scale = Vector2( 0.343604, 0.343604 )
+z_index = 15
+
+[node name="Cigarro" parent="Items" instance=ExtResource( 17 )]
+position = Vector2( 508.669, 387.724 )
+scale = Vector2( 0.356351, 0.356351 )
+z_index = 60
+
+[node name="Colher" parent="Items" instance=ExtResource( 21 )]
+position = Vector2( 503.012, 577.228 )
+rotation = 1.53214
+scale = Vector2( 0.343192, 0.343192 )
+z_index = 15
+
+[node name="Dedal" parent="Items" instance=ExtResource( 14 )]
+position = Vector2( 47.6351, 121.852 )
+scale = Vector2( 0.232095, 0.232095 )
+z_index = 60
+
+[node name="LiguaDeSogra" parent="Items" instance=ExtResource( 15 )]
+position = Vector2( 922.781, 416.925 )
+scale = Vector2( 0.211341, 0.211341 )
+z_index = 60
+
+[node name="Panela" parent="Items" instance=ExtResource( 16 )]
+position = Vector2( 58.9489, 548.944 )
+scale = Vector2( 0.419745, 0.419745 )
+z_index = 15
+
+[node name="Pirolito" parent="Items" instance=ExtResource( 20 )]
+position = Vector2( 989.501, 124.68 )
+rotation = 1.50362
+scale = Vector2( 0.353826, 0.353826 )
+z_index = 60
