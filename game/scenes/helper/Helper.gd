@@ -68,5 +68,5 @@ func _on_timeout():
 
 func _on_click_helper(event: InputEvent):
 	if event is InputEventMouseButton:
-		if event.get_button_index() == BUTTON_LEFT:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			if helper_is_active: active_helper()

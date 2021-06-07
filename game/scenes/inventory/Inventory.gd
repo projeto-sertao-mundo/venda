@@ -33,7 +33,7 @@ func _ready():
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
-		if event.get_button_index() == BUTTON_LEFT:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			if inventory_is_visible: hidden_inventory()
 			else: show_inventory()
 

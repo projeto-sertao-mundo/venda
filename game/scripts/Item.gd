@@ -45,5 +45,5 @@ func _physics_process(delta):
 # TODO: Atualizar o nome desse method para _on_click_item
 func _on_item_is_pressed(vi1ewport, event, shape_idx):
 	if event is InputEventMouseButton:
-		if event.get_button_index() == BUTTON_LEFT:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			founded()
