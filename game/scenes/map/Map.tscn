@@ -66,3 +66,20 @@ texture = ExtResource( 7 )
 __meta__ = {
 "_editor_description_": "4"
 }
+
+[node name="Timer" type="Timer" parent="Whirlwind"]
+wait_time = 9.0
+one_shot = true
+autostart = true
+
+[node name="WhirlwindMask" type="ColorRect" parent="."]
+margin_left = -15.0
+margin_top = -8.0
+margin_right = 1341.0
+margin_bottom = 766.0
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="Whirlwind/Timer" to="Whirlwind" method="_on_timeout"]

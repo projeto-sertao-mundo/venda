@@ -16,7 +16,7 @@ func _ready():
 
 func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
-		if event.is_pressed() && level_is_completed == false:
+		if event.get_button_index() == BUTTON_LEFT && level_is_completed == false:
 			get_tree().change_scene(scene)
 
 func _on_mouse_entered():

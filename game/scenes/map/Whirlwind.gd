@@ -8,5 +8,13 @@ func _ready():
 		animation.play("MoveOnMap")
 		manager.should_run_map_animation = false
 	else:
-		var whirlwind = get_node(".")
-		whirlwind.visible = false
+		hidden_items()
+
+func hidden_items():
+	var whirlwind = get_node(".")
+	var whirlwind_mask = get_parent().get_node("WhirlwindMask")
+	whirlwind.visible = false
+	whirlwind_mask.visible = false
+
+func _on_timeout():
+	hidden_items()

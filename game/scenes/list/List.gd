@@ -20,7 +20,7 @@ func _ready():
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
-		if event.is_pressed():
+		if event.get_button_index() == BUTTON_LEFT:
 			if paper_is_visible: hidden_list()
 			else: show_list()
 

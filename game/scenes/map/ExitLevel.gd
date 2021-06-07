@@ -7,8 +7,7 @@ onready var sprite_node = get_node("Sprite")
 
 func _on_click_button(event: InputEvent):
 	if event is InputEventMouseButton:
-		print("ENTREI de novo")
-		if event.is_pressed():
+		if event.get_button_index() == BUTTON_LEFT:
 			get_tree().change_scene("res://scenes/map/Map.tscn")
 
 func _on_mouse_entered():
