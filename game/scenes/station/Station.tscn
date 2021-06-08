@@ -27,7 +27,6 @@
 [node name="Station" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
 
@@ -67,10 +66,12 @@ texture = ExtResource( 4 )
 
 [node name="WindowLeft" type="Sprite" parent="Scene"]
 position = Vector2( 120.962, 316.767 )
+z_index = 20
 texture = ExtResource( 12 )
 
 [node name="WindowRight" type="Sprite" parent="Scene"]
 position = Vector2( 732.271, 316.262 )
+z_index = 20
 texture = ExtResource( 10 )
 
 [node name="Floor" type="Sprite" parent="Scene"]
@@ -93,37 +94,40 @@ z_index = 30
 texture = ExtResource( 9 )
 
 [node name="Train" type="Sprite" parent="Scene"]
-position = Vector2( 944.178, 418.068 )
+position = Vector2( 1051.09, 467.594 )
+scale = Vector2( 0.839862, 0.839862 )
 z_index = 60
 texture = ExtResource( 23 )
 
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Balança" parent="Items" instance=ExtResource( 19 )]
-position = Vector2( 717.813, 528.445 )
-scale = Vector2( 0.539398, 0.539398 )
+position = Vector2( 690.441, 536.94 )
+scale = Vector2( 0.489756, 0.489756 )
 z_index = 30
 
 [node name="Bolas De Gude" parent="Items" instance=ExtResource( 18 )]
-position = Vector2( 312.093, 541.873 )
+position = Vector2( 225.836, 541.873 )
+rotation = -0.268459
 scale = Vector2( 0.343604, 0.343604 )
 z_index = 15
 
 [node name="Cigarro" parent="Items" instance=ExtResource( 17 )]
-position = Vector2( 508.669, 387.724 )
+position = Vector2( 1180.37, 191.604 )
 scale = Vector2( 0.356351, 0.356351 )
 z_index = 60
 
 [node name="Colher" parent="Items" instance=ExtResource( 21 )]
-position = Vector2( 503.012, 577.228 )
-rotation = 1.53214
-scale = Vector2( 0.343192, 0.343192 )
+position = Vector2( 250.904, 89.6485 )
+rotation = 5.93868
+scale = Vector2( 0.245872, 0.245872 )
 z_index = 15
 
 [node name="Dedal" parent="Items" instance=ExtResource( 14 )]
-position = Vector2( 47.6351, 121.852 )
-scale = Vector2( 0.232095, 0.232095 )
-z_index = 60
+position = Vector2( 86.3063, 322.195 )
+rotation = 0.0310576
+scale = Vector2( 0.287191, 0.287191 )
+z_index = 5
 
 [node name="LiguaDeSogra" parent="Items" instance=ExtResource( 15 )]
 position = Vector2( 922.781, 416.925 )
@@ -131,12 +135,12 @@ scale = Vector2( 0.211341, 0.211341 )
 z_index = 60
 
 [node name="Panela" parent="Items" instance=ExtResource( 16 )]
-position = Vector2( 58.9489, 548.944 )
+position = Vector2( 1076.97, 580.442 )
 scale = Vector2( 0.419745, 0.419745 )
-z_index = 15
+z_index = 55
 
 [node name="Pirolito" parent="Items" instance=ExtResource( 20 )]
-position = Vector2( 989.501, 124.68 )
+position = Vector2( 333.423, 656.469 )
 rotation = 1.50362
-scale = Vector2( 0.353826, 0.353826 )
+scale = Vector2( 0.216206, 0.216206 )
 z_index = 60

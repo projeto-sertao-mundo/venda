@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 92.2743, 85.5665 )
+extents = Vector2( 75.2779, 85.5665 )
 
 [node name="Dedal" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -22,6 +22,8 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Dedal"]
+position = Vector2( 12.6134, 4.20448 )
+rotation = 0.844712
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Dedal" to="." method="_on_item_is_pressed"]
