@@ -1,18 +1,26 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/elephant/RoofBig.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/elephant/Roof.png" type="Texture" id=3]
 [ext_resource path="res://scenes/elephant/Refrigerator.png" type="Texture" id=4]
 [ext_resource path="res://scenes/elephant/Shelf.png" type="Texture" id=5]
+[ext_resource path="res://items/elephant/items/Pirulito.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/elephant/Stairs.png" type="Texture" id=7]
 [ext_resource path="res://scenes/elephant/Chair.png" type="Texture" id=8]
 [ext_resource path="res://scenes/elephant/Floor.png" type="Texture" id=9]
 [ext_resource path="res://scenes/elephant/Desk.png" type="Texture" id=10]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=12]
+[ext_resource path="res://items/elephant/items/Peao.tscn" type="PackedScene" id=13]
+[ext_resource path="res://items/elephant/items/Carretel.tscn" type="PackedScene" id=14]
+[ext_resource path="res://items/elephant/items/Pipoca.tscn" type="PackedScene" id=15]
+[ext_resource path="res://items/elephant/items/MaquinaRegistradora.tscn" type="PackedScene" id=16]
+[ext_resource path="res://items/elephant/items/Esporas.tscn" type="PackedScene" id=17]
+[ext_resource path="res://items/elephant/items/FrascoDePimenta.tscn" type="PackedScene" id=18]
+[ext_resource path="res://items/elephant/items/MacaDoAmor.tscn" type="PackedScene" id=19]
 
-[node name="level-01" type="Node2D"]
+[node name="Elephant" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
@@ -69,3 +77,48 @@ texture = ExtResource( 7 )
 [node name="Chair" type="Sprite" parent="Scene"]
 position = Vector2( 465.546, 562.005 )
 texture = ExtResource( 8 )
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Carretel" parent="Items" instance=ExtResource( 14 )]
+position = Vector2( 615.772, 690.375 )
+scale = Vector2( 0.335307, 0.335307 )
+z_index = 60
+
+[node name="Esporas" parent="Items" instance=ExtResource( 17 )]
+position = Vector2( 21.1769, 156.694 )
+scale = Vector2( 0.299885, 0.299885 )
+z_index = 60
+
+[node name="FrascoDePimenta" parent="Items" instance=ExtResource( 18 )]
+position = Vector2( 331.731, 679.336 )
+scale = Vector2( 0.320834, 0.320834 )
+z_index = 60
+
+[node name="MacaDoAmor" parent="Items" instance=ExtResource( 19 )]
+position = Vector2( 1000.77, 596.868 )
+scale = Vector2( 0.307574, 0.307574 )
+z_index = 60
+
+[node name="MaquinaRegistradora" parent="Items" instance=ExtResource( 16 )]
+position = Vector2( 1084.2, 406.96 )
+scale = Vector2( 0.390063, 0.390063 )
+z_index = 60
+
+[node name="Peao" parent="Items" instance=ExtResource( 13 )]
+position = Vector2( 583.015, 497.433 )
+scale = Vector2( 0.311044, 0.311044 )
+z_index = 60
+
+[node name="Pipoca" parent="Items" instance=ExtResource( 15 )]
+position = Vector2( 429.425, 235.119 )
+scale = Vector2( 0.261414, 0.261414 )
+z_index = 60
+
+[node name="Pirulito" parent="Items" instance=ExtResource( 6 )]
+position = Vector2( 902.538, 331.17 )
+rotation = -1.41776
+scale = Vector2( 0.271155, 0.271155 )
+z_index = 60
+
+[node name="ItemsRest" type="Node2D" parent="."]

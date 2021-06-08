@@ -27,7 +27,7 @@
 [ext_resource path="res://items/cave/items/Pelego.tscn" type="PackedScene" id=25]
 [ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=26]
 [ext_resource path="res://items/cave/rest/TachoDeCobre.tscn" type="PackedScene" id=27]
-[ext_resource path="res://items/Bolas de Gude/rest/VassouraPalha.png" type="Texture" id=28]
+[ext_resource path="res://items/church/rest/VassouraPalha.png" type="Texture" id=28]
 [ext_resource path="res://scenes/cave/Pedra_marrom_claro_esq.png" type="Texture" id=29]
 [ext_resource path="res://scenes/cave/Estalactite_grande_esq.png" type="Texture" id=30]
 [ext_resource path="res://scenes/cave/Estalactite_branca_chão.png" type="Texture" id=31]
@@ -46,9 +46,9 @@
 [ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=44]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=45]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=46]
-[ext_resource path="res://items/Bolas de Gude/rest/PoteBarro.png" type="Texture" id=47]
-[ext_resource path="res://items/Bolas de Gude/rest/Lampião.png" type="Texture" id=48]
-[ext_resource path="res://items/Bolas de Gude/rest/MalaCouro.png" type="Texture" id=49]
+[ext_resource path="res://items/church/rest/PoteBarro.png" type="Texture" id=47]
+[ext_resource path="res://items/church/rest/Lampião.png" type="Texture" id=48]
+[ext_resource path="res://items/church/rest/MalaCouro.png" type="Texture" id=49]
 
 [node name="Cave" type="Node2D"]
 

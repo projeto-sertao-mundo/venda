@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
@@ -13,20 +13,20 @@
 [ext_resource path="res://scenes/inventory/BookStation.png" type="Texture" id=11]
 [ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=12]
 [ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=13]
-[ext_resource path="res://items/Bolas de Gude/items/BaciaFlores.png" type="Texture" id=14]
+[ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=14]
 [ext_resource path="res://items/cave/items/Cachimbo.png" type="Texture" id=15]
 [ext_resource path="res://items/cave/items/Chaleira.png" type="Texture" id=16]
 [ext_resource path="res://items/cave/items/Pelego.png" type="Texture" id=17]
 [ext_resource path="res://items/cave/items/Estilingue.png" type="Texture" id=18]
 [ext_resource path="res://items/cave/items/IoIo.png" type="Texture" id=19]
 [ext_resource path="res://items/cave/items/Agulha.png" type="Texture" id=20]
-[ext_resource path="res://items/Bolas de Gude/items/Presepio.png" type="Texture" id=21]
-[ext_resource path="res://items/Bolas de Gude/items/CopoDeVidro.png" type="Texture" id=22]
-[ext_resource path="res://items/Bolas de Gude/items/Tabletes.png" type="Texture" id=23]
-[ext_resource path="res://items/Bolas de Gude/items/Bastidor.png" type="Texture" id=24]
-[ext_resource path="res://items/Bolas de Gude/items/Caderno.png" type="Texture" id=25]
-[ext_resource path="res://items/Bolas de Gude/items/Espanador.png" type="Texture" id=26]
-[ext_resource path="res://items/Bolas de Gude/items/TecidoChita.png" type="Texture" id=27]
+[ext_resource path="res://items/church/items/Presepio.png" type="Texture" id=21]
+[ext_resource path="res://items/church/items/CopoDeVidro.png" type="Texture" id=22]
+[ext_resource path="res://items/cave/rest/Isqueiro.png" type="Texture" id=23]
+[ext_resource path="res://items/church/items/Bastidor.png" type="Texture" id=24]
+[ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=25]
+[ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
+[ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
 [ext_resource path="res://scenes/inventory/Question.png" type="Texture" id=28]
 [ext_resource path="res://scenes/inventory/BookIconHover.png" type="Texture" id=29]
 [ext_resource path="res://items/station/items/Pirolito.png" type="Texture" id=30]
@@ -37,12 +37,36 @@
 [ext_resource path="res://items/station/items/LiguaDeSogra.png" type="Texture" id=35]
 [ext_resource path="res://items/station/items/Cigarro.png" type="Texture" id=36]
 [ext_resource path="res://items/station/items/Dedal.png" type="Texture" id=37]
+[ext_resource path="res://items/elephant/items/Pirulito.png" type="Texture" id=38]
+[ext_resource path="res://items/elephant/items/FrascoDePimenta.png" type="Texture" id=39]
+[ext_resource path="res://items/elephant/items/Pipoca.png" type="Texture" id=40]
+[ext_resource path="res://items/elephant/items/MaquinaRegistradora.png" type="Texture" id=41]
+[ext_resource path="res://items/elephant/items/Carretel.png" type="Texture" id=42]
+[ext_resource path="res://items/elephant/items/Peao.png" type="Texture" id=43]
+[ext_resource path="res://items/elephant/items/MacaDoAmor.png" type="Texture" id=44]
+[ext_resource path="res://items/elephant/items/Esporas.png" type="Texture" id=45]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
 level = "Cave"
 sprite_default = ExtResource( 3 )
 sprite_hover = ExtResource( 29 )
+
+[node name="Icon" type="Node2D" parent="."]
+scale = Vector2( 0.3, 0.3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Book" type="TextureRect" parent="Icon"]
+margin_left = 3925.89
+margin_top = 2066.89
+margin_right = 4181.89
+margin_bottom = 2322.89
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Book" type="Node2D" parent="."]
 __meta__ = {
@@ -55,6 +79,17 @@ margin_top = -42.0
 margin_right = 1330.0
 margin_bottom = 744.0
 color = Color( 0, 0, 0, 0.392157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGMask" type="ColorRect" parent="Book"]
+margin_left = 192.849
+margin_top = 108.019
+margin_right = 232.849
+margin_bottom = 148.019
+rect_scale = Vector2( 23.44, 13.36 )
+color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -363,20 +398,21 @@ margin_bottom = 489.085
 rect_scale = Vector2( 0.406607, 0.406607 )
 texture = ExtResource( 21 )
 
-[node name="Tabletes de Anil" type="Node2D" parent="Book/Pages/PageChurch/Items"]
+[node name="Isqueiro" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 203.647, 203.647 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Tabletes de Anil"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageChurch/Items/Isqueiro"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Tabletes de Anil"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageChurch/Items/Isqueiro"]
 visible = false
-margin_left = 511.528
-margin_top = 238.125
-margin_right = 767.528
-margin_bottom = 494.125
+margin_left = 535.312
+margin_top = 215.53
+margin_right = 815.312
+margin_bottom = 495.53
+rect_rotation = 20.1767
 rect_scale = Vector2( 0.416672, 0.416672 )
 texture = ExtResource( 23 )
 
@@ -406,141 +442,162 @@ texture = ExtResource( 9 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageElephant"]
 
-[node name="Tecido de Chita2" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Carretel" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 890.954, 205.061 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita2"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Carretel"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita2"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Carretel"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -40.9434
+margin_top = -41.4624
+margin_right = 215.057
+margin_bottom = 214.538
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita3" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Esporas" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 1030.96, 197.99 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita3"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Esporas"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita3"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Esporas"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -40.9432
+margin_top = -44.8259
+margin_right = 215.057
+margin_bottom = 211.174
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 45 )
 
-[node name="Tecido de Chita4" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Frasco de Pimenta" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 292.742, 463.862 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita4"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Frasco de Pimenta"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita4"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Frasco de Pimenta"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -20.7616
+margin_top = -49.8713
+margin_right = 235.238
+margin_bottom = 206.129
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita5" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Maça do Amor" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 428.507, 458.205 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita5"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Maça do Amor"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita5"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Maça do Amor"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -35.8979
+margin_top = -53.235
+margin_right = 220.102
+margin_bottom = 202.765
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita6" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Máquina Registradora" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 568.514, 449.72 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita6"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Máquina Registradora"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita6"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Máquina Registradora"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -47.6704
+margin_top = -41.4624
+margin_right = 208.33
+margin_bottom = 214.538
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 41 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita7" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Peão" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 752.361, 362.039 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita7"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Peão"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita7"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Peão"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -29.1705
+margin_top = -46.5078
+margin_right = 226.829
+margin_bottom = 209.492
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 43 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita8" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Pipoca" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 902.268, 339.411 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita8"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Pipoca"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita8"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Pipoca"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -34.2161
+margin_top = -48.1896
+margin_right = 221.784
+margin_bottom = 207.81
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 40 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Tecido de Chita9" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Pirulito" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 767.918, 500.632 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Tecido de Chita9"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Pirulito"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Tecido de Chita9"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Pirulito"]
 visible = false
-margin_left = 514.048
-margin_top = 229.306
-margin_right = 770.048
-margin_bottom = 485.306
+margin_left = -29.1705
+margin_top = -43.1441
+margin_right = 226.829
+margin_bottom = 212.856
 rect_scale = Vector2( 0.430931, 0.430931 )
-texture = ExtResource( 27 )
+texture = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PageStation" type="Node2D" parent="Book/Pages"]
 visible = false
@@ -764,22 +821,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Icon" type="Node2D" parent="."]
-scale = Vector2( 0.3, 0.3 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Book" type="TextureRect" parent="Icon"]
-margin_left = 3925.89
-margin_top = 2066.89
-margin_right = 4181.89
-margin_bottom = 2322.89
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
+[connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]
+[connection signal="mouse_entered" from="Icon/Book" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Icon/Book" to="." method="_on_mouse_exited"]
+[connection signal="gui_input" from="Book/BG" to="." method="toggle_popup"]
 [connection signal="gui_input" from="Book/Tags/Cave" to="." method="_on_click_cave_tag"]
 [connection signal="gui_input" from="Book/Tags/Church" to="." method="_on_click_church_tag"]
 [connection signal="gui_input" from="Book/Tags/Elephant" to="." method="_on_click_elephant_tag"]
@@ -796,8 +841,5 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tabletes de Anil/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
-[connection signal="gui_input" from="Icon/Book" to="." method="toggle_popup"]
-[connection signal="mouse_entered" from="Icon/Book" to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Icon/Book" to="." method="_on_mouse_exited"]

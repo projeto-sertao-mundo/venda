@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://items/map/Church.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/map/Cave.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/map/BackgroundMap.jpg" type="Texture" id=6]
 [ext_resource path="res://scenes/map/Whirlwind.png" type="Texture" id=7]
 [ext_resource path="res://scenes/map/Whirlwind.gd" type="Script" id=8]
+[ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "MoveOnMap"
@@ -31,23 +32,29 @@ tracks/0/keys = {
 position = Vector2( 640, 360 )
 texture = ExtResource( 6 )
 
-[node name="Cave" parent="." instance=ExtResource( 2 )]
+[node name="ExitLevel" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1192.81, 646.293 )
+exit_to_map = false
+
+[node name="Levels" type="Node2D" parent="."]
+
+[node name="Cave" parent="Levels" instance=ExtResource( 2 )]
 position = Vector2( 288.206, 107.43 )
 scale = Vector2( 0.845613, 0.845613 )
 
-[node name="Church" parent="." instance=ExtResource( 1 )]
+[node name="Church" parent="Levels" instance=ExtResource( 1 )]
 position = Vector2( 1111.03, 166.375 )
 scale = Vector2( 0.814871, 0.814871 )
 
-[node name="Elephant" parent="." instance=ExtResource( 3 )]
+[node name="Elephant" parent="Levels" instance=ExtResource( 3 )]
 position = Vector2( 214.941, 294.291 )
 scale = Vector2( 0.820433, 0.820433 )
 
-[node name="Commerce" parent="." instance=ExtResource( 4 )]
+[node name="Commerce" parent="Levels" instance=ExtResource( 4 )]
 position = Vector2( 591.866, 333.594 )
 scale = Vector2( 0.813946, 0.813946 )
 
-[node name="Station" parent="." instance=ExtResource( 5 )]
+[node name="Station" parent="Levels" instance=ExtResource( 5 )]
 position = Vector2( 700.923, 553.246 )
 scale = Vector2( 1.03902, 1.03902 )
 

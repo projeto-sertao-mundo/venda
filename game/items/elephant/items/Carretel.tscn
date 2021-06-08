@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://items/elephant/items/Carretel.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 59.8263
+height = 144.446
+
+[node name="Carretel" type="KinematicBody2D"]
+script = ExtResource( 2 )
+level = "Elephant"
+item_name = "Carretel"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Item" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+rotation = -0.962427
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Item"]
+texture = ExtResource( 1 )
+
+[connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]

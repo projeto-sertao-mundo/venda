@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://items/elephant/items/MaquinaRegistradora.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Item.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 122.872, 99.9189 )
+
+[node name="MaquinaRegistradora" type="KinematicBody2D"]
+script = ExtResource( 2 )
+level = "Elephant"
+item_name = "Máquina Registradora"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Item" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Item"]
+position = Vector2( 8.48529, 18.3848 )
+texture = ExtResource( 1 )
+
+[connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]
