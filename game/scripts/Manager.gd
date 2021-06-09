@@ -62,6 +62,14 @@ func item_found(level: String, name: String):
 func get_items(level: String):
 	return items[level]
 
+func check_item(level: String, item_name: String):
+	var item_status = false;
+	for item in items[level]:
+		if item.label == item_name:
+			item_status = item.status
+			break
+	return item_status
+
 func check_level(level: String):
 	var all_items_is_founded = true
 	for item in items[level]:

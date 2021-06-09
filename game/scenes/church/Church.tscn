@@ -47,7 +47,6 @@
 [node name="Church" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-visible = false
 position = Vector2( 39.818, 986.448 )
 z_index = 500
 

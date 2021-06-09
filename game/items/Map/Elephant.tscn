@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://items/map/ElephantHover.png" type="Texture" id=1]
 [ext_resource path="res://scripts/MapItem.gd" type="Script" id=2]
 [ext_resource path="res://items/map/Elephant.png" type="Texture" id=3]
+[ext_resource path="res://items/map/ElephantPlate.png" type="Texture" id=4]
+[ext_resource path="res://items/map/ElephantPB.png" type="Texture" id=5]
+[ext_resource path="res://scripts/MapItemPlate.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 117.925, 94.45 )
+
+[sub_resource type="RectangleShape2D" id=2]
 
 [node name="Elephant" type="Area2D"]
 script = ExtResource( 2 )
@@ -13,12 +18,25 @@ level = "Elephant"
 scene = "res://scenes/elephant/Elephant.tscn"
 default_sprite = ExtResource( 3 )
 hover_sprite = ExtResource( 1 )
+completed_sprite = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
 [node name="SpriteNode" type="Sprite" parent="."]
 texture = ExtResource( 3 )
+
+[node name="Plate" type="KinematicBody2D" parent="."]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plate"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Plate"]
+z_index = 100
+texture = ExtResource( 4 )
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
