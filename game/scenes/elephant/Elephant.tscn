@@ -90,11 +90,12 @@ texture = ExtResource( 7 )
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="Carretel" parent="Items" instance=ExtResource( 14 )]
+[node name="Carretel de linha" parent="Items" instance=ExtResource( 14 )]
 position = Vector2( 543.609, 559.413 )
 rotation = 1.10408
 scale = Vector2( 0.248936, 0.248936 )
 z_index = 25
+item_name = "Carretel de linha"
 
 [node name="Esporas" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 328.177, 135.694 )
@@ -111,11 +112,13 @@ position = Vector2( 887.709, 229.451 )
 rotation = -6.23362
 scale = Vector2( 0.307574, 0.307574 )
 z_index = 60
+item_name = "Maçã do Amor"
 
 [node name="MaquinaRegistradora" parent="Items" instance=ExtResource( 16 )]
 position = Vector2( 1115.12, 455.098 )
 scale = Vector2( 0.390063, 0.390063 )
 z_index = 25
+item_name = "Máq Registradora"
 
 [node name="Peao" parent="Items" instance=ExtResource( 13 )]
 position = Vector2( 178.093, 415.975 )

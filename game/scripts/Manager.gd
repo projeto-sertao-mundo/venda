@@ -4,7 +4,7 @@ var should_run_map_animation = true
 
 var items = {
 	Cave = [
-		{ status = false, label = "Agulha" },
+		{ status = false, label = "Agulha de tricô" },
 		{ status = false, label = "Alforge" },
 		{ status = false, label = "Berrante" },
 		{ status = false, label = "Cachimbo" },
@@ -24,24 +24,24 @@ var items = {
 		{ status = false, label = "Tecido de Chita" },
 	],
 	Elephant = [
-		{ status = false, label = "Carretel" },
+		{ status = false, label = "Carretel de linha" },
 		{ status = false, label = "Esporas" },
 		{ status = false, label = "Frasco de Pimenta" },
-		{ status = false, label = "Maça do Amor" },
-		{ status = false, label = "Máquina Registradora" },
+		{ status = false, label = "Maçã do Amor" },
+		{ status = false, label = "Máq Registradora" },
 		{ status = false, label = "Peão" },
 		{ status = false, label = "Pipoca" },
 		{ status = false, label = "Pirulito" },
 	],
 	Station = [
 		{ status = false, label = "Balança" },
-		{ status = false, label = "Bolas de Gude" },
-		{ status = false, label = "Cigarro" },
-		{ status = false, label = "Colher" },
+		{ status = false, label = "Bolinhas de gude" },
+		{ status = false, label = "Cigarro de palha" },
+		{ status = false, label = "Colher de pau" },
 		{ status = false, label = "Dedal" },
-		{ status = false, label = "Lingua De Sogra" },
+		{ status = false, label = "Língua De Sogra" },
 		{ status = false, label = "Panela" },
-		{ status = false, label = "Pirolito Puxa Puxa" },
+		{ status = false, label = "Pirulito Puxa Puxa" },
 	],
 }
 

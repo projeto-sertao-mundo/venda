@@ -95,7 +95,7 @@ scale = Vector2( 0.14105, 0.131477 )
 texture = ExtResource( 32 )
 script = ExtResource( 41 )
 level = "Cave"
-item_name = "Agulha"
+item_name = "Agulha de tricô"
 
 [node name="Alforge" type="Sprite" parent="Items/Cave"]
 visible = false
@@ -248,7 +248,7 @@ scale = Vector2( 0.177747, 0.177747 )
 texture = ExtResource( 26 )
 script = ExtResource( 41 )
 level = "Elephant"
-item_name = "Carretel"
+item_name = "Carretel de linha"
 
 [node name="Esporas" type="Sprite" parent="Items/Elephant"]
 visible = false
@@ -276,7 +276,7 @@ scale = Vector2( 0.206617, 0.206617 )
 texture = ExtResource( 29 )
 script = ExtResource( 41 )
 level = "Elephant"
-item_name = "Maça do Amor"
+item_name = "Maçã do Amor"
 
 [node name="MaquinaRegistradora" type="Sprite" parent="Items/Elephant"]
 visible = false
@@ -286,7 +286,7 @@ scale = Vector2( 0.565223, 0.565223 )
 texture = ExtResource( 25 )
 script = ExtResource( 41 )
 level = "Elephant"
-item_name = "Máquina Registradora"
+item_name = "Máq Registradora"
 
 [node name="Peao" type="Sprite" parent="Items/Elephant"]
 visible = false
@@ -337,7 +337,7 @@ scale = Vector2( 0.286856, 0.286856 )
 texture = ExtResource( 28 )
 script = ExtResource( 41 )
 level = "Station"
-item_name = "Bolas de Gude"
+item_name = "Bolinhas de gude"
 
 [node name="Cigarro" type="Sprite" parent="Items/Station"]
 visible = false
@@ -347,7 +347,7 @@ scale = Vector2( 0.169259, 0.169259 )
 texture = ExtResource( 11 )
 script = ExtResource( 41 )
 level = "Station"
-item_name = "Cigarro"
+item_name = "Cigarro de palha"
 
 [node name="Colher" type="Sprite" parent="Items/Station"]
 visible = false
@@ -357,7 +357,7 @@ scale = Vector2( 0.340168, 0.234889 )
 texture = ExtResource( 3 )
 script = ExtResource( 41 )
 level = "Station"
-item_name = "Colher"
+item_name = "Colher de pau"
 
 [node name="Dedal" type="Sprite" parent="Items/Station"]
 visible = false
@@ -377,7 +377,7 @@ scale = Vector2( 0.274134, 0.274134 )
 texture = ExtResource( 22 )
 script = ExtResource( 41 )
 level = "Station"
-item_name = "Lingua De Sogra"
+item_name = "Língua De Sogra"
 
 [node name="Panela" type="Sprite" parent="Items/Station"]
 visible = false
@@ -397,4 +397,4 @@ scale = Vector2( 0.402434, 0.402434 )
 texture = ExtResource( 20 )
 script = ExtResource( 41 )
 level = "Station"
-item_name = "Pirolito Puxa Puxa"
+item_name = "Pirulito Puxa Puxa"

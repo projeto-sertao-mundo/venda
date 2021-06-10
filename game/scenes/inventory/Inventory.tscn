@@ -153,14 +153,14 @@ texture = ExtResource( 8 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageCave"]
 
-[node name="Agulha" type="Node2D" parent="Book/Pages/PageCave/Items"]
+[node name="Agulha de tricô" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/Agulha de tricô"]
 position = Vector2( 561.235, 287.529 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Agulha"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/Agulha de tricô"]
 visible = false
 margin_left = 500.189
 margin_top = 228.046
@@ -255,14 +255,14 @@ margin_bottom = 673.095
 rect_scale = Vector2( 0.378677, 0.378677 )
 texture = ExtResource( 18 )
 
-[node name="IoIo" type="Node2D" parent="Book/Pages/PageCave/Items"]
+[node name="IoIô" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/IoIo"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageCave/Items/IoIô"]
 position = Vector2( 557.537, 451.521 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/IoIo"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageCave/Items/IoIô"]
 visible = false
 margin_left = 511.528
 margin_top = 425.853
@@ -442,15 +442,15 @@ texture = ExtResource( 9 )
 
 [node name="Items" type="Node2D" parent="Book/Pages/PageElephant"]
 
-[node name="Carretel" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Carretel de linha" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 890.954, 205.061 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Carretel"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Carretel de linha"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Carretel"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Carretel de linha"]
 visible = false
 margin_left = -40.9434
 margin_top = -41.4624
@@ -499,15 +499,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Maça do Amor" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Maçã do Amor" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 428.507, 458.205 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Maça do Amor"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Maçã do Amor"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Maça do Amor"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Maçã do Amor"]
 visible = false
 margin_left = -35.8979
 margin_top = -53.235
@@ -519,15 +519,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Máquina Registradora" type="Node2D" parent="Book/Pages/PageElephant/Items"]
+[node name="Máq Registradora" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 568.514, 449.72 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Máquina Registradora"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageElephant/Items/Máq Registradora"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Máquina Registradora"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Máq Registradora"]
 visible = false
 margin_left = -47.6704
 margin_top = -41.4624
@@ -628,15 +628,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Bolas de Gude" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Bolinhas de gude" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 770.746, 203.647 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Bolas de Gude"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Bolinhas de gude"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Bolas de Gude"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Bolinhas de gude"]
 visible = false
 margin_left = -36.0807
 margin_top = -29.495
@@ -645,15 +645,15 @@ margin_bottom = 226.505
 rect_scale = Vector2( 0.603077, 0.603077 )
 texture = ExtResource( 32 )
 
-[node name="Cigarro" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Cigarro de palha" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 564.271, 335.169 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Cigarro"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Cigarro de palha"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Cigarro"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Cigarro de palha"]
 visible = false
 margin_left = -44.5662
 margin_top = -43.6371
@@ -662,15 +662,15 @@ margin_bottom = 212.363
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 36 )
 
-[node name="Colher" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Colher de pau" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 780.646, 343.654 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Colher"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Colher de pau"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Colher"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Colher de pau"]
 visible = false
 margin_left = 21.9017
 margin_top = -50.7083
@@ -700,15 +700,15 @@ margin_bottom = 216.219
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 37 )
 
-[node name="Lingua De Sogra" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Língua De Sogra" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 567.099, 473.762 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Lingua De Sogra"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Língua De Sogra"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Lingua De Sogra"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Língua De Sogra"]
 visible = false
 margin_left = -52.7162
 margin_top = -9.50854
@@ -738,15 +738,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Pirolito Puxa Puxa" type="Node2D" parent="Book/Pages/PageStation/Items"]
+[node name="Pirulito Puxa Puxa" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 964.493, 478.004 )
 
-[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Pirolito Puxa Puxa"]
+[node name="Default" type="Sprite" parent="Book/Pages/PageStation/Items/Pirulito Puxa Puxa"]
 position = Vector2( -3.03601, 0.443726 )
 scale = Vector2( 0.464724, 0.39733 )
 texture = ExtResource( 28 )
 
-[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Pirolito Puxa Puxa"]
+[node name="Sprite" type="TextureRect" parent="Book/Pages/PageStation/Items/Pirulito Puxa Puxa"]
 visible = false
 margin_left = 11.1921
 margin_top = -56.5988
@@ -829,13 +829,13 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Tags/Church" to="." method="_on_click_church_tag"]
 [connection signal="gui_input" from="Book/Tags/Elephant" to="." method="_on_click_elephant_tag"]
 [connection signal="gui_input" from="Book/Tags/Station" to="." method="_on_click_station_tag"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIo/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
