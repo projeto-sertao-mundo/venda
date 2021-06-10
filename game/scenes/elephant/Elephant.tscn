@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/elephant/RoofBig.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -19,8 +19,11 @@
 [ext_resource path="res://items/elephant/items/Esporas.tscn" type="PackedScene" id=17]
 [ext_resource path="res://items/elephant/items/FrascoDePimenta.tscn" type="PackedScene" id=18]
 [ext_resource path="res://items/elephant/items/MacaDoAmor.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=20]
 
 [node name="Elephant" type="Node2D"]
+
+[node name="FadeIn" parent="." instance=ExtResource( 20 )]
 
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )

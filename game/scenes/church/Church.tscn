@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
@@ -43,8 +43,11 @@
 [ext_resource path="res://items/cave/rest/Tesoura.png" type="Texture" id=41]
 [ext_resource path="res://items/cave/rest/CarrinhoMadeira.png" type="Texture" id=42]
 [ext_resource path="res://items/church/items/Isqueiro.tscn" type="PackedScene" id=43]
+[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=44]
 
 [node name="Church" type="Node2D"]
+
+[node name="FadeIn" parent="." instance=ExtResource( 44 )]
 
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )

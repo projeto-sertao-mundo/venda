@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/station/BG.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -23,8 +23,11 @@
 [ext_resource path="res://items/station/items/Colher.tscn" type="PackedScene" id=21]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/station/Train.png" type="Texture" id=23]
+[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=24]
 
 [node name="Station" type="Node2D"]
+
+[node name="FadeIn" parent="." instance=ExtResource( 24 )]
 
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
