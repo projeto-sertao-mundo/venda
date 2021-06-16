@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
@@ -44,6 +44,14 @@
 [ext_resource path="res://items/cave/rest/CarrinhoMadeira.png" type="Texture" id=42]
 [ext_resource path="res://items/church/items/Isqueiro.tscn" type="PackedScene" id=43]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=44]
+[ext_resource path="res://items/elephant/rest/GuardaChuva.png" type="Texture" id=45]
+[ext_resource path="res://items/elephant/rest/Telefone.png" type="Texture" id=46]
+[ext_resource path="res://items/station/rest/ChapeuDeFeltro.png" type="Texture" id=47]
+[ext_resource path="res://items/elephant/rest/Regador.png" type="Texture" id=48]
+[ext_resource path="res://items/station/rest/FerroDeBrasa.png" type="Texture" id=49]
+[ext_resource path="res://items/station/rest/Sanfona.png" type="Texture" id=50]
+[ext_resource path="res://items/station/rest/Sino.png" type="Texture" id=51]
+[ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=52]
 
 [node name="Church" type="Node2D"]
 
@@ -63,6 +71,9 @@ level = "Church"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 36 )]
 position = Vector2( 1059.27, -319.807 )
+
+[node name="Helper" parent="HUD" instance=ExtResource( 52 )]
+position = Vector2( -36.5103, -990.538 )
 
 [node name="Scene" type="Node2D" parent="."]
 
@@ -206,7 +217,7 @@ z_index = 35
 texture = ExtResource( 35 )
 
 [node name="Agulha" type="Sprite" parent="ItemsRest"]
-position = Vector2( 1161.48, 709.818 )
+position = Vector2( 273.65, 712.996 )
 rotation = -0.508562
 scale = Vector2( 0.224845, 0.224845 )
 z_index = 60
@@ -245,8 +256,10 @@ z_index = 30
 texture = ExtResource( 31 )
 
 [node name="PlantaDecorativa" type="Sprite" parent="ItemsRest"]
-position = Vector2( 1806.53, 349.274 )
-z_index = 60
+position = Vector2( 384.225, 34.8318 )
+rotation = -2.82787
+scale = Vector2( 0.44755, 0.44755 )
+z_index = 15
 texture = ExtResource( 32 )
 
 [node name="VassouraPalha" type="Sprite" parent="ItemsRest"]
@@ -302,14 +315,68 @@ z_index = 50
 texture = ExtResource( 38 )
 
 [node name="Tesoura" type="Sprite" parent="ItemsRest"]
-position = Vector2( 1108.13, 710.58 )
+position = Vector2( 959.805, 709.521 )
 rotation = -0.762446
 scale = Vector2( 0.206468, 0.206468 )
 z_index = 50
 texture = ExtResource( 41 )
 
 [node name="Tabletes" type="Sprite" parent="ItemsRest"]
-position = Vector2( 731.658, 76.4007 )
-scale = Vector2( 0.261779, 0.261779 )
-z_index = 5
+position = Vector2( 730.071, 405.998 )
+scale = Vector2( 0.180852, 0.180852 )
+z_index = 60
 texture = ExtResource( 5 )
+
+[node name="GuardaChuva" type="Sprite" parent="ItemsRest"]
+position = Vector2( 579.455, 603.717 )
+rotation = 0.476643
+scale = Vector2( 0.624661, 0.624661 )
+z_index = 60
+texture = ExtResource( 45 )
+
+[node name="Telefone" type="Sprite" parent="ItemsRest"]
+position = Vector2( 247.332, 438.932 )
+scale = Vector2( 0.366448, 0.366448 )
+z_index = 60
+texture = ExtResource( 46 )
+
+[node name="Regador" type="Sprite" parent="ItemsRest"]
+position = Vector2( 739.595, 63.1929 )
+rotation = -0.0257211
+scale = Vector2( 0.413943, 0.413943 )
+z_index = 60
+texture = ExtResource( 48 )
+
+[node name="Sino" type="Sprite" parent="ItemsRest"]
+position = Vector2( 142.185, 167.696 )
+scale = Vector2( 0.275196, 0.275196 )
+z_index = 60
+texture = ExtResource( 51 )
+offset = Vector2( 0, -123.941 )
+
+[node name="Sino2" type="Sprite" parent="ItemsRest"]
+position = Vector2( 1204.49, 166.198 )
+scale = Vector2( 0.275196, 0.275196 )
+z_index = 60
+texture = ExtResource( 51 )
+offset = Vector2( 0, -123.941 )
+
+[node name="Sanfona" type="Sprite" parent="ItemsRest"]
+position = Vector2( 85.0164, 661.548 )
+scale = Vector2( 0.618388, 0.618388 )
+z_index = 35
+texture = ExtResource( 50 )
+
+[node name="ChapeuDeFeltro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 477.268, 619.605 )
+rotation = 0.721382
+scale = Vector2( 0.53681, 0.53681 )
+z_index = 60
+texture = ExtResource( 47 )
+
+[node name="FerroDeBrasa" type="Sprite" parent="ItemsRest"]
+position = Vector2( 585.484, 394.184 )
+rotation = -0.144887
+scale = Vector2( 0.264189, 0.264189 )
+z_index = 60
+texture = ExtResource( 49 )

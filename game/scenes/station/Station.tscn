@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://scenes/station/BG.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
@@ -24,6 +24,19 @@
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/station/Train.png" type="Texture" id=23]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=24]
+[ext_resource path="res://items/cave/rest/Envelope.png" type="Texture" id=25]
+[ext_resource path="res://items/elephant/rest/Pneu.png" type="Texture" id=26]
+[ext_resource path="res://items/station/rest/Relogio.png" type="Texture" id=27]
+[ext_resource path="res://items/cave/rest/CarrinhoMadeira.png" type="Texture" id=28]
+[ext_resource path="res://items/cave/rest/Pa.png" type="Texture" id=29]
+[ext_resource path="res://items/cave/rest/Bota.png" type="Texture" id=30]
+[ext_resource path="res://items/church/rest/ChapeuPalha.png" type="Texture" id=31]
+[ext_resource path="res://items/church/rest/MalaCouro.png" type="Texture" id=32]
+[ext_resource path="res://items/church/rest/Viola.png" type="Texture" id=33]
+[ext_resource path="res://items/cave/rest/BilhaDeBarro.png" type="Texture" id=34]
+[ext_resource path="res://items/elephant/rest/Gaiola.png" type="Texture" id=35]
+[ext_resource path="res://items/cave/rest/SacaDeFeijão.png" type="Texture" id=36]
+[ext_resource path="res://items/cave/rest/OvosEmpalhados.png" type="Texture" id=37]
 
 [node name="Station" type="Node2D"]
 
@@ -88,7 +101,7 @@ texture = ExtResource( 11 )
 
 [node name="Fence" type="Sprite" parent="Scene"]
 position = Vector2( 451.278, 496.775 )
-z_index = 30
+z_index = 40
 texture = ExtResource( 5 )
 
 [node name="Roof" type="Sprite" parent="Scene"]
@@ -152,3 +165,89 @@ rotation = 1.50362
 scale = Vector2( 0.216206, 0.216206 )
 z_index = 60
 item_name = "Pirulito Puxa Puxa"
+
+[node name="ItemsRest" type="Node2D" parent="."]
+
+[node name="ChapeuPalha" type="Sprite" parent="ItemsRest"]
+position = Vector2( 495.196, 419.976 )
+rotation = -0.432295
+scale = Vector2( 0.392397, 0.394764 )
+z_index = 60
+texture = ExtResource( 31 )
+
+[node name="MalaCouro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 781.624, 527.095 )
+scale = Vector2( 0.768503, 0.768503 )
+z_index = 35
+texture = ExtResource( 32 )
+
+[node name="Viola" type="Sprite" parent="ItemsRest"]
+position = Vector2( 264.777, 467.734 )
+rotation = 0.414841
+scale = Vector2( 0.784992, 0.784992 )
+z_index = 15
+texture = ExtResource( 33 )
+
+[node name="BilhaDeBarro" type="Sprite" parent="ItemsRest"]
+position = Vector2( 646.085, 604.988 )
+scale = Vector2( 0.517205, 0.517205 )
+z_index = 60
+texture = ExtResource( 34 )
+
+[node name="Bota" type="Sprite" parent="ItemsRest"]
+position = Vector2( 515.607, 26.4579 )
+rotation = 0.279117
+scale = Vector2( 0.34548, 0.34548 )
+z_index = 60
+texture = ExtResource( 30 )
+
+[node name="CarrinhoMadeira" type="Sprite" parent="ItemsRest"]
+position = Vector2( 948.279, 550.175 )
+scale = Vector2( 0.434287, 0.434287 )
+z_index = 60
+texture = ExtResource( 28 )
+
+[node name="Pa" type="Sprite" parent="ItemsRest"]
+position = Vector2( 965.398, -11.6246 )
+rotation = -1.4369
+scale = Vector2( 0.59275, 0.59275 )
+z_index = 60
+texture = ExtResource( 29 )
+
+[node name="SacaDeFeijão" type="Sprite" parent="ItemsRest"]
+position = Vector2( 99.6502, 524.936 )
+scale = Vector2( 0.397698, 0.397698 )
+z_index = 35
+texture = ExtResource( 36 )
+
+[node name="Gaiola" type="Sprite" parent="ItemsRest"]
+position = Vector2( 591.829, 160.934 )
+scale = Vector2( 0.605015, 0.605015 )
+z_index = 60
+texture = ExtResource( 35 )
+
+[node name="Pneu" type="Sprite" parent="ItemsRest"]
+position = Vector2( 379.535, 706.989 )
+rotation = 1.62516
+scale = Vector2( 0.602956, 0.602956 )
+z_index = 70
+texture = ExtResource( 26 )
+
+[node name="Relogio" type="Sprite" parent="ItemsRest"]
+position = Vector2( 421.13, 218.322 )
+scale = Vector2( 0.415682, 0.415682 )
+z_index = 60
+texture = ExtResource( 27 )
+
+[node name="Envelope" type="Sprite" parent="ItemsRest"]
+position = Vector2( 834.528, 570.035 )
+rotation = -0.243871
+scale = Vector2( 0.220359, 0.220359 )
+z_index = 35
+texture = ExtResource( 25 )
+
+[node name="OvosEmpalhados" type="Sprite" parent="ItemsRest"]
+position = Vector2( 183.402, 41.2829 )
+scale = Vector2( 0.397815, 0.397815 )
+z_index = 60
+texture = ExtResource( 37 )
