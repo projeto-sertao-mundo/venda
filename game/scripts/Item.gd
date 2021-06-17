@@ -13,6 +13,10 @@ var target = Vector2(1220, 670)
 var velocity = Vector2()
 var speed = 500
 
+func _ready():
+	var status = manager.check_item(level, item_name)
+	if status: delete_me()
+
 func founded():
 	manager.item_found(level, item_name)
 	z_index = 256
