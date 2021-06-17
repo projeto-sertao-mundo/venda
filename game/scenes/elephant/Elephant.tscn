@@ -51,8 +51,6 @@
 
 [node name="Elephant" type="Node2D"]
 
-[node name="FadeIn" parent="." instance=ExtResource( 20 )]
-
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
 z_index = 500
@@ -348,3 +346,5 @@ position = Vector2( 837.583, 307.588 )
 scale = Vector2( 0.237245, 0.237245 )
 z_index = 60
 texture = ExtResource( 43 )
+
+[node name="FadeIn" parent="." instance=ExtResource( 20 )]

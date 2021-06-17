@@ -1,15 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/commerce/BackgroundCommerce.jpg" type="Texture" id=2]
 [ext_resource path="res://items/commerce/fence/Fence.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/commerce/door/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=6]
 
 [node name="CommerceOutside" type="Node2D"]
 modulate = Color( 1, 1, 1, 0.96 )
-
-[node name="FadeIn" parent="." instance=ExtResource( 6 )]
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 640, 360 )

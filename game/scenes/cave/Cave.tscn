@@ -53,8 +53,6 @@
 
 [node name="Cave" type="Node2D"]
 
-[node name="FadeIn" parent="." instance=ExtResource( 50 )]
-
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
 z_index = 500
@@ -392,3 +390,5 @@ rotation = 1.16552
 scale = Vector2( 0.916981, 0.916981 )
 z_index = 50
 texture = ExtResource( 28 )
+
+[node name="FadeIn" parent="." instance=ExtResource( 50 )]

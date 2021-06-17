@@ -40,8 +40,6 @@
 
 [node name="Station" type="Node2D"]
 
-[node name="FadeIn" parent="." instance=ExtResource( 24 )]
-
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
 z_index = 500
@@ -251,3 +249,5 @@ position = Vector2( 183.402, 41.2829 )
 scale = Vector2( 0.397815, 0.397815 )
 z_index = 60
 texture = ExtResource( 37 )
+
+[node name="FadeIn" parent="." instance=ExtResource( 24 )]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://scenes/menu/ButtonPlay.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://scenes/menu/ButtonOut.png" type="Texture" id=6]
 [ext_resource path="res://scenes/commerce/Outside.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/menu/MenuButton.gd" type="Script" id=8]
+[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "ShowMenu"
@@ -119,6 +120,8 @@ rect_scale = Vector2( 31.9756, 18.1529 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="FadeIn" parent="." instance=ExtResource( 9 )]
 
 [connection signal="input_event" from="Menu/ButtonPlay" to="Menu/ButtonPlay" method="_on_ButtonPlay_pressed"]
 [connection signal="mouse_entered" from="Menu/ButtonPlay" to="Menu/ButtonPlay" method="_on_mouse_entered"]

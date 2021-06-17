@@ -29,8 +29,6 @@ tracks/0/keys = {
 
 [node name="Map" type="Node2D"]
 
-[node name="FadeIn" parent="." instance=ExtResource( 10 )]
-
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
 texture = ExtResource( 6 )
@@ -93,5 +91,7 @@ color = Color( 1, 1, 1, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="FadeIn" parent="." instance=ExtResource( 10 )]
 
 [connection signal="timeout" from="Whirlwind/Timer" to="Whirlwind" method="_on_timeout"]

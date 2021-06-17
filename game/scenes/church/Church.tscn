@@ -55,8 +55,6 @@
 
 [node name="Church" type="Node2D"]
 
-[node name="FadeIn" parent="." instance=ExtResource( 44 )]
-
 [node name="HUD" type="Node2D" parent="."]
 position = Vector2( 39.818, 986.448 )
 z_index = 500
@@ -380,3 +378,5 @@ rotation = -0.144887
 scale = Vector2( 0.264189, 0.264189 )
 z_index = 60
 texture = ExtResource( 49 )
+
+[node name="FadeIn" parent="." instance=ExtResource( 44 )]
