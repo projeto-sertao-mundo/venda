@@ -1,30 +1,19 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://scripts/GUINavigation.gd" type="Script" id=1]
 [ext_resource path="res://scenes/commerce/BackgroundCommerce.jpg" type="Texture" id=2]
 [ext_resource path="res://items/commerce/fence/Fence.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/commerce/door/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=6]
 
-[node name="CommerceOut" type="Node2D"]
+[node name="CommerceOutside" type="Node2D"]
+modulate = Color( 1, 1, 1, 0.96 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 6 )]
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 640, 360 )
 texture = ExtResource( 2 )
-
-[node name="BtnBackMenu" type="Button" parent="."]
-margin_left = 25.6619
-margin_top = 1000.19
-margin_right = 190.662
-margin_bottom = 1049.19
-text = "Voltar Menu"
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Fence" parent="." instance=ExtResource( 3 )]
 position = Vector2( 515.589, 338.65 )
@@ -36,5 +25,3 @@ rotation = -0.0112802
 scale = Vector2( 1.34665, 1.34665 )
 
 [node name="Inventory" parent="." instance=ExtResource( 5 )]
-
-[connection signal="pressed" from="BtnBackMenu" to="BtnBackMenu" method="_on_BackMenu_pressed"]
