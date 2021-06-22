@@ -22,6 +22,7 @@ func founded():
 	z_index = 256
 	is_founded = true
 	is_revealed = false
+	check_level()
 
 func delete_me():
 	get_node(get_path()).queue_free()
@@ -29,6 +30,12 @@ func delete_me():
 func reveal_me():
 	z_index = 2000
 	is_revealed = true
+
+func check_level():
+	var status = manager.get_level_status(level)
+	if status:
+		var modal = load("res://scenes/completed/CompletedModal.tscn")
+		get_node("/root").add_child(modal.instance())
 
 func _physics_process(delta):
 	velocity = position.direction_to(target) * speed
