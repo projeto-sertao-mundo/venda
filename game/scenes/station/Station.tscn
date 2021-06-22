@@ -1,17 +1,17 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
-[ext_resource path="res://scenes/station/BG.png" type="Texture" id=1]
+[ext_resource path="res://scenes/station/composition/BG.png" type="Texture" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/station/Beam.png" type="Texture" id=3]
-[ext_resource path="res://scenes/station/Door.png" type="Texture" id=4]
-[ext_resource path="res://scenes/station/Fence.png" type="Texture" id=5]
+[ext_resource path="res://scenes/station/composition/Beam.png" type="Texture" id=3]
+[ext_resource path="res://scenes/station/composition/Door.png" type="Texture" id=4]
+[ext_resource path="res://scenes/station/composition/Fence.png" type="Texture" id=5]
 [ext_resource path="res://scenes/map/ExitLevel.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/station/Floor.png" type="Texture" id=7]
-[ext_resource path="res://scenes/station/BeamLeft.png" type="Texture" id=8]
-[ext_resource path="res://scenes/station/Roof.png" type="Texture" id=9]
-[ext_resource path="res://scenes/station/WindowRight.png" type="Texture" id=10]
-[ext_resource path="res://scenes/station/TrainTracks.png" type="Texture" id=11]
-[ext_resource path="res://scenes/station/WindowLeft.png" type="Texture" id=12]
+[ext_resource path="res://scenes/station/composition/Floor.png" type="Texture" id=7]
+[ext_resource path="res://scenes/station/composition/BeamLeft.png" type="Texture" id=8]
+[ext_resource path="res://scenes/station/composition/Roof.png" type="Texture" id=9]
+[ext_resource path="res://scenes/station/composition/WindowRight.png" type="Texture" id=10]
+[ext_resource path="res://scenes/station/composition/TrainTracks.png" type="Texture" id=11]
+[ext_resource path="res://scenes/station/composition/WindowLeft.png" type="Texture" id=12]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=13]
 [ext_resource path="res://items/station/items/Dedal.tscn" type="PackedScene" id=14]
 [ext_resource path="res://items/station/items/LiguaDeSogra.tscn" type="PackedScene" id=15]
@@ -22,7 +22,7 @@
 [ext_resource path="res://items/station/items/Pirolito.tscn" type="PackedScene" id=20]
 [ext_resource path="res://items/station/items/Colher.tscn" type="PackedScene" id=21]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=22]
-[ext_resource path="res://scenes/station/Train.png" type="Texture" id=23]
+[ext_resource path="res://scenes/station/composition/Train.png" type="Texture" id=23]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=24]
 [ext_resource path="res://items/cave/rest/Envelope.png" type="Texture" id=25]
 [ext_resource path="res://items/elephant/rest/Pneu.png" type="Texture" id=26]
@@ -37,26 +37,29 @@
 [ext_resource path="res://items/elephant/rest/Gaiola.png" type="Texture" id=35]
 [ext_resource path="res://items/cave/rest/SacaDeFeijão.png" type="Texture" id=36]
 [ext_resource path="res://items/cave/rest/OvosEmpalhados.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/ButtonGroup.png" type="Texture" id=38]
 
 [node name="Station" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-position = Vector2( 39.818, 986.448 )
 z_index = 500
 
+[node name="ButtonGroup" type="Sprite" parent="HUD"]
+position = Vector2( 1130, 650 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 38 )
+
 [node name="Inventory" parent="HUD" instance=ExtResource( 13 )]
-position = Vector2( -40.4426, -986.368 )
 level = "Station"
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
-position = Vector2( -39.818, -986.448 )
 level = "Station"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 6 )]
-position = Vector2( 1049.39, -327.43 )
+position = Vector2( 1060, 650 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 22 )]
-position = Vector2( -41.7478, -986.988 )
+position = Vector2( 1200, 80 )
 level = "Station"
 
 [node name="Scene" type="Node2D" parent="."]
@@ -251,3 +254,4 @@ z_index = 60
 texture = ExtResource( 37 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 24 )]
+visible = false

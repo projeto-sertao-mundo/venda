@@ -13,10 +13,14 @@ sprite_hover = ExtResource( 4 )
 list_path = NodePath("Paper/Text")
 
 [node name="Icon" type="Node2D" parent="."]
-position = Vector2( 1112.2, 620.789 )
+position = Vector2( 1135.2, 650 )
 scale = Vector2( 0.3, 0.3 )
 
 [node name="Note" type="TextureRect" parent="Icon"]
+margin_left = -130.0
+margin_top = -120.0
+margin_right = 126.0
+margin_bottom = 136.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false

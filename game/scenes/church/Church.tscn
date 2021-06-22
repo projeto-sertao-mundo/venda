@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
@@ -6,20 +6,20 @@
 [ext_resource path="res://items/church/items/Bastidor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/church/rest/Tabletes.png" type="Texture" id=5]
 [ext_resource path="res://items/cave/rest/Envelope.png" type="Texture" id=6]
-[ext_resource path="res://scenes/church/BG.png" type="Texture" id=7]
-[ext_resource path="res://scenes/church/BancoDireita.png" type="Texture" id=8]
-[ext_resource path="res://scenes/church/BandeiraEsquerda.png" type="Texture" id=9]
-[ext_resource path="res://scenes/church/CercaDireita.png" type="Texture" id=10]
-[ext_resource path="res://scenes/church/BandeiraDireita.png" type="Texture" id=11]
-[ext_resource path="res://scenes/church/CercaEsquerda.png" type="Texture" id=12]
-[ext_resource path="res://scenes/church/ChurchWood.png" type="Texture" id=13]
-[ext_resource path="res://scenes/church/Doll02.png" type="Texture" id=14]
-[ext_resource path="res://scenes/church/Bacia.png" type="Texture" id=15]
-[ext_resource path="res://scenes/church/BG2.png" type="Texture" id=16]
-[ext_resource path="res://scenes/church/Doll03.png" type="Texture" id=17]
-[ext_resource path="res://scenes/church/BancoEsquerda.png" type="Texture" id=18]
-[ext_resource path="res://scenes/church/Doll01.png" type="Texture" id=19]
-[ext_resource path="res://scenes/church/Table.png" type="Texture" id=20]
+[ext_resource path="res://scenes/church/composition/BG.png" type="Texture" id=7]
+[ext_resource path="res://scenes/church/composition/BancoDireita.png" type="Texture" id=8]
+[ext_resource path="res://scenes/church/composition/BandeiraEsquerda.png" type="Texture" id=9]
+[ext_resource path="res://scenes/church/composition/CercaDireita.png" type="Texture" id=10]
+[ext_resource path="res://scenes/church/composition/BandeiraDireita.png" type="Texture" id=11]
+[ext_resource path="res://scenes/church/composition/CercaEsquerda.png" type="Texture" id=12]
+[ext_resource path="res://scenes/church/composition/ChurchWood.png" type="Texture" id=13]
+[ext_resource path="res://scenes/church/composition/Doll02.png" type="Texture" id=14]
+[ext_resource path="res://scenes/church/composition/Bacia.png" type="Texture" id=15]
+[ext_resource path="res://scenes/church/composition/BG2.png" type="Texture" id=16]
+[ext_resource path="res://scenes/church/composition/Doll03.png" type="Texture" id=17]
+[ext_resource path="res://scenes/church/composition/BancoEsquerda.png" type="Texture" id=18]
+[ext_resource path="res://scenes/church/composition/Doll01.png" type="Texture" id=19]
+[ext_resource path="res://scenes/church/composition/Table.png" type="Texture" id=20]
 [ext_resource path="res://items/church/items/TecidoChita.tscn" type="PackedScene" id=21]
 [ext_resource path="res://items/church/items/Caderno.tscn" type="PackedScene" id=22]
 [ext_resource path="res://items/church/items/Presepio.tscn" type="PackedScene" id=23]
@@ -52,26 +52,29 @@
 [ext_resource path="res://items/station/rest/Sanfona.png" type="Texture" id=50]
 [ext_resource path="res://items/station/rest/Sino.png" type="Texture" id=51]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=52]
+[ext_resource path="res://assets/sprites/ButtonGroup.png" type="Texture" id=53]
 
 [node name="Church" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-position = Vector2( 39.818, 986.448 )
 z_index = 500
 
+[node name="ButtonGroup" type="Sprite" parent="HUD"]
+position = Vector2( 1130, 650 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 53 )
+
 [node name="Inventory" parent="HUD" instance=ExtResource( 25 )]
-position = Vector2( -35.348, -979.095 )
 level = "Church"
 
 [node name="List" parent="HUD" instance=ExtResource( 1 )]
-position = Vector2( -29.0484, -977.835 )
 level = "Church"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 36 )]
-position = Vector2( 1059.27, -319.807 )
+position = Vector2( 1060, 650 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 52 )]
-position = Vector2( -36.5103, -990.538 )
+position = Vector2( 1200, 80 )
 
 [node name="Scene" type="Node2D" parent="."]
 
@@ -380,3 +383,4 @@ z_index = 60
 texture = ExtResource( 49 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 44 )]
+visible = false

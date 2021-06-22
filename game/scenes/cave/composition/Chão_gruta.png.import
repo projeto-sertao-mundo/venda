@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Chão_gruta.png-3fee96f1f40d65c584c5ccdd645c558f.res"
+group_file="res://scenes/cave/AtlasCaveScene.png"
+valid=true
+[deps]
+
+
+source_file="res://scenes/cave/composition/Chão_gruta.png"
+dest_files=[ "res://.import/Chão_gruta.png-3fee96f1f40d65c584c5ccdd645c558f.res" ]
+
+[params]
+
+atlas_file="res://scenes/cave/AtlasCaveScene.png"
+import_mode=0

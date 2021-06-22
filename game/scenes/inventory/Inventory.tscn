@@ -1,16 +1,16 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
-[ext_resource path="res://scenes/inventory/TagElephant.png" type="Texture" id=2]
-[ext_resource path="res://scenes/inventory/BookIcon.png" type="Texture" id=3]
-[ext_resource path="res://scenes/inventory/BookChurch.png" type="Texture" id=4]
-[ext_resource path="res://scenes/inventory/TagCave.png" type="Texture" id=5]
-[ext_resource path="res://scenes/inventory/Check.png" type="Texture" id=6]
-[ext_resource path="res://scenes/inventory/TagStation.png" type="Texture" id=7]
-[ext_resource path="res://scenes/inventory/BookCave.png" type="Texture" id=8]
-[ext_resource path="res://scenes/inventory/BookElephant.png" type="Texture" id=9]
-[ext_resource path="res://scenes/inventory/TagChruch.png" type="Texture" id=10]
-[ext_resource path="res://scenes/inventory/BookStation.png" type="Texture" id=11]
+[ext_resource path="res://scenes/inventory/tags/TagElephant.png" type="Texture" id=2]
+[ext_resource path="res://scenes/inventory/icons/BookIcon.png" type="Texture" id=3]
+[ext_resource path="res://scenes/inventory/pages/BookChurch.png" type="Texture" id=4]
+[ext_resource path="res://scenes/inventory/tags/TagCave.png" type="Texture" id=5]
+[ext_resource path="res://scenes/inventory/icons/Check.png" type="Texture" id=6]
+[ext_resource path="res://scenes/inventory/tags/TagStation.png" type="Texture" id=7]
+[ext_resource path="res://scenes/inventory/pages/BookCave.png" type="Texture" id=8]
+[ext_resource path="res://scenes/inventory/pages/BookElephant.png" type="Texture" id=9]
+[ext_resource path="res://scenes/inventory/tags/TagChruch.png" type="Texture" id=10]
+[ext_resource path="res://scenes/inventory/pages/BookStation.png" type="Texture" id=11]
 [ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=12]
 [ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=13]
 [ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=14]
@@ -27,8 +27,8 @@
 [ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=25]
 [ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=26]
 [ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=27]
-[ext_resource path="res://scenes/inventory/Question.png" type="Texture" id=28]
-[ext_resource path="res://scenes/inventory/BookIconHover.png" type="Texture" id=29]
+[ext_resource path="res://scenes/inventory/icons/Question.png" type="Texture" id=28]
+[ext_resource path="res://scenes/inventory/icons/BookIconHover.png" type="Texture" id=29]
 [ext_resource path="res://items/station/items/Pirolito.png" type="Texture" id=30]
 [ext_resource path="res://items/station/items/Balanca.png" type="Texture" id=31]
 [ext_resource path="res://items/station/items/BolasDeGude.png" type="Texture" id=32]
@@ -45,6 +45,16 @@
 [ext_resource path="res://items/elephant/items/Peao.png" type="Texture" id=43]
 [ext_resource path="res://items/elephant/items/MacaDoAmor.png" type="Texture" id=44]
 [ext_resource path="res://items/elephant/items/Esporas.png" type="Texture" id=45]
+[ext_resource path="res://scenes/inventory/Modal.png" type="Texture" id=46]
+[ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=47]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 47 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 19
+font_data = ExtResource( 47 )
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource( 1 )
@@ -53,16 +63,14 @@ sprite_default = ExtResource( 3 )
 sprite_hover = ExtResource( 29 )
 
 [node name="Icon" type="Node2D" parent="."]
+position = Vector2( 1210.7, 650 )
 scale = Vector2( 0.3, 0.3 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Book" type="TextureRect" parent="Icon"]
-margin_left = 3925.89
-margin_top = 2066.89
-margin_right = 4181.89
-margin_bottom = 2322.89
+margin_left = -127.574
+margin_top = -131.835
+margin_right = 128.426
+margin_bottom = 124.165
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -775,21 +783,16 @@ __meta__ = {
 
 [node name="Modal" type="Node2D" parent="InformationModal"]
 
-[node name="BG" type="ColorRect" parent="InformationModal/Modal"]
-margin_left = 429.413
-margin_top = 188.87
-margin_right = 469.413
-margin_bottom = 228.87
-rect_scale = Vector2( 11.84, 6.96 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="BG" type="Sprite" parent="InformationModal/Modal"]
+position = Vector2( 667.14, 346.689 )
+texture = ExtResource( 46 )
 
 [node name="ItemName" type="Label" parent="InformationModal/Modal"]
-margin_left = 452.941
-margin_top = 207.524
-margin_right = 718.941
-margin_bottom = 258.524
+margin_left = 465.647
+margin_top = 157.182
+margin_right = 734.647
+margin_bottom = 208.182
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nome do Item"
 __meta__ = {
@@ -798,23 +801,22 @@ __meta__ = {
 }
 
 [node name="ItemDescription" type="RichTextLabel" parent="InformationModal/Modal"]
-margin_left = 451.41
-margin_top = 275.624
-margin_right = 890.41
-margin_bottom = 563.624
+margin_left = 467.891
+margin_top = 251.651
+margin_right = 868.0
+margin_bottom = 539.651
+custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-
-O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos."
+text = "O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Close" type="TextureRect" parent="InformationModal/Modal"]
-margin_left = 843.554
-margin_top = 192.303
-margin_right = 1099.55
-margin_bottom = 448.303
+margin_left = 816.584
+margin_top = 154.845
+margin_right = 1072.58
+margin_bottom = 410.845
 rect_scale = Vector2( 0.203662, 0.203662 )
 texture = ExtResource( 6 )
 __meta__ = {

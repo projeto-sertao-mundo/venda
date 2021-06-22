@@ -1,10 +1,10 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://items/cave/items/Agulha.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=2]
 [ext_resource path="res://items/cave/rest/Bilboque.tscn" type="PackedScene" id=3]
 [ext_resource path="res://items/cave/rest/Alavanca.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/cave/Estalactite_branca_teto.png" type="Texture" id=5]
+[ext_resource path="res://scenes/cave/composition/Estalactite_branca_teto.png" type="Texture" id=5]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=6]
 [ext_resource path="res://items/cave/rest/CaixaDeRape.png" type="Texture" id=7]
 [ext_resource path="res://items/cave/rest/Tesoura.png" type="Texture" id=8]
@@ -28,17 +28,17 @@
 [ext_resource path="res://items/cave/rest/Radio.png" type="Texture" id=26]
 [ext_resource path="res://items/cave/rest/TachoDeCobre.tscn" type="PackedScene" id=27]
 [ext_resource path="res://items/church/rest/VassouraPalha.png" type="Texture" id=28]
-[ext_resource path="res://scenes/cave/Pedra_marrom_claro_esq.png" type="Texture" id=29]
-[ext_resource path="res://scenes/cave/Estalactite_grande_esq.png" type="Texture" id=30]
-[ext_resource path="res://scenes/cave/Estalactite_branca_chão.png" type="Texture" id=31]
-[ext_resource path="res://scenes/cave/Estalactites_grande_dir.png" type="Texture" id=32]
-[ext_resource path="res://scenes/cave/Pedra_teto_cinza_claro_dir.png" type="Texture" id=33]
-[ext_resource path="res://scenes/cave/Pedra_teto_cinza_claro_esq.png" type="Texture" id=34]
-[ext_resource path="res://scenes/cave/Chão_gruta.png" type="Texture" id=35]
-[ext_resource path="res://scenes/cave/Pedra_marrom_claro_dir.png" type="Texture" id=36]
-[ext_resource path="res://scenes/cave/Gruta_background.jpg" type="Texture" id=37]
-[ext_resource path="res://scenes/cave/Pedra_marrom_chão_dir.png" type="Texture" id=38]
-[ext_resource path="res://scenes/cave/Pedra_marrom_teto_esq.png" type="Texture" id=39]
+[ext_resource path="res://scenes/cave/composition/Pedra_marrom_claro_esq.png" type="Texture" id=29]
+[ext_resource path="res://scenes/cave/composition/Estalactite_grande_esq.png" type="Texture" id=30]
+[ext_resource path="res://scenes/cave/composition/Estalactite_branca_chão.png" type="Texture" id=31]
+[ext_resource path="res://scenes/cave/composition/Estalactites_grande_dir.png" type="Texture" id=32]
+[ext_resource path="res://scenes/cave/composition/Pedra_teto_cinza_claro_dir.png" type="Texture" id=33]
+[ext_resource path="res://scenes/cave/composition/Pedra_teto_cinza_claro_esq.png" type="Texture" id=34]
+[ext_resource path="res://scenes/cave/composition/Chão_gruta.png" type="Texture" id=35]
+[ext_resource path="res://scenes/cave/composition/Pedra_marrom_claro_dir.png" type="Texture" id=36]
+[ext_resource path="res://scenes/cave/composition/Gruta_background.jpg" type="Texture" id=37]
+[ext_resource path="res://scenes/cave/composition/Pedra_marrom_chão_dir.png" type="Texture" id=38]
+[ext_resource path="res://scenes/cave/composition/Pedra_marrom_teto_esq.png" type="Texture" id=39]
 [ext_resource path="res://items/cave/rest/SacaDeFeijão.png" type="Texture" id=40]
 [ext_resource path="res://items/cave/rest/Estribo.png" type="Texture" id=41]
 [ext_resource path="res://items/cave/rest/BilhaDeBarro.png" type="Texture" id=42]
@@ -50,27 +50,27 @@
 [ext_resource path="res://items/church/rest/Lampião.png" type="Texture" id=48]
 [ext_resource path="res://items/church/rest/MalaCouro.png" type="Texture" id=49]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=50]
+[ext_resource path="res://assets/sprites/ButtonGroup.png" type="Texture" id=51]
 
 [node name="Cave" type="Node2D"]
 
 [node name="HUD" type="Node2D" parent="."]
-position = Vector2( 39.818, 986.448 )
 z_index = 500
-__meta__ = {
-"_edit_lock_": true
-}
+
+[node name="ButtonGroup" type="Sprite" parent="HUD"]
+position = Vector2( 1130, 650 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 51 )
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 6 )]
-position = Vector2( -38.1634, -976.92 )
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
-position = Vector2( -36.1565, -984.706 )
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 46 )]
-position = Vector2( 1049.14, -324.805 )
+position = Vector2( 1060, 650 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 45 )]
-position = Vector2( -58.7329, -985.112 )
+position = Vector2( 1200, 80 )
 level = "Cave"
 
 [node name="Scene" type="Node2D" parent="."]
@@ -392,3 +392,4 @@ z_index = 50
 texture = ExtResource( 28 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 50 )]
+visible = false
