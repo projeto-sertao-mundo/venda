@@ -3,8 +3,11 @@ extends Node2D
 export (NodePath) var parent
 
 var original_scale = Vector2(1, 1)
-var hovered_scale = original_scale * 1.06
+var hovered_scale = original_scale * 1.1
 var clicked_scale = original_scale * 0.9
+
+func _ready():
+	get_parent().get_node("AnimationPlayer").play("Bounce")
 
 func _on_mouse_entered():
 	scale = hovered_scale
