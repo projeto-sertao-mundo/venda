@@ -11,7 +11,7 @@ var timer_count_default = 30
 var timer_count = 0
 
 onready var timer_node = get_node("Timer")
-onready var timer_label = get_node("Node2D/Label")
+onready var timer_label = get_node("Sprite/Label")
 
 func _ready():
 	start_timer()
@@ -54,13 +54,13 @@ func update_timer():
 func start_timer():
 	if helper_used == 0: timer_count = timer_count_default
 	else: timer_count = timer_count_default + (helper_used * timer_increment)
-	timer_label.visible = true
 	timer_label.text = String(timer_count)
 	timer_node.start()
 
 func stop_timer():
 	helper_is_active = true
-	timer_label.visible = false
+	timer_label.text = "Pronto"
+	get_node("AnimationPlayer").play("Bounce")
 	timer_node.stop()
 
 func _on_timeout():
