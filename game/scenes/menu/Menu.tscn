@@ -42,7 +42,6 @@ extents = Vector2( 56.3526, 30.2548 )
 [node name="Menu" type="Node2D" parent="."]
 position = Vector2( 640, 390 )
 rotation = -0.0277531
-scale = Vector2( 1, 1 )
 z_index = 2000
 script = ExtResource( 1 )
 
