@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var manager = get_node("/root/Manager")
+onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 onready var text_scene = preload("res://scenes/list/Text.tscn")
 
@@ -15,14 +16,26 @@ export (NodePath) var list_path
 var paper_is_visible = false
 onready var paper = get_node("Paper")
 
+var first_list_visit = true
+var first_list_close = true
+
 func _ready():
 	hidden_list()
 
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if paper_is_visible: hidden_list()
-			else: show_list()
+			if tutorial_manager.button_list_is_enable == true:
+				if paper_is_visible == false:
+					show_list()
+					if first_list_visit:
+						first_list_visit = false
+						tutorial_manager.show_list_info_step()
+				elif tutorial_manager.close_list_is_enable:
+					hidden_list()
+					if first_list_close:
+						first_list_close = false
+						tutorial_manager.close_list_close_step()
 
 func show_list():
 	clear()
@@ -53,7 +66,9 @@ func update():
 		pos += 45
 
 func _on_mouse_entered():
-	sprite_node.texture = sprite_hover
+	if tutorial_manager.button_list_is_enable == true:
+		sprite_node.texture = sprite_hover
 
 func _on_mouse_exited():
-	sprite_node.texture = sprite_default
+	if tutorial_manager.button_list_is_enable == true:
+		sprite_node.texture = sprite_default

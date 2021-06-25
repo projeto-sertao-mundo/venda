@@ -75,7 +75,6 @@ position = Vector2( 1200, 80 )
 level = "Cave"
 
 [node name="Tutorial" parent="HUD" instance=ExtResource( 52 )]
-visible = false
 
 [node name="Scene" type="Node2D" parent="."]
 __meta__ = {

@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var manager = get_node("/root/Manager")
+onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
 export (Texture) var sprite_default
@@ -34,8 +35,9 @@ func _ready():
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if inventory_is_visible: hidden_inventory()
-			else: show_inventory()
+			if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
+				if inventory_is_visible: hidden_inventory()
+				else: show_inventory()
 
 # NOTE: Controlar exibição da páginas do inventário
 
@@ -136,7 +138,9 @@ func _on_click_close_information_modal(event: InputEvent):
 			hidden_information_modal()
 
 func _on_mouse_entered():
-	sprite_node.texture = sprite_hover
+	if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
+		sprite_node.texture = sprite_hover
 
 func _on_mouse_exited():
-	sprite_node.texture = sprite_default
+	if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
+		sprite_node.texture = sprite_default
