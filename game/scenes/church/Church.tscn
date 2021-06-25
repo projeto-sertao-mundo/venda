@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://scenes/list/List.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/church/items/Espanador.tscn" type="PackedScene" id=2]
@@ -53,6 +53,7 @@
 [ext_resource path="res://items/station/rest/Sino.png" type="Texture" id=51]
 [ext_resource path="res://scenes/helper/helper.tscn" type="PackedScene" id=52]
 [ext_resource path="res://assets/sprites/ButtonGroup.png" type="Texture" id=53]
+[ext_resource path="res://scenes/tutorial/Tutorial.tscn" type="PackedScene" id=54]
 
 [node name="Church" type="Node2D"]
 
@@ -75,6 +76,9 @@ position = Vector2( 1060, 650 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 52 )]
 position = Vector2( 1200, 80 )
+
+[node name="Tutorial" parent="HUD" instance=ExtResource( 54 )]
+visible = false
 
 [node name="Scene" type="Node2D" parent="."]
 

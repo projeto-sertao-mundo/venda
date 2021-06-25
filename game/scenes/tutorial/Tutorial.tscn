@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/tutorial/Tutorial.gd" type="Script" id=1]
+[ext_resource path="res://scenes/tutorial/ModalAsk.png" type="Texture" id=2]
+[ext_resource path="res://scenes/tutorial/ButtonConfirm.png" type="Texture" id=3]
+[ext_resource path="res://scenes/tutorial/ButtonCancel.png" type="Texture" id=4]
+[ext_resource path="res://assets/animations/ModalBounce.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/tutorial/ModalConfirm.png" type="Texture" id=6]
+[ext_resource path="res://assets/animations/ModalBounceOut.tscn" type="PackedScene" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BounceOut"
+
+[node name="Tutorial" type="Node2D"]
+z_index = 3000
+script = ExtResource( 1 )
+
+[node name="Mask" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 32.52, 18.56 )
+color = Color( 1, 1, 1, 0.14902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ModalAsk" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+
+[node name="ModalBounce" parent="ModalAsk" instance=ExtResource( 5 )]
+anims/BounceOut = SubResource( 1 )
+
+[node name="ModalBounceOut" parent="ModalAsk" instance=ExtResource( 7 )]
+
+[node name="Sprite" type="Sprite" parent="ModalAsk"]
+texture = ExtResource( 2 )
+
+[node name="ButtonCancel" type="Node2D" parent="ModalAsk"]
+position = Vector2( -149.132, 103.826 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="TextureRect" type="TextureRect" parent="ModalAsk/ButtonCancel"]
+margin_left = -200.0
+margin_top = -75.0
+margin_right = 200.0
+margin_bottom = 75.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonConfirm" type="Node2D" parent="ModalAsk"]
+position = Vector2( 142.525, 100.995 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="TextureRect" type="TextureRect" parent="ModalAsk/ButtonConfirm"]
+margin_left = -197.27
+margin_top = -79.2854
+margin_right = 202.73
+margin_bottom = 70.7146
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ModalConfirm" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 360 )
+
+[node name="ModalBounce" parent="ModalConfirm" instance=ExtResource( 5 )]
+
+[node name="ModalBounceOut" parent="ModalConfirm" instance=ExtResource( 7 )]
+
+[node name="Sprite" type="Sprite" parent="ModalConfirm"]
+texture = ExtResource( 6 )
+
+[node name="ButtonCancel" type="Node2D" parent="ModalConfirm"]
+position = Vector2( -149.132, 103.826 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="TextureRect" type="TextureRect" parent="ModalConfirm/ButtonCancel"]
+margin_left = -200.0
+margin_top = -75.0
+margin_right = 200.0
+margin_bottom = 75.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonConfirm" type="Node2D" parent="ModalConfirm"]
+position = Vector2( 142.525, 100.995 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="TextureRect" type="TextureRect" parent="ModalConfirm/ButtonConfirm"]
+margin_left = -197.27
+margin_top = -79.2854
+margin_right = 202.73
+margin_bottom = 70.7146
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="gui_input" from="ModalAsk/ButtonCancel/TextureRect" to="." method="_on_click_cancel_aks_modal"]
+[connection signal="gui_input" from="ModalAsk/ButtonConfirm/TextureRect" to="." method="_on_click_confirm_ask_modal"]
+[connection signal="gui_input" from="ModalConfirm/ButtonCancel/TextureRect" to="." method="_on_click_cancel_confirm_modal"]
+[connection signal="gui_input" from="ModalConfirm/ButtonConfirm/TextureRect" to="." method="_on_click_confirm_confirm_modal"]
