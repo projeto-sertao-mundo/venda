@@ -8,7 +8,13 @@ onready var step_intro = get_node("StepIntro")
 onready var step_list_click = get_node("StepListClick")
 onready var step_list_info = get_node("StepListInfo")
 onready var step_list_close = get_node("StepListClose")
-onready var step_item_first = get_node("StepitemFirst")
+onready var step_item_first = get_node("StepItemFirst")
+
+onready var step_inventory_click = get_node("StepInventoryClick")
+onready var step_inventory_item = get_node("StepInventoryItem")
+onready var step_helper_intro = get_node("StepHelperIntro")
+onready var step_helper_time = get_node("StepHelperTime")
+onready var step_out = get_node("StepOut")
 
 func _ready():
 	hidden_all_modals()
@@ -85,6 +91,11 @@ func hidden_all_steps():
 	step_list_info.visible = false
 	step_list_close.visible = false
 	step_item_first.visible = false
+	step_inventory_click.visible = false
+	step_inventory_item.visible = false
+	step_helper_intro.visible = false
+	step_helper_time.visible = false
+	step_out.visible = false
 
 func show_intro_step():
 	step_intro.visible = true
@@ -92,23 +103,60 @@ func show_intro_step():
 func show_list_click_step(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			step_intro.visible = false
+			hidden_all_steps()
 			step_list_click.visible = true
 			tutorial_manager.enable_list_button()
 
 func show_list_info_step():
-	step_list_click.visible = false
+	hidden_all_steps()
 	step_list_info.visible = true
 
 func show_list_close_step(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			step_list_info.visible = false
+			hidden_all_steps()
 			step_list_close.visible = true
 			tutorial_manager.enable_list_close()
 
 func close_list_close_step():
-	step_list_close.visible = false
+	hidden_all_steps()
 
 func show_item_first_step():
+	hidden_all_steps()
 	step_item_first.visible = true
+
+func show_inventory_click_step(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			hidden_all_steps()
+			step_inventory_click.visible = true
+			tutorial_manager.enable_inventory_button()
+
+func show_inventory_item_step():
+	hidden_all_steps()
+	step_inventory_item.visible = true
+
+func close_inventory_item_step():
+	hidden_all_steps()
+
+func show_helper_intro_step():
+	hidden_all_steps()
+	step_helper_intro.visible = true
+
+func show_helper_time_step(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			hidden_all_steps()
+			step_helper_time.visible = true
+			tutorial_manager.disable_all_buttons()
+			tutorial_manager.enable_helper()
+
+func close_helper_time_step():
+	hidden_all_steps()
+	step_out.visible = true
+
+func close_out_step(event: InputEvent):
+	if event is InputEventMouseButton:
+		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			hidden_all_steps()
+			tutorial_manager.skip_tutorial()

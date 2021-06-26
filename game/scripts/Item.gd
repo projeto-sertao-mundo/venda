@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var manager = get_node("/root/Manager")
+onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 export (String) var item_name = ""
 
@@ -57,4 +58,5 @@ func _physics_process(delta):
 func _on_item_is_pressed(vi1ewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			founded()
+			if tutorial_manager.found_items_is_enable:
+				founded()

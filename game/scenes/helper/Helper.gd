@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var manager = get_node("/root/Manager")
+onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
 var helper_used = 0
@@ -13,6 +14,8 @@ var timer_count = 0
 onready var timer_node = get_node("Timer")
 onready var timer_label = get_node("Sprite/Label")
 
+var first_helper_use = true
+
 func _ready():
 	start_timer()
 
@@ -21,6 +24,9 @@ func active_helper():
 	helper_used += 1
 	reveal_item()
 	start_timer()
+	if first_helper_use && tutorial_manager.tutorial_is_running:
+		first_helper_use = false
+		tutorial_manager.close_helper_time_step()
 
 func reveal_item():
 	var item_revealed = select_item_to_reveal()
@@ -69,4 +75,4 @@ func _on_timeout():
 func _on_click_helper(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if helper_is_active: active_helper()
+			if helper_is_active && tutorial_manager.helper_is_enable: active_helper()

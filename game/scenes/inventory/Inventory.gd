@@ -26,6 +26,10 @@ onready var station_items = get_node("Book/Pages/PageStation/Items").get_childre
 
 onready var information_modal = get_node("InformationModal")
 
+var first_inventory_close = true
+var first_inventory_visit = true
+var first_information_modal_visit = true
+
 func _ready():
 	hidden_inventory()
 	hidden_all_pages()
@@ -35,9 +39,18 @@ func _ready():
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
-				if inventory_is_visible: hidden_inventory()
-				else: show_inventory()
+			if tutorial_manager.button_inventory_is_enable == true:
+				if inventory_is_visible:
+					if tutorial_manager.tutorial_is_running && tutorial_manager.close_inventory_is_enable:
+						hidden_inventory()
+						if first_inventory_close && tutorial_manager.tutorial_is_running:
+							first_inventory_close = false
+							tutorial_manager.show_helper_intro_step()
+				else:
+					show_inventory()
+					if first_inventory_visit && tutorial_manager.tutorial_is_running:
+						first_inventory_visit = false
+						tutorial_manager.show_inventory_item_step()
 
 # NOTE: Controlar exibição da páginas do inventário
 
@@ -80,6 +93,9 @@ func show_station_page():
 func show_information_modal():
 	information_modal.visible = true
 	information_modal.z_index = 2000
+	if first_information_modal_visit && tutorial_manager.tutorial_is_running:
+		first_information_modal_visit = false
+		tutorial_manager.close_inventory_item_step()
 
 func hidden_information_modal():
 	information_modal.visible = false
@@ -138,9 +154,9 @@ func _on_click_close_information_modal(event: InputEvent):
 			hidden_information_modal()
 
 func _on_mouse_entered():
-	if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
+	if tutorial_manager.button_inventory_is_enable == true:
 		sprite_node.texture = sprite_hover
 
 func _on_mouse_exited():
-	if tutorial_manager.tutorial_is_running == false && tutorial_manager.button_inventory_is_enable == true:
+	if tutorial_manager.button_inventory_is_enable == true:
 		sprite_node.texture = sprite_default

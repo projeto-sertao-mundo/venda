@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/tutorial/Tutorial.gd" type="Script" id=1]
 [ext_resource path="res://scenes/tutorial/ModalAsk.png" type="Texture" id=2]
@@ -11,10 +11,7 @@
 [ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://scenes/tutorial/Arrow.png" type="Texture" id=10]
 
-[sub_resource type="Animation" id=1]
-resource_name = "BounceOut"
-
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 30
 font_data = ExtResource( 9 )
 
@@ -37,7 +34,6 @@ visible = false
 position = Vector2( 640, 360 )
 
 [node name="ModalBounce" parent="ModalAsk" instance=ExtResource( 5 )]
-anims/BounceOut = SubResource( 1 )
 
 [node name="ModalBounceOut" parent="ModalAsk" instance=ExtResource( 7 )]
 
@@ -124,7 +120,7 @@ margin_left = -399.0
 margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 text = "Os itens estão escondidos! Seu papel é encontrá-los! Felizmente o vendedor te passou uma lista com os nomes dos itens perdidos!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -158,8 +154,8 @@ margin_left = -399.0
 margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
-custom_fonts/normal_font = SubResource( 2 )
-text = "Clique na lista para ver quias itens você deve procurar!"
+custom_fonts/normal_font = SubResource( 1 )
+text = "Clique na lista para ver quais itens você deve procurar!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -182,7 +178,7 @@ margin_left = -399.0
 margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 text = "Você pode consultar a sua lista a qualquer momento! Agora, tente encontrar um dos itens descritos aqui!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -204,6 +200,7 @@ __meta__ = {
 }
 
 [node name="StepListClose" type="Node2D" parent="."]
+visible = false
 position = Vector2( 640, 632.561 )
 
 [node name="BG" type="Sprite" parent="StepListClose"]
@@ -215,27 +212,181 @@ margin_left = -399.0
 margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 text = "Para fechar a lista, basta clicar em qualquer local fora dela!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StepitemFirst" type="Node2D" parent="."]
+[node name="StepItemFirst" type="Node2D" parent="."]
 visible = false
 position = Vector2( 640, 632.561 )
 
-[node name="BG" type="Sprite" parent="StepitemFirst"]
+[node name="BG" type="Sprite" parent="StepItemFirst"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 8 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="StepitemFirst"]
+[node name="RichTextLabel" type="RichTextLabel" parent="StepItemFirst"]
+margin_left = -399.0
+margin_top = -50.2485
+margin_right = 403.0
+margin_bottom = 83.7515
+custom_fonts/normal_font = SubResource( 1 )
+text = "Legal! Você encontrou o seu primeiro item! Ele está guardado, e você pode consultar as suas ceracterísitcas nos seu livro de anotações!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonNextStep" type="Node2D" parent="StepItemFirst"]
+position = Vector2( 416, 51 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="TextureRect" type="TextureRect" parent="StepItemFirst/ButtonNextStep"]
+margin_left = -67.0
+margin_top = -36.0
+margin_right = 47.0
+margin_bottom = 36.0
+texture = ExtResource( 10 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StepInventoryClick" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 632.561 )
+
+[node name="BG" type="Sprite" parent="StepInventoryClick"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StepInventoryClick"]
 margin_left = -399.0
 margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
-custom_fonts/normal_font = SubResource( 2 )
-text = "Legal! Você encontrou o seu primeiro item! Ele está guardado, e você pode consultar as suas ceracterísitcas nos seu livro de anotações!"
+custom_fonts/normal_font = SubResource( 1 )
+text = "Clique no livro para ver quais itens você já encontrou!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="Sprite" parent="StepInventoryClick"]
+position = Vector2( 574.471, -94.1245 )
+rotation = -1.5708
+texture = ExtResource( 10 )
+
+[node name="StepInventoryItem" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 632.561 )
+
+[node name="BG" type="Sprite" parent="StepInventoryItem"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StepInventoryItem"]
+margin_left = -399.0
+margin_top = -38.9092
+margin_right = 403.0
+margin_bottom = 95.0908
+custom_fonts/normal_font = SubResource( 1 )
+text = "Clique no item encontrado para ver uma breve descrição! Boa sorte na sua busca!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StepHelperIntro" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 632.561 )
+
+[node name="BG" type="Sprite" parent="StepHelperIntro"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StepHelperIntro"]
+margin_left = -399.0
+margin_top = -38.9092
+margin_right = 403.0
+margin_bottom = 95.0908
+custom_fonts/normal_font = SubResource( 1 )
+text = "Caso você tenha muita dificuldade em encontrar algum item específico, a vovó pode te ajudar, mas não o tempo todo!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonNextStep" type="Node2D" parent="StepHelperIntro"]
+position = Vector2( 416, 51 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="TextureRect" type="TextureRect" parent="StepHelperIntro/ButtonNextStep"]
+margin_left = -67.0
+margin_top = -36.0
+margin_right = 47.0
+margin_bottom = 36.0
+texture = ExtResource( 10 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StepHelperTime" type="Node2D" parent="."]
+visible = false
+position = Vector2( 640, 632.561 )
+
+[node name="BG" type="Sprite" parent="StepHelperTime"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StepHelperTime"]
+margin_left = -399.0
+margin_top = -38.9092
+margin_right = 403.0
+margin_bottom = 95.0908
+custom_fonts/normal_font = SubResource( 1 )
+text = "Quando o contados zerar, clique na vovó, que ela vai te mostrar um item que ainda não foi encontrado!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="Sprite" parent="StepHelperTime"]
+position = Vector2( 433.05, -549.501 )
+rotation = 3.14159
+texture = ExtResource( 10 )
+
+[node name="StepOut" type="Node2D" parent="."]
+position = Vector2( 640, 632.561 )
+
+[node name="BG" type="Sprite" parent="StepOut"]
+scale = Vector2( 0.38, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StepOut"]
+margin_left = -300.005
+margin_top = -38.9092
+margin_right = 349.995
+margin_bottom = 95.0908
+custom_fonts/normal_font = SubResource( 1 )
+text = "Lembrando que você pode sair e voltar quando quiser, clicando no ícone de saída!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="Sprite" parent="StepOut"]
+position = Vector2( 423.15, -98.367 )
+rotation = -1.5708
+texture = ExtResource( 10 )
+
+[node name="ButtonNextStep" type="Node2D" parent="StepOut"]
+position = Vector2( 318.419, 51 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="TextureRect" type="TextureRect" parent="StepOut/ButtonNextStep"]
+margin_left = -67.0
+margin_top = -36.0
+margin_right = 47.0
+margin_bottom = 36.0
+texture = ExtResource( 10 )
+flip_h = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -246,3 +397,6 @@ __meta__ = {
 [connection signal="gui_input" from="ModalConfirm/ButtonConfirm/TextureRect" to="." method="_on_click_confirm_confirm_modal"]
 [connection signal="gui_input" from="StepIntro/ButtonNextStep/TextureRect" to="." method="show_list_click_step"]
 [connection signal="gui_input" from="StepListInfo/ButtonNextStep/TextureRect" to="." method="show_list_close_step"]
+[connection signal="gui_input" from="StepItemFirst/ButtonNextStep/TextureRect" to="." method="show_inventory_click_step"]
+[connection signal="gui_input" from="StepHelperIntro/ButtonNextStep/TextureRect" to="." method="show_helper_time_step"]
+[connection signal="gui_input" from="StepOut/ButtonNextStep/TextureRect" to="." method="close_out_step"]

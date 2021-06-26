@@ -1,5 +1,8 @@
 extends Node2D
 
+onready var tutorial_manager = get_node("/root/TutorialManager")
+
+var first_item_found = true
 var should_run_map_animation = true
 
 var items = {
@@ -57,6 +60,9 @@ func item_found(level: String, name: String):
 		if item.label == name:
 			item.status = true
 			check_level(level)
+			if first_item_found && tutorial_manager.tutorial_is_running:
+				first_item_found = false
+				tutorial_manager.show_item_first_step()
 			break
 
 func get_items(level: String):

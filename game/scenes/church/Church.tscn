@@ -76,6 +76,7 @@ position = Vector2( 1060, 650 )
 
 [node name="Helper" parent="HUD" instance=ExtResource( 52 )]
 position = Vector2( 1200, 80 )
+level = "Church"
 
 [node name="Tutorial" parent="HUD" instance=ExtResource( 54 )]
 visible = false
