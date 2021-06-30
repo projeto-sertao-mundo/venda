@@ -19,19 +19,20 @@ font_data = ExtResource( 9 )
 z_index = 3000
 script = ExtResource( 1 )
 
-[node name="Mask" type="ColorRect" parent="."]
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
-rect_scale = Vector2( 32.52, 18.56 )
-color = Color( 1, 0, 0, 0.14902 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ModalAsk" type="Node2D" parent="."]
 visible = false
 position = Vector2( 640, 360 )
+
+[node name="Mask" type="ColorRect" parent="ModalAsk"]
+margin_left = -1239.42
+margin_top = -799.881
+margin_right = -1199.42
+margin_bottom = -759.881
+rect_scale = Vector2( 62.207, 41.3725 )
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ModalBounce" parent="ModalAsk" instance=ExtResource( 5 )]
 
@@ -71,6 +72,17 @@ __meta__ = {
 [node name="ModalConfirm" type="Node2D" parent="."]
 visible = false
 position = Vector2( 640, 360 )
+
+[node name="Mask" type="ColorRect" parent="ModalConfirm"]
+margin_left = -1239.42
+margin_top = -799.881
+margin_right = -1199.42
+margin_bottom = -759.881
+rect_scale = Vector2( 62.207, 41.3725 )
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ModalBounce" parent="ModalConfirm" instance=ExtResource( 5 )]
 
