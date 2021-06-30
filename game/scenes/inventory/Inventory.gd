@@ -39,18 +39,25 @@ func _ready():
 func toggle_popup(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if tutorial_manager.button_inventory_is_enable == true:
-				if inventory_is_visible:
-					if tutorial_manager.tutorial_is_running && tutorial_manager.close_inventory_is_enable:
-						hidden_inventory()
-						if first_inventory_close && tutorial_manager.tutorial_is_running:
-							first_inventory_close = false
-							tutorial_manager.show_helper_intro_step()
-				else:
-					show_inventory()
-					if first_inventory_visit && tutorial_manager.tutorial_is_running:
-						first_inventory_visit = false
-						tutorial_manager.show_inventory_item_step()
+			if tutorial_manager.tutorial_is_running: toggle_popup_inside_tutorial()
+			else: toggle_popup_outside_tutorial()
+
+func toggle_popup_outside_tutorial():
+	if inventory_is_visible: hidden_inventory()
+	else: show_inventory()
+
+func toggle_popup_inside_tutorial():
+	if tutorial_manager.button_inventory_is_enable == true:
+		if inventory_is_visible && tutorial_manager.close_inventory_is_enable:
+			hidden_inventory()
+			if first_inventory_close:
+				first_inventory_close = false
+				tutorial_manager.show_helper_intro_step()
+		else:
+			show_inventory()
+			if first_inventory_visit:
+				first_inventory_visit = false
+				tutorial_manager.show_inventory_item_step()
 
 # NOTE: Controlar exibição da páginas do inventário
 

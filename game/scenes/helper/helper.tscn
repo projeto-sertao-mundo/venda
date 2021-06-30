@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
-size = 52
+size = 44
 font_data = ExtResource( 3 )
 
 [sub_resource type="Animation" id=2]
@@ -47,9 +47,9 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="Sprite"]
 margin_left = -67.3508
-margin_top = 37.4319
+margin_top = 44.8565
 margin_right = 74.6496
-margin_bottom = 151.432
+margin_bottom = 158.857
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.164706, 0.164706, 0.164706, 1 )
 custom_colors/font_color_shadow = Color( 0.87451, 0.564706, 0.129412, 1 )

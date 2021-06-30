@@ -8,16 +8,15 @@ var tutorial_is_running = false
 var tutorial_is_completed = false
 var tutorial_controller = null
 
-var button_exit_is_enable = false
-var button_list_is_enable = false
-var button_inventory_is_enable = false
+var button_exit_is_enable = true
+var button_list_is_enable = true
+var button_inventory_is_enable = true
 
-var close_list_is_enable = false
-var close_inventory_is_enable = false
+var close_list_is_enable = true
+var close_inventory_is_enable = true
 
-
-var helper_is_enable = false
-var found_items_is_enable = false
+var helper_is_enable = true
+var found_items_is_enable = true
 
 func register_controller(tutorial: Node2D):
 	tutorial_controller = tutorial
@@ -30,11 +29,17 @@ func skip_tutorial():
 	tutorial_is_running = false
 	enable_all_buttons()
 	enable_list_close()
+	enable_inventory_close()
 	enable_found_items()
 	enable_helper()
 
 func start_tutorial():
 	tutorial_is_running = true
+	disable_all_buttons()
+	disable_list_close()
+	disable_inventory_close()
+	disable_found_items()
+	disable_helper()
 	show_step()
 
 # BUTTONS
@@ -62,11 +67,20 @@ func enable_inventory_button():
 	disable_all_buttons()
 	button_inventory_is_enable = true
 
+func disable_list_close():
+	close_list_is_enable = false
+
 func enable_list_close():
 	close_list_is_enable = true
 
+func disable_inventory_close():
+	close_inventory_is_enable = false
+
 func enable_inventory_close():
 	close_inventory_is_enable = true
+
+func disable_helper():
+	helper_is_enable = false
 
 func enable_helper():
 	helper_is_enable = true

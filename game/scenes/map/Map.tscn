@@ -37,8 +37,8 @@ position = Vector2( 640, 360 )
 texture = ExtResource( 6 )
 
 [node name="ButtonGroup" type="Sprite" parent="HUD"]
-position = Vector2( 1130, 650 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 1169.06, 650 )
+scale = Vector2( 0.355342, 0.5 )
 texture = ExtResource( 12 )
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 11 )]
