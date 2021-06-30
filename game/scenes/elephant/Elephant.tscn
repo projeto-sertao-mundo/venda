@@ -65,9 +65,11 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 49 )
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 11 )]
+visible = false
 level = "Elephant"
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
+visible = false
 level = "Elephant"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 12 )]
@@ -130,49 +132,41 @@ texture = ExtResource( 7 )
 [node name="Carretel de linha" parent="Items" instance=ExtResource( 14 )]
 position = Vector2( 543.609, 559.413 )
 rotation = 1.10408
-scale = Vector2( 0.248936, 0.248936 )
 z_index = 25
 item_name = "Carretel de linha"
 
 [node name="Esporas" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 328.177, 135.694 )
-scale = Vector2( 0.190556, 0.190556 )
 z_index = 15
 
-[node name="FrascoDePimenta" parent="Items" instance=ExtResource( 18 )]
+[node name="Frasco de Pimenta" parent="Items" instance=ExtResource( 18 )]
 position = Vector2( 175.731, 655.377 )
-scale = Vector2( 0.320834, 0.320834 )
 z_index = 35
 
-[node name="MacaDoAmor" parent="Items" instance=ExtResource( 19 )]
+[node name="Maçã do Amor" parent="Items" instance=ExtResource( 19 )]
 position = Vector2( 887.709, 229.451 )
 rotation = -6.23362
-scale = Vector2( 0.307574, 0.307574 )
 z_index = 60
 item_name = "Maçã do Amor"
 
-[node name="MaquinaRegistradora" parent="Items" instance=ExtResource( 16 )]
+[node name="Máq Registradora" parent="Items" instance=ExtResource( 16 )]
 position = Vector2( 1115.12, 455.098 )
-scale = Vector2( 0.390063, 0.390063 )
 z_index = 25
 item_name = "Máq Registradora"
 
-[node name="Peao" parent="Items" instance=ExtResource( 13 )]
+[node name="Peão" parent="Items" instance=ExtResource( 13 )]
 position = Vector2( 178.093, 415.975 )
 rotation = 3.10279
-scale = Vector2( 0.464817, 0.464817 )
 z_index = 45
 
 [node name="Pipoca" parent="Items" instance=ExtResource( 15 )]
 position = Vector2( 1008.48, 587.778 )
 rotation = 0.117511
-scale = Vector2( 0.407438, 0.407438 )
 z_index = 60
 
 [node name="Pirulito" parent="Items" instance=ExtResource( 6 )]
 position = Vector2( 663.96, 591.032 )
 rotation = -0.835708
-scale = Vector2( 0.188911, 0.188911 )
 z_index = 35
 
 [node name="ItemsRest" type="Node2D" parent="."]

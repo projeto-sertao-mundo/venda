@@ -6,7 +6,7 @@ export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 export (String) var item_name = ""
 
 var is_revealed = false
-var bounce_scale = 0.01
+var bounce_scale = 0.04
 var bounce_time  = 0
 
 var is_founded = false
@@ -20,6 +20,7 @@ func _ready():
 
 func founded():
 	manager.item_found(level, item_name)
+	scale = Vector2(1, 1)
 	z_index = 256
 	is_founded = true
 	is_revealed = false

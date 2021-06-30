@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 62.0613
-height = 118.142
+radius = 26.4179
+height = 54.5842
 
 [node name="Peao" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -23,6 +23,7 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Item"]
+scale = Vector2( 0.45, 0.45 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]

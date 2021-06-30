@@ -5,8 +5,8 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 103.074, 126.789 )
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 15.3314
 
 [node name="Esporas" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,9 +19,11 @@ shape = SubResource( 1 )
 [node name="Item" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+rotation = 0.565475
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Item"]
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]

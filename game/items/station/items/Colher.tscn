@@ -5,8 +5,8 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 37.1721, 120.055 )
+[sub_resource type="CapsuleShape2D" id=2]
+height = 47.0836
 
 [node name="Colher" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -23,6 +23,7 @@ shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="TecidoChita"]
 rotation = -0.144348
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="TecidoChita" to="." method="_on_item_is_pressed"]

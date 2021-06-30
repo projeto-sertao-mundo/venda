@@ -5,8 +5,8 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 45.0685, 111.403 )
+[sub_resource type="CapsuleShape2D" id=2]
+height = 29.6894
 
 [node name="Pirolito" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,11 +19,13 @@ shape = SubResource( 1 )
 [node name="Item" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+position = Vector2( -1.78381, 0.148651 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Item"]
-position = Vector2( 7.34105, -0.0371618 )
+position = Vector2( -0.199111, 0.161263 )
 rotation = -0.222726
+scale = Vector2( 0.22, 0.22 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]

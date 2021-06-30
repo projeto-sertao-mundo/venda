@@ -31,6 +31,7 @@ var first_inventory_visit = true
 var first_information_modal_visit = true
 
 func _ready():
+	visible = true
 	hidden_inventory()
 	hidden_all_pages()
 	hidden_information_modal()

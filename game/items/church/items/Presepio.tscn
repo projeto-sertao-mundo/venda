@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 139.206, 92.6087 )
+extents = Vector2( 28.9625, 39.6917 )
 
 [node name="Presepio" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,9 +19,11 @@ shape = SubResource( 1 )
 [node name="Presepio" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Presepio"]
+position = Vector2( -18.8988, -3.14981 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Presepio"]
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Presepio" to="." method="_on_item_is_pressed"]

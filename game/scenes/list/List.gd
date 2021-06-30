@@ -20,6 +20,7 @@ var first_list_visit = true
 var first_list_close = true
 
 func _ready():
+	visible = true
 	hidden_list()
 
 func toggle_popup(event: InputEvent):

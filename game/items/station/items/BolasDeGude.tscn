@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 70.5146, 48.479 )
+extents = Vector2( 23.7423, 17.0748 )
 
 [node name="Bolas De Gude" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -22,6 +22,7 @@ shape = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="BolasDeGude"]
+scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="BolasDeGude" to="." method="_on_item_is_pressed"]

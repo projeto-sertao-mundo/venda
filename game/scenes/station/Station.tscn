@@ -51,9 +51,11 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 38 )
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 13 )]
+visible = false
 level = "Station"
 
 [node name="List" parent="HUD" instance=ExtResource( 2 )]
+visible = false
 level = "Station"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 6 )]
@@ -124,51 +126,59 @@ texture = ExtResource( 23 )
 
 [node name="Balança" parent="Items" instance=ExtResource( 19 )]
 position = Vector2( 690.441, 536.94 )
-scale = Vector2( 0.489756, 0.489756 )
 z_index = 30
+collision_layer = 0
+collision_mask = 0
 
 [node name="Bolinhas de gude" parent="Items" instance=ExtResource( 18 )]
 position = Vector2( 225.836, 541.873 )
 rotation = -0.268459
-scale = Vector2( 0.343604, 0.343604 )
 z_index = 15
+collision_layer = 0
+collision_mask = 0
 item_name = "Bolinhas de gude"
 
 [node name="Cigarro de palha" parent="Items" instance=ExtResource( 17 )]
 position = Vector2( 1180.37, 191.604 )
-scale = Vector2( 0.356351, 0.356351 )
 z_index = 60
+collision_layer = 0
+collision_mask = 0
 item_name = "Cigarro de palha"
 
 [node name="Colher de pau" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 250.904, 89.6485 )
 rotation = 5.93868
-scale = Vector2( 0.245872, 0.245872 )
 z_index = 15
+collision_layer = 0
+collision_mask = 0
 item_name = "Colher de pau"
 
 [node name="Dedal" parent="Items" instance=ExtResource( 14 )]
 position = Vector2( 86.3063, 322.195 )
 rotation = 0.0310576
-scale = Vector2( 0.287191, 0.287191 )
 z_index = 5
+collision_layer = 0
+collision_mask = 0
 
-[node name="LiguaDeSogra" parent="Items" instance=ExtResource( 15 )]
+[node name="Língua De Sogra" parent="Items" instance=ExtResource( 15 )]
 position = Vector2( 922.781, 416.925 )
-scale = Vector2( 0.211341, 0.211341 )
 z_index = 60
+collision_layer = 0
+collision_mask = 0
 item_name = "Língua De Sogra"
 
 [node name="Panela" parent="Items" instance=ExtResource( 16 )]
 position = Vector2( 1076.97, 580.442 )
-scale = Vector2( 0.419745, 0.419745 )
 z_index = 55
+collision_layer = 0
+collision_mask = 0
 
 [node name="Pirulito Puxa Puxa" parent="Items" instance=ExtResource( 20 )]
 position = Vector2( 333.423, 656.469 )
 rotation = 1.50362
-scale = Vector2( 0.216206, 0.216206 )
 z_index = 60
+collision_layer = 0
+collision_mask = 0
 item_name = "Pirulito Puxa Puxa"
 
 [node name="ItemsRest" type="Node2D" parent="."]

@@ -156,21 +156,18 @@ texture = ExtResource( 15 )
 
 [node name="BaciaFlores" parent="Items" instance=ExtResource( 3 )]
 position = Vector2( 1231.86, 446.741 )
-scale = Vector2( 0.438583, 0.438583 )
 z_index = 45
 collision_layer = 0
 collision_mask = 0
 
 [node name="Caderno" parent="Items" instance=ExtResource( 22 )]
 position = Vector2( 220.883, 727.107 )
-scale = Vector2( 2.96552, 2.96552 )
 z_index = 45
 collision_layer = 0
 collision_mask = 0
 
 [node name="CopoDeVidro" parent="Items" instance=ExtResource( 24 )]
 position = Vector2( 833.25, 498.483 )
-scale = Vector2( 2.16904, 2.16904 )
 z_index = 15
 collision_layer = 0
 collision_mask = 0
@@ -178,14 +175,12 @@ collision_mask = 0
 [node name="Espanador" parent="Items" instance=ExtResource( 2 )]
 position = Vector2( 194.691, 419.222 )
 rotation = 7.02674
-scale = Vector2( 3.71573, 3.71573 )
 z_index = 35
 collision_layer = 0
 collision_mask = 0
 
 [node name="Presepio" parent="Items" instance=ExtResource( 23 )]
 position = Vector2( 550.025, 456.722 )
-scale = Vector2( 0.397761, 0.397761 )
 z_index = 15
 collision_layer = 0
 collision_mask = 0
@@ -194,7 +189,6 @@ item_name = "Presépio"
 [node name="TecidoChita" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 822.432, 387.026 )
 rotation = -0.174976
-scale = Vector2( 1.44043, 1.44043 )
 z_index = 25
 collision_layer = 0
 collision_mask = 0
@@ -202,15 +196,13 @@ collision_mask = 0
 [node name="Bastidor" parent="Items" instance=ExtResource( 4 )]
 position = Vector2( 856.666, 682.404 )
 rotation = 0.76992
-scale = Vector2( 2.36016, 2.36016 )
 z_index = 35
 collision_layer = 0
 collision_mask = 0
 
 [node name="Isqueiro" parent="Items" instance=ExtResource( 43 )]
-position = Vector2( 985.521, 387.024 )
+position = Vector2( 982.689, 386.552 )
 rotation = 1.93399
-scale = Vector2( 0.191342, 0.191342 )
 z_index = 15
 
 [node name="ItemsRest" type="Node2D" parent="."]

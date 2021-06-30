@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 79.6028, 88.1432 )
+extents = Vector2( 11.5919, 12.5063 )
 
 [node name="Isqueiro" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,10 +19,12 @@ shape = SubResource( 1 )
 [node name="Item" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+position = Vector2( 0.3125, -3.30615 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Item"]
 position = Vector2( 0, -4.00452 )
+scale = Vector2( 0.15, 0.15 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]

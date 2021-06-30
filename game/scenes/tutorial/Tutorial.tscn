@@ -366,6 +366,7 @@ rotation = 3.14159
 texture = ExtResource( 10 )
 
 [node name="StepOut" type="Node2D" parent="."]
+visible = false
 position = Vector2( 640, 632.561 )
 
 [node name="BG" type="Sprite" parent="StepOut"]

@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 77.6177, 122.546 )
+extents = Vector2( 22.9134, 32.8559 )
 
 [node name="MacaDoAmor" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,9 +19,11 @@ shape = SubResource( 1 )
 [node name="Item" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Item"]
+position = Vector2( -0.198425, 1.5874 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Item"]
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 1 )
 
 [connection signal="input_event" from="Item" to="." method="_on_item_is_pressed"]
