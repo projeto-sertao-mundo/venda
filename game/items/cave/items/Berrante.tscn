@@ -5,10 +5,11 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 20.7696
+height = 128.451
 
 [node name="Berrante" type="KinematicBody2D"]
-scale = Vector2( 5, 5 )
 script = ExtResource( 1 )
 level = "Cave"
 item_name = "Berrante"
@@ -19,11 +20,12 @@ shape = SubResource( 1 )
 [node name="Berrante" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Berrante"]
-position = Vector2( -0.0471935, -0.023597 )
+position = Vector2( 4.6722, 0.448342 )
+rotation = -0.845713
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Berrante"]
-scale = Vector2( 0.093, 0.093 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [connection signal="input_event" from="Berrante" to="." method="_on_item_is_pressed"]

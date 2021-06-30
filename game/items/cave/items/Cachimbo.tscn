@@ -5,7 +5,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 19.8391
+height = 64.3351
 
 [node name="Cachimbo" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -18,10 +20,12 @@ shape = SubResource( 1 )
 [node name="Cachimbo" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cachimbo"]
+position = Vector2( 3.86491, 0 )
+rotation = 1.59184
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Cachimbo"]
-scale = Vector2( 0.0928051, 0.092805 )
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 2 )
 
 [connection signal="input_event" from="Cachimbo" to="." method="_on_item_is_pressed"]

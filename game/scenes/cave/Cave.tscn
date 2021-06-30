@@ -185,7 +185,6 @@ __meta__ = {
 [node name="Agulha de tricô" parent="Items" instance=ExtResource( 1 )]
 position = Vector2( 397.769, 277.229 )
 rotation = -2.47189
-scale = Vector2( 4.28914, 4.28914 )
 z_index = 50
 collision_layer = 0
 collision_mask = 0
@@ -193,7 +192,6 @@ item_name = "Agulha de tricô"
 
 [node name="Alforge" parent="Items" instance=ExtResource( 12 )]
 position = Vector2( 1188.57, 392.201 )
-scale = Vector2( 4.89696, 4.89696 )
 z_index = 20
 collision_layer = 0
 collision_mask = 0
@@ -206,9 +204,8 @@ collision_layer = 0
 collision_mask = 0
 
 [node name="Cachimbo" parent="Items" instance=ExtResource( 17 )]
-position = Vector2( 701.356, 564.41 )
+position = Vector2( 689.774, 557.728 )
 rotation = -0.0460871
-scale = Vector2( 3.66316, 3.66316 )
 z_index = 30
 collision_layer = 0
 collision_mask = 0
@@ -228,8 +225,7 @@ collision_mask = 0
 
 [node name="IoIô" parent="Items" instance=ExtResource( 20 )]
 position = Vector2( 267.826, 171.077 )
-rotation = -1.30942
-scale = Vector2( 2.61971, 2.61971 )
+rotation = -1.27414
 z_index = 20
 collision_layer = 0
 collision_mask = 0
