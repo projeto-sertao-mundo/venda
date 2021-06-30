@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/tutorial/Tutorial.gd" type="Script" id=1]
 [ext_resource path="res://scenes/tutorial/ModalAsk.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scenes/tutorial/BG.png" type="Texture" id=8]
 [ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://scenes/tutorial/Arrow.png" type="Texture" id=10]
+[ext_resource path="res://scenes/tutorial/Arrow.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -172,10 +173,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" type="Sprite" parent="StepListClick"]
-position = Vector2( 489.618, -94.1245 )
-rotation = -1.5708
-texture = ExtResource( 10 )
+[node name="Arrow" parent="StepListClick" instance=ExtResource( 11 )]
+position = Vector2( 490.732, -80 )
 
 [node name="StepListInfo" type="Node2D" parent="."]
 visible = false
@@ -283,10 +282,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" type="Sprite" parent="StepInventoryClick"]
-position = Vector2( 574.471, -94.1245 )
-rotation = -1.5708
-texture = ExtResource( 10 )
+[node name="Arrow" parent="StepInventoryClick" instance=ExtResource( 11 )]
+position = Vector2( 575.585, -80 )
 
 [node name="StepInventoryItem" type="Node2D" parent="."]
 visible = false
@@ -360,10 +357,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" type="Sprite" parent="StepHelperTime"]
-position = Vector2( 433.05, -549.501 )
-rotation = 3.14159
-texture = ExtResource( 10 )
+[node name="Arrow" parent="StepHelperTime" instance=ExtResource( 11 )]
+position = Vector2( 430.34, -551.543 )
+rotation = -1.5708
 
 [node name="StepOut" type="Node2D" parent="."]
 visible = false
@@ -384,10 +380,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" type="Sprite" parent="StepOut"]
-position = Vector2( 423.15, -98.367 )
-rotation = -1.5708
-texture = ExtResource( 10 )
+[node name="Arrow" parent="StepOut" instance=ExtResource( 11 )]
+position = Vector2( 424.264, -80 )
 
 [node name="ButtonNextStep" type="Node2D" parent="StepOut"]
 position = Vector2( 318.419, 51 )
