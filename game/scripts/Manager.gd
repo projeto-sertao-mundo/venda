@@ -84,5 +84,13 @@ func check_level(level: String):
 	if all_items_is_founded:
 		level_is_completed[level] = true
 
+func check_game():
+	var status = true
+	for level_status in level_is_completed:
+		if level_is_completed[level_status] == false:
+			status = false
+			break
+	return status
+
 func get_level_status(level: String):
 	return level_is_completed[level]
