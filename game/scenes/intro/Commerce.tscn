@@ -1,0 +1,493 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://items/cave/items/Cachimbo.png" type="Texture" id=1]
+[ext_resource path="res://items/cave/items/Chaleira.png" type="Texture" id=2]
+[ext_resource path="res://items/cave/items/Pelego.png" type="Texture" id=3]
+[ext_resource path="res://items/cave/items/Berrante.png" type="Texture" id=4]
+[ext_resource path="res://items/cave/items/Estilingue.png" type="Texture" id=5]
+[ext_resource path="res://items/cave/rest/Isqueiro.png" type="Texture" id=6]
+[ext_resource path="res://items/cave/items/Alforge.png" type="Texture" id=7]
+[ext_resource path="res://items/cave/items/Agulha.png" type="Texture" id=8]
+[ext_resource path="res://items/cave/items/IoIo.png" type="Texture" id=9]
+[ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/intro/Commerce.gd" type="Script" id=11]
+[ext_resource path="res://items/elephant/items/Esporas.png" type="Texture" id=12]
+[ext_resource path="res://scenes/commerce/composition/Door.png" type="Texture" id=13]
+[ext_resource path="res://scenes/commerce/composition/Shelf.png" type="Texture" id=14]
+[ext_resource path="res://scenes/commerce/composition/Window.png" type="Texture" id=15]
+[ext_resource path="res://scenes/commerce/composition/BG.png" type="Texture" id=16]
+[ext_resource path="res://scenes/commerce/composition/Counter.png" type="Texture" id=17]
+[ext_resource path="res://scenes/commerce/composition/CounterFront.png" type="Texture" id=18]
+[ext_resource path="res://scenes/commerce/composition/Items.png" type="Texture" id=19]
+[ext_resource path="res://scenes/intro/BalonBig.png" type="Texture" id=20]
+[ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=21]
+[ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=22]
+[ext_resource path="res://items/church/items/Presepio.png" type="Texture" id=23]
+[ext_resource path="res://items/church/items/Espanador.png" type="Texture" id=24]
+[ext_resource path="res://items/church/items/TecidoChita.png" type="Texture" id=25]
+[ext_resource path="res://items/station/items/Pirolito.png" type="Texture" id=26]
+[ext_resource path="res://items/station/items/BolasDeGude.png" type="Texture" id=27]
+[ext_resource path="res://items/station/items/Colher.png" type="Texture" id=28]
+[ext_resource path="res://items/station/items/Cigarro.png" type="Texture" id=29]
+[ext_resource path="res://items/station/items/Panela.png" type="Texture" id=30]
+[ext_resource path="res://items/elephant/items/Pirulito.png" type="Texture" id=31]
+[ext_resource path="res://items/elephant/items/FrascoDePimenta.png" type="Texture" id=32]
+[ext_resource path="res://items/elephant/items/MaquinaRegistradora.png" type="Texture" id=33]
+[ext_resource path="res://items/church/items/Bastidor.png" type="Texture" id=34]
+[ext_resource path="res://items/station/items/Balanca.png" type="Texture" id=35]
+[ext_resource path="res://items/station/items/LiguaDeSogra.png" type="Texture" id=36]
+[ext_resource path="res://items/station/items/Dedal.png" type="Texture" id=37]
+[ext_resource path="res://items/elephant/items/Pipoca.png" type="Texture" id=38]
+[ext_resource path="res://items/elephant/items/Carretel.png" type="Texture" id=39]
+[ext_resource path="res://items/church/items/CopoDeVidro.png" type="Texture" id=40]
+[ext_resource path="res://items/elephant/items/Peao.png" type="Texture" id=41]
+[ext_resource path="res://items/elephant/items/MacaDoAmor.png" type="Texture" id=42]
+[ext_resource path="res://scenes/intro/Boy.png" type="Texture" id=43]
+[ext_resource path="res://scenes/intro/Man.png" type="Texture" id=44]
+[ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=45]
+[ext_resource path="res://scenes/map/Whirlwind.png" type="Texture" id=46]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 45 )
+
+[node name="InsideIntro" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Scene" type="Node2D" parent="."]
+
+[node name="BG" type="Sprite" parent="Scene"]
+position = Vector2( 640.026, 359.989 )
+texture = ExtResource( 16 )
+
+[node name="Counter" type="Sprite" parent="Scene"]
+position = Vector2( 752.258, 449.984 )
+texture = ExtResource( 17 )
+
+[node name="CounterFront" type="Sprite" parent="Scene"]
+position = Vector2( 275.63, 588.459 )
+texture = ExtResource( 18 )
+
+[node name="Window" type="Sprite" parent="Scene"]
+position = Vector2( 904.457, 281.778 )
+scale = Vector2( 0.634593, 0.634593 )
+texture = ExtResource( 15 )
+
+[node name="Door" type="Sprite" parent="Scene"]
+position = Vector2( 1167.3, 334.839 )
+scale = Vector2( 0.6742, 0.6742 )
+texture = ExtResource( 13 )
+
+[node name="Shelf" type="Sprite" parent="Scene"]
+position = Vector2( 397.1, 262.758 )
+texture = ExtResource( 14 )
+
+[node name="Items" type="Sprite" parent="Scene"]
+position = Vector2( 675.746, 471.23 )
+scale = Vector2( 0.660691, 0.660691 )
+z_index = 1024
+texture = ExtResource( 19 )
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Cave" type="Node2D" parent="Items"]
+
+[node name="Agulha" type="Sprite" parent="Items/Cave"]
+position = Vector2( 748.513, 266.074 )
+rotation = -0.614809
+scale = Vector2( 0.14105, 0.131477 )
+texture = ExtResource( 8 )
+
+[node name="Alforge" type="Sprite" parent="Items/Cave"]
+position = Vector2( 191.784, 207.704 )
+rotation = -0.166844
+scale = Vector2( 0.345916, 0.345916 )
+texture = ExtResource( 7 )
+
+[node name="Berrante" type="Sprite" parent="Items/Cave"]
+position = Vector2( 528.404, 238.12 )
+scale = Vector2( 0.20895, 0.20895 )
+texture = ExtResource( 4 )
+
+[node name="Cachimbo" type="Sprite" parent="Items/Cave"]
+position = Vector2( 686.354, 258.824 )
+scale = Vector2( 0.173571, 0.173571 )
+texture = ExtResource( 1 )
+
+[node name="Chaleira" type="Sprite" parent="Items/Cave"]
+position = Vector2( 320.096, 227.941 )
+scale = Vector2( 0.248773, 0.248773 )
+texture = ExtResource( 2 )
+
+[node name="Estilingue" type="Sprite" parent="Items/Cave"]
+position = Vector2( 437.476, 246.326 )
+rotation = -1.34616
+scale = Vector2( 0.317479, 0.317479 )
+texture = ExtResource( 5 )
+
+[node name="IoIo" type="Sprite" parent="Items/Cave"]
+position = Vector2( 612.801, 270.131 )
+scale = Vector2( 0.207829, 0.207829 )
+texture = ExtResource( 9 )
+
+[node name="Pelego" type="Sprite" parent="Items/Cave"]
+position = Vector2( 39.7173, 190.286 )
+rotation = -1.78714
+scale = Vector2( 0.480099, 0.480099 )
+texture = ExtResource( 3 )
+
+[node name="Church" type="Node2D" parent="Items"]
+
+[node name="BaciaFlores" type="Sprite" parent="Items/Church"]
+position = Vector2( 57.298, 436.498 )
+scale = Vector2( 0.511515, 0.511515 )
+texture = ExtResource( 21 )
+flip_h = true
+
+[node name="Bastidor" type="Sprite" parent="Items/Church"]
+position = Vector2( 194.148, 412.792 )
+scale = Vector2( 0.246953, 0.246953 )
+texture = ExtResource( 34 )
+
+[node name="Caderno" type="Sprite" parent="Items/Church"]
+position = Vector2( 608.467, 348.761 )
+scale = Vector2( 0.160255, 0.160255 )
+texture = ExtResource( 22 )
+
+[node name="CopoDeVidro" type="Sprite" parent="Items/Church"]
+position = Vector2( 438.411, 374.724 )
+scale = Vector2( 0.207903, 0.207903 )
+texture = ExtResource( 40 )
+
+[node name="Espanador" type="Sprite" parent="Items/Church"]
+position = Vector2( 529.979, 367.448 )
+rotation = -0.491583
+scale = Vector2( 0.183078, 0.183078 )
+texture = ExtResource( 24 )
+
+[node name="Presepio" type="Sprite" parent="Items/Church"]
+position = Vector2( 327.814, 392.363 )
+scale = Vector2( 0.320763, 0.320763 )
+texture = ExtResource( 23 )
+
+[node name="TecidoChita" type="Sprite" parent="Items/Church"]
+position = Vector2( 690.523, 341.484 )
+scale = Vector2( 0.164502, 0.164502 )
+texture = ExtResource( 25 )
+
+[node name="Isqueiro" type="Sprite" parent="Items/Church"]
+position = Vector2( 752.383, 331.22 )
+scale = Vector2( 0.186963, 0.186963 )
+texture = ExtResource( 6 )
+
+[node name="Elephant" type="Node2D" parent="Items"]
+
+[node name="Carretel" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 691.286, 297.338 )
+scale = Vector2( 0.177747, 0.177747 )
+texture = ExtResource( 39 )
+
+[node name="Esporas" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 188.578, 330.096 )
+rotation = 0.989725
+scale = Vector2( 0.421174, 0.421174 )
+texture = ExtResource( 12 )
+
+[node name="FrascoDePimenta" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 325.909, 320.016 )
+scale = Vector2( 0.298189, 0.298189 )
+texture = ExtResource( 32 )
+
+[node name="MacaDoAmor" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 439.302, 314.977 )
+scale = Vector2( 0.206617, 0.206617 )
+texture = ExtResource( 42 )
+
+[node name="MaquinaRegistradora" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 44.9468, 343.955 )
+rotation = -0.0643321
+scale = Vector2( 0.565223, 0.565223 )
+texture = ExtResource( 33 )
+
+[node name="Peao" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 536.316, 314.977 )
+rotation = 1.06767
+scale = Vector2( 0.247695, 0.247695 )
+texture = ExtResource( 41 )
+
+[node name="Pipoca" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 611.911, 307.417 )
+scale = Vector2( 0.180274, 0.180274 )
+texture = ExtResource( 38 )
+
+[node name="Pirulito" type="Sprite" parent="Items/Elephant"]
+position = Vector2( 753.023, 302.377 )
+rotation = -1.49086
+scale = Vector2( 0.169549, 0.169549 )
+texture = ExtResource( 31 )
+
+[node name="Station" type="Node2D" parent="Items"]
+
+[node name="Balanca" type="Sprite" parent="Items/Station"]
+position = Vector2( 194.382, 114.332 )
+rotation = 0.0424837
+scale = Vector2( 0.3376, 0.3376 )
+texture = ExtResource( 35 )
+
+[node name="BolasDeGude" type="Sprite" parent="Items/Station"]
+position = Vector2( 689.151, 219.219 )
+rotation = -0.197351
+scale = Vector2( 0.286856, 0.286856 )
+texture = ExtResource( 27 )
+
+[node name="Cigarro" type="Sprite" parent="Items/Station"]
+position = Vector2( 755.897, 225.576 )
+rotation = 0.147747
+scale = Vector2( 0.169259, 0.169259 )
+texture = ExtResource( 29 )
+
+[node name="Colher" type="Sprite" parent="Items/Station"]
+position = Vector2( 613.929, 206.505 )
+rotation = 1.57994
+scale = Vector2( 0.340168, 0.234889 )
+texture = ExtResource( 28 )
+
+[node name="Dedal" type="Sprite" parent="Items/Station"]
+position = Vector2( 533.41, 186.375 )
+rotation = 0.499888
+scale = Vector2( 0.209079, 0.209079 )
+texture = ExtResource( 37 )
+
+[node name="LiguaDeSogra" type="Sprite" parent="Items/Station"]
+position = Vector2( 445.475, 175.781 )
+rotation = -1.42414
+scale = Vector2( 0.274134, 0.274134 )
+texture = ExtResource( 36 )
+
+[node name="Panela" type="Sprite" parent="Items/Station"]
+position = Vector2( 50.2951, 86.7858 )
+rotation = 0.0101966
+scale = Vector2( 0.4191, 0.4191 )
+texture = ExtResource( 30 )
+
+[node name="Pirolito" type="Sprite" parent="Items/Station"]
+position = Vector2( 333.172, 156.711 )
+rotation = 1.30164
+scale = Vector2( 0.402434, 0.402434 )
+texture = ExtResource( 26 )
+
+[node name="Steps" type="Node2D" parent="."]
+z_index = 2000
+
+[node name="BG" type="ColorRect" parent="Steps"]
+margin_left = -10.4882
+margin_top = -7.49155
+margin_right = 29.5118
+margin_bottom = 32.5085
+rect_scale = Vector2( 32.92, 18.68 )
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BalonBig" type="Sprite" parent="Steps"]
+position = Vector2( 639.409, 559.935 )
+texture = ExtResource( 20 )
+
+[node name="Boy" type="Sprite" parent="Steps"]
+visible = false
+position = Vector2( 145.727, 858.366 )
+texture = ExtResource( 43 )
+
+[node name="Man" type="Sprite" parent="Steps"]
+visible = false
+position = Vector2( 1175.95, 778.995 )
+texture = ExtResource( 44 )
+
+[node name="01" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/01"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 528.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Bom dia, senhor! Tem doce pra vender?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="02" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/02"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 528.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Tem sim, meu filho! Qual você quer? "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="03" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/03"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 528.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Ah! Pode me dar aquele ali! Bala de menta..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="04" type="Node2D" parent="Steps"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/04"]
+margin_left = 523.937
+margin_top = 575.735
+margin_right = 1243.94
+margin_bottom = 640.735
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "REPRODUZIR SIM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="05" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/05"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 528.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Que ventania é essa?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="06" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="Whirlwind" type="Sprite" parent="Steps/06"]
+position = Vector2( 667.981, 393.257 )
+texture = ExtResource( 46 )
+
+[node name="07" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/07"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 528.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Nossa!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="08" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 583.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Meu Deus do céu!! 
+O que foi isso?? 
+Levou tudo! Tô perdido!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="09" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/09"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 643.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Me ajuda, meu filho! 
+Vê pra onde esse redemoinho foi e traz minhas 
+coisas de volta! 
+Prometo te recompensar!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="10" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/10"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 643.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Que confusão! 
+Eu vi tudo! Que azar! 
+Vamos procurar as coisas para o senhor. Pode ficar tranquilo!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="11" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/11"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 603.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Muito obrigado! 
+Vai com cuidado, o sertão esconde muitas surpresas. "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="12" type="Node2D" parent="Steps"]
+visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/12"]
+margin_left = 297.211
+margin_top = 463.432
+margin_right = 1017.21
+margin_bottom = 603.432
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = " Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! 
+Boa sorte!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeIn" parent="." instance=ExtResource( 10 )]
+visible = false
+
+[connection signal="gui_input" from="Steps/BG" to="." method="_on_next_step"]

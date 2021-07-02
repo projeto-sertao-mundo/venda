@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://items/map/Church.tscn" type="PackedScene" id=1]
 [ext_resource path="res://items/map/Cave.tscn" type="PackedScene" id=2]
@@ -12,6 +12,9 @@
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/inventory/Inventory.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/sprites/ButtonGroup.png" type="Texture" id=12]
+[ext_resource path="res://scenes/intro/Man.png" type="Texture" id=13]
+[ext_resource path="res://scenes/intro/BalonLong.png" type="Texture" id=14]
+[ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=15]
 
 [sub_resource type="Animation" id=1]
 length = 14.0
@@ -27,6 +30,10 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 638.279, 358.095 ), Vector2( 638.279, 358.095 ), Vector2( 214.258, 316.143 ), Vector2( 311.648, 116.868 ), Vector2( 1116.24, 215.756 ), Vector2( 738.665, 567.858 ), Vector2( 903.935, 840.489 ) ]
 }
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 15 )
 
 [node name="Map" type="Node2D"]
 
@@ -70,27 +77,10 @@ position = Vector2( 700.923, 553.246 )
 scale = Vector2( 1.03902, 1.03902 )
 
 [node name="Whirlwind" type="Node2D" parent="."]
-position = Vector2( 638.279, 358.095 )
+visible = false
 script = ExtResource( 8 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Whirlwind"]
-method_call_mode = 1
-anims/MoveOnMap = SubResource( 1 )
-
-[node name="Sprite" type="Sprite" parent="Whirlwind"]
-position = Vector2( 1.61552, -0.78537 )
-scale = Vector2( 0.4, 0.4 )
-texture = ExtResource( 7 )
-__meta__ = {
-"_editor_description_": "4"
-}
-
-[node name="Timer" type="Timer" parent="Whirlwind"]
-wait_time = 9.0
-one_shot = true
-autostart = true
-
-[node name="WhirlwindMask" type="ColorRect" parent="."]
+[node name="Mask" type="ColorRect" parent="Whirlwind"]
 margin_left = -15.0
 margin_top = -8.0
 margin_right = 1341.0
@@ -100,7 +90,65 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Timer" type="Timer" parent="Whirlwind"]
+wait_time = 9.0
+one_shot = true
+autostart = true
+
+[node name="Animation" type="Node2D" parent="Whirlwind"]
+position = Vector2( 638.279, 358.095 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Whirlwind/Animation"]
+method_call_mode = 1
+anims/MoveOnMap = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Whirlwind/Animation"]
+position = Vector2( 1.61552, -0.78537 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "4"
+}
+
+[node name="Intro" type="Node2D" parent="Whirlwind"]
+
+[node name="BG" type="ColorRect" parent="Whirlwind/Intro"]
+margin_left = -10.4882
+margin_top = -7.49155
+margin_right = 29.5118
+margin_bottom = 32.5085
+rect_scale = Vector2( 32.92, 18.68 )
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Man" type="Sprite" parent="Whirlwind/Intro"]
+position = Vector2( 196.523, 804.394 )
+texture = ExtResource( 13 )
+
+[node name="BalonLong" type="Sprite" parent="Whirlwind/Intro"]
+position = Vector2( 675.178, 460.485 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Whirlwind/Intro"]
+margin_left = 362.295
+margin_top = 439.621
+margin_right = 962.295
+margin_bottom = 479.621
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Escolha um lugar para começar a sua busca!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="FadeIn" parent="." instance=ExtResource( 10 )]
 visible = false
 
 [connection signal="timeout" from="Whirlwind/Timer" to="Whirlwind" method="_on_timeout"]
+[connection signal="gui_input" from="Whirlwind/Intro/BG" to="Whirlwind" method="_on_hidden_intro"]

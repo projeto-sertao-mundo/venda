@@ -21,11 +21,14 @@ texture = ExtResource( 1 )
 
 [node name="Fence" parent="." instance=ExtResource( 3 )]
 position = Vector2( 515.589, 338.65 )
-scene = "res://scenes/map/Map.tscn"
+scene = ""
+is_fence = true
 
 [node name="Door" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1207.37, 345.564 )
 rotation = -0.0112802
 scale = Vector2( 1.34665, 1.34665 )
+scene = ""
 
 [node name="Inventory" parent="." instance=ExtResource( 5 )]
+visible = false

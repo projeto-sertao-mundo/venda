@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/intro/Boy.png" type="Texture" id=1]
+[ext_resource path="res://scenes/intro/IntroBoy.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes/intro/BalonLong.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="Intro" type="Node2D"]
+position = Vector2( 0, 4.24265 )
+script = ExtResource( 2 )
+
+[node name="Boy" type="Sprite" parent="."]
+position = Vector2( 288.682, 458.867 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="BalonLong" type="Sprite" parent="."]
+position = Vector2( 735.877, 222.916 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 382.931
+margin_top = 185.637
+margin_right = 1102.93
+margin_bottom = 250.637
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Olha, uma venda! 
+Quero ver o que tem lá! Aposto que tem um doce gostoso."
+__meta__ = {
+"_edit_use_anchors_": false
+}

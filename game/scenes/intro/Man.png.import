@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boy-and-horse.png-cc27695d13ca9aa34fc9e176cf7abdd9.stex"
+path="res://.import/Man.png-d5a6a4ad0c5084ef9c12d9c49e0bdb2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://temp/boy-and-horse.png"
-dest_files=[ "res://.import/boy-and-horse.png-cc27695d13ca9aa34fc9e176cf7abdd9.stex" ]
+source_file="res://scenes/intro/Man.png"
+dest_files=[ "res://.import/Man.png-d5a6a4ad0c5084ef9c12d9c49e0bdb2e.stex" ]
 
 [params]
 

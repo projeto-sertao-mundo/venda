@@ -3,7 +3,6 @@ extends Node2D
 onready var tutorial_manager = get_node("/root/TutorialManager")
 
 var first_item_found = true
-var should_run_map_animation = true
 
 var items = {
 	Cave = [

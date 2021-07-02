@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/helper.png-b759ef7d0fb08c34db09611f7933b556.stex"
+path="res://.import/BalonBig.png-85f1ad6a272c9e23f22a65f3e48ff421.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://temp/helper.png"
-dest_files=[ "res://.import/helper.png-b759ef7d0fb08c34db09611f7933b556.stex" ]
+source_file="res://scenes/intro/BalonBig.png"
+dest_files=[ "res://.import/BalonBig.png-85f1ad6a272c9e23f22a65f3e48ff421.stex" ]
 
 [params]
 

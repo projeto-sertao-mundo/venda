@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://scenes/menu/ButtonPlay.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scenes/commerce/Outside.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/menu/MenuButton.gd" type="Script" id=8]
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/intro/Intro.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "ShowMenu"
@@ -38,6 +39,9 @@ extents = Vector2( 56.3526, 30.2548 )
 [node name="Main" type="Node2D"]
 
 [node name="CommerceOutside" parent="." instance=ExtResource( 7 )]
+
+[node name="Intro" parent="." instance=ExtResource( 10 )]
+visible = false
 
 [node name="Menu" type="Node2D" parent="."]
 position = Vector2( 640, 390 )
@@ -75,6 +79,7 @@ texture = ExtResource( 3 )
 position = Vector2( -29.7677, 74.4706 )
 rotation = 0.0680124
 script = ExtResource( 8 )
+intro_boy_path = NodePath("../../Intro")
 
 [node name="Sprite" type="Sprite" parent="Menu/ButtonPlay"]
 position = Vector2( 7.61469, 2.69571 )
