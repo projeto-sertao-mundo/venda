@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/AtlasMapItems.png-8c69bac597e6c0f4afa347e0978f6fc7.stex"
+path="res://.import/AtlasMapItems.png-34f44f10ec6bf6b45e9adc7feb5280f5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/Map/AtlasMapItems.png"
-dest_files=[ "res://.import/AtlasMapItems.png-8c69bac597e6c0f4afa347e0978f6fc7.stex" ]
+source_file="res://items/map/AtlasMapItems.png"
+dest_files=[ "res://.import/AtlasMapItems.png-34f44f10ec6bf6b45e9adc7feb5280f5.stex" ]
 
 [params]
 
