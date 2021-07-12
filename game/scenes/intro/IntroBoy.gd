@@ -9,4 +9,3 @@ func _ready():
 func show_me():
 	if intro_manager.display_boy_outside == true:
 		visible = true
-		intro_manager.hidden_boy_outside()

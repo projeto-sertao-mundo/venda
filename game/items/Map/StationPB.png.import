@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/StationPB.png-3eb4ff98011bc71adcfefd951d56dc64.stex"
+path="res://.import/StationPB.png-fdf1eb9148e24ba48d45e06c817b6ccb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/Map/StationPB.png"
-dest_files=[ "res://.import/StationPB.png-3eb4ff98011bc71adcfefd951d56dc64.stex" ]
+source_file="res://items/map/StationPB.png"
+dest_files=[ "res://.import/StationPB.png-fdf1eb9148e24ba48d45e06c817b6ccb.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ElephantPlate.png-1d26319b730d4cc609fe48023f6e4050.stex"
+path="res://.import/ElephantPlate.png-d2e68bf908f67fcc13f95d01d4ccbf80.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/Map/ElephantPlate.png"
-dest_files=[ "res://.import/ElephantPlate.png-1d26319b730d4cc609fe48023f6e4050.stex" ]
+source_file="res://items/map/ElephantPlate.png"
+dest_files=[ "res://.import/ElephantPlate.png-d2e68bf908f67fcc13f95d01d4ccbf80.stex" ]
 
 [params]
 

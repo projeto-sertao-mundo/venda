@@ -1,5 +1,7 @@
 extends Node2D
 
+onready var intro_manager = get_node("/root/Intro")
+
 var actual_step = 0
 
 onready var boy = get_node("Steps/Boy")
@@ -20,6 +22,7 @@ onready var step_11 = get_node("Steps/11")
 onready var step_12 = get_node("Steps/12")
 
 func _ready():
+	intro_manager.hidden_boy_outside()
 	hidden_all_steps()
 	next_step()
 
