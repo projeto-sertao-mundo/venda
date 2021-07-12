@@ -420,7 +420,6 @@ level = "Station"
 item_name = "Pirulito Puxa Puxa"
 
 [node name="Dialog" type="Node2D" parent="."]
-visible = false
 z_index = 4096
 script = ExtResource( 48 )
 

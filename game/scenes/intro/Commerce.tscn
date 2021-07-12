@@ -19,7 +19,7 @@
 [ext_resource path="res://scenes/commerce/composition/Counter.png" type="Texture" id=17]
 [ext_resource path="res://scenes/commerce/composition/CounterFront.png" type="Texture" id=18]
 [ext_resource path="res://scenes/commerce/composition/Items.png" type="Texture" id=19]
-[ext_resource path="res://scenes/intro/BalonBig.png" type="Texture" id=20]
+[ext_resource path="res://scenes/tutorial/BG.png" type="Texture" id=20]
 [ext_resource path="res://items/church/items/BaciaFlores.png" type="Texture" id=21]
 [ext_resource path="res://items/church/items/Caderno.png" type="Texture" id=22]
 [ext_resource path="res://items/church/items/Presepio.png" type="Texture" id=23]
@@ -291,29 +291,29 @@ __meta__ = {
 }
 
 [node name="BalonBig" type="Sprite" parent="Steps"]
-position = Vector2( 639.409, 559.935 )
+position = Vector2( 640, 598.585 )
+scale = Vector2( 0.5, 0.7 )
 texture = ExtResource( 20 )
 
 [node name="Boy" type="Sprite" parent="Steps"]
-visible = false
-position = Vector2( 145.727, 858.366 )
+position = Vector2( 115.996, 871.256 )
 texture = ExtResource( 43 )
+flip_h = true
 
 [node name="Man" type="Sprite" parent="Steps"]
-visible = false
-position = Vector2( 1175.95, 778.995 )
+position = Vector2( 1175.95, 758.183 )
 texture = ExtResource( 44 )
 
 [node name="01" type="Node2D" parent="Steps"]
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/01"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 528.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Bom dia, senhor! Tem doce pra vender?"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -323,12 +323,12 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/02"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 528.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Tem sim, meu filho! Qual você quer? "
 __meta__ = {
 "_edit_use_anchors_": false
@@ -338,18 +338,19 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/03"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 528.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Ah! Pode me dar aquele ali! Bala de menta..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="04" type="Node2D" parent="Steps"]
+visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/04"]
 margin_left = 523.937
@@ -357,7 +358,7 @@ margin_top = 575.735
 margin_right = 1243.94
 margin_bottom = 640.735
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "REPRODUZIR SIM"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -367,12 +368,12 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/05"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 528.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Que ventania é essa?"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -389,12 +390,12 @@ texture = ExtResource( 46 )
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/07"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 528.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Nossa!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -404,16 +405,15 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 583.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 660.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Meu Deus do céu!! 
 O que foi isso?? 
-Levou tudo! Tô perdido!
-"
+Levou tudo! Tô perdido!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -422,16 +422,15 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/09"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 643.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 720.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Me ajuda, meu filho! 
 Vê pra onde esse redemoinho foi e traz minhas 
-coisas de volta! 
-Prometo te recompensar!
+coisas de volta! Prometo te recompensar!
 "
 __meta__ = {
 "_edit_use_anchors_": false
@@ -441,14 +440,13 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/10"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 643.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 720.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Que confusão! 
-Eu vi tudo! Que azar! 
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+text = "Que confusão! Eu vi tudo! Que azar! 
 Vamos procurar as coisas para o senhor. Pode ficar tranquilo!
 "
 __meta__ = {
@@ -459,12 +457,12 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/11"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 603.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 680.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Muito obrigado! 
 Vai com cuidado, o sertão esconde muitas surpresas. "
 __meta__ = {
@@ -475,13 +473,13 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/12"]
-margin_left = 297.211
-margin_top = 463.432
-margin_right = 1017.21
-margin_bottom = 603.432
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 969.999
+margin_bottom = 680.0
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = " Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! 
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+text = "Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! 
 Boa sorte!"
 __meta__ = {
 "_edit_use_anchors_": false

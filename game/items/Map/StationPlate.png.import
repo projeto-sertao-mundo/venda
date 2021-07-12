@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/StationPlate.png-52a295c8d2060a7adc7c0cabc851628d.stex"
+path="res://.import/StationPlate.png-756e527bd9bcd9b3d584f1b753d2ada2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/map/StationPlate.png"
-dest_files=[ "res://.import/StationPlate.png-52a295c8d2060a7adc7c0cabc851628d.stex" ]
+source_file="res://items/Map/StationPlate.png"
+dest_files=[ "res://.import/StationPlate.png-756e527bd9bcd9b3d584f1b753d2ada2.stex" ]
 
 [params]
 
