@@ -83,7 +83,7 @@ position = Vector2( 397.1, 262.758 )
 texture = ExtResource( 14 )
 
 [node name="Items" type="Sprite" parent="Scene"]
-position = Vector2( 675.746, 471.23 )
+position = Vector2( 641.338, 402.785 )
 scale = Vector2( 0.660691, 0.660691 )
 z_index = 1024
 texture = ExtResource( 19 )

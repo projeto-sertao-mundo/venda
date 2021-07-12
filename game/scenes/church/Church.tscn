@@ -69,6 +69,7 @@ texture = ExtResource( 53 )
 level = "Church"
 
 [node name="List" parent="HUD" instance=ExtResource( 1 )]
+visible = false
 level = "Church"
 
 [node name="ExitLevel" parent="HUD" instance=ExtResource( 36 )]

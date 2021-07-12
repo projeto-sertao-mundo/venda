@@ -67,6 +67,7 @@ texture = ExtResource( 43 )
 position = Vector2( 1130, 650 )
 
 [node name="Inventory" parent="HUD" instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 1.57498, 1.88971 )
 
 [node name="Scene" type="Node2D" parent="."]
@@ -98,7 +99,7 @@ position = Vector2( 397.1, 262.758 )
 texture = ExtResource( 9 )
 
 [node name="Items" type="Sprite" parent="Scene"]
-position = Vector2( 675.746, 471.23 )
+position = Vector2( 641.338, 402.785 )
 scale = Vector2( 0.660691, 0.660691 )
 z_index = 2048
 texture = ExtResource( 44 )

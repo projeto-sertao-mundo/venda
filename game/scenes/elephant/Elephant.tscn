@@ -136,7 +136,8 @@ z_index = 25
 item_name = "Carretel de linha"
 
 [node name="Esporas" parent="Items" instance=ExtResource( 17 )]
-position = Vector2( 328.177, 135.694 )
+position = Vector2( 331.066, 122.054 )
+rotation = -1.45909
 z_index = 15
 
 [node name="Frasco de Pimenta" parent="Items" instance=ExtResource( 18 )]

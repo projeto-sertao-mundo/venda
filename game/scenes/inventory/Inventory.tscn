@@ -77,7 +77,6 @@ __meta__ = {
 }
 
 [node name="Book" type="Node2D" parent="."]
-visible = false
 __meta__ = {
 "_edit_lock_": true
 }
@@ -443,7 +442,6 @@ rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 27 )
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
-visible = false
 
 [node name="BookElephant" type="Sprite" parent="Book/Pages/PageElephant"]
 position = Vector2( 640, 360 )
@@ -481,12 +479,16 @@ texture = ExtResource( 28 )
 
 [node name="Sprite" type="TextureRect" parent="Book/Pages/PageElephant/Items/Esporas"]
 visible = false
-margin_left = -40.9432
-margin_top = -44.8259
-margin_right = 215.057
-margin_bottom = 211.174
+margin_left = -80.1985
+margin_top = -17.1161
+margin_right = 175.802
+margin_bottom = 238.884
+rect_rotation = -34.6234
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 45 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Frasco de Pimenta" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 292.742, 463.862 )

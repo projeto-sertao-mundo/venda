@@ -45,22 +45,19 @@ __meta__ = {
 
 [node name="BGMask" type="ColorRect" parent="Paper"]
 margin_left = 20.2043
-margin_top = 40.4086
+margin_top = 50.4575
 margin_right = 60.2043
-margin_bottom = 80.4086
-rect_scale = Vector2( 7.96, 15.36 )
+margin_bottom = 90.4576
+rect_scale = Vector2( 7.64, 15.04 )
 color = Color( 1, 1, 1, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="TextureRect" parent="Paper"]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="Sprite" type="Sprite" parent="Paper"]
+position = Vector2( 170.704, 353.412 )
+rotation = -0.0174533
 texture = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Text" type="Node2D" parent="Paper"]
 position = Vector2( 47.8684, 166.215 )
