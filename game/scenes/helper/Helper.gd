@@ -7,8 +7,8 @@ export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 var helper_used = 0
 var helper_is_active = false
 
-var timer_increment = 10
-var timer_count_default = 30
+var timer_increment = 0
+var timer_count_default = 2
 var timer_count = 0
 
 onready var timer_node = get_node("Timer")

@@ -155,7 +155,7 @@ texture = ExtResource( 15 )
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="BaciaFlores" parent="Items" instance=ExtResource( 3 )]
+[node name="Bacia de Flores" parent="Items" instance=ExtResource( 3 )]
 position = Vector2( 1231.86, 446.741 )
 z_index = 45
 collision_layer = 0
@@ -167,7 +167,7 @@ z_index = 45
 collision_layer = 0
 collision_mask = 0
 
-[node name="CopoDeVidro" parent="Items" instance=ExtResource( 24 )]
+[node name="Copo de Vidro" parent="Items" instance=ExtResource( 24 )]
 position = Vector2( 833.25, 498.483 )
 z_index = 15
 collision_layer = 0
@@ -180,14 +180,14 @@ z_index = 35
 collision_layer = 0
 collision_mask = 0
 
-[node name="Presepio" parent="Items" instance=ExtResource( 23 )]
+[node name="Presépio" parent="Items" instance=ExtResource( 23 )]
 position = Vector2( 550.025, 456.722 )
 z_index = 15
 collision_layer = 0
 collision_mask = 0
 item_name = "Presépio"
 
-[node name="TecidoChita" parent="Items" instance=ExtResource( 21 )]
+[node name="Tecido de Chita" parent="Items" instance=ExtResource( 21 )]
 position = Vector2( 822.432, 387.026 )
 rotation = -0.174976
 z_index = 25
