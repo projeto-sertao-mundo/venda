@@ -768,7 +768,6 @@ rect_scale = Vector2( 0.499413, 0.499413 )
 texture = ExtResource( 30 )
 
 [node name="InformationModal" type="Node2D" parent="."]
-visible = false
 __meta__ = {
 "_edit_lock_": true
 }
@@ -779,7 +778,7 @@ margin_top = -25.0096
 margin_right = -22.2652
 margin_bottom = 14.9904
 rect_scale = Vector2( 34.7095, 18.6983 )
-color = Color( 0, 0, 0, 0 )
+color = Color( 0, 0, 0, 0.392157 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -816,6 +815,7 @@ __meta__ = {
 }
 
 [node name="Close" type="TextureRect" parent="InformationModal/Modal"]
+visible = false
 margin_left = 816.584
 margin_top = 154.845
 margin_right = 1072.58
@@ -866,4 +866,5 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="InformationModal/ColorRect" to="." method="_on_click_close_information_modal"]
 [connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
