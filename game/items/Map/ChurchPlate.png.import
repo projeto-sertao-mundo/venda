@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ChurchPlate.png-50655c45019520e55c45bedab17f882f.stex"
+path="res://.import/ChurchPlate.png-b1a70018202cb5573580683e06349cd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://items/map/ChurchPlate.png"
-dest_files=[ "res://.import/ChurchPlate.png-50655c45019520e55c45bedab17f882f.stex" ]
+source_file="res://items/Map/ChurchPlate.png"
+dest_files=[ "res://.import/ChurchPlate.png-b1a70018202cb5573580683e06349cd3.stex" ]
 
 [params]
 
