@@ -48,7 +48,7 @@
 [ext_resource path="res://scenes/map/Whirlwind.png" type="Texture" id=46]
 
 [sub_resource type="DynamicFont" id=1]
-size = 30
+size = 42
 font_data = ExtResource( 45 )
 
 [node name="InsideIntro" type="Node2D"]
@@ -291,8 +291,8 @@ __meta__ = {
 }
 
 [node name="BalonBig" type="Sprite" parent="Steps"]
-position = Vector2( 640, 598.585 )
-scale = Vector2( 0.5, 0.7 )
+position = Vector2( 640, 566.134 )
+scale = Vector2( 0.5, 0.75 )
 texture = ExtResource( 20 )
 
 [node name="Boy" type="Sprite" parent="Steps"]
@@ -310,8 +310,9 @@ visible = false
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/01"]
 margin_left = 250.0
 margin_top = 540.0
-margin_right = 969.999
-margin_bottom = 605.0
+margin_right = 1050.0
+margin_bottom = 660.0
+rect_pivot_offset = Vector2( 400, 0 )
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 text = "Bom dia, senhor! Tem doce pra vender?"
@@ -335,16 +336,16 @@ __meta__ = {
 }
 
 [node name="03" type="Node2D" parent="Steps"]
-visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/03"]
 margin_left = 250.0
-margin_top = 540.0
+margin_top = 521.643
 margin_right = 969.999
-margin_bottom = 605.0
+margin_bottom = 641.643
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Ah! Pode me dar aquele ali! Bala de menta..."
+text = "Ah! Pode me dar aquele ali! 
+Bala de menta..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -390,9 +391,9 @@ texture = ExtResource( 46 )
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/07"]
-margin_left = 250.0
+margin_left = 567.606
 margin_top = 540.0
-margin_right = 969.999
+margin_right = 767.606
 margin_bottom = 605.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
@@ -406,13 +407,12 @@ visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
 margin_left = 250.0
-margin_top = 540.0
+margin_top = 523.083
 margin_right = 969.999
-margin_bottom = 660.0
+margin_bottom = 643.083
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Meu Deus do céu!! 
-O que foi isso?? 
+text = "Meu Deus do céu!! O que foi isso?? 
 Levou tudo! Tô perdido!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -423,14 +423,12 @@ visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/09"]
 margin_left = 250.0
-margin_top = 540.0
-margin_right = 969.999
-margin_bottom = 720.0
+margin_top = 501.225
+margin_right = 1050.0
+margin_bottom = 681.225
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Me ajuda, meu filho! 
-Vê pra onde esse redemoinho foi e traz minhas 
-coisas de volta! Prometo te recompensar!
+text = "Me ajuda, meu filho!  Vê pra onde esse redemoinho foi e traz minhas coisas de volta! Prometo te recompensar!
 "
 __meta__ = {
 "_edit_use_anchors_": false
@@ -438,6 +436,7 @@ __meta__ = {
 
 [node name="10" type="Node2D" parent="Steps"]
 visible = false
+position = Vector2( 0, -39.0892 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/10"]
 margin_left = 250.0
@@ -454,17 +453,16 @@ __meta__ = {
 }
 
 [node name="11" type="Node2D" parent="Steps"]
-visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/11"]
 margin_left = 250.0
-margin_top = 540.0
+margin_top = 521.639
 margin_right = 969.999
-margin_bottom = 680.0
+margin_bottom = 661.639
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Muito obrigado! 
-Vai com cuidado, o sertão esconde muitas surpresas. "
+text = "Muito obrigado! Vai com cuidado, 
+o sertão esconde muitas surpresas. "
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -474,13 +472,12 @@ visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/12"]
 margin_left = 250.0
-margin_top = 540.0
-margin_right = 969.999
-margin_bottom = 680.0
+margin_top = 496.486
+margin_right = 1050.0
+margin_bottom = 696.486
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! 
-Boa sorte!"
+text = "Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! Boa sorte!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

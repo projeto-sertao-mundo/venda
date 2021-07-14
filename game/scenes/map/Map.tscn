@@ -32,7 +32,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="DynamicFont" id=2]
-size = 30
+size = 42
 font_data = ExtResource( 15 )
 
 [node name="Map" type="Node2D"]
@@ -77,7 +77,6 @@ position = Vector2( 700.923, 553.246 )
 scale = Vector2( 1.03902, 1.03902 )
 
 [node name="Whirlwind" type="Node2D" parent="."]
-visible = false
 script = ExtResource( 8 )
 
 [node name="Mask" type="ColorRect" parent="Whirlwind"]
@@ -128,18 +127,19 @@ position = Vector2( 196.523, 804.394 )
 texture = ExtResource( 13 )
 
 [node name="BalonLong" type="Sprite" parent="Whirlwind/Intro"]
-position = Vector2( 675.178, 460.485 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 724.064, 410.641 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 14 )
 __meta__ = {
 "_editor_description_": "		"
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Whirlwind/Intro"]
-margin_left = 362.295
-margin_top = 439.621
-margin_right = 962.295
-margin_bottom = 479.621
+margin_left = 342.2
+margin_top = 384.376
+margin_right = 1142.2
+margin_bottom = 484.376
+rect_pivot_offset = Vector2( 400, 5555 )
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Escolha um lugar para começar a sua busca!"

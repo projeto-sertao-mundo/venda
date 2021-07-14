@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/tutorial/Arrow.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 30
+size = 40
 font_data = ExtResource( 3 )
 
 [node name="Intro" type="Node2D"]
@@ -21,19 +21,20 @@ texture = ExtResource( 1 )
 flip_h = true
 
 [node name="BalonLong" type="Sprite" parent="."]
-position = Vector2( 735.877, 222.916 )
-scale = Vector2( 0.45, 0.5 )
+position = Vector2( 696.956, 199.401 )
+scale = Vector2( 0.4, 0.7 )
 texture = ExtResource( 4 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 382.931
-margin_top = 185.637
-margin_right = 1102.93
-margin_bottom = 250.637
+margin_left = 387.796
+margin_top = 132.932
+margin_right = 987.796
+margin_bottom = 282.932
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Olha, uma venda! 
-Quero ver o que tem lá! Aposto que tem um doce gostoso."
+Quero ver o que tem lá! 
+Aposto que tem um doce gostoso."
 __meta__ = {
 "_edit_use_anchors_": false
 }
