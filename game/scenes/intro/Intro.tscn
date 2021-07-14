@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/intro/Boy.png" type="Texture" id=1]
 [ext_resource path="res://scenes/intro/IntroBoy.gd" type="Script" id=2]
 [ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/intro/BalonLong.png" type="Texture" id=4]
+[ext_resource path="res://scenes/tutorial/Arrow.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -36,3 +37,6 @@ Quero ver o que tem lá! Aposto que tem um doce gostoso."
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Arrow" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1202.95, 157.102 )
