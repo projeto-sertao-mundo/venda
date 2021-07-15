@@ -8,6 +8,7 @@ onready var boy = get_node("Steps/Boy")
 onready var man = get_node("Steps/Man")
 onready var balon = get_node("Steps/BalonBig")
 
+onready var step_bg = get_node("Steps/BG")
 onready var step_01 = get_node("Steps/01")
 onready var step_02 = get_node("Steps/02")
 onready var step_03 = get_node("Steps/03")
@@ -98,9 +99,13 @@ func step_05():
 
 func step_06():
 	step_06.visible = true
+	step_bg.visible = false
+	get_node("Steps/06/Timer").start()
+	get_node("Steps/06/Whirlwind/AnimationPlayer").play("Whirlwind")
 
 func step_07():
 	talk_man()
+	step_bg.visible = true
 	step_07.visible = true
 
 func step_08():

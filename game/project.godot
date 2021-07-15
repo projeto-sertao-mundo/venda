@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Seu Fulô"
-run/main_scene="res://scenes/menu/Menu.tscn"
+run/main_scene="res://scenes/ufmg/UFMG.tscn"
 config/icon="res://icon.png"
 
 [autoload]
