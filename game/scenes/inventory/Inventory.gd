@@ -168,3 +168,7 @@ func _on_mouse_entered():
 func _on_mouse_exited():
 	if tutorial_manager.button_inventory_is_enable == true:
 		sprite_node.texture = sprite_default
+
+
+func _on_click_item(event):
+	pass # Replace with function body.

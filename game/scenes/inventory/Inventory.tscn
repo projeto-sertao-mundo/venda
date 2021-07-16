@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://scenes/inventory/Inventory.gd" type="Script" id=1]
 [ext_resource path="res://scenes/inventory/tags/TagElephant.png" type="Texture" id=2]
@@ -47,13 +47,15 @@
 [ext_resource path="res://items/elephant/items/Esporas.png" type="Texture" id=45]
 [ext_resource path="res://scenes/inventory/Modal.png" type="Texture" id=46]
 [ext_resource path="res://assets/fonts/Xilosa.ttf" type="DynamicFontData" id=47]
+[ext_resource path="res://scenes/inventory/InventoryItem.gd" type="Script" id=48]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 47 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 19
+size = 29
+extra_spacing_top = 4
 font_data = ExtResource( 47 )
 
 [node name="Inventory" type="Node2D"]
@@ -176,9 +178,12 @@ margin_right = 780.189
 margin_bottom = 508.046
 rect_scale = Vector2( 0.430543, 0.430543 )
 texture = ExtResource( 20 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Agulha de tricô"
+item_description = "É um objeto parecido com uma vareta, normalmente usado em pares para entrelaçar fios na produção manual de tecidos."
 
 [node name="Alforge" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -195,9 +200,12 @@ margin_right = 976.713
 margin_bottom = 516.733
 rect_scale = Vector2( 0.377789, 0.377789 )
 texture = ExtResource( 13 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Alforje"
+item_description = "Bolsa colocada sobre o animal ou bicicleta. Tem dois compartimentos para que o peso fique bem distribuído dos dois lados."
 
 [node name="Berrante" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -214,6 +222,9 @@ margin_right = 1120.37
 margin_bottom = 510.566
 rect_scale = Vector2( 0.369349, 0.369349 )
 texture = ExtResource( 12 )
+script = ExtResource( 48 )
+item_name = " Berrante"
+item_description = "Instrumento de sopro, normalmente, feito de chifres de boi. Cada som produzido com ele tem um significado que ajuda os peões na condução da boiada."
 
 [node name="Cachimbo" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -230,6 +241,9 @@ margin_right = 1260.22
 margin_bottom = 506.786
 rect_scale = Vector2( 0.348731, 0.348731 )
 texture = ExtResource( 15 )
+script = ExtResource( 48 )
+item_name = "Cachimbo"
+item_description = "Utensílio de madeira ou outro material usado para fumar. Tem uma câmara onde o tabaco é queimado e uma haste fina que conduz à fumaça."
 
 [node name="Chaleira" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -246,6 +260,9 @@ margin_right = 495.447
 margin_bottom = 669.316
 rect_scale = Vector2( 0.371516, 0.371516 )
 texture = ExtResource( 16 )
+script = ExtResource( 48 )
+item_name = "Chaleira"
+item_description = "Chaleira vem da palavra “chá”. É um recipiente arredondado, normalmente de metal, com tampa, alça e gargalo em formato de bico. Costuma ser usado para ferver água."
 
 [node name="Estilingue" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -262,6 +279,9 @@ margin_right = 651.677
 margin_bottom = 673.095
 rect_scale = Vector2( 0.378677, 0.378677 )
 texture = ExtResource( 18 )
+script = ExtResource( 48 )
+item_name = "Estilingue"
+item_description = "Instrumento em formato de “Y” com tiras de elástico, com o qual se arremessa pequenos objetos."
 
 [node name="IoIô" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -278,6 +298,9 @@ margin_right = 791.528
 margin_bottom = 705.853
 rect_scale = Vector2( 0.385965, 0.385965 )
 texture = ExtResource( 19 )
+script = ExtResource( 48 )
+item_name = "Ioiô"
+item_description = "É um brinquedo que tem dois pequenos discos ligados por um eixo no qual um fio é enrolado. A brincadeira com o ioiô consiste em fazer com que ele se desenrole e enrole do ioiô o maior número de vezes possível."
 
 [node name="Pelego" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -294,6 +317,9 @@ margin_right = 993.115
 margin_bottom = 678.135
 rect_scale = Vector2( 0.349867, 0.349867 )
 texture = ExtResource( 17 )
+script = ExtResource( 48 )
+item_name = "Pelego"
+item_description = "Pele de cordeiro que é colocada entre a sela e o cavalo. Como a pele fica com a lã do cordeiro, o pelego amacia o contato entre o animal e o cavaleiro."
 
 [node name="PageChurch" type="Node2D" parent="Book/Pages"]
 visible = false
@@ -320,6 +346,9 @@ margin_right = 773.828
 margin_bottom = 492.865
 rect_scale = Vector2( 0.385355, 0.385355 )
 texture = ExtResource( 14 )
+script = ExtResource( 48 )
+item_name = "Bacia de flores"
+item_description = "Objeto decorativo ornado com flores, geralmente feito como presente ou para celebração."
 
 [node name="Bastidor" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( -144.25, -77.7817 )
@@ -337,6 +366,9 @@ margin_right = 773.828
 margin_bottom = 494.125
 rect_scale = Vector2( 0.395611, 0.395611 )
 texture = ExtResource( 24 )
+script = ExtResource( 48 )
+item_name = "Bastidor"
+item_description = "Pequena estrutura, geralmente de madeira, usada para esticar tecidos para serem bordados ou pintados."
 
 [node name="Caderno" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( -7.07104, -83.4386 )
@@ -354,6 +386,9 @@ margin_right = 777.607
 margin_bottom = 495.385
 rect_scale = Vector2( 0.382528, 0.382528 )
 texture = ExtResource( 25 )
+script = ExtResource( 48 )
+item_name = "Caderno"
+item_description = "Objeto usado para escrever ou desenhar, feito de folhas presas em blocos, normalmente amarradas ou grampeadas."
 
 [node name="Copo de Vidro" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 181.019, -70.7106 )
@@ -371,6 +406,9 @@ margin_right = 767.528
 margin_bottom = 492.865
 rect_scale = Vector2( 0.397179, 0.397179 )
 texture = ExtResource( 22 )
+script = ExtResource( 48 )
+item_name = "Copo de Vidro"
+item_description = "Recipiente cilíndrico usado para servir bebidas. Geralmente é transparente, facilitando a visualização do líquido a ser consumido."
 
 [node name="Espanador" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 190.919, 67.8822 )
@@ -388,6 +426,9 @@ margin_right = 778.867
 margin_bottom = 500.425
 rect_scale = Vector2( 0.356775, 0.356775 )
 texture = ExtResource( 26 )
+script = ExtResource( 48 )
+item_name = "Espanador"
+item_description = "Objeto feito de plumas, pelos ou barbantes presos em uma das extremidades de um pequeno cabo. Usado para tirar a poeira na limpeza das casas."
 
 [node name="Presépio" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 354.967, 56.5686 )
@@ -405,6 +446,9 @@ margin_right = 770.048
 margin_bottom = 489.085
 rect_scale = Vector2( 0.406607, 0.406607 )
 texture = ExtResource( 21 )
+script = ExtResource( 48 )
+item_name = "Presépio"
+item_description = "É uma cena com uma criança recém nascida e várias figuras em volta, representando o nascimento de Jesus. Pode ser feito de diversos materiais como barro, louça, papelão, palha, entre outros."
 
 [node name="Isqueiro" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 203.647, 203.647 )
@@ -423,6 +467,9 @@ margin_bottom = 495.53
 rect_rotation = 20.1767
 rect_scale = Vector2( 0.416672, 0.416672 )
 texture = ExtResource( 23 )
+script = ExtResource( 48 )
+item_name = "Isqueiro"
+item_description = "Instrumento usado para gerar fogo, pelo atrito de uma pederneira e uma peça de metal."
 
 [node name="Tecido de Chita" type="Node2D" parent="Book/Pages/PageChurch/Items"]
 position = Vector2( 359.21, 197.99 )
@@ -440,6 +487,9 @@ margin_right = 770.048
 margin_bottom = 485.306
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 27 )
+script = ExtResource( 48 )
+item_name = "Tecido de Chita"
+item_description = "Tecido colorido, estampado com flores e barato, muito usado para fazer roupas, cortinas e toalhas de mesa."
 
 [node name="PageElephant" type="Node2D" parent="Book/Pages"]
 
@@ -465,9 +515,12 @@ margin_right = 215.057
 margin_bottom = 214.538
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 42 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Carretel"
+item_description = "Bobina para enrolar fios, fitas, arames, linhas etc. Conhecido de quem costura, e também de quem empina pipa."
 
 [node name="Esporas" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 1030.96, 197.99 )
@@ -486,9 +539,12 @@ margin_bottom = 238.884
 rect_rotation = -34.6234
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 45 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = " Espora"
+item_description = "Presa na bota do cavaleiro, a espora serve para incomodar o animal de montaria fazendo com que ele se movimente. Geralmente é um disco com pontas ou dentes presos em um suporte."
 
 [node name="Frasco de Pimenta" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 292.742, 463.862 )
@@ -506,9 +562,12 @@ margin_right = 235.238
 margin_bottom = 206.129
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 39 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Frasco de pimenta"
+item_description = "São garrafinhas ou pequenos potes de vidro com pimenta em conserva, embebida no azeite ou na cachaça, usada para dar sabor a alguns pratos da culinária brasileira."
 
 [node name="Maçã do Amor" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 428.507, 458.205 )
@@ -526,9 +585,12 @@ margin_right = 220.102
 margin_bottom = 202.765
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 44 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Maçã-do-amor"
+item_description = "Doce tradicional de festas populares e de rua, feito de uma maçã inteira, mergulhada em uma calda açucarada, com um palito para suporte."
 
 [node name="Máq Registradora" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 568.514, 449.72 )
@@ -546,9 +608,12 @@ margin_right = 208.33
 margin_bottom = 214.538
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 41 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Máq. registradora"
+item_description = "Máquina que registra as vendas e guarda o dinheiro recebido nas lojas. Só é aberta quando uma venda é feita, evitando, assim, possíveis furtos."
 
 [node name="Peão" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 752.361, 362.039 )
@@ -566,9 +631,12 @@ margin_right = 226.829
 margin_bottom = 209.492
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 43 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Pião"
+item_description = "O pião é um brinquedo popular feito em madeira. A peça de madeira é enrolada em um cordão, que, ao ser desenrolado, faz a peça girar."
 
 [node name="Pipoca" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 902.268, 339.411 )
@@ -586,9 +654,12 @@ margin_right = 221.784
 margin_bottom = 207.81
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 40 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Pipoca"
+item_description = "Pipoca vem do tupi, e significa “milho rebentado”. É um salgado que se forma a partir do milho aquecido. "
 
 [node name="Pirulito" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 767.918, 500.632 )
@@ -606,9 +677,12 @@ margin_right = 226.829
 margin_bottom = 212.856
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 38 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Pirulito"
+item_description = "É uma bala presa a um palito de madeira ou de plástico. Pode ter muitas formas e sabores e é apreciado por crianças de todas as idades. "
 
 [node name="PageStation" type="Node2D" parent="Book/Pages"]
 visible = false
@@ -635,9 +709,12 @@ margin_right = 200.12
 margin_bottom = 210.949
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 31 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Balança"
+item_description = "Instrumento usado para pesar objetos e animais. Tem um eixo vertical que sustenta uma haste horizontal com pratos presos às pontas, que pendem para os dois lados a depender do peso dos objetos colocados sobre os pratos."
 
 [node name="Bolinhas de gude" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 770.746, 203.647 )
@@ -655,6 +732,9 @@ margin_right = 219.919
 margin_bottom = 226.505
 rect_scale = Vector2( 0.603077, 0.603077 )
 texture = ExtResource( 32 )
+script = ExtResource( 48 )
+item_name = "Bolas de gude"
+item_description = "Pequenas bolas coloridas, muitas vezes de vidro, usadas como brinquedo. São também conhecidas como baleba, búrica, ximbra, pereca, bolita, biloca, berlinda, e peca."
 
 [node name="Cigarro de palha" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 564.271, 335.169 )
@@ -672,6 +752,9 @@ margin_right = 211.434
 margin_bottom = 212.363
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 36 )
+script = ExtResource( 48 )
+item_name = "Cigarro de Palha"
+item_description = "Fumo, geralmente tabaco, enrolado em palha. "
 
 [node name="Colher de pau" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 780.646, 343.654 )
@@ -690,9 +773,12 @@ margin_bottom = 205.292
 rect_rotation = 37.2873
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 33 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Colher de pau"
+item_description = "Instrumento de madeira, longo e largo em uma das pontas. Muito usado na cozinha como mexer e misturar os alimentos em seu preparo. Dizem que realça o sabor dos alimentos."
 
 [node name="Dedal" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 954.594, 336.583 )
@@ -710,6 +796,9 @@ margin_right = 221.783
 margin_bottom = 216.219
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 37 )
+script = ExtResource( 48 )
+item_name = "Dedal"
+item_description = "Proteção para o dedo de apoio de quem costura. Pode ser de metal, madeira ou plástico."
 
 [node name="Língua De Sogra" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 567.099, 473.762 )
@@ -728,6 +817,9 @@ margin_bottom = 246.491
 rect_rotation = -53.8378
 rect_scale = Vector2( 0.430931, 0.430931 )
 texture = ExtResource( 35 )
+script = ExtResource( 48 )
+item_name = "Língua-de-sogra"
+item_description = "Brinquedo comum em festas e celebrações. Tubo enrolado feito de papel. De um lado é fechado, e do outro, onde se sopra, tem um apito. A criança apita enquanto o brinquedo se estica fazendo um barulho engraçado. "
 
 [node name="Panela" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 793.373, 482.247 )
@@ -745,9 +837,11 @@ margin_right = 216.738
 margin_bottom = 227.992
 rect_scale = Vector2( 0.347848, 0.347848 )
 texture = ExtResource( 34 )
+script = ExtResource( 48 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item_name = "Panela"
 
 [node name="Pirulito Puxa Puxa" type="Node2D" parent="Book/Pages/PageStation/Items"]
 position = Vector2( 964.493, 478.004 )
@@ -766,6 +860,9 @@ margin_bottom = 199.401
 rect_rotation = 25.989
 rect_scale = Vector2( 0.499413, 0.499413 )
 texture = ExtResource( 30 )
+script = ExtResource( 48 )
+item_name = "Pirulito puxa-puxa"
+item_description = "Pirulito em forma de cone feito de caramelo (açúcar derretido e mel)."
 
 [node name="InformationModal" type="Node2D" parent="."]
 __meta__ = {
@@ -804,12 +901,12 @@ __meta__ = {
 
 [node name="ItemDescription" type="RichTextLabel" parent="InformationModal/Modal"]
 margin_left = 467.891
-margin_top = 251.651
-margin_right = 868.0
-margin_bottom = 539.651
+margin_top = 230.743
+margin_right = 867.891
+margin_bottom = 630.743
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos."
+text = "Instrumento usado para pesar objetos e animais. Tem um eixo vertical que sustenta uma haste horizontal com pratos presos às pontas, que pendem para os dois lados a depender do peso dos objetos colocados sobre os pratos."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -834,37 +931,68 @@ __meta__ = {
 [connection signal="gui_input" from="Book/Tags/Church" to="." method="_on_click_church_tag"]
 [connection signal="gui_input" from="Book/Tags/Elephant" to="." method="_on_click_elephant_tag"]
 [connection signal="gui_input" from="Book/Tags/Station" to="." method="_on_click_station_tag"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" to="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="Book/Pages/PageCave/Items/Alforge/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="Book/Pages/PageCave/Items/Berrante/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="Book/Pages/PageCave/Items/Cachimbo/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="Book/Pages/PageCave/Items/Chaleira/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="Book/Pages/PageCave/Items/Estilingue/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="Book/Pages/PageCave/Items/IoIô/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="Book/Pages/PageCave/Items/Pelego/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Caderno/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Caderno/Sprite" to="." method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Espanador/Sprite" to="Book/Pages/PageChurch/Items/Espanador/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Espanador/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="Book/Pages/PageChurch/Items/Presépio/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="Book/Pages/PageChurch/Items/Isqueiro/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tecido de Chita/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" to="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Esporas/Sprite" to="Book/Pages/PageElephant/Items/Esporas/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Esporas/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" to="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" to="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Máq Registradora/Sprite" to="Book/Pages/PageElephant/Items/Máq Registradora/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Máq Registradora/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Peão/Sprite" to="Book/Pages/PageElephant/Items/Peão/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Peão/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Pipoca/Sprite" to="Book/Pages/PageElephant/Items/Pipoca/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Pipoca/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Pirulito/Sprite" to="Book/Pages/PageElephant/Items/Pirulito/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Pirulito/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Balança/Sprite" to="Book/Pages/PageStation/Items/Balança/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Balança/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" to="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" to="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Colher de pau/Sprite" to="Book/Pages/PageStation/Items/Colher de pau/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Colher de pau/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Dedal/Sprite" to="Book/Pages/PageStation/Items/Dedal/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Dedal/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" to="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="Book/Pages/PageStation/Items/Panela/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" to="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="InformationModal/ColorRect" to="." method="_on_click_close_information_modal"]
 [connection signal="gui_input" from="InformationModal/Modal/Close" to="." method="_on_click_close_information_modal"]
