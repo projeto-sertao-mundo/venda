@@ -396,7 +396,7 @@ margin_top = -38.9092
 margin_right = 403.0
 margin_bottom = 95.0908
 custom_fonts/normal_font = SubResource( 1 )
-text = "Quando o contados zerar, clique na vovó, que ela vai te mostrar um item que ainda não foi encontrado!"
+text = "Quando o contador zerar, clique na vovó, que ela vai te mostrar um item que ainda não foi encontrado!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
