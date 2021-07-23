@@ -50,7 +50,7 @@
 [ext_resource path="res://scenes/commerce/Dialog.gd" type="Script" id=48]
 
 [sub_resource type="DynamicFont" id=1]
-size = 30
+size = 35
 font_data = ExtResource( 45 )
 
 [node name="CommerceInside" type="Node2D"]
@@ -449,9 +449,9 @@ texture = ExtResource( 46 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Dialog/Incomplete"]
 margin_left = 312.851
-margin_top = 331.743
-margin_right = 912.851
-margin_bottom = 491.743
+margin_top = 337.736
+margin_right = 962.851
+margin_bottom = 497.736
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Olá! Está progredindo? 
@@ -462,7 +462,6 @@ __meta__ = {
 }
 
 [node name="Complete" type="Node2D" parent="Dialog"]
-visible = false
 
 [node name="BG" type="ColorRect" parent="Dialog/Complete"]
 margin_left = -10.4882
@@ -485,17 +484,28 @@ position = Vector2( 1175.95, 778.995 )
 texture = ExtResource( 46 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Dialog/Complete"]
-margin_left = 312.851
-margin_top = 331.743
-margin_right = 912.851
-margin_bottom = 491.743
+margin_left = 323.339
+margin_top = 340.733
+margin_right = 1023.34
+margin_bottom = 540.733
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Maravilha! Deus te abençoe, meu filho! 
 Você recuperou toda minha mercadoria! 
-Aqui está a recompensa que te prometi! 
-Obrigado!
-"
+Obrigado!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Dialog/Complete"]
+visible = false
+margin_left = 299.366
+margin_top = 381.187
+margin_right = 999.366
+margin_bottom = 431.187
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Vá até a sua caderneta para ver o seu prêmio!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
