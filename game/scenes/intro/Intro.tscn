@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/intro/Boy.png" type="Texture" id=1]
 [ext_resource path="res://scenes/intro/IntroBoy.gd" type="Script" id=2]
@@ -10,7 +10,24 @@
 size = 40
 font_data = ExtResource( 3 )
 
+[sub_resource type="Animation" id=2]
+resource_name = "FadeIn"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
 [node name="Intro" type="Node2D"]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 0, 4.24265 )
 script = ExtResource( 2 )
 
@@ -20,12 +37,17 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 flip_h = true
 
-[node name="BalonLong" type="Sprite" parent="."]
+[node name="Arrow" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1202.95, 157.102 )
+
+[node name="Balon" type="Node2D" parent="."]
+
+[node name="BalonLong" type="Sprite" parent="Balon"]
 position = Vector2( 696.956, 199.401 )
 scale = Vector2( 0.4, 0.7 )
 texture = ExtResource( 4 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="Balon"]
 margin_left = 387.796
 margin_top = 132.932
 margin_right = 987.796
@@ -39,5 +61,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1202.95, 157.102 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+method_call_mode = 1
+anims/FadeIn = SubResource( 2 )
