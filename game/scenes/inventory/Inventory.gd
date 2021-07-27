@@ -62,6 +62,9 @@ func toggle_popup_inside_tutorial():
 
 # NOTE: Controlar exibição da páginas do inventário
 
+func play_sound_effect():
+	get_node("AudioStreamPlayer").play()
+
 func show_inventory():
 	inventory.visible = true
 	inventory_is_visible = true
@@ -135,21 +138,25 @@ func _on_click_cave_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			show_cave_page()
+			play_sound_effect()
 
 func _on_click_church_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			show_church_page()
+			play_sound_effect()
 
 func _on_click_elephant_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			show_elephant_page()
+			play_sound_effect()
 
 func _on_click_station_tag(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			show_station_page()
+			play_sound_effect()
 
 func _on_click_open_information_modal(event: InputEvent):
 	if event is InputEventMouseButton:

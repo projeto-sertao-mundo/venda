@@ -16,6 +16,7 @@ func play():
 	animation.visible = true
 	hidden_intro()
 	animation_player.play("MoveOnMap")
+	get_node("AudioStreamPlayer").play()
 	intro_manager.hidden_whirlwind_animation()
 
 func hidden_all():

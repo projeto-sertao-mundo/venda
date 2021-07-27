@@ -100,6 +100,7 @@ func step_05():
 func step_06():
 	step_06.visible = true
 	step_bg.visible = false
+	get_node("Steps/06/AudioStreamPlayer").play()
 	get_node("Steps/06/Timer").start()
 	get_node("Steps/06/Whirlwind/AnimationPlayer").play("Whirlwind")
 
