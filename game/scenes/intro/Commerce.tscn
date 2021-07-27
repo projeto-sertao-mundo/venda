@@ -1141,6 +1141,7 @@ one_shot = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Steps/06"]
 stream = ExtResource( 47 )
+volume_db = -2.0
 
 [node name="07" type="Node2D" parent="Steps"]
 visible = false

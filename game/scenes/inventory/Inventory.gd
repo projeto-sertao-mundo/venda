@@ -63,7 +63,8 @@ func toggle_popup_inside_tutorial():
 # NOTE: Controlar exibição da páginas do inventário
 
 func play_sound_effect():
-	get_node("AudioStreamPlayer").play()
+	var audio = get_node("AudioStreamPlayer")
+	if audio.playing == false: audio.play()
 
 func show_inventory():
 	inventory.visible = true
