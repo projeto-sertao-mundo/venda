@@ -50,6 +50,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 42
+use_filter = true
 font_data = ExtResource( 45 )
 
 [sub_resource type="Animation" id=2]
