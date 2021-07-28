@@ -13,6 +13,7 @@ var timer_count = 0
 
 onready var timer_node = get_node("Timer")
 onready var timer_label = get_node("Sprite/Label")
+onready var audio_effects = get_node("AudioStreamPlayer")
 
 var first_helper_use = true
 
@@ -67,6 +68,7 @@ func stop_timer():
 	helper_is_active = true
 	timer_label.text = "Pronto"
 	get_node("AnimationPlayer").play("Bounce")
+	audio_effects.play()
 	timer_node.stop()
 
 func _on_timeout():
