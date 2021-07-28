@@ -1028,6 +1028,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Timer" type="Timer" parent="Steps"]
+
 [node name="BalonBig" type="Sprite" parent="Steps"]
 visible = false
 position = Vector2( 640, 566.134 )
@@ -1243,4 +1245,5 @@ __meta__ = {
 visible = false
 
 [connection signal="gui_input" from="Steps/BG" to="." method="_on_next_step"]
+[connection signal="timeout" from="Steps/Timer" to="." method="_on_timeout_enable_change_step"]
 [connection signal="timeout" from="Steps/06/Timer" to="." method="next_step"]

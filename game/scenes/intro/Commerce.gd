@@ -3,6 +3,7 @@ extends Node2D
 onready var intro_manager = get_node("/root/Intro")
 
 var actual_step = 0
+var is_enable_change_step = true
 
 onready var boy = get_node("Steps/Boy")
 onready var man = get_node("Steps/Man")
@@ -22,10 +23,22 @@ onready var step_10 = get_node("Steps/10")
 onready var step_11 = get_node("Steps/11")
 onready var step_12 = get_node("Steps/12")
 
+onready var timer = get_node("Steps/Timer")
+
 func _ready():
 	intro_manager.hidden_boy_outside()
 	hidden_all_steps()
 	next_step()
+
+func _on_timeout_enable_change_step():
+	enable_change_step()
+
+func enable_change_step():
+	is_enable_change_step = true
+
+func disable_change_step():
+	is_enable_change_step = false
+	timer.start()
 
 func hidden_all_steps():
 	boy.visible = false
@@ -47,7 +60,8 @@ func hidden_all_steps():
 func _on_next_step(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			next_step()
+			if is_enable_change_step:
+				next_step()
 
 func next_step():
 	actual_step += 1
@@ -79,21 +93,26 @@ func talk_man():
 	balon.flip_h = true
 
 func step_01():
+	disable_change_step()
 	talk_boy()
 	step_01.visible = true
 
 func step_02():
+	disable_change_step()
 	talk_man()
 	step_02.visible = true
 
 func step_03():
+	disable_change_step()
 	talk_boy()
 	step_03.visible = true
 
 func step_04():
+	disable_change_step()
 	step_04.visible = true
 
 func step_05():
+	disable_change_step()
 	talk_boy()
 	step_05.visible = true
 
@@ -105,27 +124,33 @@ func step_06():
 	get_node("Steps/06/Whirlwind/AnimationPlayer").play("Whirlwind")
 
 func step_07():
+	disable_change_step()
 	talk_man()
 	step_bg.visible = true
 	step_07.visible = true
 
 func step_08():
+	disable_change_step()
 	talk_man()
 	step_08.visible = true
 
 func step_09():
+	disable_change_step()
 	talk_man()
 	step_09.visible = true
 
 func step_10():
+	disable_change_step()
 	talk_boy()
 	step_10.visible = true
 
 func step_11():
+	disable_change_step()
 	talk_man()
 	step_11.visible = true
 
 func step_12():
+	disable_change_step()
 	talk_man()
 	step_12.visible = true
 
