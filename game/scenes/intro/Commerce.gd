@@ -9,6 +9,12 @@ onready var boy = get_node("Steps/Boy")
 onready var man = get_node("Steps/Man")
 onready var balon = get_node("Steps/BalonBig")
 
+var animation_time_ref = 0
+var animation_time_max = 0
+var animation_words_per_secound = 16
+var should_animation_text_label = false
+var text_label = null
+
 onready var step_bg = get_node("Steps/BG")
 onready var step_01 = get_node("Steps/01")
 onready var step_02 = get_node("Steps/02")
@@ -26,9 +32,26 @@ onready var step_12 = get_node("Steps/12")
 onready var timer = get_node("Steps/Timer")
 
 func _ready():
+	animation_time_max = 1.0 / animation_words_per_secound
 	intro_manager.hidden_boy_outside()
 	hidden_all_steps()
 	next_step()
+	
+func _process(delta):
+	if should_animation_text_label:
+		animation_time_ref += delta
+		if animation_time_ref >= animation_time_max:
+			animation_time_ref = 0
+			text_label.visible_characters += 1
+			if text_label.percent_visible == 1:
+				should_animation_text_label = false
+		
+func animate_text_label(label):
+	animation_time_ref = 0
+	should_animation_text_label = true
+	text_label = label
+	text_label.visible_characters = 0
+
 
 func _on_timeout_enable_change_step():
 	enable_change_step()
@@ -96,16 +119,22 @@ func step_01():
 	disable_change_step()
 	talk_boy()
 	step_01.visible = true
+	var label = step_01.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_02():
 	disable_change_step()
 	talk_man()
 	step_02.visible = true
+	var label = step_02.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_03():
 	disable_change_step()
 	talk_boy()
 	step_03.visible = true
+	var label = step_03.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_04():
 	disable_change_step()
@@ -115,6 +144,8 @@ func step_05():
 	disable_change_step()
 	talk_boy()
 	step_05.visible = true
+	var label = step_05.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_06():
 	step_06.visible = true
@@ -128,31 +159,43 @@ func step_07():
 	talk_man()
 	step_bg.visible = true
 	step_07.visible = true
+	var label = step_07.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_08():
 	disable_change_step()
 	talk_man()
 	step_08.visible = true
+	var label = step_08.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_09():
 	disable_change_step()
 	talk_man()
 	step_09.visible = true
+	var label = step_09.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_10():
 	disable_change_step()
 	talk_boy()
 	step_10.visible = true
+	var label = step_10.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_11():
 	disable_change_step()
 	talk_man()
 	step_11.visible = true
+	var label = step_11.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_12():
 	disable_change_step()
 	talk_man()
 	step_12.visible = true
+	var label = step_12.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_13():
 	get_tree().change_scene("res://scenes/map/Map.tscn")

@@ -12,7 +12,7 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "FadeIn"
-length = 3.0
+length = 1.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
@@ -54,6 +54,8 @@ margin_right = 987.796
 margin_bottom = 282.932
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+visible_characters = 0
+percent_visible = 0.0
 text = "Olha, uma venda! 
 Quero ver o que tem lá! 
 Aposto que tem um doce gostoso."
@@ -64,3 +66,5 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 method_call_mode = 1
 anims/FadeIn = SubResource( 2 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_end_animation"]

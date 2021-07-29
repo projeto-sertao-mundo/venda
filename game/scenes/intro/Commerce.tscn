@@ -1228,7 +1228,6 @@ __meta__ = {
 }
 
 [node name="12" type="Node2D" parent="Steps"]
-visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/12"]
 margin_left = 250.0
@@ -1237,7 +1236,7 @@ margin_right = 1050.0
 margin_bottom = 696.486
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! Boa sorte!"
+text = "Quando você entrar nos lugares para procurar os objetos, pode pedir ajuda se estiver com dificuldade! Boa sorte!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

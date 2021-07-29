@@ -6,10 +6,26 @@ onready var animation = get_node("Animation")
 onready var animation_player = get_node("Animation/AnimationPlayer")
 onready var intro = get_node("Intro")
 
+var animation_time_ref = 0
+var animation_time_max = 0
+var animation_words_per_secound = 20
+var animation_is_running = false
+onready var text_label = get_node("Intro/RichTextLabel")
+
 func _ready():
 	visible = true
+	animation_time_max = 1.0 / animation_words_per_secound
 	if intro_manager.display_whirlwind_animation: play()
 	else: hidden_all()
+	
+func _process(delta):
+	if animation_is_running:
+		animation_time_ref += delta
+		if animation_time_ref >= animation_time_max:
+			animation_time_ref = 0
+			text_label.visible_characters += 1
+			if text_label.percent_visible == 1:
+				animation_is_running = false
 
 func play():
 	mask.visible = true
@@ -33,6 +49,8 @@ func hidden_intro():
 
 func reveal_intro():
 	intro.visible = true
+	text_label.visible_characters = 0
+	animation_is_running = true
 
 func _on_timeout():
 	hidden_animation()
