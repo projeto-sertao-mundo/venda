@@ -52,7 +52,6 @@ func animate_text_label(label):
 	text_label = label
 	text_label.visible_characters = 0
 
-
 func _on_timeout_enable_change_step():
 	enable_change_step()
 

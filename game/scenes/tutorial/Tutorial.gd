@@ -16,14 +16,36 @@ onready var step_helper_intro = get_node("StepHelperIntro")
 onready var step_helper_time = get_node("StepHelperTime")
 onready var step_out = get_node("StepOut")
 
+var animation_time_ref = 0
+var animation_time_max = 0
+var animation_words_per_secound = 20
+var animation_is_running = false
+onready var text_label = get_node("Intro/RichTextLabel")
+
 func _ready():
 	hidden_all_modals()
 	hidden_all_steps()
+	animation_time_max = 1.0 / animation_words_per_secound
 	var tutorial_status = tutorial_manager.get_tutorial_status()
 	if tutorial_status == false:
 		visible = true
 		tutorial_manager.register_controller(self)
 		open_ask_modal()
+	
+func _process(delta):
+	if animation_is_running:
+		animation_time_ref += delta
+		if animation_time_ref >= animation_time_max:
+			animation_time_ref = 0
+			text_label.visible_characters += 1
+			if text_label.percent_visible == 1:
+				animation_is_running = false
+
+func start_text_label_animation(label):
+	animation_time_ref = 0
+	animation_is_running = true
+	text_label = label
+	text_label.visible_characters = 0
 
 # GERENCIAR MODAIS
 ####################
@@ -99,6 +121,8 @@ func hidden_all_steps():
 
 func show_intro_step():
 	step_intro.visible = true
+	var label = step_intro.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func show_list_click_step(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -106,10 +130,14 @@ func show_list_click_step(event: InputEvent):
 			hidden_all_steps()
 			step_list_click.visible = true
 			tutorial_manager.enable_list_button()
+			var label = step_list_click.get_node("RichTextLabel")
+			start_text_label_animation(label)
 
 func show_list_info_step():
 	hidden_all_steps()
 	step_list_info.visible = true
+	var label = step_list_info.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func show_list_close_step(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -117,6 +145,8 @@ func show_list_close_step(event: InputEvent):
 			hidden_all_steps()
 			step_list_close.visible = true
 			tutorial_manager.enable_list_close()
+			var label = step_list_close.get_node("RichTextLabel")
+			start_text_label_animation(label)
 
 func close_list_close_step():
 	hidden_all_steps()
@@ -124,6 +154,8 @@ func close_list_close_step():
 func show_item_first_step():
 	hidden_all_steps()
 	step_item_first.visible = true
+	var label = step_item_first.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func show_inventory_click_step(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -131,10 +163,14 @@ func show_inventory_click_step(event: InputEvent):
 			hidden_all_steps()
 			step_inventory_click.visible = true
 			tutorial_manager.enable_inventory_button()
+			var label = step_inventory_click.get_node("RichTextLabel")
+			start_text_label_animation(label)
 
 func show_inventory_item_step():
 	hidden_all_steps()
 	step_inventory_item.visible = true
+	var label = step_inventory_item.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func close_inventory_item_step():
 	hidden_all_steps()
@@ -142,6 +178,8 @@ func close_inventory_item_step():
 func show_helper_intro_step():
 	hidden_all_steps()
 	step_helper_intro.visible = true
+	var label = step_helper_intro.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func show_helper_time_step(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -150,6 +188,8 @@ func show_helper_time_step(event: InputEvent):
 			step_helper_time.visible = true
 			tutorial_manager.disable_all_buttons()
 			tutorial_manager.enable_helper()
+			var label = step_helper_time.get_node("RichTextLabel")
+			start_text_label_animation(label)
 
 func close_helper_time_step():
 	hidden_all_steps()
