@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/ElephantHover.png-c48e27e4e7f42978e339cd9183353530.res"
+group_file="res://items/map/AtlasMapItems.png"
+valid=true
+[deps]
+
+
+source_file="res://items/map/ElephantHover.png"
+dest_files=[ "res://.import/ElephantHover.png-c48e27e4e7f42978e339cd9183353530.res" ]
+
+[params]
+
+atlas_file="res://items/map/AtlasMapItems.png"
+import_mode=0

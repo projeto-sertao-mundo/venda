@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/VIOLA.ogg-4cf933db67905bae80e653ecf2ae4a81.oggstr"
+
+[deps]
+
+source_file="res://scenes/music/VIOLA.ogg"
+dest_files=[ "res://.import/VIOLA.ogg-4cf933db67905bae80e653ecf2ae4a81.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

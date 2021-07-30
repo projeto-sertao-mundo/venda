@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://items/map/Cave.png" type="Texture" id=1]
+[ext_resource path="res://scripts/MapItem.gd" type="Script" id=2]
+[ext_resource path="res://items/map/CaveHover.png" type="Texture" id=3]
+[ext_resource path="res://items/map/CavePB.png" type="Texture" id=4]
+[ext_resource path="res://items/map/CavePlate.png" type="Texture" id=5]
+[ext_resource path="res://scripts/MapItemPlate.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 115.134, 80.5423 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="Cave" type="Area2D"]
+script = ExtResource( 2 )
+level = "Cave"
+scene = "res://scenes/cave/Cave.tscn"
+default_sprite = ExtResource( 1 )
+hover_sprite = ExtResource( 3 )
+completed_sprite = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="SpriteNode" type="Sprite" parent="."]
+position = Vector2( 0, -16.054 )
+texture = ExtResource( 1 )
+
+[node name="Plate" type="KinematicBody2D" parent="."]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plate"]
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Plate"]
+z_index = 100
+texture = ExtResource( 5 )
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

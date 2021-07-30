@@ -3,7 +3,6 @@ extends Node2D
 var credits = null
 var credits_animation = null
 
-
 func _ready():
 	var animation = get_node("AnimationPlayer")
 	animation.play("ShowMenu")

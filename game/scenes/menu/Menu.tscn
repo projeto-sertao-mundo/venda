@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://scenes/menu/ButtonPlay.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/animations/FadeIn.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/intro/Intro.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/menu/Credits.png" type="Texture" id=11]
+[ext_resource path="res://scenes/music/EnableMusic.gd" type="Script" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "ShowMenu"
@@ -54,6 +55,8 @@ tracks/0/keys = {
 }
 
 [node name="Main" type="Node2D"]
+script = ExtResource( 12 )
+music = "Base"
 
 [node name="CommerceOutside" parent="." instance=ExtResource( 7 )]
 

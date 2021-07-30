@@ -19,6 +19,7 @@ config/icon="res://icon.png"
 Manager="*res://scripts/Manager.gd"
 TutorialManager="*res://scenes/tutorial/TutorialManager.gd"
 Intro="*res://scenes/intro/Intro.gd"
+Music="*res://scenes/music/Music.tscn"
 
 [display]
 
