@@ -43,7 +43,7 @@ func enable_church():
 func enable_elephant():
 	disable_all()
 	enable_base()
-	audio_elephant.volume_db = volume_enable
+	audio_elephant.volume_db = 0
 
 func enable_station():
 	disable_all()
