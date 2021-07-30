@@ -3,6 +3,8 @@ extends Node2D
 var credits = null
 var credits_animation = null
 
+onready var audio_manager = get_node("/root/AudioManager")
+
 func _ready():
 	var animation = get_node("AnimationPlayer")
 	animation.play("ShowMenu")
@@ -13,6 +15,7 @@ func _ready():
 func _on_show_credits(viewport: Node, event: InputEvent, shape_idx: int):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_confirm()
 			credits.visible = true
 			credits_animation.play("Show")
 

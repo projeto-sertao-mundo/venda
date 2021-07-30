@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var manager = get_node("/root/Manager")
+onready var audio_manager = get_node("/root/AudioManager")
 onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 onready var text_scene = preload("res://scenes/list/Text.tscn")
@@ -39,6 +40,7 @@ func toggle_popup(event: InputEvent):
 						tutorial_manager.close_list_close_step()
 
 func show_list():
+	audio_manager.play_button_confirm()
 	clear()
 	update()
 	paper.visible = true

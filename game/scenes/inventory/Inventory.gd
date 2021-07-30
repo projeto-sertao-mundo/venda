@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var manager = get_node("/root/Manager")
+onready var audio_manager = get_node("/root/AudioManager")
 onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
@@ -67,6 +68,7 @@ func play_sound_effect():
 	if audio.playing == false: audio.play()
 
 func show_inventory():
+	audio_manager.play_button_confirm()
 	inventory.visible = true
 	inventory_is_visible = true
 	inventory.z_index = 1000

@@ -1,6 +1,7 @@
 extends Area2D
 
 onready var manager = get_node("/root/Manager")
+onready var audio_manager = get_node("/root/AudioManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 
 export (String) var scene
@@ -23,6 +24,7 @@ func _ready():
 func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT && level_is_completed == false:
+			audio_manager.play_button_confirm()
 			get_tree().change_scene(scene)
 
 func _on_mouse_entered():

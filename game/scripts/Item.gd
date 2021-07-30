@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var manager = get_node("/root/Manager")
+onready var audio_manager = get_node("/root/AudioManager")
 onready var tutorial_manager = get_node("/root/TutorialManager")
 export (String, "Cave", "Church", "Elephant", "Station") var level = ""
 export (String) var item_name = ""
@@ -20,6 +21,7 @@ func _ready():
 
 func founded():
 	manager.item_found(level, item_name)
+	audio_manager.play_found_item()
 	scale = Vector2(1, 1)
 	z_index = 256
 	is_founded = true
@@ -37,6 +39,7 @@ func check_level():
 	var status = manager.get_level_status(level)
 	if status:
 		var modal = load("res://scenes/completed/CompletedModal.tscn")
+		audio_manager.play_found_all_items()
 		get_node("/root").add_child(modal.instance())
 
 func _physics_process(delta):

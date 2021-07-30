@@ -1,6 +1,7 @@
 extends Area2D
 
 onready var intro_manager = get_node("/root/Intro")
+onready var audio_manager = get_node("/root/AudioManager")
 
 export (String) var scene
 export (Texture) var default_sprite = null
@@ -20,6 +21,7 @@ func _on_input_event(viewport, event, shape_idx):
 	if is_fence && intro_manager.display_boy_outside: return
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_confirm()
 			get_tree().change_scene(scene)
 
 func _on_mouse_entered():

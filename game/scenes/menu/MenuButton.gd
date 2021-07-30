@@ -1,5 +1,7 @@
 extends Area2D
 
+onready var audio_manager = get_node("/root/AudioManager")
+
 export (NodePath) var intro_boy_path = null
 
 var original_scale = Vector2(1, 1)
@@ -18,6 +20,7 @@ func _on_mouse_exited():
 func _on_ButtonPlay_pressed(viewport: Node, event: InputEvent, shape_idx: int):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_confirm()
 			scale = clicked_scale
 		elif !event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			scale = hovered_scale

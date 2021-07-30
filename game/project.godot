@@ -20,6 +20,7 @@ Manager="*res://scripts/Manager.gd"
 TutorialManager="*res://scenes/tutorial/TutorialManager.gd"
 Intro="*res://scenes/intro/Intro.gd"
 Music="*res://scenes/music/Music.tscn"
+AudioManager="*res://scenes/audio/Audio.tscn"
 
 [display]
 

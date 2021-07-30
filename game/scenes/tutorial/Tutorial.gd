@@ -1,5 +1,6 @@
 extends Node2D
 
+onready var audio_manager = get_node("/root/AudioManager")
 onready var tutorial_manager = get_node("/root/TutorialManager")
 onready var modal_ask = get_node("ModalAsk")
 onready var modal_confirm = get_node("ModalConfirm")
@@ -80,6 +81,7 @@ func close_confirm_modal():
 func _on_click_confirm_ask_modal(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_confirm()
 			close_ask_modal()
 			yield(get_tree().create_timer(1.0), "timeout")
 			tutorial_manager.start_tutorial()
@@ -87,6 +89,7 @@ func _on_click_confirm_ask_modal(event: InputEvent):
 func _on_click_cancel_aks_modal(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_back()
 			close_ask_modal()
 			yield(get_tree().create_timer(1.0), "timeout")
 			open_confirm_modal()
@@ -94,12 +97,14 @@ func _on_click_cancel_aks_modal(event: InputEvent):
 func _on_click_confirm_confirm_modal(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_confirm()
 			close_confirm_modal()
 			tutorial_manager.skip_tutorial()
 
 func _on_click_cancel_confirm_modal(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
+			audio_manager.play_button_back()
 			close_confirm_modal()
 			yield(get_tree().create_timer(1.0), "timeout")
 			open_ask_modal()
