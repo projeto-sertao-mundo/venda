@@ -21,7 +21,7 @@ var animation_time_ref = 0
 var animation_time_max = 0
 var animation_words_per_secound = 20
 var animation_is_running = false
-onready var text_label = get_node("Intro/RichTextLabel")
+var text_label = null
 
 func _ready():
 	hidden_all_modals()

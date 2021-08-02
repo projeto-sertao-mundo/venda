@@ -94,3 +94,17 @@ func check_game():
 
 func get_level_status(level: String):
 	return level_is_completed[level]
+	
+func reset_items():
+	for key in items:
+		for item in items[key]:
+			item.status = false
+	
+func reset_level():
+	for key in level_is_completed:
+		level_is_completed[key] = false
+	
+func reset_game():
+	print("RESET MANAGER")
+	reset_items()
+	reset_level()

@@ -3,6 +3,9 @@ extends Node2D
 var complete_dialog_step = 1
 
 onready var item_manager = get_node("/root/Manager")
+onready var music_manager = get_node("/root/Music")
+onready var intro_manager = get_node("/root/Intro")
+onready var tutorial_manager = get_node("/root/TutorialManager")
 onready var complete_dialog = get_node("Complete")
 onready var incomplete_dialog = get_node("Incomplete")
 
@@ -38,7 +41,8 @@ func start_text_label_animation(label):
 func show_dialog():
 	var status = item_manager.check_game()
 	if status: show_complete_dialog()
-	elif status == false: show_incomplete_dialog()
+	else: show_incomplete_dialog()
+	reset_game()
 
 func show_complete_dialog():
 	hidden_complete_dialog()
@@ -53,6 +57,7 @@ func show_complete_dialog():
 		start_text_label_animation(complete_dialog_msg_02)
 	elif complete_dialog_step == 3:
 		hidden_complete_dialog()
+		reset_game()
 
 func show_incomplete_dialog():
 	incomplete_dialog.visible = true
@@ -81,3 +86,10 @@ func _on_hidden_incomplete_dialog(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			hidden_incomplete_dialog()
+
+func reset_game():
+	item_manager.reset_game()
+	tutorial_manager.reset_game()
+	intro_manager.reset_game()
+	music_manager.disable_all()
+	get_tree().change_scene("res://scenes/menu/Menu.tscn")

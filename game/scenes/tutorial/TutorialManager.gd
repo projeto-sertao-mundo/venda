@@ -129,3 +129,9 @@ func close_helper_time_step():
 	tutorial_controller.close_helper_time_step()
 	disable_all_buttons()
 	disable_found_items()
+	
+func reset_game():
+	print("RESET TUTORIAL")
+	var tutorial_is_running = false
+	var tutorial_is_completed = false
+	var tutorial_controller = null
