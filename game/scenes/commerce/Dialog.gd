@@ -14,7 +14,7 @@ onready var complete_dialog_msg_02 = get_node("Complete/RichTextLabel2")
 
 var animation_time_ref = 0
 var animation_time_max = 0
-var animation_words_per_secound = 20
+var animation_words_per_secound = 40
 var animation_is_running = false
 onready var text_label = null
 

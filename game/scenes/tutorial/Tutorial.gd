@@ -19,7 +19,7 @@ onready var step_out = get_node("StepOut")
 
 var animation_time_ref = 0
 var animation_time_max = 0
-var animation_words_per_secound = 20
+var animation_words_per_secound = 40
 var animation_is_running = false
 var text_label = null
 

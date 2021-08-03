@@ -5,7 +5,7 @@ onready var animation = get_node("AnimationPlayer")
 
 var animation_time_ref = 0
 var animation_time_max = 0
-var animation_words_per_secound = 16
+var animation_words_per_secound = 40
 var animation_is_running = false
 onready var animation_text_label = get_node("Balon/RichTextLabel")
 

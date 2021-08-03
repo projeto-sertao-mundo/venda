@@ -11,7 +11,7 @@ onready var balon = get_node("Steps/BalonBig")
 
 var animation_time_ref = 0
 var animation_time_max = 0
-var animation_words_per_secound = 16
+var animation_words_per_secound = 40
 var should_animation_text_label = false
 var text_label = null
 
