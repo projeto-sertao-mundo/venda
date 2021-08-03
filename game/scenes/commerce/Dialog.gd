@@ -42,7 +42,6 @@ func show_dialog():
 	var status = item_manager.check_game()
 	if status: show_complete_dialog()
 	else: show_incomplete_dialog()
-	reset_game()
 
 func show_complete_dialog():
 	hidden_complete_dialog()
@@ -88,8 +87,8 @@ func _on_hidden_incomplete_dialog(event: InputEvent):
 			hidden_incomplete_dialog()
 
 func reset_game():
+	intro_manager.reset_game()
 	item_manager.reset_game()
 	tutorial_manager.reset_game()
-	intro_manager.reset_game()
 	music_manager.disable_all()
 	get_tree().change_scene("res://scenes/menu/Menu.tscn")

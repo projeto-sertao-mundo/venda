@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Seu Fulô"
+config/name="Venda Sertao Mundo"
 run/main_scene="res://scenes/ufmg/UFMG.tscn"
 config/icon="res://icon.png"
 
