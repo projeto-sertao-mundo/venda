@@ -27,7 +27,6 @@ onready var step_08 = get_node("Steps/08")
 onready var step_09 = get_node("Steps/09")
 onready var step_10 = get_node("Steps/10")
 onready var step_11 = get_node("Steps/11")
-onready var step_12 = get_node("Steps/12")
 
 onready var timer = get_node("Steps/Timer")
 
@@ -77,7 +76,6 @@ func hidden_all_steps():
 	step_09.visible = false
 	step_10.visible = false
 	step_11.visible = false
-	step_12.visible = false
 
 func _on_next_step(event: InputEvent):
 	if event is InputEventMouseButton:
@@ -100,7 +98,6 @@ func next_step():
 	elif actual_step == 10: step_10()
 	elif actual_step == 11: step_11()
 	elif actual_step == 12: step_12()
-	elif actual_step == 13: step_13()
 
 func talk_boy():
 	boy.visible = true
@@ -137,26 +134,29 @@ func step_03():
 
 func step_04():
 	disable_change_step()
-	step_04.visible = true
-
-func step_05():
-	disable_change_step()
 	talk_boy()
-	step_05.visible = true
-	var label = step_05.get_node("RichTextLabel")
+	step_04.visible = true
+	var label = step_04.get_node("RichTextLabel")
 	animate_text_label(label)
 
-func step_06():
-	step_06.visible = true
+func step_05():
+	step_05.visible = true
 	step_bg.visible = false
-	get_node("Steps/06/AudioStreamPlayer").play()
-	get_node("Steps/06/Timer").start()
-	get_node("Steps/06/Whirlwind/AnimationPlayer").play("Whirlwind")
+	get_node("Steps/05/AudioStreamPlayer").play()
+	get_node("Steps/05/Timer").start()
+	get_node("Steps/05/Whirlwind/AnimationPlayer").play("Whirlwind")
+
+func step_06():
+	disable_change_step()
+	talk_man()
+	step_bg.visible = true
+	step_06.visible = true
+	var label = step_06.get_node("RichTextLabel")
+	animate_text_label(label)
 
 func step_07():
 	disable_change_step()
 	talk_man()
-	step_bg.visible = true
 	step_07.visible = true
 	var label = step_07.get_node("RichTextLabel")
 	animate_text_label(label)
@@ -170,14 +170,14 @@ func step_08():
 
 func step_09():
 	disable_change_step()
-	talk_man()
+	talk_boy()
 	step_09.visible = true
 	var label = step_09.get_node("RichTextLabel")
 	animate_text_label(label)
 
 func step_10():
 	disable_change_step()
-	talk_boy()
+	talk_man()
 	step_10.visible = true
 	var label = step_10.get_node("RichTextLabel")
 	animate_text_label(label)
@@ -190,11 +190,4 @@ func step_11():
 	animate_text_label(label)
 
 func step_12():
-	disable_change_step()
-	talk_man()
-	step_12.visible = true
-	var label = step_12.get_node("RichTextLabel")
-	animate_text_label(label)
-
-func step_13():
 	get_tree().change_scene("res://scenes/map/Map.tscn")

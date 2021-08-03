@@ -298,7 +298,7 @@ rect_scale = Vector2( 0.378677, 0.378677 )
 texture = ExtResource( 18 )
 script = ExtResource( 48 )
 item_name = "Estilingue"
-item_description = "Instrumento em formato de “Y” com tiras de elástico, com o qual se arremessa pequenos objetos."
+item_description = "Instrumento em formato de \"Y\" com tiras de elástico, com o qual se arremessa pequenos objetos."
 
 [node name="IoIô" type="Node2D" parent="Book/Pages/PageCave/Items"]
 
@@ -676,7 +676,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 item_name = "Pipoca"
-item_description = "Pipoca vem do tupi, e significa “milho rebentado”. É um salgado que se forma a partir do milho aquecido. "
+item_description = "Pipoca vem do tupi, e significa \"milho\" rebentado”. É um salgado que se forma a partir do milho aquecido. "
 
 [node name="Pirulito" type="Node2D" parent="Book/Pages/PageElephant/Items"]
 position = Vector2( 767.918, 500.632 )
@@ -699,7 +699,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 item_name = "Pirulito"
-item_description = "É uma bala presa a um palito de madeira ou de plástico. Pode ter muitas formas e sabores e é apreciado por crianças de todas as idades. "
+item_description = "Bala presa a um palito de madeira ou de plástico. Pode ter muitas formas e sabores e é apreciado por crianças de todas as idades. "
 
 [node name="PageStation" type="Node2D" parent="Book/Pages"]
 visible = false
@@ -929,7 +929,7 @@ margin_right = 846.0
 margin_bottom = 620.0
 custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "É um objeto parecido com uma vareta, normalmente usado em pares para entrelaçar fios na produção manual de tecidos."
+text = "Objeto parecido com uma vareta, normalmente usado em pares para entrelaçar fios na produção manual de tecidos."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
@@ -963,40 +963,40 @@ volume_db = -2.0
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" to="Book/Pages/PageCave/Items/Agulha de tricô/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Alforge/Sprite" to="Book/Pages/PageCave/Items/Alforge/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="Book/Pages/PageCave/Items/Berrante/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Berrante/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="Book/Pages/PageCave/Items/Cachimbo/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="Book/Pages/PageCave/Items/Chaleira/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Cachimbo/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/Chaleira/Sprite" to="Book/Pages/PageCave/Items/Chaleira/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Estilingue/Sprite" to="Book/Pages/PageCave/Items/Estilingue/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="Book/Pages/PageCave/Items/IoIô/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageCave/Items/IoIô/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="Book/Pages/PageCave/Items/Pelego/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageCave/Items/Pelego/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" to="Book/Pages/PageChurch/Items/Bacia de Flores/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="Book/Pages/PageChurch/Items/Bastidor/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Bastidor/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Caderno/Sprite" to="Book/Pages/PageChurch/Items/Caderno/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Caderno/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Copo de Vidro/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Espanador/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Espanador/Sprite" to="Book/Pages/PageChurch/Items/Espanador/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Espanador/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Presépio/Sprite" to="Book/Pages/PageChurch/Items/Presépio/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="Book/Pages/PageChurch/Items/Isqueiro/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tecido de Chita/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Isqueiro/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tecido de Chita/Sprite" to="Book/Pages/PageChurch/Items/Tecido de Chita/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageChurch/Items/Tecido de Chita/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" to="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Carretel de linha/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Esporas/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Esporas/Sprite" to="Book/Pages/PageElephant/Items/Esporas/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Esporas/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" to="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageElephant/Items/Frasco de Pimenta/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" to="Book/Pages/PageElephant/Items/Maçã do Amor/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Máq Registradora/Sprite" to="." method="_on_click_open_information_modal"]
@@ -1009,18 +1009,18 @@ volume_db = -2.0
 [connection signal="gui_input" from="Book/Pages/PageElephant/Items/Pirulito/Sprite" to="Book/Pages/PageElephant/Items/Pirulito/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Balança/Sprite" to="Book/Pages/PageStation/Items/Balança/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Balança/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" to="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Bolinhas de gude/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" to="Book/Pages/PageStation/Items/Cigarro de palha/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageStation/Items/Colher de pau/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Colher de pau/Sprite" to="Book/Pages/PageStation/Items/Colher de pau/Sprite" method="_on_click_item"]
-[connection signal="gui_input" from="Book/Pages/PageStation/Items/Dedal/Sprite" to="." method="_on_click_open_information_modal"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Colher de pau/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Dedal/Sprite" to="Book/Pages/PageStation/Items/Dedal/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Dedal/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" to="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Língua De Sogra/Sprite" to="." method="_on_click_open_information_modal"]
-[connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="Book/Pages/PageStation/Items/Panela/Sprite" method="_on_click_item"]
+[connection signal="gui_input" from="Book/Pages/PageStation/Items/Panela/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" to="." method="_on_click_open_information_modal"]
 [connection signal="gui_input" from="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" to="Book/Pages/PageStation/Items/Pirulito Puxa Puxa/Sprite" method="_on_click_item"]
 [connection signal="gui_input" from="InformationModal/ColorRect" to="." method="_on_click_close_information_modal"]

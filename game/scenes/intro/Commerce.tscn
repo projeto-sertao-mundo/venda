@@ -1099,21 +1099,6 @@ __meta__ = {
 visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/04"]
-margin_left = 523.937
-margin_top = 575.735
-margin_right = 1243.94
-margin_bottom = 640.735
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "REPRODUZIR SIM"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="05" type="Node2D" parent="Steps"]
-visible = false
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/05"]
 margin_left = 250.0
 margin_top = 540.0
 margin_right = 969.999
@@ -1125,10 +1110,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="06" type="Node2D" parent="Steps"]
+[node name="05" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="Whirlwind" type="Sprite" parent="Steps/06"]
+[node name="Whirlwind" type="Sprite" parent="Steps/05"]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 1232.58, 391.142 )
 scale = Vector2( 0.700862, 0.700862 )
@@ -1136,21 +1121,21 @@ z_index = 3000
 z_as_relative = false
 texture = ExtResource( 46 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Steps/06/Whirlwind"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Steps/05/Whirlwind"]
 anims/Whirlwind = SubResource( 2 )
 
-[node name="Timer" type="Timer" parent="Steps/06"]
+[node name="Timer" type="Timer" parent="Steps/05"]
 wait_time = 7.0
 one_shot = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Steps/06"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Steps/05"]
 stream = ExtResource( 47 )
 volume_db = -2.0
 
-[node name="07" type="Node2D" parent="Steps"]
+[node name="06" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/07"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/06"]
 margin_left = 567.606
 margin_top = 540.0
 margin_right = 767.606
@@ -1162,10 +1147,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="08" type="Node2D" parent="Steps"]
+[node name="07" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/07"]
 margin_left = 250.0
 margin_top = 523.083
 margin_right = 969.999
@@ -1178,10 +1163,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="09" type="Node2D" parent="Steps"]
+[node name="08" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/09"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
 margin_left = 250.0
 margin_top = 501.225
 margin_right = 1050.0
@@ -1194,11 +1179,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="10" type="Node2D" parent="Steps"]
+[node name="09" type="Node2D" parent="Steps"]
 visible = false
 position = Vector2( 0, -39.0892 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/10"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/09"]
 margin_left = 250.0
 margin_top = 540.0
 margin_right = 969.999
@@ -1212,10 +1197,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="11" type="Node2D" parent="Steps"]
+[node name="10" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/11"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/10"]
 margin_left = 250.0
 margin_top = 521.639
 margin_right = 969.999
@@ -1228,10 +1213,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="12" type="Node2D" parent="Steps"]
+[node name="11" type="Node2D" parent="Steps"]
 visible = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Steps/12"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Steps/11"]
 margin_left = 250.0
 margin_top = 496.486
 margin_right = 1050.0
@@ -1248,4 +1233,4 @@ visible = false
 
 [connection signal="gui_input" from="Steps/BG" to="." method="_on_next_step"]
 [connection signal="timeout" from="Steps/Timer" to="." method="_on_timeout_enable_change_step"]
-[connection signal="timeout" from="Steps/06/Timer" to="." method="next_step"]
+[connection signal="timeout" from="Steps/05/Timer" to="." method="next_step"]
