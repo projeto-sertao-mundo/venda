@@ -1168,12 +1168,12 @@ visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Steps/08"]
 margin_left = 250.0
-margin_top = 501.225
+margin_top = 515.908
 margin_right = 1050.0
-margin_bottom = 681.225
+margin_bottom = 695.908
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
-text = "Me ajuda, meu filho!  Vê pra onde esse redemoinho foi e traz minhas coisas de volta! Prometo te recompensar!
+text = "Me ajuda, meu filho!  Vê pra onde esse redemoinho foi e traz minhas coisas de volta!
 "
 __meta__ = {
 "_edit_use_anchors_": false

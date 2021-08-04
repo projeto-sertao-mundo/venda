@@ -12,7 +12,7 @@ onready var balon = get_node("Steps/BalonBig")
 var animation_time_ref = 0
 var animation_time_max = 0
 var animation_words_per_secound = 40
-var should_animation_text_label = false
+var animation_is_running = false
 var text_label = null
 
 onready var step_bg = get_node("Steps/BG")
@@ -37,19 +37,20 @@ func _ready():
 	next_step()
 	
 func _process(delta):
-	if should_animation_text_label:
+	if animation_is_running:
 		animation_time_ref += delta
 		if animation_time_ref >= animation_time_max:
 			animation_time_ref = 0
 			text_label.visible_characters += 1
 			if text_label.percent_visible == 1:
-				should_animation_text_label = false
-		
+				animation_is_running = false
+#				enable_change_step()
+
 func animate_text_label(label):
 	animation_time_ref = 0
-	should_animation_text_label = true
+	animation_is_running = true
 	text_label = label
-	text_label.visible_characters = 0
+	text_label.percent_visible = 0
 
 func _on_timeout_enable_change_step():
 	enable_change_step()
@@ -59,7 +60,7 @@ func enable_change_step():
 
 func disable_change_step():
 	is_enable_change_step = false
-	timer.start()
+#	timer.start()
 
 func hidden_all_steps():
 	boy.visible = false
@@ -80,8 +81,15 @@ func hidden_all_steps():
 func _on_next_step(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			if is_enable_change_step:
+#			if is_enable_change_step:
+#				next_step()
+			if animation_is_running:
+				animation_is_running = false
+				text_label.percent_visible = 1
+#				enable_change_step()
+			else:
 				next_step()
+				
 
 func next_step():
 	actual_step += 1

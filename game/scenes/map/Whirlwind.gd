@@ -59,4 +59,8 @@ func _on_timeout():
 func _on_hidden_intro(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			hidden_intro()
+			if animation_is_running:
+				animation_is_running = false
+				text_label.percent_visible = 1
+			else:
+				hidden_intro()

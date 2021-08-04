@@ -427,17 +427,6 @@ script = ExtResource( 48 )
 [node name="Incomplete" type="Node2D" parent="Dialog"]
 visible = false
 
-[node name="BG" type="ColorRect" parent="Dialog/Incomplete"]
-margin_left = -10.4882
-margin_top = -7.49155
-margin_right = 29.5118
-margin_bottom = 32.5085
-rect_scale = Vector2( 32.92, 18.68 )
-color = Color( 1, 1, 1, 0 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="BalonBig" type="Sprite" parent="Dialog/Incomplete"]
 position = Vector2( 639.409, 414.599 )
 texture = ExtResource( 47 )
@@ -461,9 +450,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Complete" type="Node2D" parent="Dialog"]
-
-[node name="BG" type="ColorRect" parent="Dialog/Complete"]
+[node name="BG" type="ColorRect" parent="Dialog/Incomplete"]
 margin_left = -10.4882
 margin_top = -7.49155
 margin_right = 29.5118
@@ -473,6 +460,9 @@ color = Color( 1, 1, 1, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Complete" type="Node2D" parent="Dialog"]
+visible = false
 
 [node name="BalonBig" type="Sprite" parent="Dialog/Complete"]
 position = Vector2( 639.409, 414.599 )
@@ -497,15 +487,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Dialog/Complete"]
-visible = false
-margin_left = 299.366
-margin_top = 381.187
-margin_right = 999.366
-margin_bottom = 431.187
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Vá até a sua caderneta para ver o seu prêmio!"
+[node name="BG" type="ColorRect" parent="Dialog/Complete"]
+margin_left = -10.4882
+margin_top = -7.49155
+margin_right = 29.5118
+margin_bottom = 32.5085
+rect_scale = Vector2( 32.92, 18.68 )
+color = Color( 1, 1, 1, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

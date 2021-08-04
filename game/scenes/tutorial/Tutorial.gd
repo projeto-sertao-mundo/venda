@@ -47,6 +47,11 @@ func start_text_label_animation(label):
 	animation_is_running = true
 	text_label = label
 	text_label.visible_characters = 0
+	
+func end_text_label_animaiton():
+	animation_time_ref = 0
+	animation_is_running = false
+	text_label.percent_visible = 1
 
 # GERENCIAR MODAIS
 ####################

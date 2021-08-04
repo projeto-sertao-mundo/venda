@@ -10,7 +10,6 @@ onready var complete_dialog = get_node("Complete")
 onready var incomplete_dialog = get_node("Incomplete")
 
 onready var complete_dialog_msg_01 = get_node("Complete/RichTextLabel")
-onready var complete_dialog_msg_02 = get_node("Complete/RichTextLabel2")
 
 var animation_time_ref = 0
 var animation_time_max = 0
@@ -37,6 +36,11 @@ func start_text_label_animation(label):
 	animation_is_running = true
 	text_label = label
 	text_label.visible_characters = 0
+	
+func end_text_label_animaiton():
+	animation_time_ref = 0
+	animation_is_running = false
+	text_label.percent_visible = 1
 
 func show_dialog():
 	var status = item_manager.check_game()
@@ -44,19 +48,9 @@ func show_dialog():
 	else: show_incomplete_dialog()
 
 func show_complete_dialog():
-	hidden_complete_dialog()
 	complete_dialog.visible = true
-	if complete_dialog_step == 1:
-		complete_dialog_step += 1
-		complete_dialog_msg_01.visible = true
-		start_text_label_animation(complete_dialog_msg_01)
-	elif complete_dialog_step == 2:
-		complete_dialog_step += 1
-		complete_dialog_msg_02.visible = true
-		start_text_label_animation(complete_dialog_msg_02)
-	elif complete_dialog_step == 3:
-		hidden_complete_dialog()
-		reset_game()
+	var label = complete_dialog.get_node("RichTextLabel")
+	start_text_label_animation(label)
 
 func show_incomplete_dialog():
 	incomplete_dialog.visible = true
@@ -70,8 +64,6 @@ func hidden_all():
 
 func hidden_complete_dialog():
 	complete_dialog.visible = false
-	complete_dialog_msg_01.visible = false
-	complete_dialog_msg_02.visible = false
 
 func hidden_incomplete_dialog():
 	incomplete_dialog.visible = false
@@ -79,12 +71,14 @@ func hidden_incomplete_dialog():
 func _on_hidden_complete_dialog(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			show_complete_dialog()
+			if animation_is_running: end_text_label_animaiton()
+			else: reset_game()
 
 func _on_hidden_incomplete_dialog(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
-			hidden_incomplete_dialog()
+			if animation_is_running: end_text_label_animaiton()
+			else: hidden_incomplete_dialog()
 
 func reset_game():
 	intro_manager.reset_game()

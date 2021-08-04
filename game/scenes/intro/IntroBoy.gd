@@ -13,7 +13,7 @@ func _ready():
 	animation_time_max = 1.0 / animation_words_per_secound
 	if intro_manager.display_boy_outside == false:
 		visible = false
-		
+
 func _process(delta):
 	if animation_is_running:
 		animation_time_ref += delta
