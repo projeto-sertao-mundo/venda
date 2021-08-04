@@ -13,11 +13,11 @@ var volume_enable = -2
 
 func _ready():
 	audio_base.playing = true
-#	audio_cave.playing = true
-#	audio_church.playing = true
-#	audio_elephant.playing = true
-#	audio_station.playing = true
-#	disable_all()
+	audio_cave.playing = true
+	audio_church.playing = true
+	audio_elephant.playing = true
+	audio_station.playing = true
+	disable_all()
 	enable_base()
 
 func disable_all():
@@ -27,27 +27,27 @@ func disable_all():
 	disable_station()
 
 func enable_base():
-#	disable_all()
+	disable_all()
 	audio_base.volume_db = volume_enable
 
 func enable_cave():
-#	disable_all()
-#	audio_cave.volume_db = 8
+	disable_all()
+	audio_cave.volume_db = 8
 	pass
 	
 func enable_church():
-#	disable_all()
-#	audio_church.volume_db = volume_enable
+	disable_all()
+	audio_church.volume_db = volume_enable
 	pass
 
 func enable_elephant():
-#	disable_all()
-#	audio_elephant.volume_db = 0
+	disable_all()
+	audio_elephant.volume_db = 0
 	pass
 
 func enable_station():
-#	disable_all()
-#	audio_station.volume_db = 4
+	disable_all()
+	audio_station.volume_db = 4
 	pass
 
 func disable_cave():
