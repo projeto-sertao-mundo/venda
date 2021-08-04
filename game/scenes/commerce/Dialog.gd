@@ -72,7 +72,9 @@ func _on_hidden_complete_dialog(event: InputEvent):
 	if event is InputEventMouseButton:
 		if event.is_pressed() && event.get_button_index() == BUTTON_LEFT:
 			if animation_is_running: end_text_label_animaiton()
-			else: reset_game()
+			else: 
+				hidden_complete_dialog()
+#				reset_game()
 
 func _on_hidden_incomplete_dialog(event: InputEvent):
 	if event is InputEventMouseButton:

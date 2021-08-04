@@ -15,7 +15,7 @@ func _ready():
 	sprite_node = get_node("SpriteNode")
 	if is_fence: scene = "res://scenes/map/Map.tscn"
 	elif intro_manager.display_boy_outside: scene = "res://scenes/intro/Commerce.tscn"
-	else: scene = "res://scenes/commerce/Outside.tscn"
+	else: scene = "res://scenes/commerce/Inside.tscn"
 
 func _on_input_event(viewport, event, shape_idx):
 	if is_fence && intro_manager.display_boy_outside: return
