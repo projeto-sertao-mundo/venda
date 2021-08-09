@@ -252,7 +252,6 @@ __meta__ = {
 }
 
 [node name="StepItemFirst" type="Node2D" parent="."]
-visible = false
 position = Vector2( 493.764, 632.561 )
 
 [node name="Mask" type="ColorRect" parent="StepItemFirst"]
@@ -276,7 +275,7 @@ margin_top = -50.2485
 margin_right = 403.0
 margin_bottom = 83.7515
 custom_fonts/normal_font = SubResource( 1 )
-text = "Legal! Você encontrou o seu primeiro item! Ele está guardado, e você pode consultar as suas ceracterísitcas nos seu livro de anotações!"
+text = "Legal! Você encontrou o seu primeiro item! Ele está guardado, e você pode consultar as suas características nos seu livro de anotações!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
